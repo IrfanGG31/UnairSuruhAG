@@ -506,17 +506,17 @@ const htmlContent = `<!DOCTYPE html>
           <!-- TOP PILL BADGE -->
           <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-amber-100/80 border border-amber-300/80 text-amber-950 text-xs font-bold shadow-xs">
             <span class="w-2 h-2 rounded-full bg-amber-500 animate-pulse"></span>
-            <span>Solusi Praktis untuk Anak Kos &amp; Mahasiswa Surabaya</span>
+            <span>⚡ Serba Bisa untuk Mahasiswa, Anak Kos &amp; Warga Surabaya</span>
           </div>
 
           <!-- HEADLINE -->
           <h1 class="font-heading font-black text-3xl sm:text-4xl lg:text-5xl text-navy-900 leading-[1.18] tracking-tight">
-            Hidup di Kos Jadi Lebih <span class="relative inline-block text-amber-500">Mudah &amp; Nyaman<svg class="absolute -bottom-1.5 left-0 w-full h-2.5 text-amber-400" viewBox="0 0 100 8" preserveAspectRatio="none"><path d="M0,5 C20,0 40,8 60,5 C80,2 90,6 100,5" stroke="currentColor" stroke-width="2.5" fill="none"/></svg></span>
+            Serba Bisa, Semua <span class="relative inline-block text-amber-500">Bisa Disuruh!<svg class="absolute -bottom-1.5 left-0 w-full h-2.5 text-amber-400" viewBox="0 0 100 8" preserveAspectRatio="none"><path d="M0,5 C20,0 40,8 60,5 C80,2 90,6 100,5" stroke="currentColor" stroke-width="2.5" fill="none"/></svg></span>
           </h1>
 
           <!-- SUBTITLE -->
           <p class="text-slate-600 text-sm sm:text-base lg:text-lg leading-relaxed max-w-2xl font-normal">
-            8 Lini Layanan On-Demand Mahasiswa di Surabaya: Pindahan (<span class="font-semibold text-navy-900">Move Care</span>), Antar-Jemput (<span class="font-semibold text-navy-900">Go Care</span>), Titip Barang (<span class="font-semibold text-navy-900">Keep Care</span>), Perakitan (<span class="font-semibold text-navy-900">Fix Care</span>), Belanja (<span class="font-semibold text-navy-900">Task Care</span>), Berkas (<span class="font-semibold text-navy-900">Desk Care</span>), Event Crew, dan Tutor Akademik di Surabaya.
+            Apapun kebutuhan harianmu di Surabaya, serahkan pada tim mahasiswa: dari <span class="font-semibold text-navy-900">Pindahan &amp; Titip Kos</span>, <span class="font-semibold text-navy-900">Antar-Jemput Stasiun/Bandara</span>, <span class="font-semibold text-navy-900">Urus Berkas ELPT</span>, <span class="font-semibold text-navy-900">Rakit Perabot</span>, belanja darurat, sampai <span class="font-semibold text-navy-900">Kru Event &amp; Tutor</span>. Cekatan, amanah, dan harga transparan.
           </p>
 
           <!-- CTAS -->
@@ -593,11 +593,11 @@ const htmlContent = `<!DOCTYPE html>
             <!-- FLOATING MASCOT BADGE (PRABU AIRLANGGA) -->
             <div class="absolute -bottom-4 -left-4 bg-white/95 backdrop-blur-md p-2.5 pr-4 rounded-2xl shadow-xl border border-slate-200/90 flex items-center gap-3 card-spring">
               <div class="w-10 h-10 rounded-xl bg-amber-100 border border-amber-300/80 p-0.5 overflow-hidden shrink-0 shadow-xs">
-                <img src="${mascotB64}" alt="Prabu Airlangga" class="w-full h-full object-cover rounded-lg" />
+                <img src="${mascotB64}" alt="Mas Suruh (Founder UNAIR SURUH)" class="w-full h-full object-cover rounded-lg" />
               </div>
               <div>
-                <div class="text-xs font-black text-navy-900">Prabu Airlangga</div>
-                <div class="text-[10px] text-slate-500 font-semibold">Mitra Mahasiswa Siaga</div>
+                <div class="text-xs font-black text-navy-900">Mas Suruh (Founder)</div>
+                <div class="text-[10px] text-slate-500 font-semibold">Siap Bantu Kapan Saja</div>
               </div>
             </div>
 
