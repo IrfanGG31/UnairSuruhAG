@@ -428,17 +428,14 @@ const htmlContent = `<!DOCTYPE html>
     <div class="max-w-7xl mx-auto flex items-center justify-between">
       <div class="flex items-center gap-2 overflow-hidden text-ellipsis whitespace-nowrap">
         <span class="bg-amber-400 text-navy-950 text-[10px] font-black px-2.5 py-0.5 rounded-full uppercase tracking-wider shrink-0">Inisiatif Mahasiswa</span>
-        <span class="text-slate-300">Layanan On-Demand Mahasiswa di Surabaya • 8 Pilihan Care Series</span>
+        <span id="announcementBarText" class="text-slate-300">Layanan On-Demand Mahasiswa di Surabaya • 8 Pilihan Care Series</span>
       </div>
       <div class="hidden sm:flex items-center gap-4 text-slate-300 text-xs shrink-0">
         <span class="flex items-center gap-1">
           <svg class="w-3.5 h-3.5 text-emerald-400 fill-none stroke-current stroke-2" viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
           <span class="font-semibold text-white">+62 895-0996-0815</span>
         </span>
-        <a href="admin.html" class="hover:text-amber-400 transition flex items-center gap-1 font-semibold" title="Buka Dashboard Web Admin">
-          <svg class="w-3.5 h-3.5 stroke-current fill-none stroke-2" viewBox="0 0 24 24"><path d="M12.22 2h-.44a2 2 0 0 0-2 2v.18a2 2 0 0 1-1 1.73l-.43.25a2 2 0 0 1-2 0l-.15-.08a2 2 0 0 0-2.73.73l-.22.38a2 2 0 0 0 .73 2.73l.15.1a2 2 0 0 1 1 1.72v.51a2 2 0 0 1-1 1.74l-.15.09a2 2 0 0 0-.73 2.73l.22.38a2 2 0 0 0 2.73.73l.15-.08a2 2 0 0 1 2 0l.43.25a2 2 0 0 1 1 1.73V20a2 2 0 0 0 2 2h.44a2 2 0 0 0 2-2v-.18a2 2 0 0 1 1-1.73l.43-.25a2 2 0 0 1 2 0l.15.08a2 2 0 0 0 2.73-.73l.22-.39a2 2 0 0 0-.73-2.73l-.15-.08a2 2 0 0 1-1-1.74v-.5a2 2 0 0 1 1-1.74l.15-.09a2 2 0 0 0 .73-2.73l-.22-.38a2 2 0 0 0-2.73-.73l-.15.08a2 2 0 0 1-2 0l-.43-.25a2 2 0 0 1-1-1.73V4a2 2 0 0 0-2-2z"/><circle cx="12" cy="12" r="3"/></svg>
-          <span>Admin</span>
-        </a>
+        <!-- Admin link hidden from public view -->
       </div>
     </div>
   </aside>
@@ -471,10 +468,7 @@ const htmlContent = `<!DOCTYPE html>
 
       <!-- RIGHT ACTIONS -->
       <div class="flex items-center gap-3">
-        <a href="admin.html" class="md:hidden text-slate-600 hover:text-navy-900 p-2" title="Dashboard Admin">
-          <svg class="w-5 h-5 stroke-current fill-none stroke-2" viewBox="0 0 24 24"><path d="M12.22 2h-.44a2 2 0 0 0-2 2v.18a2 2 0 0 1-1 1.73l-.43.25a2 2 0 0 1-2 0l-.15-.08a2 2 0 0 0-2.73.73l-.22.38a2 2 0 0 0 .73 2.73l.15.1a2 2 0 0 1 1 1.72v.51a2 2 0 0 1-1 1.74l-.15.09a2 2 0 0 0-.73 2.73l.22.38a2 2 0 0 0 2.73.73l.15-.08a2 2 0 0 1 2 0l.43.25a2 2 0 0 1 1 1.73V20a2 2 0 0 0 2 2h.44a2 2 0 0 0 2-2v-.18a2 2 0 0 1 1-1.73l.43-.25a2 2 0 0 1 2 0l.15.08a2 2 0 0 0 2.73-.73l.22-.39a2 2 0 0 0-.73-2.73l-.15-.08a2 2 0 0 1-1-1.74v-.5a2 2 0 0 1 1-1.74l.15-.09a2 2 0 0 0 .73-2.73l-.22-.38a2 2 0 0 0-2.73-.73l-.15.08a2 2 0 0 1-2 0l-.43-.25a2 2 0 0 1-1-1.73V4a2 2 0 0 0-2-2z"/><circle cx="12" cy="12" r="3"/></svg>
-        </a>
-
+        <!-- Admin icon hidden from public header. Access via /admin -->
         <a href="https://wa.me/6289509960815?text=Halo%20kak%20Admin%20UNAIR%20SURUH!%20%F0%9F%91%8B%E2%9C%A8%20Mau%20tanya-tanya%20seputar%20layanannya%20dong%20kak%20%F0%9F%99%8F%F0%9F%98%8A" target="_blank" rel="noopener noreferrer" class="btn-spring focus-ring inline-flex items-center gap-2 px-4 sm:px-5 py-2.5 rounded-xl bg-amber-400 hover:bg-amber-300 text-navy-900 font-heading font-bold text-xs sm:text-sm shadow-sm transition">
           <svg class="w-4 h-4 fill-current shrink-0" viewBox="0 0 24 24"><path d="M12.04 2c-5.46 0-9.91 4.45-9.91 9.91 0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.816 9.816 0 0 0 12.04 2z"/></svg>
           <span>Pesan via WA</span>
@@ -506,23 +500,23 @@ const htmlContent = `<!DOCTYPE html>
           <!-- TOP PILL BADGE -->
           <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-amber-100/80 border border-amber-300/80 text-amber-950 text-xs font-bold shadow-xs">
             <span class="w-2 h-2 rounded-full bg-amber-500 animate-pulse"></span>
-            <span>⚡ Serba Bisa untuk Mahasiswa, Anak Kos &amp; Warga Surabaya</span>
+            <span id="heroPillBadgeText">⚡ Serba Bisa untuk Mahasiswa, Anak Kos &amp; Warga Surabaya</span>
           </div>
 
           <!-- HEADLINE -->
-          <h1 class="font-heading font-black text-3xl sm:text-4xl lg:text-5xl text-navy-900 leading-[1.18] tracking-tight">
+          <h1 id="heroHeadlineTitle" class="font-heading font-black text-3xl sm:text-4xl lg:text-5xl text-navy-900 leading-[1.18] tracking-tight">
             Serba Bisa, Semua <span class="relative inline-block text-amber-500">Bisa Disuruh!<svg class="absolute -bottom-1.5 left-0 w-full h-2.5 text-amber-400" viewBox="0 0 100 8" preserveAspectRatio="none"><path d="M0,5 C20,0 40,8 60,5 C80,2 90,6 100,5" stroke="currentColor" stroke-width="2.5" fill="none"/></svg></span>
           </h1>
 
           <!-- SUBTITLE -->
-          <p class="text-slate-600 text-sm sm:text-base lg:text-lg leading-relaxed max-w-2xl font-normal">
+          <p id="heroSubtitleText" class="text-slate-600 text-sm sm:text-base lg:text-lg leading-relaxed max-w-2xl font-normal">
             Apapun kebutuhan harianmu di Surabaya, serahkan pada tim mahasiswa: dari <span class="font-semibold text-navy-900">Pindahan &amp; Titip Kos</span>, <span class="font-semibold text-navy-900">Antar-Jemput Stasiun/Bandara</span>, <span class="font-semibold text-navy-900">Urus Berkas ELPT</span>, <span class="font-semibold text-navy-900">Rakit Perabot</span>, belanja darurat, sampai <span class="font-semibold text-navy-900">Kru Event &amp; Tutor</span>. Cekatan, amanah, dan harga transparan.
           </p>
 
           <!-- CTAS -->
           <div class="flex flex-wrap items-center gap-3 pt-1">
             <button onclick="openOrderModal('move-care')" class="btn-spring focus-ring px-6 py-3.5 rounded-2xl bg-amber-400 hover:bg-amber-300 text-navy-900 font-heading font-extrabold text-sm shadow-md hover:shadow-lg transition flex items-center gap-2">
-              <span>Pesan Sekarang (WA)</span>
+              <span id="heroCtaText">Pesan Sekarang (WA)</span>
               <svg class="w-4 h-4 stroke-current fill-none stroke-2" viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
             </button>
             <a href="#layanan" class="btn-spring focus-ring px-5 py-3.5 rounded-2xl border border-slate-300/90 hover:border-slate-400 text-slate-700 font-heading font-bold text-sm bg-white/90 hover:bg-white transition shadow-xs">
@@ -1261,7 +1255,7 @@ ${feedData.map(renderFeedCard).join('\n\n')}
             <li>WhatsApp: <a href="https://wa.me/6289509960815" target="_blank" class="text-amber-600 font-semibold hover:underline">+62 895-0996-0815</a></li>
             <li>TikTok: <a href="https://www.tiktok.com/@unair_suruh" target="_blank" class="text-amber-600 font-semibold hover:underline">@unair_suruh</a></li>
             <li>Area: Surabaya (Kampus A, B, C)</li>
-            <li class="pt-2"><a href="admin.html" class="inline-flex items-center gap-1 text-slate-700 font-bold hover:text-amber-600 transition">Dashboard Admin Web &rarr;</a></li>
+            <!-- Admin link hidden from public footer. Access via /admin -->
           </ul>
         </div>
       </div>
@@ -1456,6 +1450,46 @@ ${feedData.map(renderFeedCard).join('\n\n')}
   <!-- ===================================================================== -->
   <script>
     const FEED_DATA = ${JSON.stringify(feedData)};
+
+    // =========================================================================
+    // DYNAMIC CMS HERO SYNC (LOAD FROM LOCALSTORAGE OR ADMIN CHANGES)
+    // =========================================================================
+    function initHeroCmsSync() {
+      function applyCms() {
+        try {
+          const badge = localStorage.getItem('UNAIR_SURUH_HERO_BADGE');
+          const badgeEl = document.getElementById('heroPillBadgeText');
+          if (badge && badgeEl) badgeEl.textContent = badge;
+
+          const pTitle = localStorage.getItem('UNAIR_SURUH_HERO_PREFIX');
+          const hTitle = localStorage.getItem('UNAIR_SURUH_HERO_HIGHLIGHT');
+          const headEl = document.getElementById('heroHeadlineTitle');
+          if ((pTitle !== null || hTitle !== null) && headEl) {
+            const prefix = pTitle !== null ? pTitle : 'Serba Bisa, Semua';
+            const highlight = hTitle !== null ? hTitle : 'Bisa Disuruh!';
+            headEl.innerHTML = prefix + ' <span class="relative inline-block text-amber-500">' + highlight + '<svg class="absolute -bottom-1.5 left-0 w-full h-2.5 text-amber-400" viewBox="0 0 100 8" preserveAspectRatio="none"><path d="M0,5 C20,0 40,8 60,5 C80,2 90,6 100,5" stroke="currentColor" stroke-width="2.5" fill="none"/></svg></span>';
+          }
+
+          const desc = localStorage.getItem('UNAIR_SURUH_HERO_DESC');
+          const descEl = document.getElementById('heroSubtitleText');
+          if (desc && descEl) descEl.innerHTML = desc;
+
+          const cta = localStorage.getItem('UNAIR_SURUH_HERO_CTA');
+          const ctaEl = document.getElementById('heroCtaText');
+          if (cta && ctaEl) ctaEl.textContent = cta;
+
+          const banner = localStorage.getItem('UNAIR_SURUH_BANNER_TEXT');
+          const bannerEl = document.getElementById('announcementBarText');
+          if (banner && bannerEl) bannerEl.textContent = banner;
+        } catch(e) {
+          console.warn('CMS sync skipped:', e);
+        }
+      }
+
+      applyCms();
+      window.addEventListener('storage', applyCms);
+    }
+    initHeroCmsSync();
     let activeModalIndex = 0;
     let isModalLiked = false;
     let unmutedCardIdx = null;

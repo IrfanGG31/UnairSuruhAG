@@ -498,42 +498,96 @@
           <p class="text-xs text-slate-600">Atur copywriting, banner pengumuman, dan integrasi media tanpa deploy ulang</p>
         </div>
 
-        <div class="bg-white p-6 rounded-2xl border border-slate-200 shadow-xs space-y-5 text-xs sm:text-sm">
+        <div class="bg-white p-6 sm:p-7 rounded-2xl border border-slate-200 shadow-xs space-y-6 text-xs sm:text-sm">
           
-          <div class="space-y-2">
-            <label class="block font-bold text-navy-900">Judul Utama Hero (Tagline)</label>
-            <input type="text" id="cmsHeroTitle" value="Capek Suruh-Suruh? Serahkan ke UNAIR SURUH." class="focus-ring w-full p-3 rounded-xl border border-slate-300 font-bold text-sm" />
-            <p class="text-[11px] text-slate-500">Gunakan tanda tanya (?) untuk pemisah baris warna gold.</p>
+          <div class="border-b border-slate-100 pb-4">
+            <h2 class="font-heading font-black text-base text-navy-900 tracking-tight flex items-center gap-2">
+              <span class="w-2.5 h-2.5 rounded-full bg-amber-500"></span>
+              Kustomisasi Copywriting Hero Banner (Halaman Depan)
+            </h2>
+            <p class="text-xs text-slate-500 mt-1">Ubah teks pill badge, judul utama, deskripsi, hingga tombol CTA secara langsung tanpa perlu koding.</p>
           </div>
 
-          <div class="space-y-2">
-            <label class="block font-bold text-navy-900">Deskripsi Singkat Hero</label>
-            <textarea id="cmsHeroDesc" rows="3" class="focus-ring w-full p-3 rounded-xl border border-slate-300 text-xs sm:text-sm leading-relaxed">Layanan pindah kos (1 driver + 1 SDM), bersihin kos putri/putra, rakit barang, antar jemput mobil AC / motor, hingga kebutuhan urgent 24 jam. Layanan bantuan on-demand karya mahasiswa di Surabaya dengan adab muamalah dan privasi terjaga.</textarea>
+          <!-- 1. PILL BADGE -->
+          <div class="space-y-1.5">
+            <label class="block font-bold text-navy-900">1. Teks Pill Badge Atas (Kecil)</label>
+            <input type="text" id="cmsHeroBadge" value="⚡ Serba Bisa untuk Mahasiswa, Anak Kos &amp; Warga Surabaya" class="focus-ring w-full p-3 rounded-xl border border-slate-300 font-semibold text-xs sm:text-sm" placeholder="Contoh: ⚡ Serba Bisa untuk Mahasiswa..." oninput="updateCmsPreview()" />
+            <p class="text-[11px] text-slate-500">Pill lonjong dengan titik kuning menyala di atas judul utama.</p>
           </div>
 
-          <div class="grid sm:grid-cols-2 gap-4">
-            <div class="space-y-2">
-              <label class="block font-bold text-navy-900">Banner Pengumuman / Event Maba</label>
-              <input type="text" id="cmsBannerText" value="Layanan On-Demand Mahasiswa Surabaya" class="focus-ring w-full p-2.5 rounded-xl border border-slate-300 text-xs" />
+          <!-- 2. HEADLINE / TITLE -->
+          <div class="grid grid-cols-1 sm:grid-cols-12 gap-4">
+            <div class="sm:col-span-7 space-y-1.5">
+              <label class="block font-bold text-navy-900">2a. Judul Utama (Baris Normal)</label>
+              <input type="text" id="cmsHeroPrefix" value="Serba Bisa, Semua" class="focus-ring w-full p-3 rounded-xl border border-slate-300 font-bold text-navy-900 text-sm" placeholder="Contoh: Serba Bisa, Semua" oninput="updateCmsPreview()" />
             </div>
-            <div class="space-y-2">
-              <label class="block font-bold text-navy-900">Akun TikTok Resmi</label>
-              <input type="text" id="cmsTiktokUser" value="@unair_suruh" class="focus-ring w-full p-2.5 rounded-xl border border-slate-300 text-xs font-mono" />
+            <div class="sm:col-span-5 space-y-1.5">
+              <label class="block font-bold text-amber-700">2b. Judul Aksen Emas (Highlight)</label>
+              <input type="text" id="cmsHeroHighlight" value="Bisa Disuruh!" class="focus-ring w-full p-3 rounded-xl border border-amber-300 bg-amber-50/50 font-black text-amber-600 text-sm" placeholder="Contoh: Bisa Disuruh!" oninput="updateCmsPreview()" />
             </div>
           </div>
 
-          <div class="pt-2 flex items-center gap-3">
-            <button onclick="saveCmsSettings()" class="btn-spring focus-ring px-6 py-3 rounded-xl bg-navy-900 text-gold-500 font-bold text-xs hover:bg-navy-800">
-              Simpan Konten Laman
+          <!-- 3. DESCRIPTION / SUBTITLE -->
+          <div class="space-y-1.5">
+            <label class="block font-bold text-navy-900">3. Deskripsi Singkat Hero (Paragraf)</label>
+            <textarea id="cmsHeroDesc" rows="3" class="focus-ring w-full p-3 rounded-xl border border-slate-300 text-xs sm:text-sm leading-relaxed" placeholder="Tuliskan deskripsi ringkas..." oninput="updateCmsPreview()">Apapun kebutuhan harianmu di Surabaya, serahkan pada tim mahasiswa: dari Pindahan &amp; Titip Kos, Antar-Jemput Stasiun/Bandara, Urus Berkas ELPT, Rakit Perabot, belanja darurat, sampai Kru Event &amp; Tutor. Cekatan, amanah, dan harga transparan.</textarea>
+            <p class="text-[11px] text-slate-500">Jelaskan cakupan layanan secara ringkas dan ramah.</p>
+          </div>
+
+          <!-- 4. CTA BUTTON & BANNER PENGUMUMAN -->
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+            <div class="space-y-1.5">
+              <label class="block font-bold text-navy-900">4. Teks Tombol CTA Utama</label>
+              <input type="text" id="cmsHeroCta" value="Pesan Sekarang (WA)" class="focus-ring w-full p-2.5 rounded-xl border border-slate-300 text-xs font-bold" oninput="updateCmsPreview()" />
+            </div>
+            <div class="space-y-1.5">
+              <label class="block font-bold text-navy-900">5. Teks Banner Paling Atas</label>
+              <input type="text" id="cmsBannerText" value="[INISIATIF MAHASISWA] Layanan On-Demand Mahasiswa di Surabaya • 8 Pilihan Care Series" class="focus-ring w-full p-2.5 rounded-xl border border-slate-300 text-xs" />
+            </div>
+          </div>
+
+          <!-- LIVE PREVIEW BOX -->
+          <div class="mt-4 p-5 rounded-2xl bg-slate-50 border border-slate-200/80 space-y-3">
+            <div class="text-[10px] uppercase font-bold tracking-wider text-slate-600 flex items-center justify-between">
+              <span>👁️ Pratinjau Langsung (Live Preview)</span>
+              <span class="text-amber-700 bg-amber-100 px-2 py-0.5 rounded-full">Tampilan Halaman Depan</span>
+            </div>
+            <div class="bg-gradient-to-b from-[#F8FAFC] to-white p-5 rounded-xl border border-slate-200/60 shadow-2xs space-y-3">
+              <div class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-amber-100 border border-amber-300 text-amber-950 text-[11px] font-bold">
+                <span class="w-1.5 h-1.5 rounded-full bg-amber-500 animate-pulse"></span>
+                <span id="previewHeroBadge">⚡ Serba Bisa untuk Mahasiswa, Anak Kos &amp; Warga Surabaya</span>
+              </div>
+              <h3 class="font-heading font-black text-xl sm:text-2xl text-navy-900 tracking-tight leading-snug">
+                <span id="previewHeroPrefix">Serba Bisa, Semua</span> <span id="previewHeroHighlight" class="text-amber-500 underline decoration-amber-400 decoration-wavy">Bisa Disuruh!</span>
+              </h3>
+              <p id="previewHeroDesc" class="text-slate-600 text-xs leading-relaxed max-w-xl">
+                Apapun kebutuhan harianmu di Surabaya, serahkan pada tim mahasiswa: dari Pindahan &amp; Titip Kos, Antar-Jemput Stasiun/Bandara, Urus Berkas ELPT, Rakit Perabot, belanja darurat, sampai Kru Event &amp; Tutor. Cekatan, amanah, dan harga transparan.
+              </p>
+              <div class="pt-1">
+                <button type="button" class="px-4 py-2 rounded-xl bg-amber-400 text-navy-950 font-bold text-xs shadow-xs pointer-events-none">
+                  <span id="previewHeroCta">Pesan Sekarang (WA)</span> &rarr;
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- ACTION BUTTONS -->
+          <div class="pt-3 flex flex-wrap items-center gap-3">
+            <button onclick="saveCmsSettings()" class="btn-spring focus-ring px-6 py-3 rounded-xl bg-navy-900 hover:bg-navy-800 text-amber-300 font-extrabold text-xs shadow-sm flex items-center gap-2">
+              <svg class="w-4 h-4 fill-none stroke-current stroke-2" viewBox="0 0 24 24"><path d="M19 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11l5 5v11a2 2 0 0 1-2 2z"/><polyline points="17 21 17 13 7 13 7 21"/><polyline points="7 3 7 8 15 8"/></svg>
+              <span>Simpan Konten Laman</span>
             </button>
-            <a href="index.html" target="_blank" class="btn-spring focus-ring px-4 py-3 rounded-xl border border-slate-300 text-slate-700 font-bold text-xs hover:bg-slate-50">
-              Lihat di Website Publik
+            <button onclick="resetCmsSettings()" class="btn-spring focus-ring px-4 py-3 rounded-xl border border-slate-300 hover:bg-slate-100 text-slate-700 font-bold text-xs">
+              Reset ke Default
+            </button>
+            <a href="index.html" target="_blank" class="btn-spring focus-ring px-4 py-3 rounded-xl border border-slate-300 hover:bg-slate-100 text-slate-700 font-bold text-xs flex items-center gap-1.5 ml-auto">
+              <span>Buka Web Publik (Tab Baru)</span>
+              <svg class="w-3.5 h-3.5 stroke-current fill-none stroke-2" viewBox="0 0 24 24"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6M15 3h6v6M10 14L21 3"/></svg>
             </a>
           </div>
 
         </div>
 
-      
         <!-- ================================================================= -->
         <!-- TESTIMONIALS CMS SECTION (REAL TIKTOK COMMENTS)                   -->
         <!-- ================================================================= -->
@@ -1363,12 +1417,61 @@
       showToast('Status layanan ' + services[idx].name + ' diperbarui');
     }
 
+    function updateCmsPreview() {
+      const badge = document.getElementById('cmsHeroBadge').value || '⚡ Serba Bisa untuk Mahasiswa...';
+      const prefix = document.getElementById('cmsHeroPrefix').value || 'Serba Bisa, Semua';
+      const highlight = document.getElementById('cmsHeroHighlight').value || 'Bisa Disuruh!';
+      const desc = document.getElementById('cmsHeroDesc').value || 'Apapun kebutuhan harianmu di Surabaya...';
+      const cta = document.getElementById('cmsHeroCta').value || 'Pesan Sekarang (WA)';
+
+      const pBadge = document.getElementById('previewHeroBadge');
+      if (pBadge) pBadge.textContent = badge;
+      const pPrefix = document.getElementById('previewHeroPrefix');
+      if (pPrefix) pPrefix.textContent = prefix;
+      const pHighlight = document.getElementById('previewHeroHighlight');
+      if (pHighlight) pHighlight.textContent = highlight;
+      const pDesc = document.getElementById('previewHeroDesc');
+      if (pDesc) pDesc.textContent = desc;
+      const pCta = document.getElementById('previewHeroCta');
+      if (pCta) pCta.textContent = cta;
+    }
+
     function saveCmsSettings() {
-      const title = document.getElementById('cmsHeroTitle').value.trim();
+      const badge = document.getElementById('cmsHeroBadge').value.trim();
+      const prefix = document.getElementById('cmsHeroPrefix').value.trim();
+      const highlight = document.getElementById('cmsHeroHighlight').value.trim();
       const desc = document.getElementById('cmsHeroDesc').value.trim();
-      localStorage.setItem('UNAIR_SURUH_TITLE', title);
-      localStorage.setItem('UNAIR_SURUH_DESC', desc);
-      showToast('Konten website berhasil disimpan dan disinkronkan');
+      const cta = document.getElementById('cmsHeroCta').value.trim();
+      const banner = document.getElementById('cmsBannerText').value.trim();
+
+      localStorage.setItem('UNAIR_SURUH_HERO_BADGE', badge);
+      localStorage.setItem('UNAIR_SURUH_HERO_PREFIX', prefix);
+      localStorage.setItem('UNAIR_SURUH_HERO_HIGHLIGHT', highlight);
+      localStorage.setItem('UNAIR_SURUH_HERO_DESC', desc);
+      localStorage.setItem('UNAIR_SURUH_HERO_CTA', cta);
+      localStorage.setItem('UNAIR_SURUH_BANNER_TEXT', banner);
+
+      showToast('Konten Hero Website berhasil disimpan & disinkronkan!');
+    }
+
+    function resetCmsSettings() {
+      if (!confirm('Yakin ingin mereset konten teks hero kembali ke bawaan awal?')) return;
+      localStorage.removeItem('UNAIR_SURUH_HERO_BADGE');
+      localStorage.removeItem('UNAIR_SURUH_HERO_PREFIX');
+      localStorage.removeItem('UNAIR_SURUH_HERO_HIGHLIGHT');
+      localStorage.removeItem('UNAIR_SURUH_HERO_DESC');
+      localStorage.removeItem('UNAIR_SURUH_HERO_CTA');
+      localStorage.removeItem('UNAIR_SURUH_BANNER_TEXT');
+
+      document.getElementById('cmsHeroBadge').value = '⚡ Serba Bisa untuk Mahasiswa, Anak Kos & Warga Surabaya';
+      document.getElementById('cmsHeroPrefix').value = 'Serba Bisa, Semua';
+      document.getElementById('cmsHeroHighlight').value = 'Bisa Disuruh!';
+      document.getElementById('cmsHeroDesc').value = 'Apapun kebutuhan harianmu di Surabaya, serahkan pada tim mahasiswa: dari Pindahan & Titip Kos, Antar-Jemput Stasiun/Bandara, Urus Berkas ELPT, Rakit Perabot, belanja darurat, sampai Kru Event & Tutor. Cekatan, amanah, dan harga transparan.';
+      document.getElementById('cmsHeroCta').value = 'Pesan Sekarang (WA)';
+      document.getElementById('cmsBannerText').value = '[INISIATIF MAHASISWA] Layanan On-Demand Mahasiswa di Surabaya • 8 Pilihan Care Series';
+
+      updateCmsPreview();
+      showToast('Konten teks hero direset ke pengaturan default.');
     }
 
     function saveAdminSettings() {
@@ -1411,14 +1514,28 @@
       if (savedWa) {
         document.getElementById('settingWaNumber').value = savedWa;
       }
-      const savedTitle = localStorage.getItem('UNAIR_SURUH_TITLE');
-      if (savedTitle) {
-        document.getElementById('cmsHeroTitle').value = savedTitle;
-      }
-      const savedDesc = localStorage.getItem('UNAIR_SURUH_DESC');
-      if (savedDesc) {
-        document.getElementById('cmsHeroDesc').value = savedDesc;
-      }
+      // Load saved Hero CMS
+      const savedBadge = localStorage.getItem('UNAIR_SURUH_HERO_BADGE');
+      if (savedBadge && document.getElementById('cmsHeroBadge')) document.getElementById('cmsHeroBadge').value = savedBadge;
+
+      const savedPrefix = localStorage.getItem('UNAIR_SURUH_HERO_PREFIX');
+      if (savedPrefix && document.getElementById('cmsHeroPrefix')) document.getElementById('cmsHeroPrefix').value = savedPrefix;
+
+      const savedHighlight = localStorage.getItem('UNAIR_SURUH_HERO_HIGHLIGHT');
+      if (savedHighlight && document.getElementById('cmsHeroHighlight')) document.getElementById('cmsHeroHighlight').value = savedHighlight;
+
+      const savedDesc = localStorage.getItem('UNAIR_SURUH_HERO_DESC');
+      if (savedDesc && document.getElementById('cmsHeroDesc')) document.getElementById('cmsHeroDesc').value = savedDesc;
+
+      const savedCta = localStorage.getItem('UNAIR_SURUH_HERO_CTA');
+      if (savedCta && document.getElementById('cmsHeroCta')) document.getElementById('cmsHeroCta').value = savedCta;
+
+      const savedBanner = localStorage.getItem('UNAIR_SURUH_BANNER_TEXT');
+      if (savedBanner && document.getElementById('cmsBannerText')) document.getElementById('cmsBannerText').value = savedBanner;
+
+      if (typeof updateCmsPreview === 'function') updateCmsPreview();
+      
+// Legacy title/desc replaced by Hero CMS
 
       renderAll();
     });
