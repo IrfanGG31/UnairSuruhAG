@@ -14,7 +14,7 @@ function getBase64(filePath, fallbackUrl) {
 }
 
 const publicDir = 'C:/Users/HYPE AMD/.gemini/antigravity/scratch/unair-suruh/public';
-const logoB64 = getBase64(path.join(publicDir, 'tiktok-avatar.jpg'), getBase64(path.join(publicDir, 'logo.jpg'), '/tiktok-avatar.jpg'));
+const logoB64 = getBase64(path.join(publicDir, 'unair-suruh-logo.jpg'), getBase64(path.join(publicDir, 'logo.jpg'), '/unair-suruh-logo.jpg'));
 const mascotB64 = getBase64(path.join(publicDir, 'mascot.jpg'), '/mascot.jpg');
 const heroTeamB64 = getBase64(path.join(publicDir, 'hero-team.jpg'), '/hero-team.jpg');
 
@@ -448,8 +448,8 @@ const htmlContent = `<!DOCTYPE html>
       
       <!-- LOGO -->
       <a href="#" class="flex items-center gap-3 group focus-ring rounded-xl">
-        <div class="w-10 h-10 sm:w-11 sm:h-11 rounded-xl bg-navy-900 border border-navy-800 p-0.5 flex items-center justify-center shadow-xs overflow-hidden">
-          <img src="${logoB64}" alt="Logo UNAIR SURUH" class="w-full h-full object-cover rounded-lg group-hover:scale-105 transition" />
+        <div class="w-10 h-10 sm:w-11 sm:h-11 rounded-xl bg-white border border-slate-200/90 p-0.5 flex items-center justify-center shadow-xs overflow-hidden">
+          <img src="${logoB64}" alt="Logo Maskot UNAIR SURUH" class="w-full h-full object-contain rounded-lg group-hover:scale-105 transition" />
         </div>
         <div>
           <span class="font-heading font-black text-lg sm:text-xl text-navy-900 tracking-tight block">UNAIR SURUH</span>
@@ -586,12 +586,12 @@ const htmlContent = `<!DOCTYPE html>
 
             <!-- FLOATING MASCOT BADGE (PRABU AIRLANGGA) -->
             <div class="absolute -bottom-4 -left-4 bg-white/95 backdrop-blur-md p-2.5 pr-4 rounded-2xl shadow-xl border border-slate-200/90 flex items-center gap-3 card-spring">
-              <div class="w-10 h-10 rounded-xl bg-amber-100 border border-amber-300/80 p-0.5 overflow-hidden shrink-0 shadow-xs">
-                <img src="${mascotB64}" alt="Mas Suruh (Founder UNAIR SURUH)" class="w-full h-full object-cover rounded-lg" />
+              <div class="w-11 h-11 rounded-xl bg-white border border-amber-300/80 p-0.5 overflow-hidden shrink-0 shadow-xs flex items-center justify-center">
+                <img src="${logoB64}" alt="Maskot Resmi UNAIR SURUH" class="w-full h-full object-contain rounded-lg" />
               </div>
               <div>
-                <div class="text-xs font-black text-navy-900">Mas Suruh (Founder)</div>
-                <div class="text-[10px] text-slate-500 font-semibold">Siap Bantu Kapan Saja</div>
+                <div class="text-xs font-black text-navy-900">Maskot UNAIR SURUH</div>
+                <div class="text-[10px] text-slate-500 font-semibold">Mitra Mahasiswa Siaga</div>
               </div>
             </div>
 
