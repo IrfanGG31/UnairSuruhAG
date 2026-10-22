@@ -416,55 +416,53 @@ const htmlContent = `<!DOCTYPE html>
 <body class="bg-[#F8FAFC] text-slate-800 font-sans antialiased selection:bg-amber-400 selection:text-navy-900 min-h-screen flex flex-col">
 
   <!-- ===================================================================== -->
-  <!-- TOP ANNOUNCEMENT BAR (CLEAN & MINIMAL)                                -->
+  <!-- TOP ANNOUNCEMENT BAR (SUBSTANTIAL & HIGH CONTRAST)                    -->
   <!-- ===================================================================== -->
-  <aside class="bg-navy-900 text-white text-[11px] sm:text-xs py-2 px-4 border-b border-navy-800">
-    <div class="w-full px-4 sm:px-8 lg:px-12 xl:px-16 2xl:px-20 flex items-center justify-between">
-      <div class="flex items-center gap-2 overflow-hidden text-ellipsis whitespace-nowrap">
-        <span class="bg-amber-400 text-navy-950 text-[10px] font-black px-2.5 py-0.5 rounded-full uppercase tracking-wider shrink-0">Inisiatif Mahasiswa</span>
-        <span id="announcementBarText" class="text-slate-300">Layanan On-Demand Mahasiswa di Surabaya • 8 Pilihan SURUH Series</span>
+  <aside class="bg-navy-950 text-white py-3 sm:py-3.5 px-4 border-b border-navy-800 shadow-xs relative z-50">
+    <div class="w-full px-6 sm:px-10 lg:px-14 xl:px-20 flex items-center justify-between">
+      <div class="flex items-center gap-3 overflow-hidden text-ellipsis whitespace-nowrap">
+        <span class="bg-amber-400 text-navy-950 text-xs sm:text-sm font-black px-3.5 py-1 rounded-full uppercase tracking-wider shrink-0 shadow-xs">Inisiatif Mahasiswa</span>
+        <span id="announcementBarText" class="text-slate-200 text-xs sm:text-sm lg:text-base font-medium">Layanan On-Demand Mahasiswa di Surabaya • 8 Pilihan SURUH Series</span>
       </div>
-      <div class="hidden sm:flex items-center gap-4 text-slate-300 text-xs shrink-0">
-        <span class="flex items-center gap-1">
-          <svg class="w-3.5 h-3.5 text-emerald-400 fill-none stroke-current stroke-2" viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
-          <span class="font-semibold text-white">+62 895-0996-0815</span>
+      <div class="hidden sm:flex items-center gap-6 text-slate-200 text-xs sm:text-sm lg:text-base shrink-0">
+        <span class="flex items-center gap-2">
+          <svg class="w-4 h-4 sm:w-5 sm:h-5 text-emerald-400 fill-none stroke-current stroke-2" viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+          <span class="font-bold text-white tracking-wide">+62 895-0996-0815</span>
         </span>
-        <!-- Admin link hidden from public view -->
       </div>
     </div>
   </aside>
 
   <!-- ===================================================================== -->
-  <!-- 1. STICKY NAVBAR (CLEAN WHITE / KOSTCARE STYLE)                       -->
+  <!-- 1. STICKY NAVBAR (PROPORTIONAL, BOLD & EXECUTIVE)                     -->
   <!-- ===================================================================== -->
-  <header class="sticky top-0 z-40 bg-white/95 backdrop-blur-md border-b border-slate-200/80 shadow-xs">
-    <div class="w-full px-4 sm:px-8 lg:px-12 xl:px-16 2xl:px-20 h-18 sm:h-22 flex items-center justify-between">
+  <header class="sticky top-0 z-40 bg-white/95 backdrop-blur-md border-b border-slate-200/90 shadow-sm">
+    <div class="w-full px-6 sm:px-10 lg:px-14 xl:px-20 h-22 sm:h-26 lg:h-28 flex items-center justify-between">
       
-      <!-- LOGO -->
-      <a href="#" class="flex items-center gap-3 group focus-ring rounded-xl">
-        <div class="w-10 h-10 sm:w-11 sm:h-11 rounded-xl bg-white border border-slate-200/90 p-0.5 flex items-center justify-center shadow-xs overflow-hidden">
-          <img src="${logoB64}" alt="Logo Maskot UNAIR SURUH" class="w-full h-full object-contain rounded-lg group-hover:scale-105 transition" />
+      <!-- LOGO & BRAND IDENTITY (PROPORTIONAL & CRISP) -->
+      <a href="#" class="flex items-center gap-4 sm:gap-5 group focus-ring rounded-2xl py-1">
+        <div class="w-14 h-14 sm:w-16 sm:h-16 lg:w-20 lg:h-20 rounded-2xl bg-white border-2 border-slate-200 p-1 flex items-center justify-center shadow-md overflow-hidden shrink-0 group-hover:scale-105 transition">
+          <img src="${logoB64}" alt="Logo Maskot UNAIR SURUH" class="w-full h-full object-contain rounded-xl" />
         </div>
         <div>
-          <span class="font-heading font-black text-lg sm:text-xl text-navy-900 tracking-tight block">UNAIR SURUH</span>
-          <span class="text-[10px] sm:text-[11px] font-semibold text-slate-500 -mt-1 block">Solusi Praktis Mahasiswa</span>
+          <span class="font-heading font-black text-2xl sm:text-3xl lg:text-[2rem] text-navy-950 tracking-tight block leading-tight">UNAIR SURUH</span>
+          <span class="text-xs sm:text-sm lg:text-base font-bold text-slate-500 block mt-0.5">Solusi Praktis Mahasiswa &amp; Anak Kos Surabaya</span>
         </div>
       </a>
 
-      <!-- DESKTOP NAV LINKS (KOSTCARE STRUCTURE) -->
-      <nav class="hidden md:flex items-center gap-7 text-sm font-semibold text-slate-700">
-        <a href="#layanan" class="hover:text-amber-500 transition py-1">Lini Layanan</a>
-        <a href="#mengapa-kami" class="hover:text-amber-500 transition py-1">Mengapa Kami</a>
-        <a href="#kegiatan-kami" class="hover:text-amber-500 transition py-1">Kegiatan Kami</a>
-        <a href="#testimoni" class="hover:text-amber-500 transition py-1">Kata Mereka</a>
-        <a href="#faq" class="hover:text-amber-500 transition py-1">FAQ</a>
+      <!-- DESKTOP NAV LINKS (PROMINENT, SPACIOUS & READABLE) -->
+      <nav class="hidden lg:flex items-center gap-8 xl:gap-12 text-base sm:text-lg font-bold text-navy-900/80">
+        <a href="#layanan" class="hover:text-amber-500 transition py-2 border-b-2 border-transparent hover:border-amber-400">Lini Layanan</a>
+        <a href="#mengapa-kami" class="hover:text-amber-500 transition py-2 border-b-2 border-transparent hover:border-amber-400">Mengapa Kami</a>
+        <a href="#kegiatan-kami" class="hover:text-amber-500 transition py-2 border-b-2 border-transparent hover:border-amber-400">Kegiatan Kami</a>
+        <a href="#testimoni" class="hover:text-amber-500 transition py-2 border-b-2 border-transparent hover:border-amber-400">Kata Mereka</a>
+        <a href="#faq" class="hover:text-amber-500 transition py-2 border-b-2 border-transparent hover:border-amber-400">FAQ</a>
       </nav>
 
-      <!-- RIGHT ACTIONS -->
-      <div class="flex items-center gap-3">
-        <!-- Admin icon hidden from public header. Access via /admin -->
-        <a href="https://wa.me/${WA_NUMBER}?text=Halo%20kak%20Admin%20UNAIR%20SURUH!%20%F0%9F%91%8B%E2%9C%A8%20Mau%20tanya-tanya%20seputar%20layanannya%20dong%20kak%20%F0%9F%99%8F%F0%9F%98%8A" target="_blank" rel="noopener noreferrer" class="btn-spring focus-ring inline-flex items-center gap-2 px-4 sm:px-5 py-2.5 rounded-xl bg-amber-400 hover:bg-amber-300 text-navy-900 font-heading font-bold text-xs sm:text-sm shadow-sm transition">
-          <svg class="w-4 h-4 fill-current shrink-0" viewBox="0 0 24 24"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/></svg>
+      <!-- RIGHT ACTIONS (PROMINENT CALL TO ACTION) -->
+      <div class="flex items-center gap-4">
+        <a href="https://wa.me/${WA_NUMBER}?text=Halo%20kak%20Admin%20UNAIR%20SURUH!%20%F0%9F%91%8B%E2%9C%A8%20Mau%20tanya-tanya%20seputar%20layanannya%20dong%20kak%20%F0%9F%99%8F%F0%9F%98%8A" target="_blank" rel="noopener noreferrer" class="btn-spring focus-ring inline-flex items-center gap-3 px-6 sm:px-8 py-3.5 sm:py-4.5 rounded-2xl bg-amber-400 hover:bg-amber-300 text-navy-950 font-heading font-black text-base sm:text-lg lg:text-xl shadow-md hover:shadow-lg transition">
+          <svg class="w-5 h-5 sm:w-6 sm:h-6 fill-current shrink-0" viewBox="0 0 24 24"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/></svg>
           <span>Pesan via WA</span>
         </a>
       </div>
@@ -472,10 +470,6 @@ const htmlContent = `<!DOCTYPE html>
   </header>
 
   <!-- ===================================================================== -->
-    <!-- ===================================================================== -->
-    <!-- ===================================================================== -->
-    <!-- ===================================================================== -->
-    <!-- ===================================================================== -->
   <!-- 2. HERO SECTION (KUNING - PUTIH - NAVY SIGNATURE AIRLANGGA GRADIENT)  -->
   <!-- ===================================================================== -->
   <section class="relative bg-[linear-gradient(180deg,#FACC15_0%,#FEF08A_16%,#FFFFFF_46%,#CBD5E1_74%,#0F1E36_100%)] py-16 sm:py-20 lg:py-28 xl:py-32 border-b border-navy-900/90 overflow-hidden">
