@@ -340,6 +340,8 @@
       <!-- ================================================================= -->
       <!-- 4.5. PANEL MANAJEMEN VIDEO REELS (KEGIATAN KAMI)                   -->
       <!-- ================================================================= -->
+      </section>
+
       <section id="panel-reels" class="space-y-6 hidden">
         
         <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-4">
@@ -381,7 +383,6 @@
         </div>
 
       </section>
-</section>
 
       <!-- ================================================================= -->
       <!-- PANEL 2: MANAJEMEN ORDER LENGKAP                                  -->
@@ -1267,7 +1268,181 @@
       });
     }
 
+    
+    // =========================================================================
+    // REELS CMS MANAGEMENT LOGIC
+    // =========================================================================
+    const DEFAULT_ADMIN_REELS = [{"id":1,"src":"tiktok/tiktok-real-6.mp4","poster":"","user":"unair_suruh","timeAgo":"9 HOURS AGO","likes":48,"caption":"POV pindah kos 3 jam selesai pakai Tossa roda 3 bareng crew Move Care UNAIR SURUH. Driver + kru mahasiswa bantu angkut sampai lantai 3 kamar kosan gasss 0895-0996-0815 (whatsapp)","tiktokUrl":"https://www.tiktok.com/@unair_suruh/video/7643032747786784020","active":true},{"id":2,"src":"tiktok/tiktok-real-2.mp4","poster":"","user":"unair_suruh","timeAgo":"2 DAYS AGO","likes":36,"caption":"Kak aku gabisa kena panas! Mau yg dingin & nyaman ber-AC bisa ga? Go Care transportasi ospek Amerta UNAIR no nunggu club. Booking via WA 0895-0996-0815","tiktokUrl":"https://www.tiktok.com/@unair_suruh/video/7653709528361389332","active":true},{"id":3,"src":"tiktok/tiktok-real-5.mp4","poster":"","user":"unair_suruh","timeAgo":"3 DAYS AGO","likes":124,"caption":"Video singkat POV ketika kamarmu dibersihin sama crew UNAIR SURUH. Ready all role: mitra mahasiswi khusus kos putri aman, rapi, privasi terjaga 0895-0996-0815","tiktokUrl":"https://www.tiktok.com/@unair_suruh/video/7650823166306323733","active":true},{"id":4,"src":"tiktok/tiktok-real-1.mp4","poster":"","user":"unair_suruh","timeAgo":"4 DAYS AGO","likes":58,"caption":"For Maba UNAIR! Go Care exclusive anti scam & anti ribet berangkat kampus gak pake drama war ojol. Antar jemput Kampus B - Kampus C tepat waktu 0895-0996-0815","tiktokUrl":"https://www.tiktok.com/@unair_suruh/video/7653711312844999956","active":true},{"id":5,"src":"tiktok/tiktok-real-4.mp4","poster":"","user":"unair_suruh","timeAgo":"5 DAYS AGO","likes":92,"caption":"Desk Care: Urus berkas penting & ambil sertifikat fisik ELPT di Pusat Bahasa Kampus B kirim kilat ke alamat kosan Surabaya via WA 0895-0996-0815","tiktokUrl":"https://www.tiktok.com/@unair_suruh/video/7651856659639291156","active":true},{"id":6,"src":"tiktok/tiktok-real-3.mp4","poster":"","user":"unair_suruh","timeAgo":"6 DAYS AGO","likes":185,"caption":"ANTAR JEMPUT AMERTA 2026: Go Care armada mobil van nyaman, dingin ber-AC, no drama no nunggu. Layanan eksklusif mahasiswa UNAIR 0895-0996-0815","tiktokUrl":"https://www.tiktok.com/@unair_suruh/video/7653329107001953556","active":true}];
+
+    function getAdminReels() {
+      try {
+        const stored = localStorage.getItem('unair_suruh_reels_data');
+        if (stored) {
+          const parsed = JSON.parse(stored);
+          if (Array.isArray(parsed) && parsed.length > 0) return parsed;
+        }
+      } catch (e) {}
+      return DEFAULT_ADMIN_REELS;
+    }
+
+    let adminReelsList = getAdminReels();
+
+    function persistAdminReels() {
+      localStorage.setItem('unair_suruh_reels_data', JSON.stringify(adminReelsList));
+      showToast('Perubahan video reels berhasil disimpan');
+    }
+
+    function renderReelsTable() {
+      const tbody = document.getElementById('reelsTableBody');
+      const badge = document.getElementById('reelsCountBadge');
+      if (badge) badge.innerText = adminReelsList.filter(r => r.active !== false).length;
+      if (!tbody) return;
+
+      tbody.innerHTML = adminReelsList.map((r, idx) => `
+        <tr class="hover:bg-slate-50 transition">
+          <td class="py-3 px-4">
+            <div class="w-12 h-16 rounded-lg bg-black overflow-hidden relative shadow-xs border border-slate-200">
+              <video src="${r.src}" muted playsinline preload="metadata" class="w-full h-full object-cover"></video>
+            </div>
+          </td>
+          <td class="py-3 px-4 max-w-xs">
+            <div class="font-bold text-navy-900 text-xs line-clamp-2">${r.caption}</div>
+            <a href="${r.tiktokUrl}" target="_blank" class="text-[10px] text-amber-600 hover:underline mt-0.5 inline-block">Buka di TikTok &rarr;</a>
+          </td>
+          <td class="py-3 px-4 font-mono text-[11px] text-slate-500 whitespace-nowrap">
+            ${r.src}
+          </td>
+          <td class="py-3 px-4 text-center whitespace-nowrap">
+            <span class="inline-flex items-center gap-1 text-slate-700 font-semibold">
+              <svg class="w-3.5 h-3.5 text-rose-500 fill-current" viewBox="0 0 24 24"><path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"/></svg>
+              <span>${r.likes}</span>
+            </span>
+            <div class="text-[10px] text-slate-400 font-medium">${r.timeAgo}</div>
+          </td>
+          <td class="py-3 px-4 text-center">
+            <button onclick="toggleReelStatus(${r.id})" class="text-[10px] font-bold px-2.5 py-1 rounded-full cursor-pointer transition ${r.active !== false ? 'bg-emerald-100 text-emerald-800 border border-emerald-200' : 'bg-slate-200 text-slate-500'}">
+              ${r.active !== false ? 'Aktif' : 'Nonaktif'}
+            </button>
+          </td>
+          <td class="py-3 px-4 text-right whitespace-nowrap space-x-1">
+            <button onclick="openReelEditor(${r.id})" class="p-1.5 rounded-lg bg-slate-100 hover:bg-slate-200 text-slate-700 transition" title="Edit Reel">
+              <svg class="w-3.5 h-3.5 stroke-current fill-none stroke-2" viewBox="0 0 24 24"><path d="M17 3a2.828 2.828 0 1 1 4 4L7.5 20.5 2 22l1.5-5.5L17 3z"/></svg>
+            </button>
+            <button onclick="deleteReel(${r.id})" class="p-1.5 rounded-lg bg-rose-50 hover:bg-rose-100 text-rose-600 transition" title="Hapus Reel">
+              <svg class="w-3.5 h-3.5 stroke-current fill-none stroke-2" viewBox="0 0 24 24"><polyline points="3 6 5 6 21 6"/><path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"/></svg>
+            </button>
+          </td>
+        </tr>
+      `).join('');
+    }
+
+    function toggleReelStatus(id) {
+      const reel = adminReelsList.find(r => r.id === id);
+      if (reel) {
+        reel.active = reel.active === false ? true : false;
+        persistAdminReels();
+        renderReelsTable();
+      }
+    }
+
+    function deleteReel(id) {
+      if (!confirm('Hapus video reel ini dari daftar kegiatan?')) return;
+      adminReelsList = adminReelsList.filter(r => r.id !== id);
+      persistAdminReels();
+      renderReelsTable();
+    }
+
+    function openReelEditor(id) {
+      const modal = document.getElementById('reelEditorModalBackdrop');
+      const title = document.getElementById('reelEditorTitle');
+
+      if (id) {
+        const reel = adminReelsList.find(r => r.id === id);
+        if (!reel) return;
+        title.innerText = 'Edit Video Reel #' + id;
+        document.getElementById('editReelId').value = reel.id;
+        document.getElementById('editReelCaption').value = reel.caption;
+        document.getElementById('editReelSrc').value = reel.src;
+        document.getElementById('editReelTime').value = reel.timeAgo;
+        document.getElementById('editReelLikes').value = reel.likes;
+        document.getElementById('editReelUrl').value = reel.tiktokUrl;
+        document.getElementById('editReelActive').value = reel.active !== false ? 'true' : 'false';
+      } else {
+        title.innerText = 'Tambah Video Reel Baru';
+        document.getElementById('editReelId').value = '';
+        document.getElementById('editReelCaption').value = '';
+        document.getElementById('editReelSrc').value = 'tiktok/tiktok-real-1.mp4';
+        document.getElementById('editReelTime').value = 'JUST NOW';
+        document.getElementById('editReelLikes').value = '50';
+        document.getElementById('editReelUrl').value = 'https://www.tiktok.com/@unair_suruh';
+        document.getElementById('editReelActive').value = 'true';
+      }
+
+      modal.classList.remove('hidden');
+    }
+
+    function closeReelEditor(e) {
+      if (e && e.target && e.target.id !== 'reelEditorModalBackdrop' && !e.target.closest('button')) return;
+      document.getElementById('reelEditorModalBackdrop').classList.add('hidden');
+    }
+
+    function saveReelChanges() {
+      const idStr = document.getElementById('editReelId').value;
+      const caption = document.getElementById('editReelCaption').value.trim();
+      const src = document.getElementById('editReelSrc').value.trim();
+      const timeAgo = document.getElementById('editReelTime').value.trim() || 'JUST NOW';
+      const likes = parseInt(document.getElementById('editReelLikes').value) || 0;
+      const tiktokUrl = document.getElementById('editReelUrl').value.trim() || 'https://www.tiktok.com/@unair_suruh';
+      const active = document.getElementById('editReelActive').value === 'true';
+
+      if (!caption || !src) {
+        alert('Caption dan Path Video harus diisi.');
+        return;
+      }
+
+      if (idStr) {
+        const id = parseInt(idStr);
+        const item = adminReelsList.find(r => r.id === id);
+        if (item) {
+          item.caption = caption;
+          item.src = src;
+          item.timeAgo = timeAgo;
+          item.likes = likes;
+          item.tiktokUrl = tiktokUrl;
+          item.active = active;
+        }
+      } else {
+        const nextId = adminReelsList.length > 0 ? Math.max(...adminReelsList.map(r => r.id)) + 1 : 1;
+        adminReelsList.push({
+          id: nextId,
+          src,
+          poster: '',
+          user: 'unair_suruh',
+          timeAgo,
+          likes,
+          caption,
+          tiktokUrl,
+          active
+        });
+      }
+
+      persistAdminReels();
+      renderReelsTable();
+      closeReelEditor();
+      showToast('Video Reel berhasil disimpan!');
+    }
+
+    function resetReelsToDefault() {
+      if (!confirm('Kembalikan 6 video reel kegiatan bawaan resmi @unair_suruh?')) return;
+      localStorage.removeItem('unair_suruh_reels_data');
+      adminReelsList = [...DEFAULT_ADMIN_REELS];
+      persistAdminReels();
+      renderReelsTable();
+      showToast('Video Reels dikembalikan ke default');
+    }
+
     function renderAll() {
+      renderReelsTable();
       renderDashboardRecent();
       renderOrdersTable();
       renderWorkersGrid();
@@ -1537,6 +1712,7 @@
       
 // Legacy title/desc replaced by Hero CMS
 
+      renderReelsTable();
       renderAll();
     });
   </script>
