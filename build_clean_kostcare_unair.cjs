@@ -479,17 +479,19 @@ const htmlContent = `<!DOCTYPE html>
 
   <!-- ===================================================================== -->
     <!-- ===================================================================== -->
-  <!-- 2. HERO SECTION (ELEVATED AMBIENT PALETTE — CLEAN & ANTI-SLOP)         -->
+    <!-- ===================================================================== -->
+  <!-- 2. HERO SECTION (RICH GAMIFIED CANVAS & CRISP ARCHITECTURAL DEPTH)   -->
   <!-- ===================================================================== -->
-  <section class="relative bg-gradient-to-b from-[#F8FAFC] via-[#FCFBF8] to-[#F8FAFC] py-14 sm:py-20 lg:py-24 border-b border-slate-200/80 overflow-hidden">
+  <section class="relative bg-gradient-to-b from-[#EEF4FA] via-[#FAF8F4] to-[#F1F5F9] py-14 sm:py-20 lg:py-24 border-t-2 border-amber-400/30 border-b-2 border-slate-200/90 shadow-[inset_0_4px_16px_rgba(15,30,54,0.04)] overflow-hidden">
     
-    <!-- SUBTLE AMBIENT LIGHTING GLOWS (CLEAN CSS RADIALS - ZERO AI SLOP) -->
-    <div class="absolute -top-24 -left-20 w-[420px] h-[420px] rounded-full bg-gradient-to-br from-amber-200/35 to-amber-100/10 blur-3xl pointer-events-none -z-10"></div>
-    <div class="absolute top-10 -right-20 w-[480px] h-[480px] rounded-full bg-gradient-to-bl from-blue-200/25 via-indigo-100/15 to-transparent blur-3xl pointer-events-none -z-10"></div>
-    <div class="absolute -bottom-20 left-1/3 w-80 h-80 rounded-full bg-amber-100/25 blur-2xl pointer-events-none -z-10"></div>
+    <!-- GENERATIVE ATMOSPHERIC MESH GRADIENTS (RICH CONTRAST, ZERO AI SLOP) -->
+    <div class="absolute -top-24 -left-20 w-[540px] h-[540px] rounded-full bg-gradient-to-br from-amber-300/30 via-amber-200/15 to-transparent blur-3xl pointer-events-none -z-10"></div>
+    <div class="absolute top-6 -right-20 w-[620px] h-[620px] rounded-full bg-gradient-to-bl from-blue-300/25 via-indigo-200/15 to-transparent blur-3xl pointer-events-none -z-10"></div>
+    <div class="absolute -bottom-24 left-1/3 w-[480px] h-[360px] rounded-full bg-amber-200/20 blur-2xl pointer-events-none -z-10"></div>
 
-    <!-- ARCHITECTURAL MICRO-GRID PATTERN (METRIC PRECISION - SOFT FADE) -->
-    <div class="absolute inset-0 bg-[linear-gradient(to_right,#0F1E3607_1px,transparent_1px),linear-gradient(to_bottom,#0F1E3607_1px,transparent_1px)] bg-[size:32px_32px] [mask-image:radial-gradient(ellipse_70%_60%_at_50%_40%,#000_65%,transparent_100%)] pointer-events-none -z-10"></div>
+    <!-- ARCHITECTURAL DOT-MATRIX & GEOMETRIC CANVAS (CRISP, VISIBLE & BALANCED) -->
+    <div class="absolute inset-0 bg-[radial-gradient(#0F1E3618_1.3px,transparent_1.3px)] bg-[size:24px_24px] [mask-image:radial-gradient(ellipse_85%_75%_at_50%_40%,#000_75%,transparent_100%)] pointer-events-none -z-10"></div>
+    <div class="absolute inset-0 bg-[linear-gradient(to_right,#0F1E3609_1px,transparent_1px),linear-gradient(to_bottom,#0F1E3609_1px,transparent_1px)] bg-[size:96px_96px] [mask-image:radial-gradient(ellipse_75%_65%_at_50%_45%,#000_65%,transparent_100%)] pointer-events-none -z-10"></div>
 
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-12 items-center">
@@ -497,10 +499,11 @@ const htmlContent = `<!DOCTYPE html>
         <!-- LEFT COLUMN: COPYWRITING & CTAS -->
         <div class="lg:col-span-7 space-y-6">
           
-          <!-- TOP PILL BADGE -->
-          <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-amber-100/80 border border-amber-300/80 text-amber-950 text-xs font-bold shadow-xs">
-            <span class="w-2 h-2 rounded-full bg-amber-500 animate-pulse"></span>
+          <!-- TOP GAMIFIED PILL BADGE -->
+          <div class="inline-flex items-center gap-2.5 px-4 py-1.5 rounded-full bg-white/95 backdrop-blur-md border border-amber-300/90 text-amber-950 text-xs font-bold shadow-xs">
+            <span class="w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span>
             <span id="heroPillBadgeText">⚡ Serba Bisa untuk Mahasiswa, Anak Kos &amp; Warga Surabaya</span>
+            <span class="text-amber-700 font-extrabold text-[10px] bg-amber-100 px-2 py-0.5 rounded-md border border-amber-200/80">8 Care Series</span>
           </div>
 
           <!-- HEADLINE -->
@@ -509,7 +512,7 @@ const htmlContent = `<!DOCTYPE html>
           </h1>
 
           <!-- SUBTITLE -->
-          <p id="heroSubtitleText" class="text-slate-600 text-sm sm:text-base lg:text-lg leading-relaxed max-w-2xl font-normal">
+          <p id="heroSubtitleText" class="text-slate-700 text-sm sm:text-base lg:text-lg leading-relaxed max-w-2xl font-normal">
             Apapun kebutuhan harianmu di Surabaya, serahkan pada tim mahasiswa: dari <span class="font-semibold text-navy-900">Pindahan &amp; Titip Kos</span>, <span class="font-semibold text-navy-900">Antar-Jemput Stasiun/Bandara</span>, <span class="font-semibold text-navy-900">Urus Berkas ELPT</span>, <span class="font-semibold text-navy-900">Rakit Perabot</span>, belanja darurat, sampai <span class="font-semibold text-navy-900">Kru Event &amp; Tutor</span>. Cekatan, amanah, dan harga transparan.
           </p>
 
@@ -519,51 +522,51 @@ const htmlContent = `<!DOCTYPE html>
               <span id="heroCtaText">Pesan Sekarang (WA)</span>
               <svg class="w-4 h-4 stroke-current fill-none stroke-2" viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
             </button>
-            <a href="#layanan" class="btn-spring focus-ring px-5 py-3.5 rounded-2xl border border-slate-300/90 hover:border-slate-400 text-slate-700 font-heading font-bold text-sm bg-white/90 hover:bg-white transition shadow-xs">
+            <a href="#layanan" class="btn-spring focus-ring px-5 py-3.5 rounded-2xl border border-slate-300/90 hover:border-slate-400 text-slate-700 font-heading font-bold text-sm bg-white/95 hover:bg-white transition shadow-xs">
               Lihat 8 Lini Layanan
             </a>
           </div>
 
-          <!-- TRUST METRICS ROW (ELEVATED POLISHED MICRO-CARDS) -->
-          <div class="grid grid-cols-2 sm:grid-cols-4 gap-2.5 sm:gap-3 pt-4 border-t border-slate-200/70">
+          <!-- TRUST METRICS ROW (ELEVATED GAMIFIED ACHIEVEMENT CARDS) -->
+          <div class="grid grid-cols-2 sm:grid-cols-4 gap-2.5 sm:gap-3 pt-4 border-t border-slate-300/80">
             
-            <div class="bg-white/85 backdrop-blur-xs rounded-xl p-2.5 sm:p-3 border border-slate-200/80 shadow-xs flex items-center gap-2.5 hover:border-amber-300 transition">
-              <div class="w-8 h-8 rounded-lg bg-amber-100 text-amber-800 flex items-center justify-center font-bold text-xs shrink-0">
+            <div class="bg-white/95 backdrop-blur-md rounded-2xl p-3 border border-slate-200/90 shadow-xs flex items-center gap-2.5 hover:border-amber-400 hover:shadow-sm transition">
+              <div class="w-8 h-8 rounded-xl bg-amber-100 text-amber-800 flex items-center justify-center font-bold text-xs shrink-0 shadow-2xs">
                 ★
               </div>
               <div class="leading-tight">
                 <div class="font-black text-xs text-navy-900">4.9 / 5.0</div>
-                <div class="text-[10px] text-slate-500 font-medium">Rating Amanah</div>
+                <div class="text-[10px] text-slate-500 font-semibold">Rating Amanah</div>
               </div>
             </div>
 
-            <div class="bg-white/85 backdrop-blur-xs rounded-xl p-2.5 sm:p-3 border border-slate-200/80 shadow-xs flex items-center gap-2.5 hover:border-blue-300 transition">
-              <div class="w-8 h-8 rounded-lg bg-blue-100 text-blue-800 flex items-center justify-center font-bold text-xs shrink-0">
+            <div class="bg-white/95 backdrop-blur-md rounded-2xl p-3 border border-slate-200/90 shadow-xs flex items-center gap-2.5 hover:border-blue-400 hover:shadow-sm transition">
+              <div class="w-8 h-8 rounded-xl bg-blue-100 text-blue-800 flex items-center justify-center font-bold text-xs shrink-0 shadow-2xs">
                 <svg class="w-4 h-4 stroke-current fill-none stroke-2" viewBox="0 0 24 24"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
               </div>
               <div class="leading-tight">
                 <div class="font-black text-xs text-navy-900">2.400+</div>
-                <div class="text-[10px] text-slate-500 font-medium">Tugas Tuntas</div>
+                <div class="text-[10px] text-slate-500 font-semibold">Tugas Tuntas</div>
               </div>
             </div>
 
-            <div class="bg-white/85 backdrop-blur-xs rounded-xl p-2.5 sm:p-3 border border-slate-200/80 shadow-xs flex items-center gap-2.5 hover:border-rose-300 transition">
-              <div class="w-8 h-8 rounded-lg bg-rose-100 text-rose-800 flex items-center justify-center font-bold text-xs shrink-0">
+            <div class="bg-white/95 backdrop-blur-md rounded-2xl p-3 border border-slate-200/90 shadow-xs flex items-center gap-2.5 hover:border-rose-400 hover:shadow-sm transition">
+              <div class="w-8 h-8 rounded-xl bg-rose-100 text-rose-800 flex items-center justify-center font-bold text-xs shrink-0 shadow-2xs">
                 <svg class="w-4 h-4 stroke-current fill-none stroke-2" viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
               </div>
               <div class="leading-tight">
                 <div class="font-black text-xs text-navy-900">100% Putri</div>
-                <div class="text-[10px] text-slate-500 font-medium">Khusus Kos Cewek</div>
+                <div class="text-[10px] text-slate-500 font-semibold">Khusus Kos Cewek</div>
               </div>
             </div>
 
-            <div class="bg-white/85 backdrop-blur-xs rounded-xl p-2.5 sm:p-3 border border-slate-200/80 shadow-xs flex items-center gap-2.5 hover:border-emerald-300 transition">
-              <div class="w-8 h-8 rounded-lg bg-emerald-100 text-emerald-800 flex items-center justify-center font-bold text-xs shrink-0">
+            <div class="bg-white/95 backdrop-blur-md rounded-2xl p-3 border border-slate-200/90 shadow-xs flex items-center gap-2.5 hover:border-emerald-400 hover:shadow-sm transition">
+              <div class="w-8 h-8 rounded-xl bg-emerald-100 text-emerald-800 flex items-center justify-center font-bold text-xs shrink-0 shadow-2xs">
                 <svg class="w-4 h-4 stroke-current fill-none stroke-2" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="m9 12 2 2 4-4"/></svg>
               </div>
               <div class="leading-tight">
                 <div class="font-black text-xs text-navy-900">Transparan</div>
-                <div class="text-[10px] text-slate-500 font-medium">Satuan Jelas</div>
+                <div class="text-[10px] text-slate-500 font-semibold">Satuan Jelas</div>
               </div>
             </div>
 
@@ -571,36 +574,45 @@ const htmlContent = `<!DOCTYPE html>
 
         </div>
 
-        <!-- RIGHT COLUMN: HERO TEAM PHOTO & MASCOT (EDITORIAL FRAME - ZERO SLOP) -->
+        <!-- RIGHT COLUMN: HERO TEAM PHOTO & GAMIFIED BADGES -->
         <div class="lg:col-span-5 relative">
           <div class="relative mx-auto max-w-md lg:max-w-none">
             
             <!-- SOFT PHOTO BACKDROP HALO -->
-            <div class="absolute -inset-2.5 rounded-3xl bg-gradient-to-tr from-amber-300/25 via-transparent to-blue-400/20 blur-xl -z-10"></div>
+            <div class="absolute -inset-3 rounded-3xl bg-gradient-to-tr from-amber-400/25 via-amber-200/15 to-blue-400/20 blur-xl -z-10"></div>
 
             <!-- PHOTO CARD -->
-            <div class="relative rounded-3xl overflow-hidden shadow-2xl border-4 border-white ring-1 ring-slate-900/10 bg-white aspect-[4/5] sm:aspect-[4/3] lg:aspect-[4/5]">
+            <div class="relative rounded-3xl overflow-hidden shadow-2xl border-4 border-white ring-2 ring-slate-900/10 bg-white aspect-[4/5] sm:aspect-[4/3] lg:aspect-[4/5]">
               <img src="${heroTeamB64}" alt="Tim Mahasiswa UNAIR SURUH" class="w-full h-full object-cover object-center" />
               <div class="absolute inset-0 bg-gradient-to-t from-navy-950/45 via-transparent to-transparent"></div>
             </div>
 
-            <!-- FLOATING MASCOT BADGE (PRABU AIRLANGGA) -->
-            <div class="absolute -bottom-4 -left-4 bg-white/95 backdrop-blur-md p-2.5 pr-4 rounded-2xl shadow-xl border border-slate-200/90 flex items-center gap-3 card-spring">
+            <!-- FLOATING GAMIFIED MICRO-CHIP (DISPATCH SPEED) -->
+            <div class="hidden sm:flex absolute top-8 -left-5 bg-white/95 backdrop-blur-md px-3.5 py-1.5 rounded-xl shadow-lg border border-slate-200/90 items-center gap-2 card-spring">
+              <span class="w-2 h-2 rounded-full bg-amber-500 animate-ping"></span>
+              <span class="text-[11px] font-bold text-navy-900">⚡ Dispatch Cepat &lt; 15 Mnt</span>
+            </div>
+
+            <!-- FLOATING MASCOT BADGE (OFFICIAL MASCOT LOGO) -->
+            <div class="absolute -bottom-4 -left-4 bg-white/95 backdrop-blur-md p-2.5 pr-4 rounded-2xl shadow-xl border border-slate-200 flex items-center gap-3 card-spring">
               <div class="w-11 h-11 rounded-xl bg-white border border-amber-300/80 p-0.5 overflow-hidden shrink-0 shadow-xs flex items-center justify-center">
                 <img src="${logoB64}" alt="Maskot Resmi UNAIR SURUH" class="w-full h-full object-contain rounded-lg" />
               </div>
               <div>
-                <div class="text-xs font-black text-navy-900">Maskot UNAIR SURUH</div>
-                <div class="text-[10px] text-slate-500 font-semibold">Mitra Mahasiswa Siaga</div>
+                <div class="text-xs font-black text-navy-900 flex items-center gap-1.5">
+                  <span>Maskot UNAIR SURUH</span>
+                  <span class="w-1.5 h-1.5 rounded-full bg-emerald-500"></span>
+                </div>
+                <div class="text-[10px] text-slate-500 font-semibold">Siaga 8 Lini Care Series</div>
               </div>
             </div>
 
-            <!-- FLOATING VERIFIED PILL (AMANAH & RAMAH - ZERO OVERCLAIM) -->
-            <div class="absolute -top-3 -right-3 bg-navy-950/95 backdrop-blur-md text-white px-3.5 py-2 rounded-2xl shadow-xl flex items-center gap-2.5 border border-navy-800/80">
-              <div class="w-7 h-7 rounded-full bg-amber-400 text-navy-950 flex items-center justify-center font-bold text-xs shrink-0">
-                <svg class="w-4 h-4 fill-navy-950" viewBox="0 0 24 24"><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/></svg>
+            <!-- FLOATING VERIFIED PILL (AMANAH & RAMAH) -->
+            <div class="absolute -top-3.5 -right-3.5 bg-navy-950/95 backdrop-blur-md text-white px-4 py-2.5 rounded-2xl shadow-xl flex items-center gap-2.5 border border-navy-800/80">
+              <div class="w-7 h-7 rounded-full bg-amber-400 text-navy-950 flex items-center justify-center font-bold text-xs shrink-0 shadow-xs">
+                ★
               </div>
-              <div class="text-[11px] font-bold leading-tight">Amanah &amp; Ramah<br><span class="text-amber-300 font-medium">Mahasiswa Surabaya</span></div>
+              <div class="text-[11px] font-bold leading-tight">Mitra Terverifikasi<br><span class="text-amber-300 font-medium">Mahasiswa Surabaya</span></div>
             </div>
 
           </div>
