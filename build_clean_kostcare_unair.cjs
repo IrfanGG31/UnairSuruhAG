@@ -23,8 +23,8 @@ const ttTossaB64 = '/tiktok-tossa.jpg';
 // 8 OFFICIAL CARE SERVICES DATA
 const servicesData = [
   {
-    slug: 'go-care',
-    title: 'Mobilitas & Transportasi (Go Care)',
+    slug: 'go-suruh',
+    title: 'Mobilitas & Transportasi (Go SURUH)',
     badge: 'Mobil AC & Motor',
     badgeClass: 'bg-blue-50 text-blue-700 border-blue-200',
     iconBg: 'bg-blue-50',
@@ -36,11 +36,11 @@ const servicesData = [
     unitDetail: 'Pilihan armada: Mobil van ber-AC dingin atau motor gesit',
     price: 20000,
     unit: 'trip',
-    btnText: 'Pesan Go Care'
+    btnText: 'Pesan Go SURUH'
   },
   {
-    slug: 'move-care',
-    title: 'Logistik, Pindahan & Pengangkutan (Move Care)',
+    slug: 'move-suruh',
+    title: 'Logistik, Pindahan & Pengangkutan (Move SURUH)',
     badge: '1 Driver + 1 SDM',
     badgeClass: 'bg-navy-900 text-amber-400 border-navy-800',
     iconBg: 'bg-navy-50',
@@ -52,11 +52,11 @@ const servicesData = [
     unitDetail: 'Termasuk bantuan angkut barang sampai lantai atas',
     price: 65000,
     unit: 'muatan',
-    btnText: 'Pesan Move Care'
+    btnText: 'Pesan Move SURUH'
   },
   {
-    slug: 'keep-care',
-    title: 'Penitipan & Penyimpanan Barang (Keep Care)',
+    slug: 'keep-suruh',
+    title: 'Penitipan & Penyimpanan Barang (Keep SURUH)',
     badge: 'Aman KKN & Liburan',
     badgeClass: 'bg-amber-50 text-amber-800 border-amber-200',
     iconBg: 'bg-amber-50',
@@ -68,11 +68,11 @@ const servicesData = [
     unitDetail: 'Ruang penyimpanan bersih, kering, aman bergaransi & foto berkala',
     price: 15000,
     unit: 'box/bulan',
-    btnText: 'Pesan Keep Care'
+    btnText: 'Pesan Keep SURUH'
   },
   {
-    slug: 'fix-care',
-    title: 'Perakitan & Bantuan Teknis (Fix Care)',
+    slug: 'fix-suruh',
+    title: 'Perakitan & Bantuan Teknis (Fix SURUH)',
     badge: 'Toolkit Lengkap',
     badgeClass: 'bg-orange-50 text-orange-700 border-orange-200',
     iconBg: 'bg-orange-50',
@@ -84,11 +84,11 @@ const servicesData = [
     unitDetail: 'Estimasi waktu perakitan 30-90 menit dengan perkakas lengkap',
     price: 40000,
     unit: 'unit',
-    btnText: 'Pesan Fix Care'
+    btnText: 'Pesan Fix SURUH'
   },
   {
-    slug: 'task-care',
-    title: 'Personal Assistance & Titip Beli (Task Care)',
+    slug: 'task-suruh',
+    title: 'Personal Assistance & Titip Beli (Task SURUH)',
     badge: 'Titip Beli & Antar',
     badgeClass: 'bg-emerald-50 text-emerald-700 border-emerald-200',
     iconBg: 'bg-emerald-50',
@@ -100,11 +100,11 @@ const servicesData = [
     unitDetail: '100% transparan tanpa markup harga struk toko, amanah',
     price: 15000,
     unit: 'tugas',
-    btnText: 'Pesan Task Care'
+    btnText: 'Pesan Task SURUH'
   },
   {
-    slug: 'desk-care',
-    title: 'Administrasi & Pengurusan (Desk Care)',
+    slug: 'desk-suruh',
+    title: 'Administrasi & Pengurusan (Desk SURUH)',
     badge: 'Spesialis Kampus',
     badgeClass: 'bg-purple-50 text-purple-700 border-purple-200',
     iconBg: 'bg-purple-50',
@@ -116,11 +116,11 @@ const servicesData = [
     unitDetail: 'Bukti foto serah terima dokumen fisik langsung ke pemesan',
     price: 15000,
     unit: 'berkas',
-    btnText: 'Pesan Desk Care'
+    btnText: 'Pesan Desk SURUH'
   },
   {
-    slug: 'crew-care',
-    title: 'Bantuan Operasional Event (Crew Care)',
+    slug: 'crew-suruh',
+    title: 'Bantuan Operasional Event (Crew SURUH)',
     badge: 'Event & Kampus',
     badgeClass: 'bg-indigo-50 text-indigo-700 border-indigo-200',
     iconBg: 'bg-indigo-50',
@@ -132,11 +132,11 @@ const servicesData = [
     unitDetail: 'Mitra mahasiswa sigap, komunikatif, dan terbiasa ritme acara',
     price: 75000,
     unit: 'shift',
-    btnText: 'Pesan Crew Care'
+    btnText: 'Pesan Crew SURUH'
   },
   {
-    slug: 'talent-care',
-    title: 'Tutor & Skill-Based (Talent Care)',
+    slug: 'talent-suruh',
+    title: 'Tutor & Skill-Based (Talent SURUH)',
     badge: 'Akademik & Skill',
     badgeClass: 'bg-rose-50 text-rose-700 border-rose-200',
     iconBg: 'bg-rose-50',
@@ -148,7 +148,7 @@ const servicesData = [
     unitDetail: 'Dilayani mahasiswa ber-IPK tinggi dan kompeten di bidangnya',
     price: 50000,
     unit: 'sesi',
-    btnText: 'Pesan Talent Care'
+    btnText: 'Pesan Talent SURUH'
   }
 ];
 
@@ -210,7 +210,7 @@ const feedData = [
     "user": "unair_suruh",
     "timeAgo": "KONTEN PILIHAN",
     "likes": 67,
-    "caption": "POV pindah kosan Surabaya beres dalam 3 jam pakai Tossa roda 3 bareng kru Move Care! Driver + kru mahasiswa bantu angkut sampai lantai atas 🛵📦",
+    "caption": "POV pindah kosan Surabaya beres dalam 3 jam pakai Tossa roda 3 bareng kru Move SURUH! Driver + kru mahasiswa bantu angkut sampai lantai atas 🛵📦",
     "tiktokUrl": "https://www.tiktok.com/@unair_suruh/video/7643032747786784020",
     "active": true
   },
@@ -221,7 +221,7 @@ const feedData = [
     "user": "unair_suruh",
     "timeAgo": "2 HARI LALU",
     "likes": 48,
-    "caption": "Cuaca Surabaya lagi terik-teriknya? Naik Go Care mobil van ber-AC dingin, no ribet, no nunggu. Antar jemput stasiun & kosan langsung sat set ❄️🚗",
+    "caption": "Cuaca Surabaya lagi terik-teriknya? Naik Go SURUH mobil van ber-AC dingin, no ribet, no nunggu. Antar jemput stasiun & kosan langsung sat set ❄️🚗",
     "tiktokUrl": "https://www.tiktok.com/@unair_suruh/video/7653709528361389332",
     "active": true
   },
@@ -243,7 +243,7 @@ const feedData = [
     "user": "unair_suruh",
     "timeAgo": "4 HARI LALU",
     "likes": 92,
-    "caption": "Lagi di luar kota tapi sertifikat fisik ELPT harus segera diambil? Tim Desk Care siap bantu ambilkan dan kirim ke kosan / ekspedisi 📄⚡",
+    "caption": "Lagi di luar kota tapi sertifikat fisik ELPT harus segera diambil? Tim Desk SURUH siap bantu ambilkan dan kirim ke kosan / ekspedisi 📄⚡",
     "tiktokUrl": "https://www.tiktok.com/@unair_suruh/video/7651856659639291156",
     "active": true
   },
@@ -254,7 +254,7 @@ const feedData = [
     "user": "unair_suruh",
     "timeAgo": "5 HARI LALU",
     "likes": 58,
-    "caption": "Solusi anti telat buat teman-teman mahasiswa! Go Care siap antar jemput rute kosan - kampus - stasiun tepat waktu 🛵💨",
+    "caption": "Solusi anti telat buat teman-teman mahasiswa! Go SURUH siap antar jemput rute kosan - kampus - stasiun tepat waktu 🛵💨",
     "tiktokUrl": "https://www.tiktok.com/@unair_suruh/video/7653711312844999956",
     "active": true
   },
@@ -345,7 +345,7 @@ const htmlContent = `<!DOCTYPE html>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
   <title>UNAIR SURUH — Solusi Praktis Mahasiswa & Anak Kos Surabaya</title>
-  <meta name="description" content="Layanan on-demand mahasiswa Surabaya (@unair_suruh): Go Care, Move Care, Keep Care, Fix Care, Task Care, Desk Care, Crew Care, dan Talent Care." />
+  <meta name="description" content="Layanan on-demand mahasiswa Surabaya (@unair_suruh): Go SURUH, Move SURUH, Keep SURUH, Fix SURUH, Task SURUH, Desk SURUH, Crew SURUH, dan Talent SURUH." />
   <link rel="icon" type="image/webp" href="${logoB64}" />
   
   <!-- Google Fonts: Poppins (Heading), Inter (Body) -->
@@ -422,7 +422,7 @@ const htmlContent = `<!DOCTYPE html>
     <div class="max-w-7xl mx-auto flex items-center justify-between">
       <div class="flex items-center gap-2 overflow-hidden text-ellipsis whitespace-nowrap">
         <span class="bg-amber-400 text-navy-950 text-[10px] font-black px-2.5 py-0.5 rounded-full uppercase tracking-wider shrink-0">Inisiatif Mahasiswa</span>
-        <span id="announcementBarText" class="text-slate-300">Layanan On-Demand Mahasiswa di Surabaya • 8 Pilihan Care Series</span>
+        <span id="announcementBarText" class="text-slate-300">Layanan On-Demand Mahasiswa di Surabaya • 8 Pilihan SURUH Series</span>
       </div>
       <div class="hidden sm:flex items-center gap-4 text-slate-300 text-xs shrink-0">
         <span class="flex items-center gap-1">
@@ -512,7 +512,7 @@ const htmlContent = `<!DOCTYPE html>
 
           <!-- CTAS (KOSTCARE STYLE: GREEN WA & CLEAN WHITE OUTLINE) -->
           <div class="flex flex-wrap items-center gap-3 pt-1">
-            <button onclick="openOrderModal('move-care')" class="btn-spring focus-ring px-6 py-3.5 rounded-2xl bg-[#25D366] hover:bg-[#20bd5a] text-white font-heading font-black text-sm shadow-md hover:shadow-lg transition flex items-center gap-2">
+            <button onclick="openOrderModal('move-suruh')" class="btn-spring focus-ring px-6 py-3.5 rounded-2xl bg-[#25D366] hover:bg-[#20bd5a] text-white font-heading font-black text-sm shadow-md hover:shadow-lg transition flex items-center gap-2">
               <svg class="w-4 h-4 fill-current shrink-0" viewBox="0 0 24 24"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/></svg>
               <span id="heroCtaText">Pesan Sekarang</span>
             </button>
@@ -597,7 +597,7 @@ const htmlContent = `<!DOCTYPE html>
                   <span>Maskot UNAIR SURUH</span>
                   <span class="w-1.5 h-1.5 rounded-full bg-emerald-500"></span>
                 </div>
-                <div class="text-[10px] text-slate-500 font-semibold">Siaga 8 Lini Care Series</div>
+                <div class="text-[10px] text-slate-500 font-semibold">Siaga 8 Lini SURUH Series</div>
               </div>
             </div>
 
@@ -823,7 +823,7 @@ ${feedData.map(renderFeedCard).join('\n\n')}
             <!-- SERVICE BADGE -->
             <div class="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-md text-[10px] font-bold border bg-blue-50 text-blue-700 border-blue-200">
               <span class="w-1.5 h-1.5 rounded-full bg-current opacity-70"></span>
-              <span>Move Care • Pindahan Kos</span>
+              <span>Move SURUH • Pindahan Kos</span>
             </div>
 
             <!-- COMMENT TEXT (AUTHENTIC QUOTE) -->
@@ -877,7 +877,7 @@ ${feedData.map(renderFeedCard).join('\n\n')}
             <!-- SERVICE BADGE -->
             <div class="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-md text-[10px] font-bold border bg-emerald-50 text-emerald-700 border-emerald-200">
               <span class="w-1.5 h-1.5 rounded-full bg-current opacity-70"></span>
-              <span>Desk Care • Berkas ELPT</span>
+              <span>Desk SURUH • Berkas ELPT</span>
             </div>
 
             <!-- COMMENT TEXT (AUTHENTIC QUOTE) -->
@@ -931,7 +931,7 @@ ${feedData.map(renderFeedCard).join('\n\n')}
             <!-- SERVICE BADGE -->
             <div class="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-md text-[10px] font-bold border bg-amber-50 text-amber-800 border-amber-200">
               <span class="w-1.5 h-1.5 rounded-full bg-current opacity-70"></span>
-              <span>Crew Care • Armada Tossa</span>
+              <span>Crew SURUH • Armada Tossa</span>
             </div>
 
             <!-- COMMENT TEXT (AUTHENTIC QUOTE) -->
@@ -985,7 +985,7 @@ ${feedData.map(renderFeedCard).join('\n\n')}
             <!-- SERVICE BADGE -->
             <div class="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-md text-[10px] font-bold border bg-sky-50 text-sky-700 border-sky-200">
               <span class="w-1.5 h-1.5 rounded-full bg-current opacity-70"></span>
-              <span>Go Care • Antar Jemput</span>
+              <span>Go SURUH • Antar Jemput</span>
             </div>
 
             <!-- COMMENT TEXT (AUTHENTIC QUOTE) -->
@@ -1039,7 +1039,7 @@ ${feedData.map(renderFeedCard).join('\n\n')}
             <!-- SERVICE BADGE -->
             <div class="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-md text-[10px] font-bold border bg-purple-50 text-purple-700 border-purple-200">
               <span class="w-1.5 h-1.5 rounded-full bg-current opacity-70"></span>
-              <span>Talent Care • Mahasiswa</span>
+              <span>Talent SURUH • Mahasiswa</span>
             </div>
 
             <!-- COMMENT TEXT (AUTHENTIC QUOTE) -->
@@ -1093,7 +1093,7 @@ ${feedData.map(renderFeedCard).join('\n\n')}
             <!-- SERVICE BADGE -->
             <div class="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-md text-[10px] font-bold border bg-rose-50 text-rose-700 border-rose-200">
               <span class="w-1.5 h-1.5 rounded-full bg-current opacity-70"></span>
-              <span>Task Care • Kos Putri</span>
+              <span>Task SURUH • Kos Putri</span>
             </div>
 
             <!-- COMMENT TEXT (AUTHENTIC QUOTE) -->
@@ -1163,13 +1163,13 @@ ${feedData.map(renderFeedCard).join('\n\n')}
             <svg class="w-4 h-4 stroke-current fill-none stroke-2 group-open:rotate-180 transition" viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9"/></svg>
           </summary>
           <p class="text-xs sm:text-sm text-slate-600 mt-3 leading-relaxed">
-            Tarif dihitung sangat transparan dengan satuan kerja baku: /trip untuk Go Care, /muatan armada untuk Move Care, /box/bulan untuk Keep Care, /unit untuk Fix Care, /tugas untuk Task Care, /berkas untuk Desk Care, /shift untuk Crew Care, dan /sesi untuk Talent Care. Tidak ada biaya siluman.
+            Tarif dihitung sangat transparan dengan satuan kerja baku: /trip untuk Go SURUH, /muatan armada untuk Move SURUH, /box/bulan untuk Keep SURUH, /unit untuk Fix SURUH, /tugas untuk Task SURUH, /berkas untuk Desk SURUH, /shift untuk Crew SURUH, dan /sesi untuk Talent SURUH. Tidak ada biaya siluman.
           </p>
         </details>
 
         <details class="group bg-white rounded-2xl p-5 border border-slate-200/90 shadow-xs transition duration-200">
           <summary class="flex items-center justify-between font-heading font-bold text-sm sm:text-base text-navy-900 cursor-pointer list-none">
-            <span>Bagaimana jaminan keamanan untuk barang yang dititipkan (Keep Care)?</span>
+            <span>Bagaimana jaminan keamanan untuk barang yang dititipkan (Keep SURUH)?</span>
             <svg class="w-4 h-4 stroke-current fill-none stroke-2 group-open:rotate-180 transition" viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9"/></svg>
           </summary>
           <p class="text-xs sm:text-sm text-slate-600 mt-3 leading-relaxed">
@@ -1183,7 +1183,7 @@ ${feedData.map(renderFeedCard).join('\n\n')}
             <svg class="w-4 h-4 stroke-current fill-none stroke-2 group-open:rotate-180 transition" viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9"/></svg>
           </summary>
           <p class="text-xs sm:text-sm text-slate-600 mt-3 leading-relaxed">
-            Sangat aman. Untuk pemesanan yang berlokasi di kos putri (seperti Move Care, Fix Care, atau Task Care), kami memiliki opsi centang khusus untuk menugaskan 100% mitra mahasiswi perempuan guna menjaga privasi dan adab.
+            Sangat aman. Untuk pemesanan yang berlokasi di kos putri (seperti Move SURUH, Fix SURUH, atau Task SURUH), kami memiliki opsi centang khusus untuk menugaskan 100% mitra mahasiswi perempuan guna menjaga privasi dan adab.
           </p>
         </details>
 
@@ -1238,20 +1238,20 @@ ${feedData.map(renderFeedCard).join('\n\n')}
             <span class="font-heading font-black text-base text-navy-900">UNAIR SURUH</span>
           </div>
           <p class="text-xs text-slate-500 max-w-sm leading-relaxed">
-            Inisiatif layanan on-demand independen oleh mahasiswa di Surabaya. 8 Lini Layanan: Go Care, Move Care, Keep Care, Fix Care, Task Care, Desk Care, Crew Care, dan Talent Care.
+            Inisiatif layanan on-demand independen oleh mahasiswa di Surabaya. 8 Lini Layanan: Go SURUH, Move SURUH, Keep SURUH, Fix SURUH, Task SURUH, Desk SURUH, Crew SURUH, dan Talent SURUH.
           </p>
         </div>
 
         <div class="space-y-2">
           <div class="font-heading font-bold text-xs text-navy-900 uppercase tracking-wider">8 Lini Layanan</div>
           <ul class="space-y-1.5 text-xs">
-            <li><a href="#layanan" class="hover:text-amber-600 transition">Go Care (Transportasi)</a></li>
-            <li><a href="#layanan" class="hover:text-amber-600 transition">Move Care (Pindahan)</a></li>
-            <li><a href="#layanan" class="hover:text-amber-600 transition">Keep Care (Titip Barang)</a></li>
-            <li><a href="#layanan" class="hover:text-amber-600 transition">Fix Care (Perakitan)</a></li>
-            <li><a href="#layanan" class="hover:text-amber-600 transition">Task Care (Titip Beli)</a></li>
-            <li><a href="#layanan" class="hover:text-amber-600 transition">Desk Care (Berkas)</a></li>
-            <li><a href="#layanan" class="hover:text-amber-600 transition">Crew &amp; Talent Care</a></li>
+            <li><a href="#layanan" class="hover:text-amber-600 transition">Go SURUH (Transportasi)</a></li>
+            <li><a href="#layanan" class="hover:text-amber-600 transition">Move SURUH (Pindahan)</a></li>
+            <li><a href="#layanan" class="hover:text-amber-600 transition">Keep SURUH (Titip Barang)</a></li>
+            <li><a href="#layanan" class="hover:text-amber-600 transition">Fix SURUH (Perakitan)</a></li>
+            <li><a href="#layanan" class="hover:text-amber-600 transition">Task SURUH (Titip Beli)</a></li>
+            <li><a href="#layanan" class="hover:text-amber-600 transition">Desk SURUH (Berkas)</a></li>
+            <li><a href="#layanan" class="hover:text-amber-600 transition">Crew &amp; Talent SURUH</a></li>
           </ul>
         </div>
 
@@ -1418,17 +1418,17 @@ ${feedData.map(renderFeedCard).join('\n\n')}
         
         <!-- 1. PILIH LAYANAN CARE -->
         <div class="space-y-1.5">
-          <label class="block text-xs font-bold text-slate-700">Pilih Layanan Care Series</label>
+          <label class="block text-xs font-bold text-slate-700">Pilih Layanan SURUH Series</label>
           <div class="relative">
             <select id="wizardService" class="focus-ring w-full px-4 py-3 rounded-2xl border border-slate-300 font-bold text-xs sm:text-sm bg-white text-navy-900 appearance-none pr-10">
-              <option value="move-care" selected>🚚 Move Care • Pindahan Kos (Mulai Rp 65.000)</option>
-              <option value="go-care">🛵 Go Care • Antar Jemput Kampus / Stasiun (Mulai Rp 20.000)</option>
-              <option value="keep-care">📦 Keep Care • Penitipan Barang Kos (Mulai Rp 15.000/bln)</option>
-              <option value="fix-care">🛠️ Fix Care • Rakit Meja/Lemari &amp; Servis (Mulai Rp 40.000)</option>
-              <option value="task-care">🎒 Task Care • Titip Beli &amp; Personal Assist (Mulai Rp 15.000)</option>
-              <option value="desk-care">📄 Desk Care • Ambil Berkas ELPT &amp; Birokrasi (Mulai Rp 15.000)</option>
-              <option value="crew-care">🎪 Crew Care • Tenaga Event &amp; Kampus (Mulai Rp 75.000)</option>
-              <option value="talent-care">🎓 Talent Care • Tutor &amp; Skill Worker (Mulai Rp 50.000)</option>
+              <option value="move-suruh" selected>🚚 Move SURUH • Pindahan Kos (Mulai Rp 65.000)</option>
+              <option value="go-suruh">🛵 Go SURUH • Antar Jemput Kampus / Stasiun (Mulai Rp 20.000)</option>
+              <option value="keep-suruh">📦 Keep SURUH • Penitipan Barang Kos (Mulai Rp 15.000/bln)</option>
+              <option value="fix-suruh">🛠️ Fix SURUH • Rakit Meja/Lemari &amp; Servis (Mulai Rp 40.000)</option>
+              <option value="task-suruh">🎒 Task SURUH • Titip Beli &amp; Personal Assist (Mulai Rp 15.000)</option>
+              <option value="desk-suruh">📄 Desk SURUH • Ambil Berkas ELPT &amp; Birokrasi (Mulai Rp 15.000)</option>
+              <option value="crew-suruh">🎪 Crew SURUH • Tenaga Event &amp; Kampus (Mulai Rp 75.000)</option>
+              <option value="talent-suruh">🎓 Talent SURUH • Tutor &amp; Skill Worker (Mulai Rp 50.000)</option>
             </select>
             <div class="absolute right-3.5 top-1/2 -translate-y-1/2 pointer-events-none text-slate-400">
               <svg class="w-4 h-4 stroke-current fill-none stroke-2" viewBox="0 0 24 24"><path d="m6 9 6 6 6-6"/></svg>
@@ -1916,6 +1916,7 @@ ${feedData.map(renderFeedCard).join('\n\n')}
 
     // SUPER SIMPLE & FRIENDLY WHATSAPP ORDER LOGIC
     function openOrderModal(serviceSlug) {
+      if (serviceSlug) serviceSlug = serviceSlug.replace(/-care$/, '-suruh');
       const modal = document.getElementById('orderModalBackdrop');
       if (serviceSlug) {
         const sel = document.getElementById('wizardService');
