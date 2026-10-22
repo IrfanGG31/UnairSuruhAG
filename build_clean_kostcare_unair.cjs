@@ -419,7 +419,7 @@ const htmlContent = `<!DOCTYPE html>
   <!-- TOP ANNOUNCEMENT BAR (CLEAN & MINIMAL)                                -->
   <!-- ===================================================================== -->
   <aside class="bg-navy-900 text-white text-[11px] sm:text-xs py-2 px-4 border-b border-navy-800">
-    <div class="max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-10 flex items-center justify-between">
+    <div class="w-full px-4 sm:px-8 lg:px-12 xl:px-16 2xl:px-20 flex items-center justify-between">
       <div class="flex items-center gap-2 overflow-hidden text-ellipsis whitespace-nowrap">
         <span class="bg-amber-400 text-navy-950 text-[10px] font-black px-2.5 py-0.5 rounded-full uppercase tracking-wider shrink-0">Inisiatif Mahasiswa</span>
         <span id="announcementBarText" class="text-slate-300">Layanan On-Demand Mahasiswa di Surabaya • 8 Pilihan SURUH Series</span>
@@ -438,7 +438,7 @@ const htmlContent = `<!DOCTYPE html>
   <!-- 1. STICKY NAVBAR (CLEAN WHITE / KOSTCARE STYLE)                       -->
   <!-- ===================================================================== -->
   <header class="sticky top-0 z-40 bg-white/95 backdrop-blur-md border-b border-slate-200/80 shadow-xs">
-    <div class="max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-10 h-16 sm:h-20 flex items-center justify-between">
+    <div class="w-full px-4 sm:px-8 lg:px-12 xl:px-16 2xl:px-20 h-18 sm:h-22 flex items-center justify-between">
       
       <!-- LOGO -->
       <a href="#" class="flex items-center gap-3 group focus-ring rounded-xl">
@@ -481,86 +481,87 @@ const htmlContent = `<!DOCTYPE html>
   <section class="relative bg-[linear-gradient(180deg,#FACC15_0%,#FEF08A_16%,#FFFFFF_46%,#CBD5E1_74%,#0F1E36_100%)] py-16 sm:py-20 lg:py-28 xl:py-32 border-b border-navy-900/90 overflow-hidden">
     
     <!-- SUBTLE SUNLIGHT AMBIENT RADIALS (WARM GOLD TOP & DEEP NAVY BASE) -->
-    <div class="absolute -top-20 -left-20 w-[650px] h-[650px] rounded-full bg-gradient-to-br from-amber-400/35 via-yellow-300/20 to-transparent blur-3xl pointer-events-none -z-10"></div>
-    <div class="absolute top-10 -right-20 w-[700px] h-[700px] rounded-full bg-gradient-to-bl from-amber-300/25 via-yellow-200/15 to-transparent blur-3xl pointer-events-none -z-10"></div>
-    <div class="absolute -bottom-24 left-1/4 w-[750px] h-[450px] rounded-full bg-gradient-to-t from-navy-950/80 via-navy-900/40 to-transparent blur-3xl pointer-events-none -z-10"></div>
+    <div class="absolute -top-20 -left-20 w-[800px] h-[800px] rounded-full bg-gradient-to-br from-amber-400/40 via-yellow-300/25 to-transparent blur-3xl pointer-events-none -z-10"></div>
+    <div class="absolute top-10 -right-20 w-[850px] h-[850px] rounded-full bg-gradient-to-bl from-amber-300/30 via-yellow-200/20 to-transparent blur-3xl pointer-events-none -z-10"></div>
+    <div class="absolute -bottom-24 left-1/4 w-[900px] h-[550px] rounded-full bg-gradient-to-t from-navy-950/80 via-navy-900/40 to-transparent blur-3xl pointer-events-none -z-10"></div>
 
     <!-- ARCHITECTURAL MICRO-GRID (ELEGANT FAINT BLUEPRINT OVERLAY) -->
     <div class="absolute inset-0 bg-[radial-gradient(#0F1E3618_1px,transparent_1px)] bg-[size:24px_24px] [mask-image:radial-gradient(ellipse_85%_75%_at_50%_35%,#000_75%,transparent_100%)] pointer-events-none -z-10"></div>
 
-    <div class="max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-10 xl:px-12">
-      <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-14 xl:gap-16 items-center">
+    <!-- FULL-WIDTH EXPANSIVE FLUID CONTAINER -->
+    <div class="w-full px-4 sm:px-8 lg:px-12 xl:px-16 2xl:px-20">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-14 xl:gap-20 2xl:gap-24 items-center">
         
         <!-- LEFT COLUMN: COPYWRITING & CTAS (WIDE & PROPORTIONAL) -->
-        <div class="lg:col-span-7 space-y-7 sm:space-y-8">
+        <div class="lg:col-span-7 xl:col-span-7 space-y-8 xl:space-y-10">
           
           <!-- TOP PILL BADGE (NAVY ACCENT ON WARM GOLD) -->
-          <div class="inline-flex items-center gap-2.5 px-4 sm:px-5 py-2 rounded-full bg-navy-950 text-white text-xs sm:text-sm font-bold shadow-md hover:scale-[1.02] transition cursor-default">
+          <div class="inline-flex items-center gap-3 px-5 py-2.5 rounded-full bg-navy-950 text-white text-xs sm:text-sm lg:text-base font-bold shadow-md hover:scale-[1.02] transition cursor-default">
             <span class="w-2.5 h-2.5 rounded-full bg-amber-400 animate-pulse"></span>
             <span id="heroPillBadgeText">⚡ Serba Bisa untuk Mahasiswa, Anak Kos &amp; Warga Surabaya</span>
           </div>
 
-          <!-- HEADLINE (DEEP NAVY HIGH-CONTRAST, LARGER & WIDER PROPORTION) -->
-          <h1 id="heroHeadlineTitle" class="font-heading font-black text-3xl sm:text-5xl lg:text-[3.25rem] xl:text-[3.85rem] text-navy-950 leading-[1.14] tracking-tight">
+          <!-- HEADLINE (DEEP NAVY HIGH-CONTRAST, ULTRA-WIDE, MASSIVE SCALE) -->
+          <h1 id="heroHeadlineTitle" class="font-heading font-black text-4xl sm:text-5xl md:text-6xl lg:text-6xl xl:text-7xl 2xl:text-[5.25rem] text-navy-950 leading-[1.08] tracking-tight">
             Serba Bisa, Semua <span class="relative inline-block text-amber-600 underline decoration-amber-500 decoration-wavy">Bisa Disuruh!</span>
           </h1>
 
-          <!-- SUBTITLE (WIDE, AIRY, HIGH LEGIBILITY) -->
-          <p id="heroSubtitleText" class="text-navy-950/85 text-base sm:text-lg lg:text-xl xl:text-[1.28rem] leading-relaxed max-w-3xl font-medium">
+          <!-- SUBTITLE (WIDE, AIRY, FULL-SPAN LEGIBILITY) -->
+          <p id="heroSubtitleText" class="text-navy-950/90 text-base sm:text-lg lg:text-xl xl:text-2xl 2xl:text-[1.55rem] leading-relaxed max-w-5xl font-medium">
             Apapun kebutuhan harianmu di Surabaya, serahkan pada tim mahasiswa: dari <span class="font-semibold text-navy-950">Pindahan &amp; Titip Kos</span>, <span class="font-semibold text-navy-950">Antar-Jemput Stasiun/Bandara</span>, <span class="font-semibold text-navy-950">Urus Berkas ELPT</span>, <span class="font-semibold text-navy-950">Rakit Perabot</span>, belanja darurat, sampai <span class="font-semibold text-navy-950">Kru Event &amp; Tutor</span>. Cekatan, amanah, dan harga transparan.
           </p>
 
-          <!-- CTAS (PROMINENT, LARGER BUTTONS) -->
-          <div class="flex flex-wrap items-center gap-3.5 sm:gap-4 pt-2">
-            <button onclick="openOrderModal('move-suruh')" class="btn-spring focus-ring px-7 sm:px-8 py-4 sm:py-4.5 rounded-2xl bg-[#25D366] hover:bg-[#20bd5a] text-white font-heading font-black text-base sm:text-lg shadow-lg hover:shadow-xl transition flex items-center gap-2.5">
-              <svg class="w-5 h-5 fill-current shrink-0" viewBox="0 0 24 24"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/></svg>
+          <!-- CTAS (PROMINENT, COMMANDING BUTTONS) -->
+          <div class="flex flex-wrap items-center gap-4 sm:gap-5 pt-2">
+            <button onclick="openOrderModal('move-suruh')" class="btn-spring focus-ring px-8 sm:px-10 py-4.5 sm:py-5 rounded-2xl bg-[#25D366] hover:bg-[#20bd5a] text-white font-heading font-black text-base sm:text-xl shadow-xl hover:shadow-2xl transition flex items-center gap-3">
+              <svg class="w-6 h-6 fill-current shrink-0" viewBox="0 0 24 24"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/></svg>
               <span id="heroCtaText">Pesan Sekarang</span>
             </button>
-            <a href="#layanan" class="btn-spring focus-ring px-6 sm:px-7 py-4 sm:py-4.5 rounded-2xl border-2 border-navy-900/20 hover:border-navy-900/40 text-navy-950 font-heading font-bold text-base bg-white/95 hover:bg-white transition shadow-sm">
+            <a href="#layanan" class="btn-spring focus-ring px-8 sm:px-10 py-4.5 sm:py-5 rounded-2xl border-2 border-navy-900/20 hover:border-navy-900/40 text-navy-950 font-heading font-bold text-base sm:text-xl bg-white/95 hover:bg-white transition shadow-sm">
               Lihat 8 Lini Layanan
             </a>
           </div>
 
           <!-- TRUST METRICS ROW (ELEVATED CARDS WITH GENEROUS BREATHING ROOM) -->
-          <div class="grid grid-cols-2 sm:grid-cols-4 gap-3 sm:gap-4 pt-6 sm:pt-7 border-t border-navy-900/15">
+          <div class="grid grid-cols-2 sm:grid-cols-4 gap-4 xl:gap-5 pt-8 border-t border-navy-900/15">
             
-            <div class="bg-white/95 backdrop-blur-md rounded-2xl p-3.5 sm:p-4 border border-white/80 shadow-xl flex items-center gap-3 hover:border-amber-400 hover:shadow-2xl transition">
-              <div class="w-9 h-9 sm:w-10 sm:h-10 rounded-xl bg-amber-100 text-amber-800 flex items-center justify-center font-bold text-sm shrink-0 shadow-2xs">
+            <div class="bg-white/95 backdrop-blur-md rounded-2xl p-4 sm:p-5 border border-white/80 shadow-xl flex items-center gap-3.5 hover:border-amber-400 hover:shadow-2xl transition">
+              <div class="w-11 h-11 sm:w-12 sm:h-12 rounded-xl bg-amber-100 text-amber-800 flex items-center justify-center font-bold text-base sm:text-lg shrink-0 shadow-2xs">
                 ★
               </div>
               <div class="leading-tight">
-                <div class="font-black text-sm sm:text-base text-navy-950">4.9 / 5.0</div>
-                <div class="text-[11px] sm:text-xs text-slate-500 font-semibold">Rating Amanah</div>
+                <div class="font-black text-base sm:text-lg lg:text-xl text-navy-950">4.9 / 5.0</div>
+                <div class="text-xs sm:text-sm text-slate-500 font-semibold">Rating Amanah</div>
               </div>
             </div>
 
-            <div class="bg-white/95 backdrop-blur-md rounded-2xl p-3.5 sm:p-4 border border-white/80 shadow-xl flex items-center gap-3 hover:border-blue-400 hover:shadow-2xl transition">
-              <div class="w-9 h-9 sm:w-10 sm:h-10 rounded-xl bg-blue-100 text-blue-800 flex items-center justify-center font-bold text-sm shrink-0 shadow-2xs">
-                <svg class="w-5 h-5 stroke-current fill-none stroke-2" viewBox="0 0 24 24"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+            <div class="bg-white/95 backdrop-blur-md rounded-2xl p-4 sm:p-5 border border-white/80 shadow-xl flex items-center gap-3.5 hover:border-blue-400 hover:shadow-2xl transition">
+              <div class="w-11 h-11 sm:w-12 sm:h-12 rounded-xl bg-blue-100 text-blue-800 flex items-center justify-center font-bold text-base sm:text-lg shrink-0 shadow-2xs">
+                <svg class="w-6 h-6 stroke-current fill-none stroke-2" viewBox="0 0 24 24"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
               </div>
               <div class="leading-tight">
-                <div class="font-black text-sm sm:text-base text-navy-950">2.400+</div>
-                <div class="text-[11px] sm:text-xs text-slate-500 font-semibold">Tugas Tuntas</div>
+                <div class="font-black text-base sm:text-lg lg:text-xl text-navy-950">2.400+</div>
+                <div class="text-xs sm:text-sm text-slate-500 font-semibold">Tugas Tuntas</div>
               </div>
             </div>
 
-            <div class="bg-white/95 backdrop-blur-md rounded-2xl p-3.5 sm:p-4 border border-white/80 shadow-xl flex items-center gap-3 hover:border-rose-400 hover:shadow-2xl transition">
-              <div class="w-9 h-9 sm:w-10 sm:h-10 rounded-xl bg-rose-100 text-rose-800 flex items-center justify-center font-bold text-sm shrink-0 shadow-2xs">
-                <svg class="w-5 h-5 stroke-current fill-none stroke-2" viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+            <div class="bg-white/95 backdrop-blur-md rounded-2xl p-4 sm:p-5 border border-white/80 shadow-xl flex items-center gap-3.5 hover:border-rose-400 hover:shadow-2xl transition">
+              <div class="w-11 h-11 sm:w-12 sm:h-12 rounded-xl bg-rose-100 text-rose-800 flex items-center justify-center font-bold text-base sm:text-lg shrink-0 shadow-2xs">
+                <svg class="w-6 h-6 stroke-current fill-none stroke-2" viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
               </div>
               <div class="leading-tight">
-                <div class="font-black text-sm sm:text-base text-navy-950">100% Putri</div>
-                <div class="text-[11px] sm:text-xs text-slate-500 font-semibold">Khusus Kos Cewek</div>
+                <div class="font-black text-base sm:text-lg lg:text-xl text-navy-950">100% Putri</div>
+                <div class="text-xs sm:text-sm text-slate-500 font-semibold">Khusus Kos Cewek</div>
               </div>
             </div>
 
-            <div class="bg-white/95 backdrop-blur-md rounded-2xl p-3.5 sm:p-4 border border-white/80 shadow-xl flex items-center gap-3 hover:border-emerald-400 hover:shadow-2xl transition">
-              <div class="w-9 h-9 sm:w-10 sm:h-10 rounded-xl bg-emerald-100 text-emerald-800 flex items-center justify-center font-bold text-sm shrink-0 shadow-2xs">
-                <svg class="w-5 h-5 stroke-current fill-none stroke-2" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="m9 12 2 2 4-4"/></svg>
+            <div class="bg-white/95 backdrop-blur-md rounded-2xl p-4 sm:p-5 border border-white/80 shadow-xl flex items-center gap-3.5 hover:border-emerald-400 hover:shadow-2xl transition">
+              <div class="w-11 h-11 sm:w-12 sm:h-12 rounded-xl bg-emerald-100 text-emerald-800 flex items-center justify-center font-bold text-base sm:text-lg shrink-0 shadow-2xs">
+                <svg class="w-6 h-6 stroke-current fill-none stroke-2" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="m9 12 2 2 4-4"/></svg>
               </div>
               <div class="leading-tight">
-                <div class="font-black text-sm sm:text-base text-navy-950">Transparan</div>
-                <div class="text-[11px] sm:text-xs text-slate-500 font-semibold">Satuan Jelas</div>
+                <div class="font-black text-base sm:text-lg lg:text-xl text-navy-950">Transparan</div>
+                <div class="text-xs sm:text-sm text-slate-500 font-semibold">Satuan Jelas</div>
               </div>
             </div>
 
@@ -569,44 +570,44 @@ const htmlContent = `<!DOCTYPE html>
         </div>
 
         <!-- RIGHT COLUMN: HERO TEAM PHOTO & FLOATING BADGES (EXPANSIVE & PROMINENT) -->
-        <div class="lg:col-span-5 relative">
-          <div class="relative mx-auto w-full max-w-xl lg:max-w-none">
+        <div class="lg:col-span-5 relative w-full">
+          <div class="relative w-full">
             
             <!-- SOFT PHOTO BACKDROP HALO -->
-            <div class="absolute -inset-4 sm:-inset-6 rounded-[3rem] bg-gradient-to-tr from-amber-400/35 via-yellow-200/25 to-blue-500/25 blur-2xl -z-10"></div>
+            <div class="absolute -inset-6 sm:-inset-10 rounded-[3.5rem] bg-gradient-to-tr from-amber-400/40 via-yellow-200/30 to-blue-500/30 blur-3xl -z-10"></div>
 
             <!-- PHOTO CARD -->
-            <div class="relative rounded-[2.25rem] sm:rounded-[2.75rem] overflow-hidden shadow-[0_25px_60px_-15px_rgba(15,30,54,0.35)] border-[5px] sm:border-[7px] border-white ring-1 ring-navy-950/10 bg-white aspect-[4/5] sm:aspect-[4/3] lg:aspect-[4/5] xl:aspect-[5/6] min-h-[460px] sm:min-h-[520px] lg:min-h-[580px] xl:min-h-[620px]">
+            <div class="relative w-full rounded-[2.5rem] sm:rounded-[3rem] overflow-hidden shadow-[0_30px_70px_-15px_rgba(15,30,54,0.4)] border-[6px] sm:border-[8px] border-white ring-1 ring-navy-950/10 bg-white aspect-[4/5] sm:aspect-[4/3] lg:aspect-[4/5] xl:aspect-[5/6] 2xl:aspect-[1/1] min-h-[500px] sm:min-h-[580px] lg:min-h-[660px] xl:min-h-[740px]">
               <img src="${heroTeamB64}" alt="Tim Mahasiswa UNAIR SURUH" class="w-full h-full object-cover object-center" />
               <div class="absolute inset-0 bg-gradient-to-t from-navy-950/50 via-transparent to-transparent"></div>
             </div>
 
             <!-- FLOATING GAMIFIED MICRO-CHIP (DISPATCH SPEED) -->
-            <div class="hidden sm:flex absolute top-6 -left-4 sm:-left-6 bg-white/95 backdrop-blur-md px-4 py-2 rounded-2xl shadow-xl border border-slate-200/90 items-center gap-2.5 card-spring">
-              <span class="w-2.5 h-2.5 rounded-full bg-emerald-500 animate-ping"></span>
-              <span class="text-xs sm:text-sm font-bold text-navy-950">⚡ Dispatch Cepat &lt; 15 Mnt</span>
+            <div class="hidden sm:flex absolute top-8 -left-4 sm:-left-6 lg:-left-8 bg-white/95 backdrop-blur-md px-5 py-3 rounded-2xl shadow-2xl border border-slate-200/90 items-center gap-3 card-spring z-10">
+              <span class="w-3 h-3 rounded-full bg-emerald-500 animate-ping"></span>
+              <span class="text-xs sm:text-sm lg:text-base font-bold text-navy-950">⚡ Dispatch Cepat &lt; 15 Mnt</span>
             </div>
 
             <!-- FLOATING MASCOT BADGE (OFFICIAL MASCOT LOGO) -->
-            <div class="absolute -bottom-5 sm:-bottom-7 -left-3 sm:-left-6 bg-white/95 backdrop-blur-md p-3 sm:p-4 pr-5 sm:pr-7 rounded-2xl sm:rounded-3xl shadow-2xl border border-slate-200 flex items-center gap-3.5 sm:gap-4 card-spring">
-              <div class="w-12 h-12 sm:w-14 sm:h-14 rounded-2xl bg-white border-2 border-amber-300/90 p-1 overflow-hidden shrink-0 shadow-sm flex items-center justify-center">
+            <div class="absolute -bottom-6 sm:-bottom-8 lg:-bottom-10 -left-3 sm:-left-6 lg:-left-8 bg-white/95 backdrop-blur-md p-4 sm:p-5 pr-7 sm:pr-9 rounded-3xl shadow-2xl border border-slate-200 flex items-center gap-4 card-spring z-10">
+              <div class="w-14 h-14 sm:w-16 sm:h-16 lg:w-18 lg:h-18 rounded-2xl bg-white border-2 border-amber-300/90 p-1 overflow-hidden shrink-0 shadow-sm flex items-center justify-center">
                 <img src="${logoB64}" alt="Maskot Resmi UNAIR SURUH" class="w-full h-full object-contain rounded-lg" />
               </div>
               <div>
-                <div class="text-xs sm:text-sm font-black text-navy-950 flex items-center gap-2">
+                <div class="text-sm sm:text-base lg:text-lg font-black text-navy-950 flex items-center gap-2">
                   <span>Maskot UNAIR SURUH</span>
-                  <span class="w-2 h-2 rounded-full bg-emerald-500"></span>
+                  <span class="w-2.5 h-2.5 rounded-full bg-emerald-500"></span>
                 </div>
-                <div class="text-[11px] sm:text-xs text-slate-500 font-semibold">Siaga 8 Lini SURUH Series</div>
+                <div class="text-xs sm:text-sm text-slate-500 font-semibold">Siaga 8 Lini SURUH Series</div>
               </div>
             </div>
 
             <!-- FLOATING VERIFIED PILL (AMANAH & RAMAH) -->
-            <div class="absolute -top-4 -right-3 sm:-right-6 bg-navy-950/95 backdrop-blur-md text-white px-4 sm:px-5 py-2.5 sm:py-3 rounded-2xl shadow-xl flex items-center gap-3 border border-navy-800/80 card-spring">
-              <div class="w-8 h-8 rounded-full bg-amber-400 text-navy-950 flex items-center justify-center font-bold text-sm shrink-0 shadow-xs">
+            <div class="absolute -top-5 sm:-top-6 -right-2 sm:-right-4 lg:-right-6 xl:-right-8 bg-navy-950/95 backdrop-blur-md text-white px-5 sm:px-6 py-3 sm:py-3.5 rounded-2xl shadow-2xl flex items-center gap-3.5 border border-navy-800/80 card-spring z-10">
+              <div class="w-9 h-9 sm:w-10 sm:h-10 rounded-full bg-amber-400 text-navy-950 flex items-center justify-center font-bold text-base sm:text-lg shrink-0 shadow-xs">
                 ★
               </div>
-              <div class="text-xs sm:text-sm font-bold leading-tight">Mitra Terverifikasi<br><span class="text-amber-300 font-medium">Mahasiswa Surabaya</span></div>
+              <div class="text-xs sm:text-sm lg:text-base font-bold leading-tight">Mitra Terverifikasi<br><span class="text-amber-300 font-medium">Mahasiswa Surabaya</span></div>
             </div>
 
           </div>
@@ -619,7 +620,7 @@ const htmlContent = `<!DOCTYPE html>
   <!-- 3. SECTION LINI LAYANAN & SATUAN KERJA (EXACT SCREENSHOT LAYOUT)       -->
   <!-- ===================================================================== -->
   <section id="layanan" class="py-16 sm:py-24 bg-[#F8FAFC]">
-    <div class="max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-10">
+    <div class="w-full px-4 sm:px-8 lg:px-12 xl:px-16 2xl:px-20">
       
       <!-- SECTION HEADER (PERSIS SCREENSHOT) -->
       <div class="text-center max-w-3xl mx-auto mb-12 sm:mb-16">
@@ -643,7 +644,7 @@ ${servicesData.map(renderServiceCard).join('\n\n')}
   <!-- 4. SECTION MENGAPA MEMILIH KAMI? (KOSTCARE EXACT 1:1 SCREENSHOT 3)    -->
   <!-- ===================================================================== -->
   <section id="mengapa-kami" class="py-16 sm:py-24 bg-white border-y border-slate-200/80">
-    <div class="max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-10">
+    <div class="w-full px-4 sm:px-8 lg:px-12 xl:px-16 2xl:px-20">
       
       <!-- HEADING & SUBTITLE -->
       <div class="text-center max-w-2xl mx-auto mb-12 sm:mb-16">
