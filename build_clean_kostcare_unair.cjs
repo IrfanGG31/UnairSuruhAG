@@ -6,7 +6,7 @@ console.log('Building UNAIR SURUH - 8 Official Care Services...');
 const publicDir = path.join(__dirname, 'public');
 
 // Single source of truth for the WhatsApp number used on every CTA.
-const WA_NUMBER = '6289509960815';
+const WA_NUMBER = '6289677772336';
 
 // Web build (Vite/Vercel) uses static file URLs from /public.
 // Standalone copies in Downloads get these inlined as base64 by inlineAssets().
@@ -427,7 +427,7 @@ const htmlContent = `<!DOCTYPE html>
       <div class="hidden sm:flex items-center gap-6 text-slate-200 text-xs sm:text-sm lg:text-base shrink-0">
         <span class="flex items-center gap-2">
           <svg class="w-4 h-4 sm:w-5 sm:h-5 text-emerald-400 fill-none stroke-current stroke-2" viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
-          <span class="font-bold text-white tracking-wide">+62 895-0996-0815</span>
+          <span class="font-bold text-white tracking-wide">+62 896-7777-2336</span>
         </span>
       </div>
     </div>
@@ -456,6 +456,7 @@ const htmlContent = `<!DOCTYPE html>
         <a href="#mengapa-kami" class="hover:text-amber-500 transition py-2 border-b-2 border-transparent hover:border-amber-400">Mengapa Kami</a>
         <a href="#kegiatan-kami" class="hover:text-amber-500 transition py-2 border-b-2 border-transparent hover:border-amber-400">Kegiatan Kami</a>
         <a href="#testimoni" class="hover:text-amber-500 transition py-2 border-b-2 border-transparent hover:border-amber-400">Kata Mereka</a>
+        <a href="#mitra" class="hover:text-amber-500 transition py-2 border-b-2 border-transparent hover:border-amber-400 text-amber-500">Jadi Mitra</a>
         <a href="#faq" class="hover:text-amber-500 transition py-2 border-b-2 border-transparent hover:border-amber-400">FAQ</a>
       </nav>
 
@@ -516,46 +517,50 @@ const htmlContent = `<!DOCTYPE html>
             </a>
           </div>
 
-          <!-- TRUST METRICS ROW (ELEVATED CARDS WITH GENEROUS BREATHING ROOM) -->
+          <!-- TRUST METRICS ROW (ELEVATED CARDS WITH GENEROUS BREATHING ROOM - DATA RIIL PROPOSAL BAB 11) -->
           <div class="grid grid-cols-2 sm:grid-cols-4 gap-4 xl:gap-5 pt-8 border-t border-navy-900/15">
             
+            <!-- METRIC 1: 22 WORKER -->
             <div class="bg-white/95 backdrop-blur-md rounded-2xl p-4 sm:p-5 border border-white/80 shadow-xl flex items-center gap-3.5 hover:border-amber-400 hover:shadow-2xl transition">
               <div class="w-11 h-11 sm:w-12 sm:h-12 rounded-xl bg-amber-100 text-amber-800 flex items-center justify-center font-bold text-base sm:text-lg shrink-0 shadow-2xs">
                 ★
               </div>
               <div class="leading-tight">
-                <div class="font-black text-base sm:text-lg lg:text-xl text-navy-950">4.9 / 5.0</div>
-                <div class="text-xs sm:text-sm text-slate-500 font-semibold">Rating Amanah</div>
+                <div class="font-black text-base sm:text-lg lg:text-xl text-navy-950">22 Worker</div>
+                <div class="text-xs sm:text-sm text-slate-500 font-semibold">Mitra Mahasiswa Siaga</div>
               </div>
             </div>
 
+            <!-- METRIC 2: 83% REPEAT ORDER -->
             <div class="bg-white/95 backdrop-blur-md rounded-2xl p-4 sm:p-5 border border-white/80 shadow-xl flex items-center gap-3.5 hover:border-blue-400 hover:shadow-2xl transition">
               <div class="w-11 h-11 sm:w-12 sm:h-12 rounded-xl bg-blue-100 text-blue-800 flex items-center justify-center font-bold text-base sm:text-lg shrink-0 shadow-2xs">
                 <svg class="w-6 h-6 stroke-current fill-none stroke-2" viewBox="0 0 24 24"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
               </div>
               <div class="leading-tight">
-                <div class="font-black text-base sm:text-lg lg:text-xl text-navy-950">2.400+</div>
-                <div class="text-xs sm:text-sm text-slate-500 font-semibold">Tugas Tuntas</div>
+                <div class="font-black text-base sm:text-lg lg:text-xl text-navy-950">83% Repeat</div>
+                <div class="text-xs sm:text-sm text-slate-500 font-semibold">Pelanggan Berulang</div>
               </div>
             </div>
 
-            <div class="bg-white/95 backdrop-blur-md rounded-2xl p-4 sm:p-5 border border-white/80 shadow-xl flex items-center gap-3.5 hover:border-rose-400 hover:shadow-2xl transition">
-              <div class="w-11 h-11 sm:w-12 sm:h-12 rounded-xl bg-rose-100 text-rose-800 flex items-center justify-center font-bold text-base sm:text-lg shrink-0 shadow-2xs">
-                <svg class="w-6 h-6 stroke-current fill-none stroke-2" viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
-              </div>
-              <div class="leading-tight">
-                <div class="font-black text-base sm:text-lg lg:text-xl text-navy-950">100% Putri</div>
-                <div class="text-xs sm:text-sm text-slate-500 font-semibold">Khusus Kos Cewek</div>
-              </div>
-            </div>
-
+            <!-- METRIC 3: 81% PERTUMBUHAN ORDER -->
             <div class="bg-white/95 backdrop-blur-md rounded-2xl p-4 sm:p-5 border border-white/80 shadow-xl flex items-center gap-3.5 hover:border-emerald-400 hover:shadow-2xl transition">
               <div class="w-11 h-11 sm:w-12 sm:h-12 rounded-xl bg-emerald-100 text-emerald-800 flex items-center justify-center font-bold text-base sm:text-lg shrink-0 shadow-2xs">
+                <svg class="w-6 h-6 stroke-current fill-none stroke-2" viewBox="0 0 24 24"><polyline points="23 6 13.5 15.5 8.5 10.5 1 18"/><polyline points="17 6 23 6 23 12"/></svg>
+              </div>
+              <div class="leading-tight">
+                <div class="font-black text-base sm:text-lg lg:text-xl text-navy-950">81% / Bulan</div>
+                <div class="text-xs sm:text-sm text-slate-500 font-semibold">Pertumbuhan Pesanan</div>
+              </div>
+            </div>
+
+            <!-- METRIC 4: AKAD JELAS & TRANSPARAN -->
+            <div class="bg-white/95 backdrop-blur-md rounded-2xl p-4 sm:p-5 border border-white/80 shadow-xl flex items-center gap-3.5 hover:border-indigo-400 hover:shadow-2xl transition">
+              <div class="w-11 h-11 sm:w-12 sm:h-12 rounded-xl bg-indigo-100 text-indigo-800 flex items-center justify-center font-bold text-base sm:text-lg shrink-0 shadow-2xs">
                 <svg class="w-6 h-6 stroke-current fill-none stroke-2" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="m9 12 2 2 4-4"/></svg>
               </div>
               <div class="leading-tight">
-                <div class="font-black text-base sm:text-lg lg:text-xl text-navy-950">Transparan</div>
-                <div class="text-xs sm:text-sm text-slate-500 font-semibold">Satuan Jelas</div>
+                <div class="font-black text-base sm:text-lg lg:text-xl text-navy-950">Akad Jelas</div>
+                <div class="text-xs sm:text-sm text-slate-500 font-semibold">Fee &amp; Tarif di Awal</div>
               </div>
             </div>
 
@@ -641,92 +646,95 @@ ${servicesData.map(renderServiceCard).join('\n\n')}
     <div class="w-full px-4 sm:px-8 lg:px-12 xl:px-16 2xl:px-20">
       
       <!-- HEADING & SUBTITLE -->
-      <div class="text-center max-w-2xl mx-auto mb-12 sm:mb-16">
-        <h2 class="font-heading font-black text-2xl sm:text-3xl text-navy-900 tracking-tight">
+      <div class="text-center max-w-3xl mx-auto mb-12 sm:mb-16">
+        <div class="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-amber-50 border border-amber-200 text-amber-800 text-xs font-bold uppercase tracking-wider mb-3">
+          Prinsip Muamalah &amp; Nilai Layanan
+        </div>
+        <h2 class="font-heading font-black text-2xl sm:text-3xl lg:text-4xl text-navy-900 tracking-tight">
           Mengapa Memilih UNAIR SURUH?
         </h2>
-        <p class="text-slate-600 text-sm sm:text-base mt-2">
-          Berbagai keunggulan yang membedakan kami dari yang lain
+        <p class="text-slate-600 text-sm sm:text-base mt-2 leading-relaxed">
+          Pembeda utama kami berakar pada transparansi akad, penghormatan privasi, dan pembagian hak pekerja yang adil
         </p>
       </div>
 
-      <!-- 6 FEATURE CARDS (3x2 GRID SEPERTI KOSTCARE SCREENSHOT 3) -->
+      <!-- 6 FEATURE CARDS SESUAI PROPOSAL BISNIS BAB 2 & BAB 3 -->
       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
         
-        <!-- ITEM 1: TERPERCAYA & AMAN -->
-        <div class="bg-white rounded-2xl border border-slate-200/90 p-6 flex items-start gap-4 shadow-xs hover:shadow-md transition card-spring">
-          <div class="w-12 h-12 rounded-xl bg-amber-400 text-navy-900 flex items-center justify-center shrink-0 shadow-xs">
-            <svg class="w-6 h-6 stroke-current fill-none stroke-2" viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+        <!-- ITEM 1: HARGA & RUANG LINGKUP DISEPAKATI DI AWAL -->
+        <div class="bg-white rounded-3xl border border-slate-200/90 p-6 sm:p-7 flex items-start gap-4 shadow-xs hover:shadow-md transition card-spring hover:border-amber-400">
+          <div class="w-12 h-12 rounded-2xl bg-amber-400 text-navy-900 flex items-center justify-center shrink-0 shadow-xs">
+            <svg class="w-6 h-6 stroke-current fill-none stroke-2" viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7.5L14 2z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg>
           </div>
           <div>
-            <h3 class="font-heading font-bold text-base text-navy-900">Terpercaya &amp; Aman</h3>
-            <p class="text-xs sm:text-sm text-slate-600 mt-1 leading-relaxed">
-              Dikerjakan oleh rekan mahasiswa di Surabaya yang cekatan, ramah, amanah, dan saling tolong-menolong.
+            <h3 class="font-heading font-bold text-base sm:text-lg text-navy-950">Harga Disepakati di Awal</h3>
+            <p class="text-xs sm:text-sm text-slate-600 mt-1.5 leading-relaxed">
+              Ruang lingkup tugas dan total biaya sudah jelas sebelum pengerjaan dimulai. 100% tanpa biaya siluman atau kenaikan tarif mendadak.
             </p>
           </div>
         </div>
 
-        <!-- ITEM 2: LAYANAN CEPAT -->
-        <div class="bg-white rounded-2xl border border-slate-200/90 p-6 flex items-start gap-4 shadow-xs hover:shadow-md transition card-spring">
-          <div class="w-12 h-12 rounded-xl bg-amber-400 text-navy-900 flex items-center justify-center shrink-0 shadow-xs">
-            <svg class="w-6 h-6 stroke-current fill-none stroke-2" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
-          </div>
-          <div>
-            <h3 class="font-heading font-bold text-base text-navy-900">Layanan Cepat</h3>
-            <p class="text-xs sm:text-sm text-slate-600 mt-1 leading-relaxed">
-              Respon cepat dan pengerjaan tepat waktu di seluruh Kampus A, B, C Surabaya.
-            </p>
-          </div>
-        </div>
-
-        <!-- ITEM 3: SUPPORT 24/7 -->
-        <div class="bg-white rounded-2xl border border-slate-200/90 p-6 flex items-start gap-4 shadow-xs hover:shadow-md transition card-spring">
-          <div class="w-12 h-12 rounded-xl bg-amber-400 text-navy-900 flex items-center justify-center shrink-0 shadow-xs">
-            <svg class="w-6 h-6 stroke-current fill-none stroke-2" viewBox="0 0 24 24"><path d="M3 18v-6a9 9 0 0 1 18 0v6"/><path d="M21 19a2 2 0 0 1-2 2h-1a2 2 0 0 1-2-2v-3a2 2 0 0 1 2-2h3zM3 19a2 2 0 0 0 2 2h1a2 2 0 0 0 2-2v-3a2 2 0 0 0-2-2H3z"/></svg>
-          </div>
-          <div>
-            <h3 class="font-heading font-bold text-base text-navy-900">Support 24/7</h3>
-            <p class="text-xs sm:text-sm text-slate-600 mt-1 leading-relaxed">
-              Customer service siap membantu kapan saja via WhatsApp operasional.
-            </p>
-          </div>
-        </div>
-
-        <!-- ITEM 4: HARGA TERJANGKAU -->
-        <div class="bg-white rounded-2xl border border-slate-200/90 p-6 flex items-start gap-4 shadow-xs hover:shadow-md transition card-spring">
-          <div class="w-12 h-12 rounded-xl bg-amber-400 text-navy-900 flex items-center justify-center shrink-0 shadow-xs">
+        <!-- ITEM 2: FEE WORKER TRANSPARAN TANPA POTONGAN SEPIHAK -->
+        <div class="bg-white rounded-3xl border border-slate-200/90 p-6 sm:p-7 flex items-start gap-4 shadow-xs hover:shadow-md transition card-spring hover:border-amber-400">
+          <div class="w-12 h-12 rounded-2xl bg-amber-400 text-navy-900 flex items-center justify-center shrink-0 shadow-xs">
             <svg class="w-6 h-6 stroke-current fill-none stroke-2" viewBox="0 0 24 24"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
           </div>
           <div>
-            <h3 class="font-heading font-bold text-base text-navy-900">Harga Terjangkau</h3>
-            <p class="text-xs sm:text-sm text-slate-600 mt-1 leading-relaxed">
-              Paket harga yang sesuai dengan kantong mahasiswa dengan hitungan satuan pasti.
+            <h3 class="font-heading font-bold text-base sm:text-lg text-navy-950">Fee Worker Terbuka &amp; Adil</h3>
+            <p class="text-xs sm:text-sm text-slate-600 mt-1.5 leading-relaxed">
+              Pekerja mengetahui ujrah/imbalan sebelum mengambil order. Tidak ada pemotongan hak pekerja sepihak, menjamin hasil kerja yang ikhlas dan tuntas.
             </p>
           </div>
         </div>
 
-        <!-- ITEM 5: TIM KHUSUS KOS PUTRI -->
-        <div class="bg-white rounded-2xl border border-slate-200/90 p-6 flex items-start gap-4 shadow-xs hover:shadow-md transition card-spring">
-          <div class="w-12 h-12 rounded-xl bg-amber-400 text-navy-900 flex items-center justify-center shrink-0 shadow-xs">
+        <!-- ITEM 3: GENDER MATCHING UNTUK RUANG PRIVAT -->
+        <div class="bg-white rounded-3xl border border-slate-200/90 p-6 sm:p-7 flex items-start gap-4 shadow-xs hover:shadow-md transition card-spring hover:border-amber-400">
+          <div class="w-12 h-12 rounded-2xl bg-amber-400 text-navy-900 flex items-center justify-center shrink-0 shadow-xs">
             <svg class="w-6 h-6 stroke-current fill-none stroke-2" viewBox="0 0 24 24"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
           </div>
           <div>
-            <h3 class="font-heading font-bold text-base text-navy-900">Tim Khusus Kos Putri</h3>
-            <p class="text-xs sm:text-sm text-slate-600 mt-1 leading-relaxed">
-              100% mitra mahasiswi untuk menjaga adab, kenyamanan, dan privasi kos cewek.
+            <h3 class="font-heading font-bold text-base sm:text-lg text-navy-950">Gender Matching di Ruang Privat</h3>
+            <p class="text-xs sm:text-sm text-slate-600 mt-1.5 leading-relaxed">
+              Penugasan mitra mahasiswi khusus untuk pengerjaan di kos putri atau tempat tinggal demi menjaga adab, etika, kenyamanan, dan privasi penuh pelanggan.
             </p>
           </div>
         </div>
 
-        <!-- ITEM 6: KUALITAS TERJAMIN -->
-        <div class="bg-white rounded-2xl border border-slate-200/90 p-6 flex items-start gap-4 shadow-xs hover:shadow-md transition card-spring">
-          <div class="w-12 h-12 rounded-xl bg-amber-400 text-navy-900 flex items-center justify-center shrink-0 shadow-xs">
-            <svg class="w-6 h-6 stroke-current fill-none stroke-2" viewBox="0 0 24 24"><path d="M19 21l-7-5-7 5V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z"/></svg>
+        <!-- ITEM 4: LAYANAN 1 PINTU FLEKSIBEL -->
+        <div class="bg-white rounded-3xl border border-slate-200/90 p-6 sm:p-7 flex items-start gap-4 shadow-xs hover:shadow-md transition card-spring hover:border-amber-400">
+          <div class="w-12 h-12 rounded-2xl bg-amber-400 text-navy-900 flex items-center justify-center shrink-0 shadow-xs">
+            <svg class="w-6 h-6 stroke-current fill-none stroke-2" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="m9 12 2 2 4-4"/></svg>
           </div>
           <div>
-            <h3 class="font-heading font-bold text-base text-navy-900">Kualitas Terjamin</h3>
-            <p class="text-xs sm:text-sm text-slate-600 mt-1 leading-relaxed">
-              Kepuasan pelanggan dan garansi pengerjaan tuntas adalah prioritas kami.
+            <h3 class="font-heading font-bold text-base sm:text-lg text-navy-950">Layanan 1 Pintu Serba Bisa</h3>
+            <p class="text-xs sm:text-sm text-slate-600 mt-1.5 leading-relaxed">
+              Cukup 1 kontak untuk 8 kategori kebutuhan harian: pindahan kos, angkutan armada Tossa/Pick-up, titip barang, rakit meja, sampai urus berkas kampus.
+            </p>
+          </div>
+        </div>
+
+        <!-- ITEM 5: DIKERJAKAN MAHASISWA BERINTEGRITAS -->
+        <div class="bg-white rounded-3xl border border-slate-200/90 p-6 sm:p-7 flex items-start gap-4 shadow-xs hover:shadow-md transition card-spring hover:border-amber-400">
+          <div class="w-12 h-12 rounded-2xl bg-amber-400 text-navy-900 flex items-center justify-center shrink-0 shadow-xs">
+            <svg class="w-6 h-6 stroke-current fill-none stroke-2" viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+          </div>
+          <div>
+            <h3 class="font-heading font-bold text-base sm:text-lg text-navy-950">Mitra Mahasiswa Terverifikasi</h3>
+            <p class="text-xs sm:text-sm text-slate-600 mt-1.5 leading-relaxed">
+              Dikerjakan langsung oleh mahasiswa aktif di Surabaya yang telah diverifikasi identitasnya, komunikatif, ramah, dan memegang teguh amanah.
+            </p>
+          </div>
+        </div>
+
+        <!-- ITEM 6: RESPON CEPAT & SIAGA SURABAYA -->
+        <div class="bg-white rounded-3xl border border-slate-200/90 p-6 sm:p-7 flex items-start gap-4 shadow-xs hover:shadow-md transition card-spring hover:border-amber-400">
+          <div class="w-12 h-12 rounded-2xl bg-amber-400 text-navy-900 flex items-center justify-center shrink-0 shadow-xs">
+            <svg class="w-6 h-6 stroke-current fill-none stroke-2" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+          </div>
+          <div>
+            <h3 class="font-heading font-bold text-base sm:text-lg text-navy-950">Respon Tanggap Kebutuhan Urgent</h3>
+            <p class="text-xs sm:text-sm text-slate-600 mt-1.5 leading-relaxed">
+              Siaga membantu kebutuhan mendadak: motor mogok di jalan, antar-jemput stasiun dini hari, hingga titip obat saat sakit di kos di seluruh penjuru Surabaya.
             </p>
           </div>
         </div>
@@ -1187,7 +1195,7 @@ ${feedData.map(renderFeedCard).join('\n\n')}
             <svg class="w-4 h-4 stroke-current fill-none stroke-2 group-open:rotate-180 transition" viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9"/></svg>
           </summary>
           <p class="text-xs sm:text-sm text-slate-600 mt-3 leading-relaxed">
-            Cukup klik tombol "Pesan" pada layanan yang diinginkan, lengkapi data singkat pada form, dan pesan akan langsung terformat rapi untuk dikirim via WhatsApp ke admin operasional di 0895-0996-0815.
+            Cukup klik tombol "Pesan" pada layanan yang diinginkan, lengkapi data singkat pada form, dan pesan akan langsung terformat rapi untuk dikirim via WhatsApp ke admin operasional di 0896-7777-2336.
           </p>
         </details>
 
@@ -1219,57 +1227,144 @@ ${feedData.map(renderFeedCard).join('\n\n')}
   </section>
 
   <!-- ===================================================================== -->
-  <!-- 9. FOOTER (CLEAN & MINIMALIST)                                        -->
+  <!-- 8. SECTION GABUNG JADI MITRA WORKER (PROPOSAL BAB 5 & 13.3)           -->
+  <!-- ===================================================================== -->
+  <section id="mitra" class="py-16 sm:py-24 bg-gradient-to-br from-navy-950 via-navy-900 to-[#0F1E36] text-white relative overflow-hidden border-t border-navy-800">
+    <!-- Subtle ambient background radials -->
+    <div class="absolute -top-24 -right-24 w-96 h-96 bg-amber-400/15 rounded-full blur-3xl pointer-events-none"></div>
+    <div class="absolute -bottom-24 -left-24 w-96 h-96 bg-blue-500/15 rounded-full blur-3xl pointer-events-none"></div>
+
+    <div class="w-full px-6 sm:px-10 lg:px-14 xl:px-20 relative z-10">
+      <div class="max-w-4xl mx-auto text-center space-y-6">
+        
+        <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-amber-400/20 border border-amber-400/30 text-amber-300 text-xs sm:text-sm font-bold uppercase tracking-wider">
+          <span>🤝 Rekrutmen Mitra Mahasiswa Surabaya</span>
+        </div>
+
+        <h2 class="font-heading font-black text-3xl sm:text-4xl lg:text-5xl tracking-tight text-white leading-tight">
+          Ingin Penghasilan Fleksibel?<br>
+          <span class="text-amber-400">Gabung Jadi Mitra Worker @unair_suruh</span>
+        </h2>
+
+        <p class="text-slate-300 text-sm sm:text-base lg:text-lg leading-relaxed max-w-2xl mx-auto font-medium">
+          Buka peluang pendapatan bagi mahasiswa dan masyarakat tanpa meninggalkan kuliah atau aktivitas utama. Fee pekerja transparan disepakati di awal tanpa potongan sepihak.
+        </p>
+
+        <div class="pt-4 flex flex-wrap items-center justify-center gap-4">
+          <a href="https://wa.me/${WA_NUMBER}?text=Halo%20kak%20Afif%20%2F%20Admin%20UNAIR%20SURUH!%20%F0%9F%91%8B%20Saya%20mahasiswa%20di%20Surabaya%20yang%20tertarik%20bergabung%20menjadi%20Mitra%20Worker%20UNAIR%20SURUH.%20Boleh%20minta%20info%20alur%20pendaftarannya%20kak%3F%20%F0%9F%99%8F" target="_blank" rel="noopener noreferrer" class="btn-spring focus-ring inline-flex items-center gap-3 px-8 sm:px-10 py-4.5 rounded-2xl bg-amber-400 hover:bg-amber-300 text-navy-950 font-heading font-black text-base sm:text-lg shadow-xl hover:shadow-2xl transition">
+            <svg class="w-5 h-5 fill-current shrink-0" viewBox="0 0 24 24"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/></svg>
+            <span>Daftar Jadi Mitra via WA</span>
+          </a>
+          <a href="#layanan" class="btn-spring focus-ring px-7 py-4.5 rounded-2xl border-2 border-white/25 hover:border-white text-white font-heading font-bold text-base hover:bg-white/10 transition">
+            Lihat 8 Lini Tugas
+          </a>
+        </div>
+
+        <!-- 3 Mitra Value Pillars Sesuai Proposal Bab 5 & 10 -->
+        <div class="grid grid-cols-1 sm:grid-cols-3 gap-5 pt-8 text-left border-t border-navy-800/80">
+          <div class="bg-white/5 backdrop-blur-sm rounded-2xl p-5 border border-white/10">
+            <div class="font-bold text-amber-400 text-sm sm:text-base flex items-center gap-2 mb-1.5">
+              <span>⏱️ Jam Kerja Fleksibel</span>
+            </div>
+            <p class="text-xs sm:text-sm text-slate-300 leading-relaxed">
+              Bebas memilih order saat tidak ada kelas kuliah. Mandiri finansial tanpa mengganggu kegiatan akademik utama.
+            </p>
+          </div>
+          <div class="bg-white/5 backdrop-blur-sm rounded-2xl p-5 border border-white/10">
+            <div class="font-bold text-amber-400 text-sm sm:text-base flex items-center gap-2 mb-1.5">
+              <span>💰 Ujrah Terbuka &amp; Utuh</span>
+            </div>
+            <p class="text-xs sm:text-sm text-slate-300 leading-relaxed">
+              Besaran fee pekerja disepakati di awal sebelum kamu terima tugas. Fee dibagikan terbuka tanpa potongan sepihak.
+            </p>
+          </div>
+          <div class="bg-white/5 backdrop-blur-sm rounded-2xl p-5 border border-white/10">
+            <div class="font-bold text-amber-400 text-sm sm:text-base flex items-center gap-2 mb-1.5">
+              <span>🛡️ Gender Matching &amp; Aman</span>
+            </div>
+            <p class="text-xs sm:text-sm text-slate-300 leading-relaxed">
+              Penugasan kamar kos putri hanya diberikan kepada mitra mahasiswi. Didukung koordinator tim siaga di lapangan.
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================================================================== -->
+  <!-- 9. FOOTER (CLEAN & MINIMALIST - SESUAI PROPOSAL BISNIS BAB 14)          -->
   <!-- ===================================================================== -->
   <footer class="bg-white border-t border-slate-200 py-12 text-slate-600 text-xs sm:text-sm">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="w-full px-6 sm:px-10 lg:px-14 xl:px-20">
       <div class="grid grid-cols-1 md:grid-cols-4 gap-8 pb-10 border-b border-slate-100">
         <div class="space-y-3 md:col-span-2">
-          <div class="flex items-center gap-2.5">
-            <div class="w-8 h-8 rounded-lg bg-navy-900 p-0.5 overflow-hidden">
-              <img src="${logoB64}" alt="Logo" class="w-full h-full object-cover rounded-md" />
+          <div class="flex items-center gap-3">
+            <div class="w-10 h-10 rounded-xl bg-white border border-slate-200 p-0.5 overflow-hidden shadow-xs">
+              <img src="${logoB64}" alt="Logo UNAIR SURUH" class="w-full h-full object-contain rounded-lg" />
             </div>
-            <span class="font-heading font-black text-base text-navy-900">UNAIR SURUH</span>
+            <span class="font-heading font-black text-xl text-navy-950">UNAIR SURUH</span>
           </div>
-          <p class="text-xs text-slate-500 max-w-sm leading-relaxed">
-            Inisiatif layanan on-demand independen oleh mahasiswa di Surabaya. 8 Lini Layanan: Go SURUH, Move SURUH, Keep SURUH, Fix SURUH, Task SURUH, Desk SURUH, Crew SURUH, dan Talent SURUH.
+          <p class="text-xs sm:text-sm text-slate-500 max-w-md leading-relaxed font-medium">
+            Usaha jasa satu pintu independen oleh mahasiswa di Surabaya yang membantu menyelesaikan kebutuhan harian dengan harga disepakati di awal dan fee pekerja transparan.
           </p>
+          <div class="pt-2 flex items-center gap-3 text-xs font-semibold text-slate-700">
+            <span class="bg-amber-100 text-amber-900 px-3 py-1 rounded-full">PJ Operasional: Mas Afif</span>
+            <span class="bg-blue-50 text-blue-800 px-3 py-1 rounded-full">22 Mitra Aktif</span>
+          </div>
         </div>
 
         <div class="space-y-2">
           <div class="font-heading font-bold text-xs text-navy-900 uppercase tracking-wider">8 Lini Layanan</div>
-          <ul class="space-y-1.5 text-xs">
+          <ul class="space-y-1.5 text-xs font-medium">
             <li><a href="#layanan" class="hover:text-amber-600 transition">Go SURUH (Transportasi)</a></li>
-            <li><a href="#layanan" class="hover:text-amber-600 transition">Move SURUH (Pindahan)</a></li>
-            <li><a href="#layanan" class="hover:text-amber-600 transition">Keep SURUH (Titip Barang)</a></li>
-            <li><a href="#layanan" class="hover:text-amber-600 transition">Fix SURUH (Perakitan)</a></li>
-            <li><a href="#layanan" class="hover:text-amber-600 transition">Task SURUH (Titip Beli)</a></li>
-            <li><a href="#layanan" class="hover:text-amber-600 transition">Desk SURUH (Berkas)</a></li>
-            <li><a href="#layanan" class="hover:text-amber-600 transition">Crew &amp; Talent SURUH</a></li>
+            <li><a href="#layanan" class="hover:text-amber-600 transition">Move SURUH (Pindahan &amp; Tossa)</a></li>
+            <li><a href="#layanan" class="hover:text-amber-600 transition">Keep SURUH (Titip Barang KKN)</a></li>
+            <li><a href="#layanan" class="hover:text-amber-600 transition">Fix SURUH (Perakitan &amp; Servis)</a></li>
+            <li><a href="#layanan" class="hover:text-amber-600 transition">Task SURUH (Personal Assistance)</a></li>
+            <li><a href="#layanan" class="hover:text-amber-600 transition">Desk SURUH (Berkas Kampus/ELPT)</a></li>
+            <li><a href="#layanan" class="hover:text-amber-600 transition">Crew SURUH (Operasional Event)</a></li>
+            <li><a href="#layanan" class="hover:text-amber-600 transition">Talent SURUH (Tutor &amp; Skill-Based)</a></li>
           </ul>
         </div>
 
         <div class="space-y-2">
-          <div class="font-heading font-bold text-xs text-navy-900 uppercase tracking-wider">Kontak &amp; Admin</div>
-          <ul class="space-y-1.5 text-xs text-slate-500">
-            <li>WhatsApp: <a href="https://wa.me/${WA_NUMBER}" target="_blank" class="text-amber-600 font-semibold hover:underline">+62 895-0996-0815</a></li>
-            <li>TikTok: <a href="https://www.tiktok.com/@unair_suruh" target="_blank" class="text-amber-600 font-semibold hover:underline">@unair_suruh</a></li>
-            <li>Area: Surabaya (Kampus A, B, C)</li>
-            <!-- Admin link hidden from public footer. Access via /admin -->
+          <div class="font-heading font-bold text-xs text-navy-900 uppercase tracking-wider">Kontak &amp; Kanal Resmi</div>
+          <ul class="space-y-2 text-xs text-slate-600 font-medium">
+            <li class="flex items-center gap-2">
+              <span class="font-bold text-navy-950">WhatsApp:</span>
+              <a href="https://wa.me/${WA_NUMBER}" target="_blank" rel="noopener noreferrer" class="text-amber-600 font-bold hover:underline">+62 896-7777-2336</a>
+            </li>
+            <li class="flex items-center gap-2">
+              <span class="font-bold text-navy-950">Email:</span>
+              <a href="mailto:unairsuruh@gmail.com" class="text-amber-600 hover:underline">unairsuruh@gmail.com</a>
+            </li>
+            <li class="flex items-center gap-2">
+              <span class="font-bold text-navy-950">Instagram:</span>
+              <a href="https://www.instagram.com/unair_suruh" target="_blank" rel="noopener noreferrer" class="text-amber-600 hover:underline">@unair_suruh</a>
+            </li>
+            <li class="flex items-center gap-2">
+              <span class="font-bold text-navy-950">TikTok:</span>
+              <a href="https://www.tiktok.com/@unair_suruh" target="_blank" rel="noopener noreferrer" class="text-amber-600 hover:underline">@unair_suruh</a>
+            </li>
+            <li class="pt-1 text-[11px] text-slate-500">
+              Cakupan: Seluruh Surabaya &amp; Jawa Timur (Kampus A, B, C UNAIR, kawasan kos &amp; pemukiman).
+            </li>
           </ul>
         </div>
       </div>
 
-      <!-- DISCLAIMER INDEPENDENSI KAMPUS -->
-      <div class="py-3.5 my-4 border-y border-slate-100 text-[11px] text-slate-500 text-center leading-relaxed">
-        <strong class="text-slate-700">Pemberitahuan &amp; Disclaimer Independensi:</strong> UNAIR SURUH adalah inisiatif mandiri oleh mahasiswa di Surabaya untuk saling membantu kebutuhan sesama mahasiswa dan warga sekitar. Layanan ini <u>tidak berafiliasi resmi, tidak disponsori, dan tidak dikelola secara institusional oleh Universitas Airlangga</u>.
+      <!-- DISCLAIMER INDEPENDENSI KAMPUS SESUAI PROPOSAL -->
+      <div class="py-3.5 my-4 border-y border-slate-100 text-[11px] text-slate-500 text-center leading-relaxed font-medium">
+        <strong class="text-slate-700">Pemberitahuan &amp; Disclaimer Independensi:</strong> UNAIR SURUH adalah inisiatif mandiri oleh mahasiswa dan masyarakat di Surabaya untuk menyelesaikan kebutuhan harian secara profesional. Layanan ini <u>tidak berafiliasi resmi, tidak disponsori, dan tidak dikelola secara institusional oleh Universitas Airlangga</u>.
       </div>
 
       <div class="pt-2 flex flex-col sm:flex-row items-center justify-between text-[11px] text-slate-400 gap-3">
-        <div>&copy; 2026 UNAIR SURUH. All rights reserved. Solusi Praktis Mahasiswa &amp; Anak Kos Surabaya.</div>
+        <div>&copy; 2026 UNAIR SURUH (@unair_suruh). Seluruh hak cipta dilindungi.</div>
         <div class="flex items-center gap-4">
-          <a href="#" class="hover:underline">Privacy Policy</a>
-          <a href="#" class="hover:underline">Terms of Service</a>
+          <a href="#mitra" class="text-amber-600 font-bold hover:underline">Gabung Mitra Mahasiswa</a>
+          <a href="#" class="hover:underline">Kebijakan Privasi</a>
+          <a href="#" class="hover:underline">Ketentuan Layanan</a>
         </div>
       </div>
     </div>
