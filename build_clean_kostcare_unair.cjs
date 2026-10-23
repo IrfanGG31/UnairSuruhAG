@@ -418,15 +418,17 @@ const htmlContent = `<!DOCTYPE html>
   <!-- ===================================================================== -->
   <!-- TOP ANNOUNCEMENT BAR (SUBSTANTIAL & HIGH CONTRAST)                    -->
   <!-- ===================================================================== -->
-  <aside class="bg-navy-950 text-white py-3 sm:py-3.5 px-4 border-b border-navy-800 shadow-xs relative z-50">
-    <div class="w-full px-6 sm:px-10 lg:px-14 xl:px-20 flex items-center justify-between">
-      <div class="flex items-center gap-3 overflow-hidden text-ellipsis whitespace-nowrap">
-        <span class="bg-amber-400 text-navy-950 text-xs sm:text-sm font-black px-3.5 py-1 rounded-full uppercase tracking-wider shrink-0 shadow-xs">Inisiatif Mahasiswa</span>
-        <span id="announcementBarText" class="text-slate-200 text-xs sm:text-sm lg:text-base font-medium">Layanan On-Demand Mahasiswa di Surabaya • 8 Pilihan SURUH Series</span>
+  <!-- 0. TOP ANNOUNCEMENT BAR (CLEAN, PROPORTIONAL & RESPONSIVE)            -->
+  <!-- ===================================================================== -->
+  <aside class="bg-navy-950 text-white py-2 px-4 border-b border-navy-800 shadow-xs relative z-50">
+    <div class="w-full px-4 sm:px-8 lg:px-12 xl:px-16 flex items-center justify-between">
+      <div class="flex items-center gap-2.5 overflow-hidden text-ellipsis whitespace-nowrap">
+        <span class="bg-amber-400 text-navy-950 text-[11px] sm:text-xs font-black px-2.5 py-0.5 rounded-full uppercase tracking-wider shrink-0 shadow-xs">Inisiatif Mahasiswa</span>
+        <span id="announcementBarText" class="text-slate-200 text-xs sm:text-sm font-medium">Layanan On-Demand Mahasiswa di Surabaya • 8 Pilihan SURUH Series</span>
       </div>
-      <div class="hidden sm:flex items-center gap-6 text-slate-200 text-xs sm:text-sm lg:text-base shrink-0">
+      <div class="hidden sm:flex items-center gap-6 text-slate-200 text-xs sm:text-sm shrink-0">
         <span class="flex items-center gap-2">
-          <svg class="w-4 h-4 sm:w-5 sm:h-5 text-emerald-400 fill-none stroke-current stroke-2" viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+          <svg class="w-4 h-4 text-emerald-400 fill-none stroke-current stroke-2" viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
           <span class="font-bold text-white tracking-wide">+62 896-7777-2336</span>
         </span>
       </div>
@@ -434,24 +436,24 @@ const htmlContent = `<!DOCTYPE html>
   </aside>
 
   <!-- ===================================================================== -->
-  <!-- 1. STICKY NAVBAR (PROPORTIONAL, BOLD & EXECUTIVE)                     -->
+  <!-- 1. STICKY NAVBAR (PROPORTIONAL, MODERN & BALANCED)                    -->
   <!-- ===================================================================== -->
-  <header class="sticky top-0 z-40 bg-white/95 backdrop-blur-md border-b border-slate-200/90 shadow-sm">
-    <div class="w-full px-6 sm:px-10 lg:px-14 xl:px-20 h-22 sm:h-26 lg:h-28 flex items-center justify-between">
+  <header class="sticky top-0 z-40 bg-white/95 backdrop-blur-md border-b border-slate-200/90 shadow-xs">
+    <div class="w-full px-4 sm:px-8 lg:px-12 xl:px-16 h-18 sm:h-20 flex items-center justify-between">
       
-      <!-- LOGO & BRAND IDENTITY (PROPORTIONAL & CRISP) -->
-      <a href="#" class="flex items-center gap-4 sm:gap-5 group focus-ring rounded-2xl py-1">
-        <div class="w-14 h-14 sm:w-16 sm:h-16 lg:w-20 lg:h-20 rounded-2xl bg-white border-2 border-slate-200 p-1 flex items-center justify-center shadow-md overflow-hidden shrink-0 group-hover:scale-105 transition">
-          <img src="${logoB64}" alt="Logo Maskot UNAIR SURUH" class="w-full h-full object-contain rounded-xl" />
+      <!-- LOGO & BRAND IDENTITY -->
+      <a href="#" class="flex items-center gap-3 sm:gap-4 group focus-ring rounded-xl py-1">
+        <div class="w-11 h-11 sm:w-12 sm:h-12 rounded-xl bg-white border border-slate-200 p-0.5 flex items-center justify-center shadow-xs overflow-hidden shrink-0 group-hover:scale-105 transition">
+          <img src="${logoB64}" alt="Logo Maskot UNAIR SURUH" class="w-full h-full object-contain rounded-lg" />
         </div>
         <div>
-          <span class="font-heading font-black text-2xl sm:text-3xl lg:text-[2rem] text-navy-950 tracking-tight block leading-tight">UNAIR SURUH</span>
-          <span class="text-xs sm:text-sm lg:text-base font-bold text-slate-500 block mt-0.5">Solusi Praktis Mahasiswa &amp; Anak Kos Surabaya</span>
+          <span class="font-heading font-black text-lg sm:text-xl lg:text-2xl text-navy-950 tracking-tight block leading-tight">UNAIR SURUH</span>
+          <span class="text-[11px] sm:text-xs font-semibold text-slate-500 block">Solusi Praktis Mahasiswa &amp; Anak Kos Surabaya</span>
         </div>
       </a>
 
-      <!-- DESKTOP NAV LINKS (PROMINENT, SPACIOUS & READABLE) -->
-      <nav class="hidden lg:flex items-center gap-8 xl:gap-12 text-base sm:text-lg font-bold text-navy-900/80">
+      <!-- DESKTOP NAV LINKS -->
+      <nav class="hidden lg:flex items-center gap-6 xl:gap-8 text-sm sm:text-base font-bold text-navy-900/80">
         <a href="#layanan" class="hover:text-amber-500 transition py-2 border-b-2 border-transparent hover:border-amber-400">Lini Layanan</a>
         <a href="#mengapa-kami" class="hover:text-amber-500 transition py-2 border-b-2 border-transparent hover:border-amber-400">Mengapa Kami</a>
         <a href="#kegiatan-kami" class="hover:text-amber-500 transition py-2 border-b-2 border-transparent hover:border-amber-400">Kegiatan Kami</a>
@@ -460,10 +462,10 @@ const htmlContent = `<!DOCTYPE html>
         <a href="#faq" class="hover:text-amber-500 transition py-2 border-b-2 border-transparent hover:border-amber-400">FAQ</a>
       </nav>
 
-      <!-- RIGHT ACTIONS (PROMINENT CALL TO ACTION) -->
-      <div class="flex items-center gap-4">
-        <a href="https://wa.me/${WA_NUMBER}?text=Halo%20kak%20Admin%20UNAIR%20SURUH!%20%F0%9F%91%8B%E2%9C%A8%20Mau%20tanya-tanya%20seputar%20layanannya%20dong%20kak%20%F0%9F%99%8F%F0%9F%98%8A" target="_blank" rel="noopener noreferrer" class="btn-spring focus-ring inline-flex items-center gap-3 px-6 sm:px-8 py-3.5 sm:py-4.5 rounded-2xl bg-amber-400 hover:bg-amber-300 text-navy-950 font-heading font-black text-base sm:text-lg lg:text-xl shadow-md hover:shadow-lg transition">
-          <svg class="w-5 h-5 sm:w-6 sm:h-6 fill-current shrink-0" viewBox="0 0 24 24"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/></svg>
+      <!-- RIGHT ACTIONS -->
+      <div class="flex items-center gap-3">
+        <a href="https://wa.me/${WA_NUMBER}?text=Halo%20kak%20Admin%20UNAIR%20SURUH!%20%F0%9F%91%8B%E2%9C%A8%20Mau%20tanya-tanya%20seputar%20layanannya%20dong%20kak%20%F0%9F%99%8F%F0%9F%98%8A" target="_blank" rel="noopener noreferrer" class="btn-spring focus-ring inline-flex items-center gap-2.5 px-5 sm:px-6 py-2.5 sm:py-3 rounded-xl bg-amber-400 hover:bg-amber-300 text-navy-950 font-heading font-black text-sm sm:text-base shadow-xs hover:shadow-md transition">
+          <svg class="w-4 h-4 sm:w-5 sm:h-5 fill-current shrink-0" viewBox="0 0 24 24"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/></svg>
           <span>Pesan via WA</span>
         </a>
       </div>
@@ -473,94 +475,94 @@ const htmlContent = `<!DOCTYPE html>
   <!-- ===================================================================== -->
   <!-- 2. HERO SECTION (KUNING - PUTIH - NAVY SIGNATURE AIRLANGGA GRADIENT)  -->
   <!-- ===================================================================== -->
-  <section class="relative bg-[linear-gradient(180deg,#FACC15_0%,#FEF08A_16%,#FFFFFF_46%,#CBD5E1_74%,#0F1E36_100%)] py-16 sm:py-20 lg:py-28 xl:py-32 border-b border-navy-900/90 overflow-hidden">
+  <section class="relative bg-[linear-gradient(180deg,#FACC15_0%,#FEF08A_16%,#FFFFFF_46%,#CBD5E1_74%,#0F1E36_100%)] py-8 sm:py-12 lg:py-14 border-b border-navy-900/90 overflow-hidden">
     
-    <!-- SUBTLE SUNLIGHT AMBIENT RADIALS (WARM GOLD TOP & DEEP NAVY BASE) -->
-    <div class="absolute -top-20 -left-20 w-[800px] h-[800px] rounded-full bg-gradient-to-br from-amber-400/40 via-yellow-300/25 to-transparent blur-3xl pointer-events-none -z-10"></div>
-    <div class="absolute top-10 -right-20 w-[850px] h-[850px] rounded-full bg-gradient-to-bl from-amber-300/30 via-yellow-200/20 to-transparent blur-3xl pointer-events-none -z-10"></div>
-    <div class="absolute -bottom-24 left-1/4 w-[900px] h-[550px] rounded-full bg-gradient-to-t from-navy-950/80 via-navy-900/40 to-transparent blur-3xl pointer-events-none -z-10"></div>
+    <!-- SUBTLE SUNLIGHT AMBIENT RADIALS -->
+    <div class="absolute -top-20 -left-20 w-[600px] h-[600px] rounded-full bg-gradient-to-br from-amber-400/35 via-yellow-300/20 to-transparent blur-3xl pointer-events-none -z-10"></div>
+    <div class="absolute top-10 -right-20 w-[650px] h-[650px] rounded-full bg-gradient-to-bl from-amber-300/25 via-yellow-200/15 to-transparent blur-3xl pointer-events-none -z-10"></div>
+    <div class="absolute -bottom-24 left-1/4 w-[700px] h-[450px] rounded-full bg-gradient-to-t from-navy-950/80 via-navy-900/40 to-transparent blur-3xl pointer-events-none -z-10"></div>
 
-    <!-- ARCHITECTURAL MICRO-GRID (ELEGANT FAINT BLUEPRINT OVERLAY) -->
+    <!-- ARCHITECTURAL MICRO-GRID -->
     <div class="absolute inset-0 bg-[radial-gradient(#0F1E3618_1px,transparent_1px)] bg-[size:24px_24px] [mask-image:radial-gradient(ellipse_85%_75%_at_50%_35%,#000_75%,transparent_100%)] pointer-events-none -z-10"></div>
 
-    <!-- FULL-WIDTH EXPANSIVE FLUID CONTAINER -->
-    <div class="w-full px-4 sm:px-8 lg:px-12 xl:px-16 2xl:px-20">
-      <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-14 xl:gap-20 2xl:gap-24 items-center">
+    <!-- PROPORTIONAL CONTAINER -->
+    <div class="w-full px-4 sm:px-8 lg:px-12 xl:px-16">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-10 xl:gap-14 items-center">
         
-        <!-- LEFT COLUMN: COPYWRITING & CTAS (WIDE & PROPORTIONAL) -->
-        <div class="lg:col-span-7 xl:col-span-7 space-y-8 xl:space-y-10">
+        <!-- LEFT COLUMN: COPYWRITING & CTAS (BALANCED & CRISP) -->
+        <div class="lg:col-span-7 xl:col-span-7 space-y-5 sm:space-y-6">
           
-          <!-- TOP PILL BADGE (NAVY ACCENT ON WARM GOLD) -->
-          <div class="inline-flex items-center gap-3 px-5 py-2.5 rounded-full bg-navy-950 text-white text-xs sm:text-sm lg:text-base font-bold shadow-md hover:scale-[1.02] transition cursor-default">
-            <span class="w-2.5 h-2.5 rounded-full bg-amber-400 animate-pulse"></span>
+          <!-- TOP PILL BADGE -->
+          <div class="inline-flex items-center gap-2.5 px-4 py-1.5 rounded-full bg-navy-950 text-white text-xs sm:text-sm font-bold shadow-xs hover:scale-[1.02] transition cursor-default">
+            <span class="w-2 h-2 rounded-full bg-amber-400 animate-pulse"></span>
             <span id="heroPillBadgeText">⚡ Serba Bisa untuk Mahasiswa, Anak Kos &amp; Warga Surabaya</span>
           </div>
 
-          <!-- HEADLINE (DEEP NAVY HIGH-CONTRAST, ULTRA-WIDE, MASSIVE SCALE) -->
-          <h1 id="heroHeadlineTitle" class="font-heading font-black text-4xl sm:text-5xl md:text-6xl lg:text-6xl xl:text-7xl 2xl:text-[5.25rem] text-navy-950 leading-[1.08] tracking-tight">
+          <!-- HEADLINE (PROPORTIONAL 100% ZOOM BALANCED) -->
+          <h1 id="heroHeadlineTitle" class="font-heading font-black text-3xl sm:text-4xl md:text-5xl lg:text-[3.25rem] xl:text-[3.5rem] text-navy-950 leading-[1.12] tracking-tight">
             Serba Bisa, Semua <span class="relative inline-block text-amber-600 underline decoration-amber-500 decoration-wavy">Bisa Disuruh!</span>
           </h1>
 
-          <!-- SUBTITLE (WIDE, AIRY, FULL-SPAN LEGIBILITY) -->
-          <p id="heroSubtitleText" class="text-navy-950/90 text-base sm:text-lg lg:text-xl xl:text-2xl 2xl:text-[1.55rem] leading-relaxed max-w-5xl font-medium">
+          <!-- SUBTITLE -->
+          <p id="heroSubtitleText" class="text-navy-950/90 text-sm sm:text-base lg:text-lg leading-relaxed max-w-2xl font-medium">
             Apapun kebutuhan harianmu di Surabaya, serahkan pada tim mahasiswa: dari <span class="font-semibold text-navy-950">Pindahan &amp; Titip Kos</span>, <span class="font-semibold text-navy-950">Antar-Jemput Stasiun/Bandara</span>, <span class="font-semibold text-navy-950">Urus Berkas ELPT</span>, <span class="font-semibold text-navy-950">Rakit Perabot</span>, belanja darurat, sampai <span class="font-semibold text-navy-950">Kru Event &amp; Tutor</span>. Cekatan, amanah, dan harga transparan.
           </p>
 
-          <!-- CTAS (PROMINENT, COMMANDING BUTTONS) -->
-          <div class="flex flex-wrap items-center gap-4 sm:gap-5 pt-2">
-            <button onclick="openOrderModal('move-suruh')" class="btn-spring focus-ring px-8 sm:px-10 py-4.5 sm:py-5 rounded-2xl bg-[#25D366] hover:bg-[#20bd5a] text-white font-heading font-black text-base sm:text-xl shadow-xl hover:shadow-2xl transition flex items-center gap-3">
-              <svg class="w-6 h-6 fill-current shrink-0" viewBox="0 0 24 24"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/></svg>
+          <!-- CTAS -->
+          <div class="flex flex-wrap items-center gap-3 sm:gap-4 pt-1">
+            <button onclick="openOrderModal('move-suruh')" class="btn-spring focus-ring px-6 sm:px-8 py-3.5 sm:py-4 rounded-xl bg-[#25D366] hover:bg-[#20bd5a] text-white font-heading font-black text-sm sm:text-base shadow-md hover:shadow-lg transition flex items-center gap-2.5">
+              <svg class="w-5 h-5 fill-current shrink-0" viewBox="0 0 24 24"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/></svg>
               <span id="heroCtaText">Pesan Sekarang</span>
             </button>
-            <a href="#layanan" class="btn-spring focus-ring px-8 sm:px-10 py-4.5 sm:py-5 rounded-2xl border-2 border-navy-900/20 hover:border-navy-900/40 text-navy-950 font-heading font-bold text-base sm:text-xl bg-white/95 hover:bg-white transition shadow-sm">
+            <a href="#layanan" class="btn-spring focus-ring px-6 sm:px-8 py-3.5 sm:py-4 rounded-xl border-2 border-navy-900/20 hover:border-navy-900/40 text-navy-950 font-heading font-bold text-sm sm:text-base bg-white/95 hover:bg-white transition shadow-2xs">
               Lihat 8 Lini Layanan
             </a>
           </div>
 
-          <!-- TRUST METRICS ROW (ELEVATED CARDS WITH GENEROUS BREATHING ROOM - DATA RIIL PROPOSAL BAB 11) -->
-          <div class="grid grid-cols-2 sm:grid-cols-4 gap-4 xl:gap-5 pt-8 border-t border-navy-900/15">
+          <!-- TRUST METRICS ROW (PROPORTIONAL 4-COLUMN CARDS) -->
+          <div class="grid grid-cols-2 sm:grid-cols-4 gap-3 sm:gap-4 pt-5 sm:pt-6 border-t border-navy-900/15">
             
             <!-- METRIC 1: 22 WORKER -->
-            <div class="bg-white/95 backdrop-blur-md rounded-2xl p-4 sm:p-5 border border-white/80 shadow-xl flex items-center gap-3.5 hover:border-amber-400 hover:shadow-2xl transition">
-              <div class="w-11 h-11 sm:w-12 sm:h-12 rounded-xl bg-amber-100 text-amber-800 flex items-center justify-center font-bold text-base sm:text-lg shrink-0 shadow-2xs">
+            <div class="bg-white/95 backdrop-blur-md rounded-xl p-3 sm:p-3.5 border border-white/80 shadow-md flex items-center gap-3 hover:border-amber-400 hover:shadow-lg transition">
+              <div class="w-9 h-9 sm:w-10 sm:h-10 rounded-lg bg-amber-100 text-amber-800 flex items-center justify-center font-bold text-sm sm:text-base shrink-0 shadow-2xs">
                 ★
               </div>
               <div class="leading-tight">
-                <div class="font-black text-base sm:text-lg lg:text-xl text-navy-950">22 Worker</div>
-                <div class="text-xs sm:text-sm text-slate-500 font-semibold">Mitra Mahasiswa Siaga</div>
+                <div class="font-black text-sm sm:text-base text-navy-950">22 Worker</div>
+                <div class="text-[11px] sm:text-xs text-slate-500 font-semibold">Mitra Mahasiswa</div>
               </div>
             </div>
 
             <!-- METRIC 2: 83% REPEAT ORDER -->
-            <div class="bg-white/95 backdrop-blur-md rounded-2xl p-4 sm:p-5 border border-white/80 shadow-xl flex items-center gap-3.5 hover:border-blue-400 hover:shadow-2xl transition">
-              <div class="w-11 h-11 sm:w-12 sm:h-12 rounded-xl bg-blue-100 text-blue-800 flex items-center justify-center font-bold text-base sm:text-lg shrink-0 shadow-2xs">
-                <svg class="w-6 h-6 stroke-current fill-none stroke-2" viewBox="0 0 24 24"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+            <div class="bg-white/95 backdrop-blur-md rounded-xl p-3 sm:p-3.5 border border-white/80 shadow-md flex items-center gap-3 hover:border-blue-400 hover:shadow-lg transition">
+              <div class="w-9 h-9 sm:w-10 sm:h-10 rounded-lg bg-blue-100 text-blue-800 flex items-center justify-center font-bold text-sm sm:text-base shrink-0 shadow-2xs">
+                <svg class="w-5 h-5 stroke-current fill-none stroke-2" viewBox="0 0 24 24"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
               </div>
               <div class="leading-tight">
-                <div class="font-black text-base sm:text-lg lg:text-xl text-navy-950">83% Repeat</div>
-                <div class="text-xs sm:text-sm text-slate-500 font-semibold">Pelanggan Berulang</div>
+                <div class="font-black text-sm sm:text-base text-navy-950">83% Repeat</div>
+                <div class="text-[11px] sm:text-xs text-slate-500 font-semibold">Pelanggan Setia</div>
               </div>
             </div>
 
             <!-- METRIC 3: 81% PERTUMBUHAN ORDER -->
-            <div class="bg-white/95 backdrop-blur-md rounded-2xl p-4 sm:p-5 border border-white/80 shadow-xl flex items-center gap-3.5 hover:border-emerald-400 hover:shadow-2xl transition">
-              <div class="w-11 h-11 sm:w-12 sm:h-12 rounded-xl bg-emerald-100 text-emerald-800 flex items-center justify-center font-bold text-base sm:text-lg shrink-0 shadow-2xs">
-                <svg class="w-6 h-6 stroke-current fill-none stroke-2" viewBox="0 0 24 24"><polyline points="23 6 13.5 15.5 8.5 10.5 1 18"/><polyline points="17 6 23 6 23 12"/></svg>
+            <div class="bg-white/95 backdrop-blur-md rounded-xl p-3 sm:p-3.5 border border-white/80 shadow-md flex items-center gap-3 hover:border-emerald-400 hover:shadow-lg transition">
+              <div class="w-9 h-9 sm:w-10 sm:h-10 rounded-lg bg-emerald-100 text-emerald-800 flex items-center justify-center font-bold text-sm sm:text-base shrink-0 shadow-2xs">
+                <svg class="w-5 h-5 stroke-current fill-none stroke-2" viewBox="0 0 24 24"><polyline points="23 6 13.5 15.5 8.5 10.5 1 18"/><polyline points="17 6 23 6 23 12"/></svg>
               </div>
               <div class="leading-tight">
-                <div class="font-black text-base sm:text-lg lg:text-xl text-navy-950">81% / Bulan</div>
-                <div class="text-xs sm:text-sm text-slate-500 font-semibold">Pertumbuhan Pesanan</div>
+                <div class="font-black text-sm sm:text-base text-navy-950">81% / Bulan</div>
+                <div class="text-[11px] sm:text-xs text-slate-500 font-semibold">Pertumbuhan</div>
               </div>
             </div>
 
             <!-- METRIC 4: AKAD JELAS & TRANSPARAN -->
-            <div class="bg-white/95 backdrop-blur-md rounded-2xl p-4 sm:p-5 border border-white/80 shadow-xl flex items-center gap-3.5 hover:border-indigo-400 hover:shadow-2xl transition">
-              <div class="w-11 h-11 sm:w-12 sm:h-12 rounded-xl bg-indigo-100 text-indigo-800 flex items-center justify-center font-bold text-base sm:text-lg shrink-0 shadow-2xs">
-                <svg class="w-6 h-6 stroke-current fill-none stroke-2" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="m9 12 2 2 4-4"/></svg>
+            <div class="bg-white/95 backdrop-blur-md rounded-xl p-3 sm:p-3.5 border border-white/80 shadow-md flex items-center gap-3 hover:border-indigo-400 hover:shadow-lg transition">
+              <div class="w-9 h-9 sm:w-10 sm:h-10 rounded-lg bg-indigo-100 text-indigo-800 flex items-center justify-center font-bold text-sm sm:text-base shrink-0 shadow-2xs">
+                <svg class="w-5 h-5 stroke-current fill-none stroke-2" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="m9 12 2 2 4-4"/></svg>
               </div>
               <div class="leading-tight">
-                <div class="font-black text-base sm:text-lg lg:text-xl text-navy-950">Akad Jelas</div>
-                <div class="text-xs sm:text-sm text-slate-500 font-semibold">Fee &amp; Tarif di Awal</div>
+                <div class="font-black text-sm sm:text-base text-navy-950">Akad Jelas</div>
+                <div class="text-[11px] sm:text-xs text-slate-500 font-semibold">Tarif di Awal</div>
               </div>
             </div>
 
@@ -568,49 +570,53 @@ const htmlContent = `<!DOCTYPE html>
 
         </div>
 
-        <!-- RIGHT COLUMN: HERO TEAM PHOTO & FLOATING BADGES (EXPANSIVE & PROMINENT) -->
-        <div class="lg:col-span-5 relative w-full">
-          <div class="relative w-full">
+        <!-- RIGHT COLUMN: HERO TEAM PHOTO & FLOATING BADGES (BALANCED & PROPORTIONAL) -->
+        <div class="lg:col-span-5 relative w-full flex justify-center">
+          <div class="relative w-full max-w-[420px] lg:max-w-[460px]">
             
             <!-- SOFT PHOTO BACKDROP HALO -->
-            <div class="absolute -inset-6 sm:-inset-10 rounded-[3.5rem] bg-gradient-to-tr from-amber-400/40 via-yellow-200/30 to-blue-500/30 blur-3xl -z-10"></div>
+            <div class="absolute -inset-4 sm:-inset-6 rounded-3xl bg-gradient-to-tr from-amber-400/30 via-yellow-200/25 to-blue-500/25 blur-2xl -z-10"></div>
 
-            <!-- PHOTO CARD -->
-            <div class="relative w-full rounded-[2.5rem] sm:rounded-[3rem] overflow-hidden shadow-[0_30px_70px_-15px_rgba(15,30,54,0.4)] border-[6px] sm:border-[8px] border-white ring-1 ring-navy-950/10 bg-white aspect-[4/5] sm:aspect-[4/3] lg:aspect-[4/5] xl:aspect-[5/6] 2xl:aspect-[1/1] min-h-[500px] sm:min-h-[580px] lg:min-h-[660px] xl:min-h-[740px]">
+            <!-- PHOTO CARD (BALANCED ASPECT RATIO & COMFORTABLE VIEWPORT HEIGHT) -->
+            <div class="relative w-full rounded-2xl sm:rounded-3xl overflow-hidden shadow-xl border-4 sm:border-[5px] border-white ring-1 ring-navy-950/10 bg-white aspect-[4/5] max-h-[460px] sm:max-h-[500px]">
               <img src="${heroTeamB64}" alt="Tim Mahasiswa UNAIR SURUH" class="w-full h-full object-cover object-center" />
-              <div class="absolute inset-0 bg-gradient-to-t from-navy-950/50 via-transparent to-transparent"></div>
+              <div class="absolute inset-0 bg-gradient-to-t from-navy-950/40 via-transparent to-transparent"></div>
             </div>
 
             <!-- FLOATING GAMIFIED MICRO-CHIP (DISPATCH SPEED) -->
-            <div class="hidden sm:flex absolute top-8 -left-4 sm:-left-6 lg:-left-8 bg-white/95 backdrop-blur-md px-5 py-3 rounded-2xl shadow-2xl border border-slate-200/90 items-center gap-3 card-spring z-10">
-              <span class="w-3 h-3 rounded-full bg-emerald-500 animate-ping"></span>
-              <span class="text-xs sm:text-sm lg:text-base font-bold text-navy-950">⚡ Dispatch Cepat &lt; 15 Mnt</span>
+            <div class="hidden sm:flex absolute top-5 -left-3 sm:-left-5 bg-white/95 backdrop-blur-md px-3.5 py-2 rounded-xl shadow-lg border border-slate-200/90 items-center gap-2.5 card-spring z-10">
+              <span class="w-2.5 h-2.5 rounded-full bg-emerald-500 animate-ping"></span>
+              <span class="text-xs sm:text-sm font-bold text-navy-950">⚡ Dispatch Cepat &lt; 15 Mnt</span>
             </div>
 
             <!-- FLOATING MASCOT BADGE (OFFICIAL MASCOT LOGO) -->
-            <div class="absolute -bottom-6 sm:-bottom-8 lg:-bottom-10 -left-3 sm:-left-6 lg:-left-8 bg-white/95 backdrop-blur-md p-4 sm:p-5 pr-7 sm:pr-9 rounded-3xl shadow-2xl border border-slate-200 flex items-center gap-4 card-spring z-10">
-              <div class="w-14 h-14 sm:w-16 sm:h-16 lg:w-18 lg:h-18 rounded-2xl bg-white border-2 border-amber-300/90 p-1 overflow-hidden shrink-0 shadow-sm flex items-center justify-center">
+            <div class="absolute -bottom-5 sm:-bottom-6 -left-2 sm:-left-5 bg-white/95 backdrop-blur-md p-3 sm:p-3.5 pr-5 sm:pr-6 rounded-2xl shadow-xl border border-slate-200 flex items-center gap-3 card-spring z-10">
+              <div class="w-10 h-10 sm:w-11 sm:h-11 rounded-xl bg-white border border-amber-300 p-0.5 overflow-hidden shrink-0 shadow-xs flex items-center justify-center">
                 <img src="${logoB64}" alt="Maskot Resmi UNAIR SURUH" class="w-full h-full object-contain rounded-lg" />
               </div>
               <div>
-                <div class="text-sm sm:text-base lg:text-lg font-black text-navy-950 flex items-center gap-2">
+                <div class="text-xs sm:text-sm font-black text-navy-950 flex items-center gap-1.5">
                   <span>Maskot UNAIR SURUH</span>
-                  <span class="w-2.5 h-2.5 rounded-full bg-emerald-500"></span>
+                  <span class="w-2 h-2 rounded-full bg-emerald-500"></span>
                 </div>
-                <div class="text-xs sm:text-sm text-slate-500 font-semibold">Siaga 8 Lini SURUH Series</div>
+                <div class="text-[11px] sm:text-xs text-slate-500 font-semibold">Siaga 8 Lini SURUH Series</div>
               </div>
             </div>
 
             <!-- FLOATING VERIFIED PILL (AMANAH & RAMAH) -->
-            <div class="absolute -top-5 sm:-top-6 -right-2 sm:-right-4 lg:-right-6 xl:-right-8 bg-navy-950/95 backdrop-blur-md text-white px-5 sm:px-6 py-3 sm:py-3.5 rounded-2xl shadow-2xl flex items-center gap-3.5 border border-navy-800/80 card-spring z-10">
-              <div class="w-9 h-9 sm:w-10 sm:h-10 rounded-full bg-amber-400 text-navy-950 flex items-center justify-center font-bold text-base sm:text-lg shrink-0 shadow-xs">
+            <div class="absolute -top-4 sm:-top-5 -right-2 sm:-right-4 bg-navy-950/95 backdrop-blur-md text-white px-4 py-2 sm:py-2.5 rounded-xl shadow-xl flex items-center gap-2.5 border border-navy-800/80 card-spring z-10">
+              <div class="w-7 h-7 sm:w-8 sm:h-8 rounded-full bg-amber-400 text-navy-950 flex items-center justify-center font-bold text-xs sm:text-sm shrink-0 shadow-2xs">
                 ★
               </div>
-              <div class="text-xs sm:text-sm lg:text-base font-bold leading-tight">Mitra Terverifikasi<br><span class="text-amber-300 font-medium">Mahasiswa Surabaya</span></div>
+              <div class="text-xs sm:text-sm font-bold leading-tight">Mitra Terverifikasi<br><span class="text-amber-300 font-medium">Mahasiswa Surabaya</span></div>
             </div>
 
           </div>
         </div>
+
+      </div>
+    </div>
+  </section>
 
       </div>
     </div>
