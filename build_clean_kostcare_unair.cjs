@@ -105,13 +105,13 @@ const servicesData = [
   {
     slug: 'desk-suruh',
     title: 'Administrasi & Pengurusan (Desk SURUH)',
-    badge: 'Spesialis Kampus',
+    badge: 'Birokrasi & Berkas',
     badgeClass: 'bg-purple-50 text-purple-700 border-purple-200',
     iconBg: 'bg-purple-50',
     iconColor: 'text-purple-600',
     iconBorder: 'border border-purple-200',
     iconSvg: `<svg class="w-5 h-5 stroke-current fill-none stroke-2 stroke-linecap-round stroke-linejoin-round" viewBox="0 0 24 24"><path d="M14.5 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7.5L14.5 2z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg>`,
-    desc: 'Membantu mengurus kebutuhan administratif tertentu, seperti berkas fisik ELPT/Ijazah di Pusat Bahasa Kampus B, kebutuhan perizinan kampus, dan pengurusan dokumen instansi resmi.',
+    desc: 'Membantu mengurus dan mengambil kebutuhan dokumen fisik, surat perizinan, cetak/fotokopi berkas tugas, hingga pengurusan berkas administrasi instansi resmi secara cepat dan amanah.',
     unitPrimary: 'Per Dokumen / Berkas Fisik / Per Lokasi Pengurusan',
     unitDetail: 'Bukti foto serah terima dokumen fisik langsung ke pemesan',
     price: 15000,
@@ -243,7 +243,7 @@ const feedData = [
     "user": "unair_suruh",
     "timeAgo": "4 HARI LALU",
     "likes": 92,
-    "caption": "Lagi di luar kota tapi sertifikat fisik ELPT harus segera diambil? Tim Desk SURUH siap bantu ambilkan dan kirim ke kosan / ekspedisi 📄⚡",
+    "caption": "Lagi di luar kota tapi ada berkas fisik atau dokumen penting yang harus segera diambil? Tim Desk SURUH siap bantu ambilkan dan kirim ke alamat / ekspedisi 📄📦",
     "tiktokUrl": "https://www.tiktok.com/@unair_suruh/video/7651856659639291156",
     "active": true
   },
@@ -505,7 +505,7 @@ const htmlContent = `<!DOCTYPE html>
 
           <!-- SUBTITLE -->
           <p id="heroSubtitleText" class="text-navy-950/90 text-sm sm:text-base lg:text-lg leading-relaxed max-w-2xl font-medium">
-            Apapun kebutuhan harianmu di Surabaya, serahkan pada tim mahasiswa: dari <span class="font-semibold text-navy-950">Pindahan &amp; Titip Kos</span>, <span class="font-semibold text-navy-950">Antar-Jemput Stasiun/Bandara</span>, <span class="font-semibold text-navy-950">Urus Berkas ELPT</span>, <span class="font-semibold text-navy-950">Rakit Perabot</span>, belanja darurat, sampai <span class="font-semibold text-navy-950">Kru Event &amp; Tutor</span>. Cekatan, amanah, dan harga transparan.
+            Apapun kebutuhan harianmu di Surabaya, serahkan pada tim mahasiswa: dari <span class="font-semibold text-navy-950">Pindahan &amp; Titip Kos</span>, <span class="font-semibold text-navy-950">Antar-Jemput Stasiun/Bandara</span>, <span class="font-semibold text-navy-950">Urus Berkas &amp; Dokumen</span>, <span class="font-semibold text-navy-950">Rakit Perabot</span>, belanja darurat, sampai <span class="font-semibold text-navy-950">Kru Event &amp; Tutor</span>. Cekatan, amanah, dan harga transparan.
           </p>
 
           <!-- CTAS -->
@@ -885,18 +885,18 @@ ${feedData.map(renderFeedCard).join('\n\n')}
             <!-- SERVICE BADGE -->
             <div class="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-md text-[10px] font-bold border bg-emerald-50 text-emerald-700 border-emerald-200">
               <span class="w-1.5 h-1.5 rounded-full bg-current opacity-70"></span>
-              <span>Desk SURUH • Berkas ELPT</span>
+              <span>Desk SURUH • Urus Berkas &amp; Dokumen</span>
             </div>
 
             <!-- COMMENT TEXT (AUTHENTIC QUOTE) -->
             <p class="text-xs sm:text-[13px] text-slate-700 font-medium leading-relaxed italic">
-              "KAK AMBILIN SERTIF ELPT KU OLS DR TAHUN KMREN"
+              "Kak tolong ambilin berkas fisik dan dokumen pentingku dong, butuh cepat!"
             </p>
 
             <!-- SOURCE VIDEO ANNOTATION -->
             <div class="text-[10px] text-slate-400 flex items-center gap-1">
               <svg class="w-3 h-3 text-slate-400 shrink-0 stroke-current fill-none stroke-2" viewBox="0 0 24 24"><polygon points="5 3 19 12 5 21 5 3"/></svg>
-              <span class="truncate">Video: Ambil Dokumen & ELPT Pusat Bahasa</span>
+              <span class="truncate">Video: Ambil Dokumen &amp; Berkas Fisik</span>
             </div>
           </div>
 
@@ -1328,7 +1328,7 @@ ${feedData.map(renderFeedCard).join('\n\n')}
             <li><a href="#layanan" class="hover:text-amber-600 transition">Keep SURUH (Titip Barang KKN)</a></li>
             <li><a href="#layanan" class="hover:text-amber-600 transition">Fix SURUH (Perakitan &amp; Servis)</a></li>
             <li><a href="#layanan" class="hover:text-amber-600 transition">Task SURUH (Personal Assistance)</a></li>
-            <li><a href="#layanan" class="hover:text-amber-600 transition">Desk SURUH (Berkas Kampus/ELPT)</a></li>
+            <li><a href="#layanan" class="hover:text-amber-600 transition">Desk SURUH (Urus Berkas &amp; Dokumen)</a></li>
             <li><a href="#layanan" class="hover:text-amber-600 transition">Crew SURUH (Operasional Event)</a></li>
             <li><a href="#layanan" class="hover:text-amber-600 transition">Talent SURUH (Tutor &amp; Skill-Based)</a></li>
           </ul>
@@ -1521,7 +1521,7 @@ ${feedData.map(renderFeedCard).join('\n\n')}
               <option value="keep-suruh">📦 Keep SURUH • Penitipan Barang Kos (Mulai Rp 15.000/bln)</option>
               <option value="fix-suruh">🛠️ Fix SURUH • Rakit Meja/Lemari &amp; Servis (Mulai Rp 40.000)</option>
               <option value="task-suruh">🎒 Task SURUH • Titip Beli &amp; Personal Assist (Mulai Rp 15.000)</option>
-              <option value="desk-suruh">📄 Desk SURUH • Ambil Berkas ELPT &amp; Birokrasi (Mulai Rp 15.000)</option>
+              <option value="desk-suruh">📄 Desk SURUH • Urus Berkas, File &amp; Dokumen (Mulai Rp 15.000)</option>
               <option value="crew-suruh">🎪 Crew SURUH • Tenaga Event &amp; Kampus (Mulai Rp 75.000)</option>
               <option value="talent-suruh">🎓 Talent SURUH • Tutor &amp; Skill Worker (Mulai Rp 50.000)</option>
             </select>
