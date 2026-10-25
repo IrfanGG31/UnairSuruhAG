@@ -424,7 +424,7 @@ const htmlContent = `<!DOCTYPE html>
     <div class="w-full px-4 sm:px-8 lg:px-12 xl:px-16 flex items-center justify-between">
       <div class="flex items-center gap-2.5 overflow-hidden text-ellipsis whitespace-nowrap">
         <span class="bg-amber-400 text-navy-950 text-[11px] sm:text-xs font-black px-2.5 py-0.5 rounded-full uppercase tracking-wider shrink-0 shadow-xs">Inisiatif Mahasiswa</span>
-        <span id="announcementBarText" class="text-slate-200 text-xs sm:text-sm font-medium">Layanan On-Demand Mahasiswa di Surabaya • 8 Pilihan SURUH Series</span>
+        <span id="announcementBarText" class="text-slate-200 text-xs sm:text-sm font-medium">Layanan On-Demand Mahasiswa di Surabaya • 8 Lini Siaga + Bebas Custom SURUH</span>
       </div>
       <div class="hidden sm:flex items-center gap-6 text-slate-200 text-xs sm:text-sm shrink-0">
         <span class="flex items-center gap-2">
@@ -627,14 +627,178 @@ const htmlContent = `<!DOCTYPE html>
   <section id="layanan" class="py-16 sm:py-24 bg-[#F8FAFC]">
     <div class="w-full px-4 sm:px-8 lg:px-12 xl:px-16 2xl:px-20">
       
-      <!-- SECTION HEADER (PERSIS SCREENSHOT) -->
-      <div class="text-center max-w-3xl mx-auto mb-12 sm:mb-16">
+      <!-- SECTION HEADER -->
+      <div class="text-center max-w-3xl mx-auto mb-10 sm:mb-12">
         <h2 class="font-heading font-black text-2xl sm:text-3xl lg:text-4xl text-navy-900 tracking-tight">
           Lini Layanan &amp; Satuan Kerja
         </h2>
         <p class="text-slate-600 text-xs sm:text-sm mt-2 max-w-2xl mx-auto leading-relaxed">
           Tiap jenis tugas memiliki satuan dan batasan kerja yang transparan. Tidak ada biaya tersembunyi, langsung diskusikan di WhatsApp dengan format chat otomatis.
         </p>
+      </div>
+
+      <!-- ===================================================================== -->
+      <!-- SPOTLIGHT HIGHLIGHT UTAMA: CUSTOM SURUH (BEBAS REQUEST APA SAJA)      -->
+      <!-- ===================================================================== -->
+      <div id="custom-suruh-spotlight" class="mb-12 sm:mb-16 rounded-3xl bg-gradient-to-br from-navy-950 via-[#0B1528] to-[#122240] text-white p-6 sm:p-8 lg:p-10 border-2 border-amber-400/50 shadow-[0_20px_50px_rgba(15,30,54,0.35)] relative overflow-hidden group">
+        
+        <!-- GLOWING AMBIENT RADIALS -->
+        <div class="absolute -top-24 -right-24 w-80 h-80 bg-amber-400/20 rounded-full blur-3xl pointer-events-none -z-0"></div>
+        <div class="absolute -bottom-24 -left-24 w-80 h-80 bg-blue-500/20 rounded-full blur-3xl pointer-events-none -z-0"></div>
+        
+        <!-- MICRO-GRID TEXTURE -->
+        <div class="absolute inset-0 bg-[radial-gradient(#FACC1510_1px,transparent_1px)] bg-[size:20px_20px] pointer-events-none -z-0"></div>
+
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-10 items-center relative z-10">
+          
+          <!-- LEFT SIDE: COPYWRITING & QUICK IDEA CHIPS -->
+          <div class="lg:col-span-7 space-y-5">
+            
+            <!-- SPOTLIGHT BADGE -->
+            <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-gradient-to-r from-amber-400/25 to-yellow-300/15 border border-amber-400/40 text-amber-300 text-xs font-bold uppercase tracking-wider shadow-xs">
+              <span class="w-2 h-2 rounded-full bg-amber-400 animate-ping"></span>
+              <span>⭐ SPOTLIGHT UTAMA • LAYANAN APA SAJA BEBAS REQUEST</span>
+            </div>
+
+            <!-- TITLE -->
+            <h3 class="font-heading font-black text-2xl sm:text-3xl lg:text-[2.25rem] text-white leading-tight tracking-tight">
+              Punya Kebutuhan Lain?<br>
+              <span class="text-amber-400 underline decoration-amber-400/40 decoration-wavy">Semua Bebas Kamu Suruh!</span>
+            </h3>
+
+            <!-- DESCRIPTION -->
+            <p class="text-slate-300 text-xs sm:text-sm lg:text-base leading-relaxed font-medium max-w-xl">
+              Nggak nemu layanan yang cocok di 8 pilihan bawah? Tenang! Dari urusan antre tiket/tempat, titip jaga stand event, survei lokasi kosan, cari barang unik, sampai bantuan mendadak apa saja di Surabaya—tulis tugasmu, harga disepakati di awal tanpa biaya siluman.
+            </p>
+
+            <!-- QUICK IDEA CHIPS (CLICK TO AUTO-FILL) -->
+            <div class="space-y-2 pt-1">
+              <div class="text-[11px] sm:text-xs font-bold uppercase tracking-wider text-amber-300/90 flex items-center gap-1.5">
+                <span>💡 Klik contoh tugas yang sering direquest:</span>
+              </div>
+              <div class="flex flex-wrap gap-2">
+                <button type="button" onclick="fillCustomChip('Tolong survei kamar kosan & fotokan video detail lokasinya kak')" class="text-xs font-semibold px-3 py-1.5 rounded-xl bg-white/10 hover:bg-amber-400 hover:text-navy-950 border border-white/15 text-slate-200 transition card-spring cursor-pointer">
+                  🎯 Survei Kosan / Cek Lokasi
+                </button>
+                <button type="button" onclick="fillCustomChip('Bantu antre tiket / antre tempat dari pagi ya kak')" class="text-xs font-semibold px-3 py-1.5 rounded-xl bg-white/10 hover:bg-amber-400 hover:text-navy-950 border border-white/15 text-slate-200 transition card-spring cursor-pointer">
+                  🎟️ Bantu Antre Tiket / Tempat
+                </button>
+                <button type="button" onclick="fillCustomChip('Bantu cari dan belikan barang khusus / kado mendadak')" class="text-xs font-semibold px-3 py-1.5 rounded-xl bg-white/10 hover:bg-amber-400 hover:text-navy-950 border border-white/15 text-slate-200 transition card-spring cursor-pointer">
+                  🛍️ Beli Barang Khusus / Kado
+                </button>
+                <button type="button" onclick="fillCustomChip('Temani periksa ke klinik / rumah sakit di Surabaya')" class="text-xs font-semibold px-3 py-1.5 rounded-xl bg-white/10 hover:bg-amber-400 hover:text-navy-950 border border-white/15 text-slate-200 transition card-spring cursor-pointer">
+                  🏥 Temani Periksa / Rumah Sakit
+                </button>
+                <button type="button" onclick="fillCustomChip('Bantu jaga stand booth bazaar / event kampus')" class="text-xs font-semibold px-3 py-1.5 rounded-xl bg-white/10 hover:bg-amber-400 hover:text-navy-950 border border-white/15 text-slate-200 transition card-spring cursor-pointer">
+                  🎪 Jaga Stand / Booth Event
+                </button>
+                <button type="button" onclick="fillCustomChip('Tolong bantu angkut barang unik / perabot khusus ke lokasi')" class="text-xs font-semibold px-3 py-1.5 rounded-xl bg-white/10 hover:bg-amber-400 hover:text-navy-950 border border-white/15 text-slate-200 transition card-spring cursor-pointer">
+                  📦 Bantuan Fisik &amp; Angkut Unik
+                </button>
+              </div>
+            </div>
+
+            <!-- TRUST BULLETS -->
+            <div class="pt-2 flex flex-wrap items-center gap-4 text-[11px] sm:text-xs text-slate-300 font-semibold border-t border-white/10">
+              <span class="flex items-center gap-1.5 text-emerald-400">
+                <svg class="w-4 h-4 fill-current shrink-0" viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg>
+                <span>Tarif Disepakati di Awal</span>
+              </span>
+              <span class="flex items-center gap-1.5 text-amber-300">
+                <svg class="w-4 h-4 fill-current shrink-0" viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg>
+                <span>Mitra Mahasiswa Amanah</span>
+              </span>
+              <span class="flex items-center gap-1.5 text-blue-300">
+                <svg class="w-4 h-4 fill-current shrink-0" viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg>
+                <span>Respon Kilat &lt; 15 Mnt</span>
+              </span>
+            </div>
+
+          </div>
+
+          <!-- RIGHT SIDE: INTERACTIVE REQUEST BUILDER -->
+          <div class="lg:col-span-5">
+            <div class="bg-white/10 backdrop-blur-xl rounded-2xl p-5 sm:p-6 border border-white/20 shadow-2xl space-y-4">
+              
+              <div class="flex items-center justify-between pb-2 border-b border-white/10">
+                <div class="flex items-center gap-2">
+                  <span class="w-8 h-8 rounded-xl bg-amber-400 text-navy-950 flex items-center justify-center font-bold text-sm shadow-xs">✍️</span>
+                  <span class="font-heading font-black text-sm sm:text-base text-white">Form Kilat Custom SURUH</span>
+                </div>
+                <span class="text-[11px] font-bold px-2.5 py-0.5 rounded-full bg-emerald-500/20 text-emerald-300 border border-emerald-400/30">Nego Bebas</span>
+              </div>
+
+              <!-- FIELD 1: REQUEST INPUT -->
+              <div class="space-y-1.5">
+                <label for="customTaskInput" class="block text-xs font-bold text-slate-200">Mau minta tolong apa? <span class="text-amber-400">*</span></label>
+                <textarea id="customTaskInput" rows="3" class="focus-ring w-full px-3.5 py-2.5 rounded-xl bg-white text-navy-950 text-xs sm:text-sm font-medium border border-white/80 placeholder:text-slate-400 resize-none leading-relaxed transition" placeholder="Tuliskan tugasmu di sini, misal: 'Tolong survei kosan di Dharmawangsa dan fotokan detailnya ya kak...'"></textarea>
+              </div>
+
+              <!-- FIELD 2: 2-COLUMN HELPER (AREA & WAKTU) -->
+              <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+                <div class="space-y-1">
+                  <label for="customAreaSelect" class="block text-[11px] font-bold text-slate-200">Area / Lokasi</label>
+                  <select id="customAreaSelect" class="focus-ring w-full px-3 py-2 rounded-xl bg-white text-navy-950 text-xs font-semibold border border-white/80">
+                    <option value="Kampus A / B UNAIR (Gubeng)">📍 Kampus A / B (Gubeng)</option>
+                    <option value="Kampus C UNAIR (Mulyorejo)">📍 Kampus C (Mulyorejo)</option>
+                    <option value="Surabaya Timur (Rungkut / Sukolilo)">📍 Surabaya Timur</option>
+                    <option value="Surabaya Pusat / Selatan">📍 Surabaya Pusat / Selatan</option>
+                    <option value="Surabaya Barat / Utara">📍 Surabaya Barat / Utara</option>
+                    <option value="Lainnya / Luar Kota">📍 Lokasi Lainnya</option>
+                  </select>
+                </div>
+                <div class="space-y-1">
+                  <label for="customTimeSelect" class="block text-[11px] font-bold text-slate-200">Waktu Kebutuhan</label>
+                  <select id="customTimeSelect" class="focus-ring w-full px-3 py-2 rounded-xl bg-white text-navy-950 text-xs font-semibold border border-white/80">
+                    <option value="⚡ Kebutuhan Urgent / Hari Ini">⚡ Urgent / Hari Ini</option>
+                    <option value="📅 Besok Pagi / Siang">📅 Besok Pagi / Siang</option>
+                    <option value="🗓️ Akhir Pekan (Sabtu / Minggu)">🗓️ Akhir Pekan</option>
+                    <option value="💬 Fleksibel / Sesuai Kesepakatan">💬 Fleksibel / Santai</option>
+                  </select>
+                </div>
+              </div>
+
+              <!-- FIELD 3: FEMALE DORM GENDER TOGGLE -->
+              <label for="customFemaleCheck" class="p-2.5 rounded-xl bg-rose-500/20 border border-rose-300/30 flex items-center gap-2 cursor-pointer hover:bg-rose-500/30 transition">
+                <input type="checkbox" id="customFemaleCheck" class="rounded text-rose-500 focus:ring-rose-400 w-4 h-4 bg-white border-white/50" />
+                <span class="text-[11px] sm:text-xs text-rose-200 font-semibold flex items-center gap-1">
+                  <span>🌸</span>
+                  <span>Khusus Kos Putri: Request mitra mahasiswi cewek</span>
+                </span>
+              </label>
+
+              <!-- SUBMIT BUTTON DIRECT TO WHATSAPP -->
+              <button type="button" onclick="sendCustomOrderToWA()" class="btn-spring focus-ring w-full py-3.5 sm:py-4 rounded-xl bg-amber-400 hover:bg-amber-300 text-navy-950 font-heading font-black text-sm sm:text-base flex items-center justify-center gap-2.5 shadow-xl hover:shadow-2xl transition cursor-pointer">
+                <svg class="w-5 h-5 fill-current shrink-0" viewBox="0 0 24 24"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/></svg>
+                <span>Kirim Request Custom ke WA</span>
+              </button>
+
+              <p class="text-[11px] text-center text-slate-300 flex items-center justify-center gap-1.5 pt-0.5">
+                <span class="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-pulse"></span>
+                <span>Pesan otomatis diformat rapi ke WA Mas Afif</span>
+              </p>
+
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+      <!-- SUBHEADER FOR 8 PRE-PACKAGED SERVICES -->
+      <div class="flex flex-col sm:flex-row sm:items-end justify-between mb-6 sm:mb-8 pb-4 border-b border-slate-200/80 gap-2">
+        <div>
+          <h3 class="font-heading font-extrabold text-lg sm:text-xl text-navy-950 tracking-tight">
+            Atau Pilih 8 Kategori Layanan Siaga:
+          </h3>
+          <p class="text-xs sm:text-sm text-slate-500 mt-0.5">
+            Paket tugas terstandarisasi dengan estimasi durasi dan satuan kerja jelas
+          </p>
+        </div>
+        <div class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-white border border-slate-200 text-slate-600 text-xs font-bold shrink-0 self-start sm:self-auto shadow-2xs">
+          <span class="w-2 h-2 rounded-full bg-amber-400"></span>
+          <span>8 Paket Terstandarisasi</span>
+        </div>
       </div>
 
       <!-- 8 OFFICIAL CARE SERVICES GRID (PERSIS SCREENSHOT 4-COLUMN / RESPONSIVE) -->
@@ -1226,7 +1390,7 @@ ${feedData.map(renderFeedCard).join('\n\n')}
       <div class="pt-2">
         <a href="https://wa.me/${WA_NUMBER}?text=Halo%20Admin%20UNAIR%20SURUH,%20saya%20butuh%20bantuan%20layanan" target="_blank" rel="noopener noreferrer" class="btn-spring focus-ring inline-flex items-center gap-2.5 px-8 py-4 rounded-xl bg-amber-400 hover:bg-amber-300 text-navy-900 font-heading font-extrabold text-sm sm:text-base shadow-lg transition">
           <svg class="w-5 h-5 fill-current shrink-0" viewBox="0 0 24 24"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/></svg>
-          <span>Chat WhatsApp: +62 895-0996-0815</span>
+          <span>Chat WhatsApp: +62 896-7777-2336</span>
         </a>
       </div>
     </div>
@@ -1321,8 +1485,9 @@ ${feedData.map(renderFeedCard).join('\n\n')}
         </div>
 
         <div class="space-y-2">
-          <div class="font-heading font-bold text-xs text-navy-900 uppercase tracking-wider">8 Lini Layanan</div>
+          <div class="font-heading font-bold text-xs text-navy-900 uppercase tracking-wider">Layanan SURUH Series</div>
           <ul class="space-y-1.5 text-xs font-medium">
+            <li><a href="#custom-suruh-spotlight" class="text-amber-600 font-bold hover:underline flex items-center gap-1"><span>✨</span> Custom SURUH (Bebas Request)</a></li>
             <li><a href="#layanan" class="hover:text-amber-600 transition">Go SURUH (Transportasi)</a></li>
             <li><a href="#layanan" class="hover:text-amber-600 transition">Move SURUH (Pindahan &amp; Tossa)</a></li>
             <li><a href="#layanan" class="hover:text-amber-600 transition">Keep SURUH (Titip Barang KKN)</a></li>
@@ -1516,6 +1681,7 @@ ${feedData.map(renderFeedCard).join('\n\n')}
           <label class="block text-xs font-bold text-slate-700">Pilih Layanan SURUH Series</label>
           <div class="relative">
             <select id="wizardService" class="focus-ring w-full px-4 py-3 rounded-2xl border border-slate-300 font-bold text-xs sm:text-sm bg-white text-navy-900 appearance-none pr-10">
+              <option value="custom-suruh">✨ Custom SURUH • Bebas Request Apa Saja (Nego di Awal)</option>
               <option value="move-suruh" selected>🚚 Move SURUH • Pindahan Kos (Mulai Rp 65.000)</option>
               <option value="go-suruh">🛵 Go SURUH • Antar Jemput Kampus / Stasiun (Mulai Rp 20.000)</option>
               <option value="keep-suruh">📦 Keep SURUH • Penitipan Barang Kos (Mulai Rp 15.000/bln)</option>
@@ -1562,7 +1728,7 @@ ${feedData.map(renderFeedCard).join('\n\n')}
         </button>
         <p class="text-[11px] text-center text-slate-500 flex items-center justify-center gap-1.5 pt-1">
           <span class="w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span>
-          <span>Admin WhatsApp Resmi: <strong class="text-slate-700">+62 895-0996-0815</strong></span>
+          <span>Admin WhatsApp Resmi: <strong class="text-slate-700">+62 896-7777-2336</strong></span>
         </p>
       </div>
 
@@ -2037,6 +2203,52 @@ ${feedData.map(renderFeedCard).join('\n\n')}
       const modal = document.getElementById('orderModalBackdrop');
       modal.classList.add('hidden');
       document.body.style.overflow = '';
+    }
+
+    // Custom SURUH interactive helper functions
+    function fillCustomChip(text) {
+      const input = document.getElementById('customTaskInput');
+      if (input) {
+        input.value = text;
+        input.focus();
+        input.classList.add('ring-2', 'ring-amber-400');
+        setTimeout(() => input.classList.remove('ring-2', 'ring-amber-400'), 800);
+      }
+    }
+
+    function sendCustomOrderToWA() {
+      const taskInput = document.getElementById('customTaskInput');
+      const areaSelect = document.getElementById('customAreaSelect');
+      const timeSelect = document.getElementById('customTimeSelect');
+      const femaleCheck = document.getElementById('customFemaleCheck');
+
+      const task = (taskInput && taskInput.value.trim()) ? taskInput.value.trim() : 'Konsultasi Layanan Custom (Bebas Request)';
+      const area = areaSelect ? areaSelect.value : 'Surabaya';
+      const time = timeSelect ? timeSelect.value : 'Fleksibel';
+      const isFemale = femaleCheck ? femaleCheck.checked : false;
+
+      const lines = [
+        'Halo Mas Afif / Admin UNAIR SURUH! 👋✨',
+        '',
+        'Saya ingin memesan layanan *Custom SURUH (Bebas Request)*:',
+        '',
+        '📌 *Detail Tugas/Kebutuhan:*',
+        task,
+        '',
+        '📍 *Area/Lokasi:* ' + area,
+        '⏰ *Waktu Kebutuhan:* ' + time
+      ];
+
+      if (isFemale) {
+        lines.push('🌸 *Catatan Khusus:* Request mitra mahasiswi cewek ya kak (menjaga privasi kos putri).');
+      }
+
+      lines.push('');
+      lines.push('Mohon info ketersediaan mitra worker & estimasi biayanya yaa kak. Terima kasih banyak! 🙏😊');
+
+      const waMsg = lines.join(String.fromCharCode(10));
+      const waUrl = 'https://wa.me/' + getWaNumber() + '?text=' + encodeURIComponent(waMsg);
+      window.open(waUrl, '_blank');
     }
 
     // Friendly WhatsApp message generator
