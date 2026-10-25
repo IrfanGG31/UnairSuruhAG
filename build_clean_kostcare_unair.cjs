@@ -232,7 +232,7 @@ const feedData = [
     "user": "unair_suruh",
     "timeAgo": "3 HARI LALU",
     "likes": 124,
-    "caption": "Khusus kos putri, privasi kamu nomor satu! Dikerjakan langsung sama mitra mahasiswi cewek yang rapi, teliti, dan bisa dipercaya 🌸🧹",
+    "caption": "Klien cewek request worker cewek, privasi kamu nomor satu! Dikerjakan langsung sama mitra mahasiswi yang rapi, teliti, dan bisa dipercaya 🌸🧹",
     "tiktokUrl": "https://www.tiktok.com/@unair_suruh/video/7650823166306323733",
     "active": true
   },
@@ -808,7 +808,7 @@ const htmlContent = `<!DOCTYPE html>
                 <input type="checkbox" id="customFemaleCheck" class="rounded text-rose-500 focus:ring-rose-400 w-4 h-4 bg-white border-white/50" />
                 <span class="text-[11px] sm:text-xs text-rose-200 font-semibold flex items-center gap-1">
                   <span>🌸</span>
-                  <span>Khusus Kos Putri: Request mitra mahasiswi cewek</span>
+                  <span>🌸 (Klien Cewek: Request Worker Cewek)</span>
                 </span>
               </label>
 
@@ -910,7 +910,7 @@ ${servicesData.map(renderServiceCard).join('\n\n')}
           <div>
             <h3 class="font-heading font-bold text-base sm:text-lg text-navy-950">Gender Matching di Ruang Privat</h3>
             <p class="text-xs sm:text-sm text-slate-600 mt-1.5 leading-relaxed">
-              Penugasan mitra mahasiswi khusus untuk pengerjaan di kos putri atau tempat tinggal demi menjaga adab, etika, kenyamanan, dan privasi penuh pelanggan.
+              Klien cewek bebas request penugasan 100% mitra mahasiswi cewek untuk pengerjaan di kos atau tempat tinggal demi kenyamanan, etika, dan privasi terjaga.
             </p>
           </div>
         </div>
@@ -1115,7 +1115,7 @@ ${feedData.map(renderFeedCard).join('\n\n')}
                     <span>@clarissasalsaa</span>
                     <svg class="w-3.5 h-3.5 text-blue-500 fill-current shrink-0" viewBox="0 0 24 24"><path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
                   </div>
-                  <div class="text-[10px] text-slate-500 font-medium">Penghuni Kos Putri Dharmawangsa</div>
+                  <div class="text-[10px] text-slate-500 font-medium">Pelanggan Mahasiswi Dharmawangsa</div>
                 </div>
               </div>
               <div class="w-7 h-7 rounded-full bg-slate-900 text-white flex items-center justify-center group-hover:bg-[#FE2C55] transition-colors shrink-0 shadow-xs" title="Buka komentar asli di TikTok">
@@ -1124,14 +1124,14 @@ ${feedData.map(renderFeedCard).join('\n\n')}
             </div>
             <div class="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-md text-[10px] font-bold border bg-rose-50 text-rose-700 border-rose-200">
               <span class="w-1.5 h-1.5 rounded-full bg-current opacity-70"></span>
-              <span>Task SURUH • Bersih Kos Putri</span>
+              <span>Task SURUH • Request Worker Cewek</span>
             </div>
             <p class="text-xs sm:text-[13px] text-slate-700 font-medium leading-relaxed italic">
-              "Kamar kos abis ditinggal liburan semester berdebu parah, minta tolong tim Task SURUH langsung kinclong rapi wangi. Yang datang mahasiswi ramah banget jadi ngerasa aman &amp; nyaman!"
+              "Kamar kos abis ditinggal liburan semester berdebu parah, minta tolong tim Task SURUH langsung kinclong rapi wangi. Senang banget klien cewek bisa request worker cewek, jadi ngerasa aman &amp; nyaman!"
             </p>
             <div class="text-[10px] text-slate-400 flex items-center gap-1">
               <svg class="w-3 h-3 text-slate-400 shrink-0 stroke-current fill-none stroke-2" viewBox="0 0 24 24"><polygon points="5 3 19 12 5 21 5 3"/></svg>
-              <span class="truncate">Video: Mitra Mahasiswi Kos Putri</span>
+              <span class="truncate">Video: Layanan Khusus Klien Cewek</span>
             </div>
           </div>
           <div class="pt-3.5 mt-4 border-t border-slate-200/80 flex items-center justify-between text-xs">
@@ -1335,11 +1335,11 @@ ${feedData.map(renderFeedCard).join('\n\n')}
 
         <details class="group bg-white rounded-2xl p-5 border border-slate-200/90 shadow-xs transition duration-200">
           <summary class="flex items-center justify-between font-heading font-bold text-sm sm:text-base text-navy-900 cursor-pointer list-none">
-            <span>Apakah aman untuk mahasiswi yang tinggal di kos putri?</span>
+            <span>Apakah bisa request worker cewek untuk klien cewek?</span>
             <svg class="w-4 h-4 stroke-current fill-none stroke-2 group-open:rotate-180 transition" viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9"/></svg>
           </summary>
           <p class="text-xs sm:text-sm text-slate-600 mt-3 leading-relaxed">
-            Sangat aman. Untuk pemesanan yang berlokasi di kos putri (seperti Move SURUH, Fix SURUH, atau Task SURUH), kami memiliki opsi centang khusus untuk menugaskan 100% mitra mahasiswi perempuan guna menjaga privasi dan adab.
+            Sangat bisa dan aman! Untuk klien cewek yang memesan layanan (seperti Move SURUH, Fix SURUH, atau Task SURUH), kamu cukup mencentang opsi (Klien Cewek: Request Worker Cewek). Kami memiliki SOP penugasan 100% mitra mahasiswi cewek demi menjaga kenyamanan, etika, dan privasi penuh.
           </p>
         </details>
 
@@ -1437,7 +1437,7 @@ ${feedData.map(renderFeedCard).join('\n\n')}
               <span>🛡️ Gender Matching &amp; Aman</span>
             </div>
             <p class="text-xs sm:text-sm text-slate-300 leading-relaxed">
-              Penugasan kamar kos putri hanya diberikan kepada mitra mahasiswi. Didukung koordinator tim siaga di lapangan.
+              Klien cewek bebas request worker cewek (100% mitra mahasiswi). Didukung koordinator tim siaga di lapangan.
             </p>
           </div>
         </div>
@@ -1693,12 +1693,12 @@ ${feedData.map(renderFeedCard).join('\n\n')}
           <textarea id="wizardNotes" rows="3" placeholder="Tulis santai aja kak, misal:&#10;'Bantu angkut lemari kos dari Sutorejo ke Mulyorejo besok siang ya kak...'" class="focus-ring w-full px-4 py-2.5 rounded-2xl border border-slate-300 text-xs sm:text-sm leading-relaxed"></textarea>
         </div>
 
-        <!-- 4. TOGGLE KOS PUTRI (SIMPLE & CUTE PILL) -->
+        <!-- 4. TOGGLE KLIEN CEWEK (REQUEST WORKER CEWEK) -->
         <label for="wizardIsFemaleKos" class="p-3 rounded-2xl bg-rose-50/70 border border-rose-200/80 flex items-center gap-2.5 cursor-pointer hover:bg-rose-50 transition">
           <input type="checkbox" id="wizardIsFemaleKos" class="rounded text-rose-600 focus:ring-rose-500 w-4 h-4" />
           <span class="text-xs text-rose-900 font-semibold flex items-center gap-1.5">
             <span>🌸</span>
-            <span>Khusus Kos Putri: Request mitra mahasiswi cewek</span>
+            <span>🌸 (Klien Cewek: Request Worker Cewek)</span>
           </span>
         </label>
 
@@ -2266,7 +2266,7 @@ ${feedData.map(renderFeedCard).join('\n\n')}
       ];
 
       if (isFemale) {
-        lines.push('🌸 *Catatan Khusus:* Request mitra mahasiswi cewek ya kak (menjaga privasi kos putri).');
+        lines.push('🌸 *Klien Cewek:* Request worker cewek ya kak (agar lebih nyaman & privasi terjaga).');
       }
 
       lines.push('');
@@ -2300,7 +2300,7 @@ ${feedData.map(renderFeedCard).join('\n\n')}
       }
 
       if (isFemale) {
-        lines.push('🌸 *Khusus Kos Putri:* Iya kak, kalau bisa mitra mahasiswi cewek yaa agar nyaman dan terjaga privasinya.');
+        lines.push('🌸 *Klien Cewek:* Iya kak, request worker cewek yaa agar nyaman dan terjaga privasinya.');
       }
 
       lines.push('');

@@ -210,7 +210,7 @@
       <div class="mt-auto p-4 border-t border-navy-800 text-[11px] text-slate-400">
         <div class="font-semibold text-slate-200">SOP Adab Muamalah:</div>
         <div class="text-[10px] text-slate-400 mt-1 leading-relaxed">
-          • Order kamar kos putri wajib 100% worker mahasiswi<br>
+          • Klien cewek: bebas request 100% worker mahasiswi cewek<br>
           • Tanpa mark-up sepihak biaya talangan belanja
         </div>
       </div>
@@ -300,7 +300,7 @@
               <svg class="w-4 h-4 stroke-current fill-none stroke-2 stroke-linecap-round stroke-linejoin-round" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
             </div>
             <div>
-              <span class="font-bold">Perhatian SOP Gender Match:</span> Ada pesanan pembersihan kamar kos putri masuk. Sistem mengunci penugasan hanya untuk mitra mahasiswi putri.
+              <span class="font-bold">Perhatian SOP Gender Match:</span> Ada pesanan dari klien cewek (Request Worker Cewek) masuk. Sistem mengunci penugasan hanya untuk mitra mahasiswi cewek.
             </div>
           </div>
           <button onclick="filterOrdersBy('privat')" class="btn-spring focus-ring px-3 py-1.5 rounded-lg bg-rose-600 text-white font-bold text-[11px] shrink-0">
@@ -422,7 +422,7 @@
               <button onclick="setOrderStatusFilter('Menunggu Akad')" id="filterStatus-Menunggu" class="px-3 py-1.5 rounded-lg bg-slate-100 text-slate-600 font-medium whitespace-nowrap hover:bg-slate-200">Menunggu Akad</button>
               <button onclick="setOrderStatusFilter('Dikerjakan')" id="filterStatus-Dikerjakan" class="px-3 py-1.5 rounded-lg bg-slate-100 text-slate-600 font-medium whitespace-nowrap hover:bg-slate-200">Dikerjakan</button>
               <button onclick="setOrderStatusFilter('Selesai')" id="filterStatus-Selesai" class="px-3 py-1.5 rounded-lg bg-slate-100 text-slate-600 font-medium whitespace-nowrap hover:bg-slate-200">Selesai</button>
-              <button onclick="setOrderStatusFilter('privat')" id="filterStatus-privat" class="px-3 py-1.5 rounded-lg bg-rose-100 text-rose-700 font-bold whitespace-nowrap">Khusus Kos Putri</button>
+              <button onclick="setOrderStatusFilter('privat')" id="filterStatus-privat" class="px-3 py-1.5 rounded-lg bg-rose-100 text-rose-700 font-bold whitespace-nowrap">Worker Cewek</button>
             </div>
 
           </div>
@@ -657,7 +657,7 @@
           <div class="bg-white p-5 rounded-2xl border border-slate-200 shadow-xs space-y-2">
             <div class="text-xs font-semibold text-slate-500">Kepatuhan Gender Match</div>
             <div class="font-heading font-bold text-lg text-emerald-600">100% Sesuai</div>
-            <div class="text-[11px] text-slate-500">Seluruh kos putri dikerjakan mitra cewek</div>
+            <div class="text-[11px] text-slate-500">Klien cewek dilayani mitra mahasiswi cewek</div>
           </div>
           <div class="bg-white p-5 rounded-2xl border border-slate-200 shadow-xs space-y-2">
             <div class="text-xs font-semibold text-slate-500">Waktu Respon WhatsApp</div>
@@ -740,7 +740,7 @@
           <div class="flex justify-between"><span class="text-slate-500">Lokasi Asal:</span> <span class="text-slate-800" id="modalOrderPickup">Kos Melati Mulyorejo</span></div>
           <div class="flex justify-between"><span class="text-slate-500">Lokasi Tujuan:</span> <span class="text-slate-800" id="modalOrderDropoff">Wisma Dharmawangsa</span></div>
           <div class="flex justify-between"><span class="text-slate-500">Jadwal:</span> <span class="font-semibold text-navy-900" id="modalOrderTime">Hari ini jam 15.00 WIB</span></div>
-          <div class="flex justify-between items-center"><span class="text-slate-500">Privasi Kos Putri:</span> <span class="font-bold px-2 py-0.5 rounded text-[10px]" id="modalOrderPrivat">Ya (Wajib Cewek)</span></div>
+          <div class="flex justify-between items-center"><span class="text-slate-500">Klien Cewek (Worker Cewek):</span> <span class="font-bold px-2 py-0.5 rounded text-[10px]" id="modalOrderPrivat">Ya (Wajib Cewek)</span></div>
         </div>
 
         <div>
@@ -754,7 +754,7 @@
             <!-- Populated by JS based on gender match -->
           </select>
           <div id="modalGenderAlert" class="text-[10px] text-rose-600 font-medium hidden">
-            ⚠️ Order ruang privat: Opsi dikunci hanya untuk mitra mahasiswi putri.
+            ⚠️ Klien cewek: Opsi dikunci hanya untuk mitra mahasiswi cewek.
           </div>
         </div>
 
@@ -826,7 +826,7 @@
 
       <label class="flex items-center gap-2 p-2 bg-slate-50 rounded-lg border border-slate-200 cursor-pointer">
         <input type="checkbox" id="newOrderPrivat" class="rounded text-gold-500 focus:ring-gold-500" />
-        <span>Khusus Kos Putri (Wajib Mitra Cewek)</span>
+        <span>🌸 (Klien Cewek: Request Worker Cewek)</span>
       </label>
 
       <div class="pt-2 flex items-center gap-2">
@@ -856,7 +856,7 @@
         satuan: '1 Tossa Roda 3 + 1 Helper Mahasiswa (Lantai 2)',
         name: 'Sarah Nabila',
         wa: '081234567890',
-        pickup: 'Kos Putri Melati, Jl. Mulyorejo No. 45',
+        pickup: 'Jl. Mulyorejo No. 45 (Request Worker Cewek)',
         dropoff: 'Wisma Airlangga, Jl. Dharmawangsa',
         time: 'Hari ini jam 15.00 WIB',
         isPrivat: true,
@@ -881,10 +881,10 @@
       {
         code: '#US-2610-840',
         service: 'Bersihin Kos',
-        satuan: '1 Kamar Standar (KM Dalam) • Khusus Putri',
+        satuan: '1 Kamar Standar (KM Dalam) • Worker Cewek',
         name: 'Alya Khairunnisa',
         wa: '089698765432',
-        pickup: 'Kos Putri Srikandi, Jl. Karangmenjangan',
+        pickup: 'Jl. Karangmenjangan (Request Worker Cewek)',
         dropoff: '-',
         time: 'Hari ini jam 10.00 WIB',
         isPrivat: true,
@@ -950,7 +950,7 @@
       },
       {
         name: 'Siti Rahmawati',
-        role: 'Mitra Utama Khusus Kos Putri',
+        role: 'Mitra Utama Worker Cewek',
         faculty: 'FKM UNAIR 2023',
         gender: 'Perempuan',
         vehicle: 'Motor Matic',
@@ -1175,7 +1175,7 @@
         if (o.status === 'Selesai') statusBadge = '<span class="bg-emerald-100 text-emerald-800 px-2 py-0.5 rounded-full font-semibold">Selesai</span>';
 
         const privatBadge = o.isPrivat 
-          ? '<span class="bg-rose-50 text-rose-700 px-2 py-0.5 rounded-md font-bold text-[10px] border border-rose-200">Kos Putri (Cewek)</span>' 
+          ? '<span class="bg-rose-50 text-rose-700 px-2 py-0.5 rounded-md font-bold text-[10px] border border-rose-200">Worker Cewek</span>' 
           : '<span class="text-slate-400 text-[10px]">Standar</span>';
 
         tr.innerHTML = `
@@ -1215,7 +1215,7 @@
         card.className = 'bg-white p-5 rounded-2xl border border-slate-200 shadow-xs space-y-3';
         
         const badgeGender = w.gender === 'Perempuan' 
-          ? '<span class="bg-rose-100 text-rose-700 px-2 py-0.5 rounded text-[10px] font-bold">Perempuan (Kos Putri)</span>' 
+          ? '<span class="bg-rose-100 text-rose-700 px-2 py-0.5 rounded text-[10px] font-bold">Perempuan (Worker Cewek)</span>' 
           : '<span class="bg-blue-100 text-blue-700 px-2 py-0.5 rounded text-[10px] font-bold">Laki-laki</span>';
 
         const verifiedBadge = w.verified 
@@ -1279,7 +1279,7 @@
     // =========================================================================
     // REELS CMS MANAGEMENT LOGIC
     // =========================================================================
-    const DEFAULT_ADMIN_REELS = [{"id":1,"src":"tiktok/tiktok-real-6.mp4","poster":"","user":"unair_suruh","timeAgo":"9 HOURS AGO","likes":48,"caption":"POV pindah kos 3 jam selesai pakai Tossa roda 3 bareng crew Move SURUH UNAIR SURUH. Driver + kru mahasiswa bantu angkut sampai lantai 3 kamar kosan gasss 0896-7777-2336 (whatsapp)","tiktokUrl":"https://www.tiktok.com/@unair_suruh/video/7643032747786784020","active":true},{"id":2,"src":"tiktok/tiktok-real-2.mp4","poster":"","user":"unair_suruh","timeAgo":"2 DAYS AGO","likes":36,"caption":"Kak aku gabisa kena panas! Mau yg dingin & nyaman ber-AC bisa ga? Go SURUH transportasi ospek Amerta UNAIR no nunggu club. Booking via WA 0896-7777-2336","tiktokUrl":"https://www.tiktok.com/@unair_suruh/video/7653709528361389332","active":true},{"id":3,"src":"tiktok/tiktok-real-5.mp4","poster":"","user":"unair_suruh","timeAgo":"3 DAYS AGO","likes":124,"caption":"Video singkat POV ketika kamarmu dibersihin sama crew UNAIR SURUH. Ready all role: mitra mahasiswi khusus kos putri aman, rapi, privasi terjaga 0896-7777-2336","tiktokUrl":"https://www.tiktok.com/@unair_suruh/video/7650823166306323733","active":true},{"id":4,"src":"tiktok/tiktok-real-1.mp4","poster":"","user":"unair_suruh","timeAgo":"4 DAYS AGO","likes":58,"caption":"For Maba UNAIR! Go SURUH exclusive anti scam & anti ribet berangkat kampus gak pake drama war ojol. Antar jemput Kampus B - Kampus C tepat waktu 0896-7777-2336","tiktokUrl":"https://www.tiktok.com/@unair_suruh/video/7653711312844999956","active":true},{"id":5,"src":"tiktok/tiktok-real-4.mp4","poster":"","user":"unair_suruh","timeAgo":"5 DAYS AGO","likes":92,"caption":"Desk SURUH: Urus berkas penting & ambil dokumen fisik kirim kilat ke alamat tujuan Surabaya via WA 0896-7777-2336","tiktokUrl":"https://www.tiktok.com/@unair_suruh/video/7651856659639291156","active":true},{"id":6,"src":"tiktok/tiktok-real-3.mp4","poster":"","user":"unair_suruh","timeAgo":"6 DAYS AGO","likes":185,"caption":"ANTAR JEMPUT AMERTA 2026: Go SURUH armada mobil van nyaman, dingin ber-AC, no drama no nunggu. Layanan eksklusif mahasiswa UNAIR 0896-7777-2336","tiktokUrl":"https://www.tiktok.com/@unair_suruh/video/7653329107001953556","active":true}];
+    const DEFAULT_ADMIN_REELS = [{"id":1,"src":"tiktok/tiktok-real-6.mp4","poster":"","user":"unair_suruh","timeAgo":"9 HOURS AGO","likes":48,"caption":"POV pindah kos 3 jam selesai pakai Tossa roda 3 bareng crew Move SURUH UNAIR SURUH. Driver + kru mahasiswa bantu angkut sampai lantai 3 kamar kosan gasss 0896-7777-2336 (whatsapp)","tiktokUrl":"https://www.tiktok.com/@unair_suruh/video/7643032747786784020","active":true},{"id":2,"src":"tiktok/tiktok-real-2.mp4","poster":"","user":"unair_suruh","timeAgo":"2 DAYS AGO","likes":36,"caption":"Kak aku gabisa kena panas! Mau yg dingin & nyaman ber-AC bisa ga? Go SURUH transportasi ospek Amerta UNAIR no nunggu club. Booking via WA 0896-7777-2336","tiktokUrl":"https://www.tiktok.com/@unair_suruh/video/7653709528361389332","active":true},{"id":3,"src":"tiktok/tiktok-real-5.mp4","poster":"","user":"unair_suruh","timeAgo":"3 DAYS AGO","likes":124,"caption":"Video singkat POV ketika kamarmu dibersihin sama crew UNAIR SURUH. Ready all role: mitra mahasiswi request worker cewek aman, rapi, privasi terjaga 0896-7777-2336","tiktokUrl":"https://www.tiktok.com/@unair_suruh/video/7650823166306323733","active":true},{"id":4,"src":"tiktok/tiktok-real-1.mp4","poster":"","user":"unair_suruh","timeAgo":"4 DAYS AGO","likes":58,"caption":"For Maba UNAIR! Go SURUH exclusive anti scam & anti ribet berangkat kampus gak pake drama war ojol. Antar jemput Kampus B - Kampus C tepat waktu 0896-7777-2336","tiktokUrl":"https://www.tiktok.com/@unair_suruh/video/7653711312844999956","active":true},{"id":5,"src":"tiktok/tiktok-real-4.mp4","poster":"","user":"unair_suruh","timeAgo":"5 DAYS AGO","likes":92,"caption":"Desk SURUH: Urus berkas penting & ambil dokumen fisik kirim kilat ke alamat tujuan Surabaya via WA 0896-7777-2336","tiktokUrl":"https://www.tiktok.com/@unair_suruh/video/7651856659639291156","active":true},{"id":6,"src":"tiktok/tiktok-real-3.mp4","poster":"","user":"unair_suruh","timeAgo":"6 DAYS AGO","likes":185,"caption":"ANTAR JEMPUT AMERTA 2026: Go SURUH armada mobil van nyaman, dingin ber-AC, no drama no nunggu. Layanan eksklusif mahasiswa UNAIR 0896-7777-2336","tiktokUrl":"https://www.tiktok.com/@unair_suruh/video/7653329107001953556","active":true}];
 
     function getAdminReels() {
       try {
@@ -1481,11 +1481,11 @@
     "id": 3,
     "tiktokUrl": "https://www.tiktok.com/@unair_suruh/video/7650823166306323733",
     "username": "@clarissasalsaa",
-    "name": "Penghuni Kos Putri Dharmawangsa",
-    "serviceBadge": "Task SURUH • Bersih Kos Putri",
+    "name": "Pelanggan Mahasiswi Dharmawangsa",
+    "serviceBadge": "Task SURUH • Request Worker Cewek",
     "serviceColor": "bg-rose-50 text-rose-700 border-rose-200",
     "comment": "Kamar kos abis ditinggal liburan semester berdebu parah, minta tolong tim Task SURUH langsung kinclong rapi wangi. Yang datang mahasiswi ramah banget jadi ngerasa aman & nyaman!",
-    "videoTitle": "Mitra Mahasiswi Kos Putri",
+    "videoTitle": "Layanan Khusus Klien Cewek",
     "likes": 176,
     "active": true
   },
@@ -2084,7 +2084,7 @@
               <option value="Desk SURUH • Urus Berkas & Dokumen">Desk SURUH (Birokrasi & Dokumen)</option>
               <option value="Go SURUH • Antar Jemput">Go SURUH (Antar Jemput)</option>
               <option value="Crew SURUH • Armada Tossa">Crew SURUH (Armada & Tenaga)</option>
-              <option value="Task SURUH • Kos Putri">Task SURUH (Beres Kos & Titip)</option>
+              <option value="Task SURUH • Worker Cewek">Task SURUH (Beres Kos & Titip)</option>
               <option value="Keep SURUH • Titip Barang">Keep SURUH (Penitipan Barang)</option>
               <option value="Fix SURUH • Bantuan Teknis">Fix SURUH (Perakitan & Servis)</option>
               <option value="Talent SURUH • Mahasiswa">Talent SURUH (Tutor & Skill)</option>

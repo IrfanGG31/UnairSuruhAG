@@ -118,7 +118,7 @@ export const initialServices = [
       { name: "Bantuan Masalah Laptop, Install OS / Software Tugas", price: 40000 }
     ],
     vehicles: ["Motor"],
-    included: ["Peralatan obeng, bor & perkakas lengkap", "Uji coba fungsi setelah perakitan", "Pembersihan serpihan kemasan", "Worker cewek untuk kos putri"],
+    included: ["Peralatan obeng, bor & perkakas lengkap", "Uji coba fungsi setelah perakitan", "Pembersihan serpihan kemasan", "Worker cewek untuk klien cewek"],
     notIncluded: ["Sparepart atau suku cadang baru", "Komponen hardware pengganti"]
   },
   {
@@ -226,14 +226,14 @@ export const initialOrders = [
     isPrivateSpace: true,
     clientGenderPreference: "Wanita",
     vehicleType: "Tossa Roda Tiga",
-    notes: "Lantai 2, tolong bawakan worker cewek karena kamar kos putri ketat penjagaannya.",
+    notes: "Lantai 2, tolong bawakan worker cewek karena klien cewek request worker cewek.",
     estimatedPrice: 95000,
     finalPrice: 95000,
     workerCut: 76000, // 80%
     platformCut: 19000, // 20%
     status: "SELESAI", // MENUNGGU_QUOTE, QUOTE_DIKIRIM, AKAD_DISETUJUI, WORKER_DITUGASKAN, DIKERJAKAN, SELESAI, DIBATALKAN
     akadDetails: {
-      scopeOfWork: "Pengangkutan 4 kardus besar pakaian, 1 rak susun, 1 galon, dan koper dari lantai 2 kamar kos putri ke kos baru menggunakan armada Tossa.",
+      scopeOfWork: "Pengangkutan 4 kardus besar pakaian, 1 rak susun, 1 galon, dan koper dari lantai 2 kamar kos ke tempat baru (request worker cewek) menggunakan armada Tossa.",
       finalPrice: 95000,
       paymentScheme: "Lunas di Tempat / Transfer setelah selesai",
       workerUjrah: 76000,
@@ -399,7 +399,7 @@ export const initialWorkers = [
     gender: "Wanita",
     phone: "085712345678",
     vehicle: "Motor Scoopy",
-    skills: ["Pindahan Kos Putri", "Bantuan Administrasi Kampus", "Rakit Rak/Meja", "Tutor Kimia Farmasi"],
+    skills: ["Pindahan (Worker Cewek)", "Bantuan Administrasi Kampus", "Rakit Rak/Meja", "Tutor Kimia Farmasi"],
     availableHours: "Setiap hari (jadwal lab fleksibel)",
     rating: 5.0,
     completedJobs: 37,
@@ -463,7 +463,7 @@ export const initialReviews = [
     author: "Dinda Aisyah (Mahasiswi FISIP UNAIR)",
     service: "Move Care (Pindahan Kos)",
     rating: 5,
-    text: "Sumpah pake jasanya worth it banget!! Kemarin aku pindahan dari kos lama ke dekat Kampus B dan Unair Suruh yang ngerjain semuanya. Yang paling bikin tenang, karena kosku putri ketat, mereka kirim worker cewek yang sopan banget. Harganya transparan dari awal!",
+    text: "Sumpah pake jasanya worth it banget!! Kemarin aku pindahan dari kos lama ke dekat Kampus B dan Unair Suruh yang ngerjain semuanya. Yang paling bikin tenang, karena aku klien cewek, mereka kirim worker cewek yang sopan banget. Harganya transparan dari awal!",
     date: "2 hari lalu",
     source: "Komentar TikTok Viral (185.8K Views)"
   },
@@ -506,7 +506,7 @@ export const initialFaqs = [
     answer: "Sesuai nilai muamalah Islam, kami menjamin kepastian di awal: harga final, ruang lingkup pengerjaan, dan besaran upah (ujrah) worker disepakati sebelum pekerjaan dimulai. Tidak ada tarif terselubung, tidak ada kenaikan harga sepihak, dan tidak ada potongan upah semena-mena terhadap mahasiswa pekerja."
   },
   {
-    question: "Apakah aman untuk kamar kos putri (Kesesuaian Gender)?",
+    question: "Apakah bisa request worker cewek untuk klien cewek (Kesesuaian Gender)?",
     answer: "Sangat aman! Untuk pekerjaan yang memasuki ruang privat seperti kamar kos atau kontrakan, sistem kami secara otomatis memfilter dan mewajibkan penugasan mitra pekerja dengan gender yang sesuai (pelanggan wanita dikerjakan oleh worker mahasiswi, pelanggan pria oleh mahasiswa)."
   },
   {
