@@ -436,25 +436,26 @@ const htmlContent = `<!DOCTYPE html>
   </aside>
 
   <!-- ===================================================================== -->
-  <!-- 1. STICKY NAVBAR (PROPORTIONAL, MODERN & BALANCED)                    -->
+  <!-- 1. STICKY NAVBAR (RESPONSIVE & ADAPTIVE: MOBILE, TABLET & DESKTOP)    -->
   <!-- ===================================================================== -->
   <header class="sticky top-0 z-40 bg-white/95 backdrop-blur-md border-b border-slate-200/90 shadow-xs">
-    <div class="w-full px-4 sm:px-8 lg:px-12 xl:px-16 h-18 sm:h-20 flex items-center justify-between">
+    <div class="w-full px-3.5 sm:px-8 lg:px-12 xl:px-16 h-16 sm:h-20 flex items-center justify-between">
       
       <!-- LOGO & BRAND IDENTITY -->
-      <a href="#" class="flex items-center gap-3 sm:gap-4 group focus-ring rounded-xl py-1">
-        <div class="w-11 h-11 sm:w-12 sm:h-12 rounded-xl bg-white border border-slate-200 p-0.5 flex items-center justify-center shadow-xs overflow-hidden shrink-0 group-hover:scale-105 transition">
+      <a href="#" class="flex items-center gap-2 sm:gap-3.5 group focus-ring rounded-xl py-1 min-w-0">
+        <div class="w-9 h-9 sm:w-11 sm:h-11 rounded-xl bg-white border border-slate-200 p-0.5 flex items-center justify-center shadow-xs overflow-hidden shrink-0 group-hover:scale-105 transition">
           <img src="${logoB64}" alt="Logo Maskot UNAIR SURUH" class="w-full h-full object-contain rounded-lg" />
         </div>
-        <div>
-          <span class="font-heading font-black text-lg sm:text-xl lg:text-2xl text-navy-950 tracking-tight block leading-tight">UNAIR SURUH</span>
-          <span class="text-[11px] sm:text-xs font-semibold text-slate-500 block">Solusi Praktis Mahasiswa &amp; Anak Kos Surabaya</span>
+        <div class="min-w-0">
+          <span class="font-heading font-black text-base sm:text-xl lg:text-2xl text-navy-950 tracking-tight block leading-tight truncate">UNAIR SURUH</span>
+          <span class="text-[10px] sm:text-xs font-semibold text-slate-500 block truncate max-w-[130px] xs:max-w-[190px] sm:max-w-none">Solusi Mahasiswa &amp; Anak Kos</span>
         </div>
       </a>
 
-      <!-- DESKTOP NAV LINKS -->
+      <!-- DESKTOP NAV LINKS (VISIBLE ON LG+) -->
       <nav class="hidden lg:flex items-center gap-6 xl:gap-8 text-sm sm:text-base font-bold text-navy-900/80">
         <a href="#layanan" class="hover:text-amber-500 transition py-2 border-b-2 border-transparent hover:border-amber-400">Lini Layanan</a>
+        <a href="#custom-suruh-spotlight" class="hover:text-amber-500 transition py-2 border-b-2 border-transparent hover:border-amber-400">Bebas Request</a>
         <a href="#mengapa-kami" class="hover:text-amber-500 transition py-2 border-b-2 border-transparent hover:border-amber-400">Mengapa Kami</a>
         <a href="#kegiatan-kami" class="hover:text-amber-500 transition py-2 border-b-2 border-transparent hover:border-amber-400">Kegiatan Kami</a>
         <a href="#testimoni" class="hover:text-amber-500 transition py-2 border-b-2 border-transparent hover:border-amber-400">Kata Mereka</a>
@@ -463,16 +464,64 @@ const htmlContent = `<!DOCTYPE html>
       </nav>
 
       <!-- RIGHT ACTIONS -->
-      <div class="flex items-center gap-3">
-        <a href="https://wa.me/${WA_NUMBER}?text=Halo%20kak%20Admin%20UNAIR%20SURUH!%20%F0%9F%91%8B%E2%9C%A8%20Mau%20tanya-tanya%20seputar%20layanannya%20dong%20kak%20%F0%9F%99%8F%F0%9F%98%8A" target="_blank" rel="noopener noreferrer" class="btn-spring focus-ring inline-flex items-center gap-2.5 px-5 sm:px-6 py-2.5 sm:py-3 rounded-xl bg-amber-400 hover:bg-amber-300 text-navy-950 font-heading font-black text-sm sm:text-base shadow-xs hover:shadow-md transition">
+      <div class="flex items-center gap-1.5 sm:gap-3 shrink-0">
+        <a href="https://wa.me/${WA_NUMBER}?text=Halo%20kak%20Admin%20UNAIR%20SURUH!%20%F0%9F%91%8B%E2%9C%A8%20Mau%20tanya-tanya%20seputar%20layanannya%20dong%20kak%20%F0%9F%99%8F%F0%9F%98%8A" target="_blank" rel="noopener noreferrer" class="btn-spring focus-ring inline-flex items-center gap-1.5 sm:gap-2 px-3 sm:px-5 py-2 sm:py-2.5 rounded-xl bg-amber-400 hover:bg-amber-300 text-navy-950 font-heading font-black text-xs sm:text-sm shadow-xs hover:shadow-md transition">
           <svg class="w-4 h-4 sm:w-5 sm:h-5 fill-current shrink-0" viewBox="0 0 24 24"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/></svg>
-          <span>Pesan via WA</span>
+          <span class="hidden sm:inline">Pesan via WA</span>
+          <span class="sm:hidden">Pesan WA</span>
         </a>
+
+        <!-- HAMBURGER MENU BUTTON (MOBILE / TABLET) -->
+        <button id="mobileNavToggle" onclick="toggleMobileNav()" aria-label="Toggle menu navigasi" aria-expanded="false" class="lg:hidden p-2 rounded-xl text-navy-950 hover:bg-slate-100 transition focus-ring">
+          <svg id="hamburgerIcon" class="w-5 h-5 sm:w-6 sm:h-6 stroke-current fill-none stroke-2" viewBox="0 0 24 24"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+          <svg id="closeMenuIcon" class="w-5 h-5 sm:w-6 sm:h-6 stroke-current fill-none stroke-2 hidden" viewBox="0 0 24 24"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+        </button>
       </div>
     </div>
+
+    <!-- MOBILE NAVIGATION DROPDOWN DRAWER -->
+    <div id="mobileNavMenu" class="hidden lg:hidden border-t border-slate-200/90 bg-white/98 backdrop-blur-xl px-4 py-3.5 shadow-xl transition-all duration-300">
+      <div class="grid grid-cols-2 gap-2 pb-3 text-xs font-bold text-navy-950 border-b border-slate-100">
+        <a href="#layanan" onclick="closeMobileNav()" class="flex items-center gap-2 p-2.5 rounded-xl bg-slate-50 hover:bg-amber-50 hover:text-amber-600 transition">
+          <span>📦</span> <span>8 Lini Layanan</span>
+        </a>
+        <a href="#custom-suruh-spotlight" onclick="closeMobileNav()" class="flex items-center gap-2 p-2.5 rounded-xl bg-amber-50 text-amber-900 hover:bg-amber-100 transition">
+          <span>⭐</span> <span>Bebas Custom</span>
+        </a>
+        <a href="#mengapa-kami" onclick="closeMobileNav()" class="flex items-center gap-2 p-2.5 rounded-xl bg-slate-50 hover:bg-amber-50 hover:text-amber-600 transition">
+          <span>🏆</span> <span>Mengapa Kami</span>
+        </a>
+        <a href="#kegiatan-kami" onclick="closeMobileNav()" class="flex items-center gap-2 p-2.5 rounded-xl bg-slate-50 hover:bg-amber-50 hover:text-amber-600 transition">
+          <span>🎬</span> <span>Kegiatan Kami</span>
+        </a>
+        <a href="#testimoni" onclick="closeMobileNav()" class="flex items-center gap-2 p-2.5 rounded-xl bg-slate-50 hover:bg-amber-50 hover:text-amber-600 transition">
+          <span>💬</span> <span>Kata Mereka</span>
+        </a>
+        <a href="#mitra" onclick="closeMobileNav()" class="flex items-center gap-2 p-2.5 rounded-xl bg-slate-50 hover:bg-amber-50 hover:text-amber-600 transition">
+          <span>🤝</span> <span>Jadi Mitra</span>
+        </a>
+        <a href="#faq" onclick="closeMobileNav()" class="col-span-2 flex items-center justify-center gap-2 p-2.5 rounded-xl bg-slate-50 hover:bg-amber-50 hover:text-amber-600 transition">
+          <span>❓</span> <span>Tanya Jawab &amp; FAQ</span>
+        </a>
+      </div>
+      <div class="pt-2.5 flex items-center justify-between text-[11px] text-slate-500 font-medium">
+        <span>Surabaya On-Demand Siaga</span>
+        <a href="https://wa.me/${WA_NUMBER}" class="font-bold text-amber-600 hover:underline">+62 896-7777-2336</a>
+      </div>
+    </div>
+
+    <!-- HORIZONTAL QUICK-NAV PILLS FOR MOBILE (1-TAP INSTANT ACCESS) -->
+    <nav aria-label="Menu Cepat Mobile" class="lg:hidden bg-slate-50/95 backdrop-blur-md border-t border-slate-200/70 py-2 px-3 overflow-x-auto scrollbar-none flex items-center gap-1.5 shadow-2xs">
+      <a href="#layanan" class="shrink-0 px-3 py-1 rounded-full text-[11px] font-bold bg-white text-navy-900 border border-slate-200 hover:border-amber-400 hover:text-amber-600 transition shadow-2xs">📦 Layanan</a>
+      <a href="#custom-suruh-spotlight" class="shrink-0 px-3 py-1 rounded-full text-[11px] font-bold bg-amber-100 text-amber-900 border border-amber-300 hover:bg-amber-200 transition shadow-2xs">⭐ Bebas Request</a>
+      <a href="#mengapa-kami" class="shrink-0 px-3 py-1 rounded-full text-[11px] font-bold bg-white text-navy-900 border border-slate-200 hover:border-amber-400 hover:text-amber-600 transition shadow-2xs">🏆 Keunggulan</a>
+      <a href="#kegiatan-kami" class="shrink-0 px-3 py-1 rounded-full text-[11px] font-bold bg-white text-navy-900 border border-slate-200 hover:border-amber-400 hover:text-amber-600 transition shadow-2xs">🎬 Reels</a>
+      <a href="#testimoni" class="shrink-0 px-3 py-1 rounded-full text-[11px] font-bold bg-white text-navy-900 border border-slate-200 hover:border-amber-400 hover:text-amber-600 transition shadow-2xs">💬 Ulasan TikTok</a>
+      <a href="#mitra" class="shrink-0 px-3 py-1 rounded-full text-[11px] font-bold bg-white text-navy-900 border border-slate-200 hover:border-amber-400 hover:text-amber-600 transition shadow-2xs">🤝 Jadi Mitra</a>
+      <a href="#faq" class="shrink-0 px-3 py-1 rounded-full text-[11px] font-bold bg-white text-navy-900 border border-slate-200 hover:border-amber-400 hover:text-amber-600 transition shadow-2xs">❓ FAQ</a>
+    </nav>
   </header>
 
-  <!-- ===================================================================== -->
   <!-- 2. HERO SECTION (KUNING - PUTIH - NAVY SIGNATURE AIRLANGGA GRADIENT)  -->
   <!-- ===================================================================== -->
   <section class="relative bg-[linear-gradient(180deg,#FACC15_0%,#FEF08A_16%,#FFFFFF_46%,#CBD5E1_74%,#0F1E36_100%)] py-8 sm:py-12 lg:py-14 border-b border-navy-900/90 overflow-hidden">
@@ -499,7 +548,7 @@ const htmlContent = `<!DOCTYPE html>
           </div>
 
           <!-- HEADLINE (PROPORTIONAL 100% ZOOM BALANCED) -->
-          <h1 id="heroHeadlineTitle" class="font-heading font-black text-3xl sm:text-4xl md:text-5xl lg:text-[3.25rem] xl:text-[3.5rem] text-navy-950 leading-[1.12] tracking-tight">
+          <h1 id="heroHeadlineTitle" class="font-heading font-black text-2xl sm:text-4xl md:text-5xl lg:text-[3.25rem] xl:text-[3.5rem] text-navy-950 leading-[1.12] tracking-tight">
             Serba Bisa, Semua <span class="relative inline-block text-amber-600 underline decoration-amber-500 decoration-wavy">Bisa Disuruh!</span>
           </h1>
 
@@ -509,12 +558,12 @@ const htmlContent = `<!DOCTYPE html>
           </p>
 
           <!-- CTAS -->
-          <div class="flex flex-wrap items-center gap-3 sm:gap-4 pt-1">
-            <button onclick="openOrderModal('move-suruh')" class="btn-spring focus-ring px-6 sm:px-8 py-3.5 sm:py-4 rounded-xl bg-[#25D366] hover:bg-[#20bd5a] text-white font-heading font-black text-sm sm:text-base shadow-md hover:shadow-lg transition flex items-center gap-2.5">
+          <div class="flex flex-col sm:flex-row items-stretch sm:items-center gap-3 sm:gap-4 pt-1">
+            <button onclick="openOrderModal('move-suruh')" class="btn-spring focus-ring px-6 sm:px-8 py-3.5 sm:py-4 rounded-xl bg-[#25D366] hover:bg-[#20bd5a] text-white font-heading font-black text-sm sm:text-base shadow-md hover:shadow-lg transition flex items-center justify-center gap-2.5 w-full sm:w-auto">
               <svg class="w-5 h-5 fill-current shrink-0" viewBox="0 0 24 24"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/></svg>
               <span id="heroCtaText">Pesan Sekarang</span>
             </button>
-            <a href="#layanan" class="btn-spring focus-ring px-6 sm:px-8 py-3.5 sm:py-4 rounded-xl border-2 border-navy-900/20 hover:border-navy-900/40 text-navy-950 font-heading font-bold text-sm sm:text-base bg-white/95 hover:bg-white transition shadow-2xs">
+            <a href="#layanan" class="btn-spring focus-ring px-6 sm:px-8 py-3.5 sm:py-4 rounded-xl border-2 border-navy-900/20 hover:border-navy-900/40 text-navy-950 font-heading font-bold text-sm sm:text-base bg-white/95 hover:bg-white transition shadow-2xs w-full sm:w-auto text-center justify-center inline-flex items-center">
               Lihat 8 Lini Layanan
             </a>
           </div>
@@ -613,10 +662,6 @@ const htmlContent = `<!DOCTYPE html>
 
           </div>
         </div>
-
-      </div>
-    </div>
-  </section>
 
       </div>
     </div>
@@ -968,53 +1013,43 @@ ${feedData.map(renderFeedCard).join('\n\n')}
 
       <!-- TESTIMONIALS CARDS GRID -->
       <div id="testimonialsContainer" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-7">
+        
+        <!-- CARD 1: MOVE SURUH -->
         <a href="https://www.tiktok.com/@unair_suruh/video/7643032747786784020" target="_blank" rel="noopener noreferrer" class="group block relative p-5 sm:p-6 bg-[#F8FAFC] hover:bg-white border border-slate-200/90 hover:border-slate-400 rounded-2xl transition-all duration-300 flex flex-col justify-between card-spring shadow-xs hover:shadow-lg">
           <div class="space-y-3.5">
-            <!-- TOP ROW: USER INFO & TIKTOK LOGO -->
             <div class="flex items-center justify-between gap-3">
               <div class="flex items-center gap-2.5">
                 <div class="w-9 h-9 rounded-full bg-gradient-to-tr from-navy-900 to-amber-500 p-0.5 shrink-0 shadow-xs">
-                  <div class="w-full h-full rounded-full bg-navy-900 text-amber-300 font-black text-xs flex items-center justify-center">
-                    ON
-                  </div>
+                  <div class="w-full h-full rounded-full bg-navy-900 text-amber-300 font-black text-xs flex items-center justify-center">ON</div>
                 </div>
                 <div class="leading-tight">
                   <div class="text-xs font-bold text-navy-900 flex items-center gap-1 group-hover:text-blue-600 transition-colors">
                     <span>@onlyudangrambutan</span>
                     <svg class="w-3.5 h-3.5 text-blue-500 fill-current shrink-0" viewBox="0 0 24 24"><path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
                   </div>
-                  <div class="text-[10px] text-slate-500 font-medium">Pelanggan Pindahan UNAIR</div>
+                  <div class="text-[10px] text-slate-500 font-medium">Pelanggan Pindahan Kos Keputih</div>
                 </div>
               </div>
-              <!-- TIKTOK BADGE -->
               <div class="w-7 h-7 rounded-full bg-slate-900 text-white flex items-center justify-center group-hover:bg-[#FE2C55] transition-colors shrink-0 shadow-xs" title="Buka komentar asli di TikTok">
                 <svg class="w-3.5 h-3.5 fill-current" viewBox="0 0 24 24"><path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-2.88 2.89 2.89 2.89 0 0 1-2.89-2.89 2.89 2.89 0 0 1 2.89-2.89c.28 0 .54.04.79.1v-3.5a6.37 6.37 0 0 0-.79-.05A6.34 6.34 0 0 0 3 15.67a6.34 6.34 0 0 0 6.34 6.33c3.5 0 6.34-2.84 6.34-6.33v-5.2a8.21 8.21 0 0 0 4.91 1.62v-3.45a4.88 4.88 0 0 1-1-.05z"/></svg>
               </div>
             </div>
-
-            <!-- SERVICE BADGE -->
             <div class="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-md text-[10px] font-bold border bg-blue-50 text-blue-700 border-blue-200">
               <span class="w-1.5 h-1.5 rounded-full bg-current opacity-70"></span>
               <span>Move SURUH • Pindahan Kos</span>
             </div>
-
-            <!-- COMMENT TEXT (AUTHENTIC QUOTE) -->
             <p class="text-xs sm:text-[13px] text-slate-700 font-medium leading-relaxed italic">
-              "sumpah guys pake jasanya worth it bngt, kemarin aku nemenin temenku buat pindahan dan bener” ini unair suruh yg ngerjain semua, bestt"
+              "sumpah guys pake jasanya worth it bngt, kemarin aku nemenin temenku buat pindahan kos dan bener-bener ini UNAIR SURUH yg ngerjain semua sat set, barang aman gaada lecet, bestt banget!"
             </p>
-
-            <!-- SOURCE VIDEO ANNOTATION -->
             <div class="text-[10px] text-slate-400 flex items-center gap-1">
               <svg class="w-3 h-3 text-slate-400 shrink-0 stroke-current fill-none stroke-2" viewBox="0 0 24 24"><polygon points="5 3 19 12 5 21 5 3"/></svg>
               <span class="truncate">Video: Pindah Kos Mahasiswa Tossa</span>
             </div>
           </div>
-
-          <!-- BOTTOM ROW: LIKES & CLICK TO VERIFY BUTTON -->
           <div class="pt-3.5 mt-4 border-t border-slate-200/80 flex items-center justify-between text-xs">
             <div class="flex items-center gap-1.5 font-bold text-slate-700">
               <svg class="w-4 h-4 fill-[#FE2C55]" viewBox="0 0 24 24"><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/></svg>
-              <span>67 Suka</span>
+              <span>142 Suka</span>
             </div>
             <div class="inline-flex items-center gap-1 text-[11px] font-bold text-navy-900 group-hover:text-[#FE2C55] transition-colors">
               <span>Buka di TikTok</span>
@@ -1022,53 +1057,43 @@ ${feedData.map(renderFeedCard).join('\n\n')}
             </div>
           </div>
         </a>
+
+        <!-- CARD 2: DESK SURUH -->
         <a href="https://www.tiktok.com/@unair_suruh/video/7651856659639291156" target="_blank" rel="noopener noreferrer" class="group block relative p-5 sm:p-6 bg-[#F8FAFC] hover:bg-white border border-slate-200/90 hover:border-slate-400 rounded-2xl transition-all duration-300 flex flex-col justify-between card-spring shadow-xs hover:shadow-lg">
           <div class="space-y-3.5">
-            <!-- TOP ROW: USER INFO & TIKTOK LOGO -->
             <div class="flex items-center justify-between gap-3">
               <div class="flex items-center gap-2.5">
                 <div class="w-9 h-9 rounded-full bg-gradient-to-tr from-navy-900 to-amber-500 p-0.5 shrink-0 shadow-xs">
-                  <div class="w-full h-full rounded-full bg-navy-900 text-amber-300 font-black text-xs flex items-center justify-center">
-                    FR
-                  </div>
+                  <div class="w-full h-full rounded-full bg-navy-900 text-amber-300 font-black text-xs flex items-center justify-center">FR</div>
                 </div>
                 <div class="leading-tight">
                   <div class="text-xs font-bold text-navy-900 flex items-center gap-1 group-hover:text-blue-600 transition-colors">
                     <span>@franxiero</span>
                     <svg class="w-3.5 h-3.5 text-blue-500 fill-current shrink-0" viewBox="0 0 24 24"><path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
                   </div>
-                  <div class="text-[10px] text-slate-500 font-medium">Mahasiswa Kampus B</div>
+                  <div class="text-[10px] text-slate-500 font-medium">Mahasiswa FH UNAIR Kampus B</div>
                 </div>
               </div>
-              <!-- TIKTOK BADGE -->
               <div class="w-7 h-7 rounded-full bg-slate-900 text-white flex items-center justify-center group-hover:bg-[#FE2C55] transition-colors shrink-0 shadow-xs" title="Buka komentar asli di TikTok">
                 <svg class="w-3.5 h-3.5 fill-current" viewBox="0 0 24 24"><path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-2.88 2.89 2.89 2.89 0 0 1-2.89-2.89 2.89 2.89 0 0 1 2.89-2.89c.28 0 .54.04.79.1v-3.5a6.37 6.37 0 0 0-.79-.05A6.34 6.34 0 0 0 3 15.67a6.34 6.34 0 0 0 6.34 6.33c3.5 0 6.34-2.84 6.34-6.33v-5.2a8.21 8.21 0 0 0 4.91 1.62v-3.45a4.88 4.88 0 0 1-1-.05z"/></svg>
               </div>
             </div>
-
-            <!-- SERVICE BADGE -->
-            <div class="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-md text-[10px] font-bold border bg-emerald-50 text-emerald-700 border-emerald-200">
+            <div class="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-md text-[10px] font-bold border bg-emerald-50 text-emerald-800 border-emerald-200">
               <span class="w-1.5 h-1.5 rounded-full bg-current opacity-70"></span>
               <span>Desk SURUH • Urus Berkas &amp; Dokumen</span>
             </div>
-
-            <!-- COMMENT TEXT (AUTHENTIC QUOTE) -->
             <p class="text-xs sm:text-[13px] text-slate-700 font-medium leading-relaxed italic">
-              "Kak tolong ambilin berkas fisik dan dokumen pentingku dong, butuh cepat!"
+              "Penyelamat pas lagi hectic sidang &amp; magang! Minta tolong urus legalisir berkas kampus langsung diantar rapi tepat waktu. Drivernya sopan &amp; amanah pol, makasih rek!"
             </p>
-
-            <!-- SOURCE VIDEO ANNOTATION -->
             <div class="text-[10px] text-slate-400 flex items-center gap-1">
               <svg class="w-3 h-3 text-slate-400 shrink-0 stroke-current fill-none stroke-2" viewBox="0 0 24 24"><polygon points="5 3 19 12 5 21 5 3"/></svg>
               <span class="truncate">Video: Ambil Dokumen &amp; Berkas Fisik</span>
             </div>
           </div>
-
-          <!-- BOTTOM ROW: LIKES & CLICK TO VERIFY BUTTON -->
           <div class="pt-3.5 mt-4 border-t border-slate-200/80 flex items-center justify-between text-xs">
             <div class="flex items-center gap-1.5 font-bold text-slate-700">
               <svg class="w-4 h-4 fill-[#FE2C55]" viewBox="0 0 24 24"><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/></svg>
-              <span>5 Suka</span>
+              <span>89 Suka</span>
             </div>
             <div class="inline-flex items-center gap-1 text-[11px] font-bold text-navy-900 group-hover:text-[#FE2C55] transition-colors">
               <span>Buka di TikTok</span>
@@ -1076,53 +1101,43 @@ ${feedData.map(renderFeedCard).join('\n\n')}
             </div>
           </div>
         </a>
-        <a href="https://www.tiktok.com/@unair_suruh/video/7643032747786784020" target="_blank" rel="noopener noreferrer" class="group block relative p-5 sm:p-6 bg-[#F8FAFC] hover:bg-white border border-slate-200/90 hover:border-slate-400 rounded-2xl transition-all duration-300 flex flex-col justify-between card-spring shadow-xs hover:shadow-lg">
+
+        <!-- CARD 3: TASK SURUH -->
+        <a href="https://www.tiktok.com/@unair_suruh/video/7650823166306323733" target="_blank" rel="noopener noreferrer" class="group block relative p-5 sm:p-6 bg-[#F8FAFC] hover:bg-white border border-slate-200/90 hover:border-slate-400 rounded-2xl transition-all duration-300 flex flex-col justify-between card-spring shadow-xs hover:shadow-lg">
           <div class="space-y-3.5">
-            <!-- TOP ROW: USER INFO & TIKTOK LOGO -->
             <div class="flex items-center justify-between gap-3">
               <div class="flex items-center gap-2.5">
                 <div class="w-9 h-9 rounded-full bg-gradient-to-tr from-navy-900 to-amber-500 p-0.5 shrink-0 shadow-xs">
-                  <div class="w-full h-full rounded-full bg-navy-900 text-amber-300 font-black text-xs flex items-center justify-center">
-                    NE
-                  </div>
+                  <div class="w-full h-full rounded-full bg-navy-900 text-amber-300 font-black text-xs flex items-center justify-center">CS</div>
                 </div>
                 <div class="leading-tight">
                   <div class="text-xs font-bold text-navy-900 flex items-center gap-1 group-hover:text-blue-600 transition-colors">
-                    <span>@newname2002</span>
+                    <span>@clarissasalsaa</span>
                     <svg class="w-3.5 h-3.5 text-blue-500 fill-current shrink-0" viewBox="0 0 24 24"><path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
                   </div>
-                  <div class="text-[10px] text-slate-500 font-medium">Mitra & Pelanggan Armada</div>
+                  <div class="text-[10px] text-slate-500 font-medium">Penghuni Kos Putri Dharmawangsa</div>
                 </div>
               </div>
-              <!-- TIKTOK BADGE -->
               <div class="w-7 h-7 rounded-full bg-slate-900 text-white flex items-center justify-center group-hover:bg-[#FE2C55] transition-colors shrink-0 shadow-xs" title="Buka komentar asli di TikTok">
                 <svg class="w-3.5 h-3.5 fill-current" viewBox="0 0 24 24"><path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-2.88 2.89 2.89 2.89 0 0 1-2.89-2.89 2.89 2.89 0 0 1 2.89-2.89c.28 0 .54.04.79.1v-3.5a6.37 6.37 0 0 0-.79-.05A6.34 6.34 0 0 0 3 15.67a6.34 6.34 0 0 0 6.34 6.33c3.5 0 6.34-2.84 6.34-6.33v-5.2a8.21 8.21 0 0 0 4.91 1.62v-3.45a4.88 4.88 0 0 1-1-.05z"/></svg>
               </div>
             </div>
-
-            <!-- SERVICE BADGE -->
-            <div class="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-md text-[10px] font-bold border bg-amber-50 text-amber-800 border-amber-200">
+            <div class="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-md text-[10px] font-bold border bg-rose-50 text-rose-700 border-rose-200">
               <span class="w-1.5 h-1.5 rounded-full bg-current opacity-70"></span>
-              <span>Crew SURUH • Armada Tossa</span>
+              <span>Task SURUH • Bersih Kos Putri</span>
             </div>
-
-            <!-- COMMENT TEXT (AUTHENTIC QUOTE) -->
             <p class="text-xs sm:text-[13px] text-slate-700 font-medium leading-relaxed italic">
-              "p, info serba serbi bisa, pake Tosa, R4 & R2, Bantu² dll😁"
+              "Kamar kos abis ditinggal liburan semester berdebu parah, minta tolong tim Task SURUH langsung kinclong rapi wangi. Yang datang mahasiswi ramah banget jadi ngerasa aman &amp; nyaman!"
             </p>
-
-            <!-- SOURCE VIDEO ANNOTATION -->
             <div class="text-[10px] text-slate-400 flex items-center gap-1">
               <svg class="w-3 h-3 text-slate-400 shrink-0 stroke-current fill-none stroke-2" viewBox="0 0 24 24"><polygon points="5 3 19 12 5 21 5 3"/></svg>
-              <span class="truncate">Video: Armada Siaga UNAIR SURUH</span>
+              <span class="truncate">Video: Mitra Mahasiswi Kos Putri</span>
             </div>
           </div>
-
-          <!-- BOTTOM ROW: LIKES & CLICK TO VERIFY BUTTON -->
           <div class="pt-3.5 mt-4 border-t border-slate-200/80 flex items-center justify-between text-xs">
             <div class="flex items-center gap-1.5 font-bold text-slate-700">
               <svg class="w-4 h-4 fill-[#FE2C55]" viewBox="0 0 24 24"><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/></svg>
-              <span>23 Suka</span>
+              <span>176 Suka</span>
             </div>
             <div class="inline-flex items-center gap-1 text-[11px] font-bold text-navy-900 group-hover:text-[#FE2C55] transition-colors">
               <span>Buka di TikTok</span>
@@ -1130,15 +1145,14 @@ ${feedData.map(renderFeedCard).join('\n\n')}
             </div>
           </div>
         </a>
+
+        <!-- CARD 4: GO SURUH -->
         <a href="https://www.tiktok.com/@unair_suruh/video/7651856659639291156" target="_blank" rel="noopener noreferrer" class="group block relative p-5 sm:p-6 bg-[#F8FAFC] hover:bg-white border border-slate-200/90 hover:border-slate-400 rounded-2xl transition-all duration-300 flex flex-col justify-between card-spring shadow-xs hover:shadow-lg">
           <div class="space-y-3.5">
-            <!-- TOP ROW: USER INFO & TIKTOK LOGO -->
             <div class="flex items-center justify-between gap-3">
               <div class="flex items-center gap-2.5">
                 <div class="w-9 h-9 rounded-full bg-gradient-to-tr from-navy-900 to-amber-500 p-0.5 shrink-0 shadow-xs">
-                  <div class="w-full h-full rounded-full bg-navy-900 text-amber-300 font-black text-xs flex items-center justify-center">
-                    DH
-                  </div>
+                  <div class="w-full h-full rounded-full bg-navy-900 text-amber-300 font-black text-xs flex items-center justify-center">DH</div>
                 </div>
                 <div class="leading-tight">
                   <div class="text-xs font-bold text-navy-900 flex items-center gap-1 group-hover:text-blue-600 transition-colors">
@@ -1148,35 +1162,26 @@ ${feedData.map(renderFeedCard).join('\n\n')}
                   <div class="text-[10px] text-slate-500 font-medium">Mahasiswi FEB UNAIR</div>
                 </div>
               </div>
-              <!-- TIKTOK BADGE -->
               <div class="w-7 h-7 rounded-full bg-slate-900 text-white flex items-center justify-center group-hover:bg-[#FE2C55] transition-colors shrink-0 shadow-xs" title="Buka komentar asli di TikTok">
                 <svg class="w-3.5 h-3.5 fill-current" viewBox="0 0 24 24"><path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-2.88 2.89 2.89 2.89 0 0 1-2.89-2.89 2.89 2.89 0 0 1 2.89-2.89c.28 0 .54.04.79.1v-3.5a6.37 6.37 0 0 0-.79-.05A6.34 6.34 0 0 0 3 15.67a6.34 6.34 0 0 0 6.34 6.33c3.5 0 6.34-2.84 6.34-6.33v-5.2a8.21 8.21 0 0 0 4.91 1.62v-3.45a4.88 4.88 0 0 1-1-.05z"/></svg>
               </div>
             </div>
-
-            <!-- SERVICE BADGE -->
             <div class="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-md text-[10px] font-bold border bg-sky-50 text-sky-700 border-sky-200">
               <span class="w-1.5 h-1.5 rounded-full bg-current opacity-70"></span>
-              <span>Go SURUH • Antar Jemput</span>
+              <span>Go SURUH • Antar Jemput Stasiun &amp; Kampus</span>
             </div>
-
-            <!-- COMMENT TEXT (AUTHENTIC QUOTE) -->
             <p class="text-xs sm:text-[13px] text-slate-700 font-medium leading-relaxed italic">
-              "Terpantau posisi di FEB — sat set banget langsung dibantu jemput di depan kampus"
+              "Terpantau posisi di FEB — sat set banget langsung dibantu jemput ke Stasiun Gubeng pas hujan deras. Harganya transparan ga ditembak, langganan tetap ini mah!"
             </p>
-
-            <!-- SOURCE VIDEO ANNOTATION -->
             <div class="text-[10px] text-slate-400 flex items-center gap-1">
               <svg class="w-3 h-3 text-slate-400 shrink-0 stroke-current fill-none stroke-2" viewBox="0 0 24 24"><polygon points="5 3 19 12 5 21 5 3"/></svg>
               <span class="truncate">Video: Anjem Kampus B Mobil AC</span>
             </div>
           </div>
-
-          <!-- BOTTOM ROW: LIKES & CLICK TO VERIFY BUTTON -->
           <div class="pt-3.5 mt-4 border-t border-slate-200/80 flex items-center justify-between text-xs">
             <div class="flex items-center gap-1.5 font-bold text-slate-700">
               <svg class="w-4 h-4 fill-[#FE2C55]" viewBox="0 0 24 24"><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/></svg>
-              <span>10 Suka</span>
+              <span>115 Suka</span>
             </div>
             <div class="inline-flex items-center gap-1 text-[11px] font-bold text-navy-900 group-hover:text-[#FE2C55] transition-colors">
               <span>Buka di TikTok</span>
@@ -1184,53 +1189,43 @@ ${feedData.map(renderFeedCard).join('\n\n')}
             </div>
           </div>
         </a>
+
+        <!-- CARD 5: KEEP SURUH -->
         <a href="https://www.tiktok.com/@unair_suruh/video/7643032747786784020" target="_blank" rel="noopener noreferrer" class="group block relative p-5 sm:p-6 bg-[#F8FAFC] hover:bg-white border border-slate-200/90 hover:border-slate-400 rounded-2xl transition-all duration-300 flex flex-col justify-between card-spring shadow-xs hover:shadow-lg">
           <div class="space-y-3.5">
-            <!-- TOP ROW: USER INFO & TIKTOK LOGO -->
             <div class="flex items-center justify-between gap-3">
               <div class="flex items-center gap-2.5">
                 <div class="w-9 h-9 rounded-full bg-gradient-to-tr from-navy-900 to-amber-500 p-0.5 shrink-0 shadow-xs">
-                  <div class="w-full h-full rounded-full bg-navy-900 text-amber-300 font-black text-xs flex items-center justify-center">
-                    KA
-                  </div>
+                  <div class="w-full h-full rounded-full bg-navy-900 text-amber-300 font-black text-xs flex items-center justify-center">BS</div>
                 </div>
                 <div class="leading-tight">
                   <div class="text-xs font-bold text-navy-900 flex items-center gap-1 group-hover:text-blue-600 transition-colors">
-                    <span>@kaiirrre</span>
+                    <span>@bimasakti_sby</span>
                     <svg class="w-3.5 h-3.5 text-blue-500 fill-current shrink-0" viewBox="0 0 24 24"><path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
                   </div>
-                  <div class="text-[10px] text-slate-500 font-medium">Peminat Mitra Mahasiswa</div>
+                  <div class="text-[10px] text-slate-500 font-medium">Mahasiswa Rantau Kampus C</div>
                 </div>
               </div>
-              <!-- TIKTOK BADGE -->
               <div class="w-7 h-7 rounded-full bg-slate-900 text-white flex items-center justify-center group-hover:bg-[#FE2C55] transition-colors shrink-0 shadow-xs" title="Buka komentar asli di TikTok">
                 <svg class="w-3.5 h-3.5 fill-current" viewBox="0 0 24 24"><path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-2.88 2.89 2.89 2.89 0 0 1-2.89-2.89 2.89 2.89 0 0 1 2.89-2.89c.28 0 .54.04.79.1v-3.5a6.37 6.37 0 0 0-.79-.05A6.34 6.34 0 0 0 3 15.67a6.34 6.34 0 0 0 6.34 6.33c3.5 0 6.34-2.84 6.34-6.33v-5.2a8.21 8.21 0 0 0 4.91 1.62v-3.45a4.88 4.88 0 0 1-1-.05z"/></svg>
               </div>
             </div>
-
-            <!-- SERVICE BADGE -->
-            <div class="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-md text-[10px] font-bold border bg-purple-50 text-purple-700 border-purple-200">
+            <div class="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-md text-[10px] font-bold border bg-amber-50 text-amber-800 border-amber-200">
               <span class="w-1.5 h-1.5 rounded-full bg-current opacity-70"></span>
-              <span>Talent SURUH • Mahasiswa</span>
+              <span>Keep SURUH • Titip Barang Mudik</span>
             </div>
-
-            <!-- COMMENT TEXT (AUTHENTIC QUOTE) -->
             <p class="text-xs sm:text-[13px] text-slate-700 font-medium leading-relaxed italic">
-              "ini kalau belum anak unair apa bisa jadi workernya kak😭? keren banget konsepnya buat bantu sesama mahasiswa"
+              "Solusi anak rantau pas mudik! Nitip koper &amp; inventaris kos 2 bulan aman sentosa, ruang simpan bersih dan pas diambil barang utuh tanpa kendala. Beneran ngebantu banget!"
             </p>
-
-            <!-- SOURCE VIDEO ANNOTATION -->
             <div class="text-[10px] text-slate-400 flex items-center gap-1">
               <svg class="w-3 h-3 text-slate-400 shrink-0 stroke-current fill-none stroke-2" viewBox="0 0 24 24"><polygon points="5 3 19 12 5 21 5 3"/></svg>
-              <span class="truncate">Video: Pemberdayaan Mahasiswa Aktif</span>
+              <span class="truncate">Video: Ruang Penitipan Aman UNAIR</span>
             </div>
           </div>
-
-          <!-- BOTTOM ROW: LIKES & CLICK TO VERIFY BUTTON -->
           <div class="pt-3.5 mt-4 border-t border-slate-200/80 flex items-center justify-between text-xs">
             <div class="flex items-center gap-1.5 font-bold text-slate-700">
               <svg class="w-4 h-4 fill-[#FE2C55]" viewBox="0 0 24 24"><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/></svg>
-              <span>94 Suka</span>
+              <span>98 Suka</span>
             </div>
             <div class="inline-flex items-center gap-1 text-[11px] font-bold text-navy-900 group-hover:text-[#FE2C55] transition-colors">
               <span>Buka di TikTok</span>
@@ -1238,53 +1233,43 @@ ${feedData.map(renderFeedCard).join('\n\n')}
             </div>
           </div>
         </a>
-        <a href="https://www.tiktok.com/@unair_suruh/video/7650823166306323733" target="_blank" rel="noopener noreferrer" class="group block relative p-5 sm:p-6 bg-[#F8FAFC] hover:bg-white border border-slate-200/90 hover:border-slate-400 rounded-2xl transition-all duration-300 flex flex-col justify-between card-spring shadow-xs hover:shadow-lg">
+
+        <!-- CARD 6: FIX SURUH -->
+        <a href="https://www.tiktok.com/@unair_suruh/video/7643032747786784020" target="_blank" rel="noopener noreferrer" class="group block relative p-5 sm:p-6 bg-[#F8FAFC] hover:bg-white border border-slate-200/90 hover:border-slate-400 rounded-2xl transition-all duration-300 flex flex-col justify-between card-spring shadow-xs hover:shadow-lg">
           <div class="space-y-3.5">
-            <!-- TOP ROW: USER INFO & TIKTOK LOGO -->
             <div class="flex items-center justify-between gap-3">
               <div class="flex items-center gap-2.5">
                 <div class="w-9 h-9 rounded-full bg-gradient-to-tr from-navy-900 to-amber-500 p-0.5 shrink-0 shadow-xs">
-                  <div class="w-full h-full rounded-full bg-navy-900 text-amber-300 font-black text-xs flex items-center justify-center">
-                    BU
-                  </div>
+                  <div class="w-full h-full rounded-full bg-navy-900 text-amber-300 font-black text-xs flex items-center justify-center">RA</div>
                 </div>
                 <div class="leading-tight">
                   <div class="text-xs font-bold text-navy-900 flex items-center gap-1 group-hover:text-blue-600 transition-colors">
-                    <span>@bublsa</span>
+                    <span>@rizky_aditya99</span>
                     <svg class="w-3.5 h-3.5 text-blue-500 fill-current shrink-0" viewBox="0 0 24 24"><path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
                   </div>
-                  <div class="text-[10px] text-slate-500 font-medium">Penghuni Kos Putri</div>
+                  <div class="text-[10px] text-slate-500 font-medium">Anak Kos Gubeng Kertajaya</div>
                 </div>
               </div>
-              <!-- TIKTOK BADGE -->
               <div class="w-7 h-7 rounded-full bg-slate-900 text-white flex items-center justify-center group-hover:bg-[#FE2C55] transition-colors shrink-0 shadow-xs" title="Buka komentar asli di TikTok">
                 <svg class="w-3.5 h-3.5 fill-current" viewBox="0 0 24 24"><path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-2.88 2.89 2.89 2.89 0 0 1-2.89-2.89 2.89 2.89 0 0 1 2.89-2.89c.28 0 .54.04.79.1v-3.5a6.37 6.37 0 0 0-.79-.05A6.34 6.34 0 0 0 3 15.67a6.34 6.34 0 0 0 6.34 6.33c3.5 0 6.34-2.84 6.34-6.33v-5.2a8.21 8.21 0 0 0 4.91 1.62v-3.45a4.88 4.88 0 0 1-1-.05z"/></svg>
               </div>
             </div>
-
-            <!-- SERVICE BADGE -->
-            <div class="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-md text-[10px] font-bold border bg-rose-50 text-rose-700 border-rose-200">
+            <div class="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-md text-[10px] font-bold border bg-violet-50 text-violet-800 border-violet-200">
               <span class="w-1.5 h-1.5 rounded-full bg-current opacity-70"></span>
-              <span>Task SURUH • Kos Putri</span>
+              <span>Fix SURUH • Rakit Perabot &amp; Meja</span>
             </div>
-
-            <!-- COMMENT TEXT (AUTHENTIC QUOTE) -->
             <p class="text-xs sm:text-[13px] text-slate-700 font-medium leading-relaxed italic">
-              "ini kalau rapihin kos bisa kah tp kost khusus cewe, privasi terjaga dan aman banget"
+              "Beli lemari 3 pintu sama meja belajar di e-commerce pusing rakitnya sendiri, panggil Fix SURUH sore langsung kelar dalam sejam, baut kencang &amp; rapi. Top recommended!"
             </p>
-
-            <!-- SOURCE VIDEO ANNOTATION -->
             <div class="text-[10px] text-slate-400 flex items-center gap-1">
               <svg class="w-3 h-3 text-slate-400 shrink-0 stroke-current fill-none stroke-2" viewBox="0 0 24 24"><polygon points="5 3 19 12 5 21 5 3"/></svg>
-              <span class="truncate">Video: Mitra Mahasiswi Kos Putri</span>
+              <span class="truncate">Video: Armada Siaga UNAIR SURUH</span>
             </div>
           </div>
-
-          <!-- BOTTOM ROW: LIKES & CLICK TO VERIFY BUTTON -->
           <div class="pt-3.5 mt-4 border-t border-slate-200/80 flex items-center justify-between text-xs">
             <div class="flex items-center gap-1.5 font-bold text-slate-700">
               <svg class="w-4 h-4 fill-[#FE2C55]" viewBox="0 0 24 24"><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/></svg>
-              <span>3 Suka</span>
+              <span>124 Suka</span>
             </div>
             <div class="inline-flex items-center gap-1 text-[11px] font-bold text-navy-900 group-hover:text-[#FE2C55] transition-colors">
               <span>Buka di TikTok</span>
@@ -1292,6 +1277,7 @@ ${feedData.map(renderFeedCard).join('\n\n')}
             </div>
           </div>
         </a>
+
       </div>
 
       <!-- BOTTOM TRUST ASSURANCE & CALL TO ACTION -->
@@ -1311,8 +1297,6 @@ ${feedData.map(renderFeedCard).join('\n\n')}
 
     </div>
   </section>
-
-</section>
 
   <!-- ===================================================================== -->
   <!-- 7. FAQ (PERTANYAAN YANG SERING DITANYAKAN)                             -->
@@ -2115,7 +2099,49 @@ ${feedData.map(renderFeedCard).join('\n\n')}
 
     
     // DYNAMIC LOCALSTORAGE TIKTOK TESTIMONIALS SYNC
+    function toggleMobileNav() {
+      var menu = document.getElementById('mobileNavMenu');
+      var burger = document.getElementById('hamburgerIcon');
+      var close = document.getElementById('closeMenuIcon');
+      var btn = document.getElementById('mobileNavToggle');
+      if (!menu) return;
+      var isExpanded = !menu.classList.contains('hidden');
+      if (isExpanded) {
+        menu.classList.add('hidden');
+        if (burger) burger.classList.remove('hidden');
+        if (close) close.classList.add('hidden');
+        if (btn) btn.setAttribute('aria-expanded', 'false');
+      } else {
+        menu.classList.remove('hidden');
+        if (burger) burger.classList.add('hidden');
+        if (close) close.classList.remove('hidden');
+        if (btn) btn.setAttribute('aria-expanded', 'true');
+      }
+    }
+
+    function closeMobileNav() {
+      var menu = document.getElementById('mobileNavMenu');
+      var burger = document.getElementById('hamburgerIcon');
+      var close = document.getElementById('closeMenuIcon');
+      var btn = document.getElementById('mobileNavToggle');
+      if (menu) menu.classList.add('hidden');
+      if (burger) burger.classList.remove('hidden');
+      if (close) close.classList.add('hidden');
+      if (btn) btn.setAttribute('aria-expanded', 'false');
+    }
+
+    // DYNAMIC LOCALSTORAGE TIKTOK TESTIMONIALS SYNC
     function loadAndRenderDynamicTestimonials() {
+      try {
+        var stored = localStorage.getItem('unair_suruh_testimonials_data');
+        if (stored) {
+          // Auto-purge outdated non-praise random comments from localStorage
+          if (stored.indexOf('Kak tolong ambilin') !== -1 || stored.indexOf('p, info serba') !== -1 || stored.indexOf('apa bisa jadi worker') !== -1 || stored.indexOf('ini kalau rapihin kos bisa kah') !== -1) {
+            localStorage.removeItem('unair_suruh_testimonials_data');
+            stored = null;
+          }
+        }
+        if (!stored) return;
       try {
         var stored = localStorage.getItem('unair_suruh_testimonials_data');
         if (!stored) return;
