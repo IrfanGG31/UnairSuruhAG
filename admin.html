@@ -947,7 +947,7 @@
               </div>
               <div class="space-y-1">
                 <label class="block text-xs font-bold text-slate-700">Teks Tombol Banner CTA</label>
-                <input type="text" id="cmsCtaBtnText" value="Chat WhatsApp: 089509960815" class="focus-ring w-full p-2.5 rounded-xl border border-slate-300 bg-white text-xs font-bold" />
+                <input type="text" id="cmsCtaBtnText" value="Chat WhatsApp Sekarang" class="focus-ring w-full p-2.5 rounded-xl border border-slate-300 bg-white text-xs font-bold" />
               </div>
             </div>
             <div class="space-y-1">
@@ -1229,7 +1229,7 @@
           <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
             <div class="space-y-1.5">
               <label class="block font-bold text-navy-900">6. Kontak Owner (Footer)</label>
-              <input type="text" id="settingFooterPj" value="Owner: Afif (089509960815)" class="focus-ring w-full p-2.5 rounded-xl border border-slate-300 text-xs font-bold" />
+              <input type="text" id="settingFooterPj" value="Owner: Afif" class="focus-ring w-full p-2.5 rounded-xl border border-slate-300 text-xs font-bold" />
             </div>
             <div class="space-y-1.5">
               <label class="block font-bold text-navy-900">7. Badge Worker (Footer)</label>
@@ -1714,7 +1714,7 @@
 
     // ONE-TIME REVISION MIGRATION: Ensure stale pre-revision localStorage keys do not overwrite the 9-point precision revision
     try {
-      var CURRENT_REV_VER = '2026-10-26-rev9-v1';
+      var CURRENT_REV_VER = '2026-10-26-rev9-v2';
       if (localStorage.getItem('UNAIR_REV_VER') !== CURRENT_REV_VER) {
         localStorage.removeItem('UNAIR_SITE_CONFIG');
         localStorage.removeItem('UNAIR_SERVICES');
@@ -1842,7 +1842,7 @@
       {
         id: 1,
         q: 'Bagaimana cara memesan layanan di UNAIR SURUH?',
-        a: 'Cukup klik tombol "Pesan Layanan Ini" pada layanan yang diinginkan atau isi form Custom SURUH, pilih tanggal & jam kebutuhan, dan pesan akan langsung terformat rapi untuk dikirim via WhatsApp ke Owner Afif (089509960815).',
+        a: 'Cukup klik tombol "Pesan Layanan Ini" pada layanan yang diinginkan atau isi form Custom SURUH, pilih tanggal & jam kebutuhan, dan pesan akan langsung terformat rapi untuk dikirim via <a href="https://wa.me/6289509960815?text=Halo%20Owner%20Afif,%20saya%20mau%20order%20layanan%20UNAIR%20SURUH" target="_blank" rel="noopener noreferrer" class="text-amber-600 font-bold hover:underline">WhatsApp Owner Afif</a>.',
         active: true
       },
       {
@@ -3196,7 +3196,7 @@
       cfg.ctaBadge = getVal('cmsCtaBadge', 'Siap untuk memulai?');
       cfg.ctaTitle = getVal('cmsCtaTitle', 'Butuh Bantuan Mendadak atau Urusan Kampus Hari Ini?');
       cfg.ctaDesc = getVal('cmsCtaDesc', 'Kami siap membantu kapan saja. Konsultasi kebutuhanmu via WhatsApp sekarang tanpa ribet.');
-      cfg.ctaBtnText = getVal('cmsCtaBtnText', 'Pesan Jasa Sekarang');
+      cfg.ctaBtnText = getVal('cmsCtaBtnText', 'Chat WhatsApp Sekarang');
 
       cfg.mitraBadge = getVal('cmsMitraBadge', 'Rekrutmen Mitra Worker UNAIR SURUH');
       cfg.mitraTitle1 = getVal('cmsMitraTitle1', 'Ingin Penghasilan Fleksibel?');
@@ -3226,7 +3226,7 @@
       cfg.footerEmail = getVal('settingFooterEmail', 'unairsuruh@gmail.com');
       cfg.footerInstagram = getVal('settingFooterIg', '@unair.suruh');
       cfg.footerTiktok = getVal('settingFooterTiktok', '@unair_suruh');
-      cfg.footerPjBadge = getVal('settingFooterPj', 'Owner: Afif (089509960815)');
+      cfg.footerPjBadge = getVal('settingFooterPj', 'Owner: Afif');
       cfg.footerWorkerBadge = getVal('settingFooterWorker', 'Worker Terverifikasi (Mahasiswa & Warga Surabaya)');
       cfg.footerCoverage = getVal('settingHours', 'Area Kampus A, B, C & Seluruh Surabaya • Setiap Hari 06.00 – 23.00 WIB');
       cfg.footerDesc = getVal('settingFooterDesc', 'Usaha jasa satu pintu independen oleh mahasiswa UNAIR di Surabaya yang membantu semua kalangan untuk menyelesaikan kebutuhan harian dengan harga disepakati di awal dan fee pekerja transparan.');
