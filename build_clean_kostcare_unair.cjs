@@ -1991,12 +1991,13 @@ ${feedData.map(renderFeedCard).join('\n\n')}
       if (raw.indexOf('<ul') !== -1 || raw.indexOf('<li') !== -1) {
         return raw;
       }
-      var lines = raw.split(/\r?\n/);
+      var lines = raw.split(new RegExp('\\r?\\n'));
       if (lines.length <= 1) {
         return '<p>' + esc(raw) + '</p>';
       }
       var out = '';
       var inList = false;
+      var boldRe = new RegExp('\\*\\*(.+?)\\*\\*', 'g');
       lines.forEach(function(line) {
         var trimmed = line.trim();
         if (!trimmed) return;
@@ -2005,14 +2006,14 @@ ${feedData.map(renderFeedCard).join('\n\n')}
             out += '<ul class="list-disc pl-5 space-y-1.5 my-2">';
             inList = true;
           }
-          var itemText = esc(trimmed.slice(2)).replace(/\*\*(.+?)\*\*/g, '<strong>$1</strong>');
+          var itemText = esc(trimmed.slice(2)).replace(boldRe, '<strong>$1</strong>');
           out += '<li>' + itemText + '</li>';
         } else {
           if (inList) {
             out += '</ul>';
             inList = false;
           }
-          var pText = esc(trimmed).replace(/\*\*(.+?)\*\*/g, '<strong>$1</strong>');
+          var pText = esc(trimmed).replace(boldRe, '<strong>$1</strong>');
           out += '<p>' + pText + '</p>';
         }
       });
