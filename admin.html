@@ -1714,7 +1714,7 @@
 
     // ONE-TIME REVISION MIGRATION: Ensure stale pre-revision localStorage keys do not overwrite the 9-point precision revision
     try {
-      var CURRENT_REV_VER = '2026-10-26-rev9-v2';
+      var CURRENT_REV_VER = '2026-10-26-rev9-v3';
       if (localStorage.getItem('UNAIR_REV_VER') !== CURRENT_REV_VER) {
         localStorage.removeItem('UNAIR_SITE_CONFIG');
         localStorage.removeItem('UNAIR_SERVICES');
