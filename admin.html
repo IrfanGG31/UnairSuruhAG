@@ -168,7 +168,7 @@
     <!-- SIDEBAR NAV DESKTOP & MOBILE -->
     <aside id="adminSidebar" class="hidden md:flex flex-col w-64 bg-navy-950 text-slate-300 border-r border-navy-800 shrink-0 z-30 transition-all duration-200">
       <div class="p-4 space-y-1">
-        <div class="px-3 py-2 text-[10px] font-bold uppercase tracking-wider text-slate-400">Pusat Kendali</div>
+        <div class="px-3 py-2 text-[10px] font-bold uppercase tracking-wider text-slate-400">Operasional Harian</div>
         
         <button onclick="switchTab('dashboard')" id="tabBtn-dashboard" class="nav-tab active w-full flex items-center gap-3 px-3.5 py-2.5 rounded-xl text-xs font-semibold hover:bg-navy-900 hover:text-white transition cursor-pointer">
           <svg class="w-4 h-4 stroke-current fill-none stroke-2 stroke-linecap-round stroke-linejoin-round" viewBox="0 0 24 24"><rect width="7" height="9" x="3" y="3" rx="1"/><rect width="7" height="5" x="14" y="3" rx="1"/><rect width="7" height="9" x="14" y="12" rx="1"/><rect width="7" height="5" x="3" y="16" rx="1"/></svg>
@@ -188,34 +188,37 @@
           <span>Mitra Mahasiswa</span>
         </button>
 
+        <div class="pt-4 px-3 py-2 text-[10px] font-bold uppercase tracking-wider text-amber-400">Easy Setup Website Utama</div>
+
+        <button onclick="switchTab('cms')" id="tabBtn-cms" class="nav-tab w-full flex items-center justify-between px-3.5 py-2.5 rounded-xl text-xs font-semibold hover:bg-navy-900 hover:text-white transition cursor-pointer">
+          <div class="flex items-center gap-3">
+            <svg class="w-4 h-4 stroke-current fill-none stroke-2 stroke-linecap-round stroke-linejoin-round" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><line x1="2" x2="22" y1="12" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+            <span>Semua Tampilan Web</span>
+          </div>
+          <span class="bg-emerald-500/20 text-emerald-300 border border-emerald-500/30 text-[9px] font-bold px-1.5 py-0.5 rounded">FULL</span>
+        </button>
+
         <button onclick="switchTab('services')" id="tabBtn-services" class="nav-tab w-full flex items-center gap-3 px-3.5 py-2.5 rounded-xl text-xs font-semibold hover:bg-navy-900 hover:text-white transition cursor-pointer">
           <svg class="w-4 h-4 stroke-current fill-none stroke-2 stroke-linecap-round stroke-linejoin-round" viewBox="0 0 24 24"><rect width="20" height="14" x="2" y="5" rx="2"/><line x1="2" x2="22" y1="10" y2="10"/></svg>
-          <span>Layanan & Satuan</span>
+          <span>8 Layanan & Tarif Harga</span>
         </button>
 
         <button onclick="switchTab('reels')" id="tabBtn-reels" class="nav-tab w-full flex items-center justify-between px-3.5 py-2.5 rounded-xl text-xs font-semibold hover:bg-navy-900 hover:text-white transition cursor-pointer">
           <div class="flex items-center gap-3">
             <svg class="w-4 h-4 stroke-current fill-none stroke-2 stroke-linecap-round stroke-linejoin-round" viewBox="0 0 24 24"><path d="m22 8-6 4 6 4V8Z"/><rect width="14" height="12" x="2" y="6" rx="2" ry="2"/></svg>
-            <span>Video Reels (Kegiatan)</span>
+            <span>Video Reels Kegiatan</span>
           </div>
-          <span id="reelsCountBadge" class="bg-amber-400 text-navy-900 text-[10px] font-bold px-1.5 py-0.5 rounded-full">8</span>
-        </button>
-
-        <div class="pt-4 px-3 py-2 text-[10px] font-bold uppercase tracking-wider text-slate-400">Website & Sistem</div>
-
-        <button onclick="switchTab('cms')" id="tabBtn-cms" class="nav-tab w-full flex items-center gap-3 px-3.5 py-2.5 rounded-xl text-xs font-semibold hover:bg-navy-900 hover:text-white transition cursor-pointer">
-          <svg class="w-4 h-4 stroke-current fill-none stroke-2 stroke-linecap-round stroke-linejoin-round" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><line x1="2" x2="22" y1="12" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
-          <span>Konten Website (CMS)</span>
-        </button>
-
-        <button onclick="switchTab('reports')" id="tabBtn-reports" class="nav-tab w-full flex items-center gap-3 px-3.5 py-2.5 rounded-xl text-xs font-semibold hover:bg-navy-900 hover:text-white transition cursor-pointer">
-          <svg class="w-4 h-4 stroke-current fill-none stroke-2 stroke-linecap-round stroke-linejoin-round" viewBox="0 0 24 24"><line x1="18" y1="20" x2="18" y2="10"/><line x1="12" y1="20" x2="12" y2="4"/><line x1="6" y1="20" x2="6" y2="14"/></svg>
-          <span>Laporan & Ekspor</span>
+          <span id="reelsCountBadge" class="bg-amber-400 text-navy-900 text-[10px] font-bold px-1.5 py-0.5 rounded-full">6</span>
         </button>
 
         <button onclick="switchTab('settings')" id="tabBtn-settings" class="nav-tab w-full flex items-center gap-3 px-3.5 py-2.5 rounded-xl text-xs font-semibold hover:bg-navy-900 hover:text-white transition cursor-pointer">
           <svg class="w-4 h-4 stroke-current fill-none stroke-2 stroke-linecap-round stroke-linejoin-round" viewBox="0 0 24 24"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"/></svg>
-          <span>Pengaturan WA & Toko</span>
+          <span>Kontak WA, Footer & PIN</span>
+        </button>
+
+        <button onclick="switchTab('reports')" id="tabBtn-reports" class="nav-tab w-full flex items-center gap-3 px-3.5 py-2.5 rounded-xl text-xs font-semibold hover:bg-navy-900 hover:text-white transition cursor-pointer">
+          <svg class="w-4 h-4 stroke-current fill-none stroke-2 stroke-linecap-round stroke-linejoin-round" viewBox="0 0 24 24"><line x1="18" y1="20" x2="18" y2="10"/><line x1="12" y1="20" x2="12" y2="4"/><line x1="6" y1="20" x2="6" y2="14"/></svg>
+          <span>Laporan & Backup Data</span>
         </button>
 
       </div>
@@ -320,6 +323,28 @@
           <button onclick="filterOrdersBy('privat')" class="btn-spring focus-ring px-3 py-1.5 rounded-lg bg-rose-600 text-white font-bold text-[11px] shrink-0">
             Lihat Order
           </button>
+        </div>
+
+        <!-- EASY WEB ADMIN QUICK SHORTCUTS BANNER -->
+        <div class="bg-gradient-to-r from-navy-900 via-navy-800 to-navy-900 rounded-2xl p-5 text-white shadow-md border border-navy-700 flex flex-col lg:flex-row lg:items-center justify-between gap-4">
+          <div class="space-y-1">
+            <div class="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full bg-amber-400/20 border border-amber-400/40 text-amber-300 text-[10px] font-bold uppercase tracking-wider">
+              <span>⚡ Easy Web Admin Mode • Sinkronisasi Langsung</span>
+            </div>
+            <h2 class="font-heading font-extrabold text-base sm:text-lg text-white">Semua Bagian Website Utama Bisa Disetting dari Sini!</h2>
+            <p class="text-xs text-slate-300">Ubah teks Hero, Spotlight Custom SURUH, Harga 8 Layanan, Video Reels, Testimoni TikTok, FAQ, hingga Nomor WA tanpa koding.</p>
+          </div>
+          <div class="flex flex-wrap items-center gap-2 shrink-0">
+            <button onclick="switchTab('cms')" class="btn-spring px-4 py-2.5 rounded-xl bg-amber-400 hover:bg-amber-300 text-navy-950 font-heading font-extrabold text-xs shadow-xs">
+              🎨 Setting Semua Tampilan Web
+            </button>
+            <button onclick="switchTab('services')" class="btn-spring px-3.5 py-2.5 rounded-xl bg-white/10 hover:bg-white/20 text-white font-bold text-xs border border-white/15">
+              🏷️ Edit 8 Layanan & Tarif
+            </button>
+            <button onclick="switchTab('settings')" class="btn-spring px-3.5 py-2.5 rounded-xl bg-white/10 hover:bg-white/20 text-white font-bold text-xs border border-white/15">
+              📱 Nomor WA & Footer
+            </button>
+          </div>
         </div>
 
         <!-- RECENT ORDERS PREVIEW -->
@@ -489,13 +514,23 @@
       </section>
 
       <!-- ================================================================= -->
-      <!-- PANEL 4: LAYANAN & SATUAN KERJA                                   -->
+      <!-- PANEL 4: 8 LAYANAN & TARIF HARGA (FULL VISUAL EDITOR)             -->
       <!-- ================================================================= -->
       <section id="panel-services" class="space-y-6 hidden">
         
-        <div>
-          <h1 class="font-heading font-black text-2xl text-navy-900 tracking-tight">Katalog Layanan & Satuan Kerja</h1>
-          <p class="text-xs text-slate-600">Standar satuan pemesanan dan sistem tarif transparan yang disepakati di awal</p>
+        <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-4">
+          <div>
+            <h1 class="font-heading font-black text-2xl text-navy-900 tracking-tight">8 Lini Layanan &amp; Tarif Harga</h1>
+            <p class="text-xs text-slate-600">Edit nama layanan, badge, harga mulai Rp, rincian satuan, deskripsi, tombol pesan, atau matikan sementara jika penuh</p>
+          </div>
+          <div class="flex flex-wrap items-center gap-2">
+            <button onclick="resetServicesToDefault()" class="btn-spring focus-ring px-3.5 py-2.5 rounded-xl bg-white border border-slate-300 text-slate-700 font-bold text-xs hover:bg-slate-50">
+              Reset 8 Layanan Default
+            </button>
+            <button onclick="openServiceEditor()" class="btn-spring focus-ring px-4 py-2.5 rounded-xl bg-navy-900 text-gold-500 font-bold text-xs flex items-center gap-1.5 hover:bg-navy-800 shadow-xs">
+              <span>+ Tambah Layanan Baru</span>
+            </button>
+          </div>
         </div>
 
         <div class="grid md:grid-cols-2 gap-4" id="servicesGrid">
@@ -505,67 +540,181 @@
       </section>
 
       <!-- ================================================================= -->
-      <!-- PANEL 5: CMS KONTEN WEBSITE                                       -->
+      <!-- PANEL 5: EASY SETUP SEMUA TAMPILAN WEBSITE UTAMA (FULL CMS)       -->
       <!-- ================================================================= -->
       <section id="panel-cms" class="space-y-6 hidden">
         
-        <div>
-          <h1 class="font-heading font-black text-2xl text-navy-900 tracking-tight">CMS Konten Website</h1>
-          <p class="text-xs text-slate-600">Atur copywriting, banner pengumuman, dan integrasi media tanpa deploy ulang</p>
+        <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-4">
+          <div>
+            <div class="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full bg-amber-100 border border-amber-300 text-amber-900 text-[10px] font-bold uppercase tracking-wider mb-1">
+              <span>⚡ Easy Web Admin CMS • Sinkronisasi Langsung</span>
+            </div>
+            <h1 class="font-heading font-black text-2xl text-navy-900 tracking-tight">Setting Semua Tampilan Website Utama</h1>
+            <p class="text-xs text-slate-600">Pilih bagian website di bawah, ubah isinya dengan mudah, lalu klik <strong>Simpan &amp; Terapkan</strong>.</p>
+          </div>
+          <div class="flex flex-wrap items-center gap-2">
+            <button onclick="saveCmsSettings()" class="btn-spring focus-ring px-5 py-2.5 rounded-xl bg-navy-900 hover:bg-navy-800 text-amber-300 font-extrabold text-xs shadow-sm flex items-center gap-2">
+              <svg class="w-4 h-4 fill-none stroke-current stroke-2" viewBox="0 0 24 24"><path d="M19 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11l5 5v11a2 2 0 0 1-2 2z"/><polyline points="17 21 17 13 7 13 7 21"/><polyline points="7 3 7 8 15 8"/></svg>
+              <span>Simpan &amp; Terapkan Semua</span>
+            </button>
+            <a href="index.html" target="_blank" class="btn-spring focus-ring px-3.5 py-2.5 rounded-xl bg-white border border-slate-300 hover:bg-slate-50 text-navy-900 font-bold text-xs flex items-center gap-1.5">
+              <span>Lihat Web</span>
+              <svg class="w-3.5 h-3.5 stroke-current fill-none stroke-2" viewBox="0 0 24 24"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6M15 3h6v6M10 14L21 3"/></svg>
+            </a>
+          </div>
         </div>
 
-        <div class="bg-white p-6 sm:p-7 rounded-2xl border border-slate-200 shadow-xs space-y-6 text-xs sm:text-sm">
+        <!-- SUB-TABS NAVIGATION FOR EASY CMS -->
+        <div class="bg-white p-2 rounded-2xl border border-slate-200 shadow-xs flex items-center gap-1.5 overflow-x-auto scrollbar-none text-xs">
+          <button type="button" onclick="switchCmsSubTab('hero')" id="cmsSubBtn-hero" class="px-3.5 py-2 rounded-xl bg-navy-900 text-amber-300 font-bold whitespace-nowrap transition">1. Header &amp; Hero Utama</button>
+          <button type="button" onclick="switchCmsSubTab('custom')" id="cmsSubBtn-custom" class="px-3.5 py-2 rounded-xl bg-slate-100 text-slate-600 hover:bg-slate-200 font-semibold whitespace-nowrap transition">2. Spotlight Custom SURUH</button>
+          <button type="button" onclick="switchCmsSubTab('why')" id="cmsSubBtn-why" class="px-3.5 py-2 rounded-xl bg-slate-100 text-slate-600 hover:bg-slate-200 font-semibold whitespace-nowrap transition">3. Mengapa Kami (6 Keunggulan)</button>
+          <button type="button" onclick="switchCmsSubTab('mitra')" id="cmsSubBtn-mitra" class="px-3.5 py-2 rounded-xl bg-slate-100 text-slate-600 hover:bg-slate-200 font-semibold whitespace-nowrap transition">4. Seksi Mitra &amp; Banner CTA</button>
+          <button type="button" onclick="switchCmsSubTab('faq')" id="cmsSubBtn-faq" class="px-3.5 py-2 rounded-xl bg-slate-100 text-slate-600 hover:bg-slate-200 font-semibold whitespace-nowrap transition">5. Tanya Jawab (FAQ) &amp; Judul</button>
+          <button type="button" onclick="switchCmsSubTab('testi')" id="cmsSubBtn-testi" class="px-3.5 py-2 rounded-xl bg-slate-100 text-slate-600 hover:bg-slate-200 font-semibold whitespace-nowrap transition">6. Testimoni Komentar TikTok</button>
+        </div>
+
+        <!-- =============================================================== -->
+        <!-- SUB-PANEL 1: HEADER, TOP BAR & HERO UTAMA                       -->
+        <!-- =============================================================== -->
+        <div id="cmsSubPanel-hero" class="bg-white p-5 sm:p-7 rounded-2xl border border-slate-200 shadow-xs space-y-6 text-xs sm:text-sm">
           
-          <div class="border-b border-slate-100 pb-4">
-            <h2 class="font-heading font-black text-base text-navy-900 tracking-tight flex items-center gap-2">
-              <span class="w-2.5 h-2.5 rounded-full bg-amber-500"></span>
-              Kustomisasi Copywriting Hero Banner (Halaman Depan)
-            </h2>
-            <p class="text-xs text-slate-500 mt-1">Ubah teks pill badge, judul utama, deskripsi, hingga tombol CTA secara langsung tanpa perlu koding.</p>
-          </div>
-
-          <!-- 1. PILL BADGE -->
-          <div class="space-y-1.5">
-            <label class="block font-bold text-navy-900">1. Teks Pill Badge Atas (Kecil)</label>
-            <input type="text" id="cmsHeroBadge" value="⚡ Serba Bisa untuk Mahasiswa, Anak Kos &amp; Warga Surabaya" class="focus-ring w-full p-3 rounded-xl border border-slate-300 font-semibold text-xs sm:text-sm" placeholder="Contoh: ⚡ Serba Bisa untuk Mahasiswa..." oninput="updateCmsPreview()" />
-            <p class="text-[11px] text-slate-500">Pill lonjong dengan titik kuning menyala di atas judul utama.</p>
-          </div>
-
-          <!-- 2. HEADLINE / TITLE -->
-          <div class="grid grid-cols-1 sm:grid-cols-12 gap-4">
-            <div class="sm:col-span-7 space-y-1.5">
-              <label class="block font-bold text-navy-900">2a. Judul Utama (Baris Normal)</label>
-              <input type="text" id="cmsHeroPrefix" value="Serba Bisa, Semua" class="focus-ring w-full p-3 rounded-xl border border-slate-300 font-bold text-navy-900 text-sm" placeholder="Contoh: Serba Bisa, Semua" oninput="updateCmsPreview()" />
+          <div class="border-b border-slate-100 pb-4 flex flex-col sm:flex-row sm:items-center justify-between gap-2">
+            <div>
+              <h2 class="font-heading font-black text-base text-navy-900 tracking-tight flex items-center gap-2">
+                <span class="w-2.5 h-2.5 rounded-full bg-amber-500"></span>
+                <span>1. Pengaturan Top Bar, Nama Brand &amp; Hero Utama</span>
+              </h2>
+              <p class="text-xs text-slate-500 mt-0.5">Bagian paling atas halaman utama saat pengunjung membuka website.</p>
             </div>
-            <div class="sm:col-span-5 space-y-1.5">
-              <label class="block font-bold text-amber-700">2b. Judul Aksen Emas (Highlight)</label>
-              <input type="text" id="cmsHeroHighlight" value="Bisa Disuruh!" class="focus-ring w-full p-3 rounded-xl border border-amber-300 bg-amber-50/50 font-black text-amber-600 text-sm" placeholder="Contoh: Bisa Disuruh!" oninput="updateCmsPreview()" />
+            <button type="button" onclick="resetCmsSettings()" class="text-xs font-bold text-rose-600 hover:underline self-start sm:self-auto">Reset Default Seksi Ini</button>
+          </div>
+
+          <!-- Top Bar & Brand -->
+          <div class="p-4 rounded-xl bg-slate-50 border border-slate-200/80 space-y-4">
+            <div class="font-heading font-bold text-xs text-navy-900 uppercase tracking-wider">A. Bar Pengumuman Atas &amp; Nama Brand Navbar</div>
+            <div class="grid grid-cols-1 sm:grid-cols-12 gap-3">
+              <div class="sm:col-span-4 space-y-1">
+                <label class="block text-xs font-bold text-slate-700">Badge Pengumuman Kiri</label>
+                <input type="text" id="cmsTopBarBadge" value="INISIATIF MAHASISWA" class="focus-ring w-full p-2.5 rounded-xl border border-slate-300 bg-white text-xs font-bold" />
+              </div>
+              <div class="sm:col-span-8 space-y-1">
+                <label class="block text-xs font-bold text-slate-700">Teks Pengumuman Bar Paling Atas</label>
+                <input type="text" id="cmsBannerText" value="Layanan On-Demand Mahasiswa di Surabaya • 8 Pilihan SURUH Series" class="focus-ring w-full p-2.5 rounded-xl border border-slate-300 bg-white text-xs" />
+              </div>
+            </div>
+            <div class="grid grid-cols-1 sm:grid-cols-3 gap-3">
+              <div class="space-y-1">
+                <label class="block text-xs font-bold text-slate-700">Nama Brand Utama</label>
+                <input type="text" id="cmsBrandName" value="UNAIR SURUH" class="focus-ring w-full p-2.5 rounded-xl border border-slate-300 bg-white text-xs font-bold" />
+              </div>
+              <div class="space-y-1">
+                <label class="block text-xs font-bold text-slate-700">Sub-judul Brand (Tampilan HP)</label>
+                <input type="text" id="cmsBrandSubMobile" value="Layanan Mahasiswa Surabaya" class="focus-ring w-full p-2.5 rounded-xl border border-slate-300 bg-white text-xs" />
+              </div>
+              <div class="space-y-1">
+                <label class="block text-xs font-bold text-slate-700">Sub-judul Brand (Tampilan Laptop)</label>
+                <input type="text" id="cmsBrandSubDesktop" value="Layanan On-Demand Mahasiswa Surabaya" class="focus-ring w-full p-2.5 rounded-xl border border-slate-300 bg-white text-xs" />
+              </div>
             </div>
           </div>
 
-          <!-- 3. DESCRIPTION / SUBTITLE -->
-          <div class="space-y-1.5">
-            <label class="block font-bold text-navy-900">3. Deskripsi Singkat Hero (Paragraf)</label>
-            <textarea id="cmsHeroDesc" rows="3" class="focus-ring w-full p-3 rounded-xl border border-slate-300 text-xs sm:text-sm leading-relaxed" placeholder="Tuliskan deskripsi ringkas..." oninput="updateCmsPreview()">Apapun kebutuhan harianmu di Surabaya, serahkan pada tim mahasiswa: dari Pindahan &amp; Titip Kos, Antar-Jemput Stasiun/Bandara, Urus Berkas & Dokumen, Rakit Perabot, belanja darurat, sampai Kru Event &amp; Tutor. Cekatan, terpercaya, dan harga transparan.</textarea>
-            <p class="text-[11px] text-slate-500">Jelaskan cakupan layanan secara ringkas dan ramah.</p>
-          </div>
-
-          <!-- 4. CTA BUTTON & BANNER PENGUMUMAN -->
-          <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+          <!-- Hero Texts -->
+          <div class="space-y-4">
+            <div class="font-heading font-bold text-xs text-navy-900 uppercase tracking-wider">B. Judul &amp; Copywriting Hero Utama</div>
             <div class="space-y-1.5">
-              <label class="block font-bold text-navy-900">4. Teks Tombol CTA Utama</label>
-              <input type="text" id="cmsHeroCta" value="Pesan Sekarang (WA)" class="focus-ring w-full p-2.5 rounded-xl border border-slate-300 text-xs font-bold" oninput="updateCmsPreview()" />
+              <label class="block font-bold text-navy-900">1. Teks Pill Badge Atas Hero</label>
+              <input type="text" id="cmsHeroBadge" value="⚡ Serba Bisa untuk Mahasiswa, Anak Kos &amp; Warga Surabaya" class="focus-ring w-full p-3 rounded-xl border border-slate-300 font-semibold text-xs sm:text-sm" oninput="updateCmsPreview()" />
             </div>
+
+            <div class="grid grid-cols-1 sm:grid-cols-12 gap-4">
+              <div class="sm:col-span-7 space-y-1.5">
+                <label class="block font-bold text-navy-900">2a. Judul Utama (Baris Normal)</label>
+                <input type="text" id="cmsHeroPrefix" value="Serba Bisa, Semua" class="focus-ring w-full p-3 rounded-xl border border-slate-300 font-bold text-navy-900 text-sm" oninput="updateCmsPreview()" />
+              </div>
+              <div class="sm:col-span-5 space-y-1.5">
+                <label class="block font-bold text-amber-700">2b. Judul Aksen Emas (Garis Bawah)</label>
+                <input type="text" id="cmsHeroHighlight" value="Bisa Disuruh!" class="focus-ring w-full p-3 rounded-xl border border-amber-300 bg-amber-50/50 font-black text-amber-600 text-sm" oninput="updateCmsPreview()" />
+              </div>
+            </div>
+
             <div class="space-y-1.5">
-              <label class="block font-bold text-navy-900">5. Teks Banner Paling Atas</label>
-              <input type="text" id="cmsBannerText" value="[INISIATIF MAHASISWA] Layanan On-Demand Mahasiswa di Surabaya • 8 Pilihan SURUH Series" class="focus-ring w-full p-2.5 rounded-xl border border-slate-300 text-xs" />
+              <label class="block font-bold text-navy-900">3. Deskripsi Paragraf Hero</label>
+              <textarea id="cmsHeroDesc" rows="3" class="focus-ring w-full p-3 rounded-xl border border-slate-300 text-xs sm:text-sm leading-relaxed" oninput="updateCmsPreview()">Apapun kebutuhan harianmu di Surabaya, serahkan pada tim mahasiswa: dari Pindahan &amp; Titip Kos, Antar-Jemput Stasiun/Bandara, Urus Berkas &amp; Dokumen, Rakit Perabot, belanja darurat, sampai Kru Event &amp; Tutor. Cekatan, terpercaya, dan harga transparan.</textarea>
+            </div>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+              <div class="space-y-1.5">
+                <label class="block font-bold text-navy-900">4a. Teks Tombol Utama (Kuning)</label>
+                <input type="text" id="cmsHeroCta" value="Pesan Sekarang (WA)" class="focus-ring w-full p-2.5 rounded-xl border border-slate-300 text-xs font-bold" oninput="updateCmsPreview()" />
+              </div>
+              <div class="space-y-1.5">
+                <label class="block font-bold text-navy-900">4b. Teks Tombol Kedua (Putih)</label>
+                <input type="text" id="cmsHeroSecondaryCta" value="Lihat 8 Layanan" class="focus-ring w-full p-2.5 rounded-xl border border-slate-300 text-xs font-bold" />
+              </div>
+            </div>
+          </div>
+
+          <!-- 4 Hero Metrics -->
+          <div class="p-4 rounded-xl bg-slate-50 border border-slate-200/80 space-y-3">
+            <div class="font-heading font-bold text-xs text-navy-900 uppercase tracking-wider">C. 4 Kotak Statistik Kepercayaan (Di Bawah Tombol Hero)</div>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3">
+              <div class="p-3 bg-white rounded-xl border border-slate-200 space-y-2">
+                <span class="text-[10px] font-bold text-amber-600 uppercase">Kotak Statistik 1</span>
+                <input type="text" id="cmsMetric1Val" value="Mulai 5rb" class="focus-ring w-full p-2 rounded-lg border border-slate-300 text-xs font-bold" placeholder="Angka/Judul" />
+                <input type="text" id="cmsMetric1Sub" value="Tarif Mahasiswa" class="focus-ring w-full p-2 rounded-lg border border-slate-300 text-[11px]" placeholder="Keterangan" />
+              </div>
+              <div class="p-3 bg-white rounded-xl border border-slate-200 space-y-2">
+                <span class="text-[10px] font-bold text-amber-600 uppercase">Kotak Statistik 2</span>
+                <input type="text" id="cmsMetric2Val" value="25+ Mitra" class="focus-ring w-full p-2 rounded-lg border border-slate-300 text-xs font-bold" placeholder="Angka/Judul" />
+                <input type="text" id="cmsMetric2Sub" value="Mahasiswa Terverifikasi" class="focus-ring w-full p-2 rounded-lg border border-slate-300 text-[11px]" placeholder="Keterangan" />
+              </div>
+              <div class="p-3 bg-white rounded-xl border border-slate-200 space-y-2">
+                <span class="text-[10px] font-bold text-amber-600 uppercase">Kotak Statistik 3</span>
+                <input type="text" id="cmsMetric3Val" value="8 Layanan" class="focus-ring w-full p-2 rounded-lg border border-slate-300 text-xs font-bold" placeholder="Angka/Judul" />
+                <input type="text" id="cmsMetric3Sub" value="Ekosistem SURUH" class="focus-ring w-full p-2 rounded-lg border border-slate-300 text-[11px]" placeholder="Keterangan" />
+              </div>
+              <div class="p-3 bg-white rounded-xl border border-slate-200 space-y-2">
+                <span class="text-[10px] font-bold text-amber-600 uppercase">Kotak Statistik 4</span>
+                <input type="text" id="cmsMetric4Val" value="Worker Cewek" class="focus-ring w-full p-2 rounded-lg border border-slate-300 text-xs font-bold" placeholder="Angka/Judul" />
+                <input type="text" id="cmsMetric4Sub" value="Klien Cewek Nyaman" class="focus-ring w-full p-2 rounded-lg border border-slate-300 text-[11px]" placeholder="Keterangan" />
+              </div>
+            </div>
+          </div>
+
+          <!-- Hero Floating Photo Badges -->
+          <div class="p-4 rounded-xl bg-slate-50 border border-slate-200/80 space-y-3">
+            <div class="font-heading font-bold text-xs text-navy-900 uppercase tracking-wider">D. Teks Kartu &amp; Badge pada Foto Hero Kanan</div>
+            <div class="grid grid-cols-1 sm:grid-cols-3 gap-3">
+              <div class="space-y-1">
+                <label class="block text-xs font-bold text-slate-700">Badge Pojok Atas Foto</label>
+                <input type="text" id="cmsHeroDispatchBadge" value="Siaga Surabaya • Fast Response" class="focus-ring w-full p-2 rounded-lg border border-slate-300 bg-white text-xs" />
+              </div>
+              <div class="space-y-1">
+                <label class="block text-xs font-bold text-slate-700">Judul Kartu Foto Tim</label>
+                <input type="text" id="cmsHeroCardTitle" value="Tim Mahasiswa &amp; Armada Siap Bantu!" class="focus-ring w-full p-2 rounded-lg border border-slate-300 bg-white text-xs font-bold" />
+              </div>
+              <div class="space-y-1">
+                <label class="block text-xs font-bold text-slate-700">Subjudul Kartu Foto Tim</label>
+                <input type="text" id="cmsHeroCardSub" value="Mitra Terverifikasi • Cekatan, Aman &amp; Ramah Kantong" class="focus-ring w-full p-2 rounded-lg border border-slate-300 bg-white text-xs" />
+              </div>
+            </div>
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+              <div class="space-y-1">
+                <label class="block text-xs font-bold text-slate-700">Badge Verifikasi Kiri Bawah (Baris 1)</label>
+                <input type="text" id="cmsHeroVerified1" value="Identitas Mahasiswa Terverifikasi" class="focus-ring w-full p-2 rounded-lg border border-slate-300 bg-white text-xs font-bold" />
+              </div>
+              <div class="space-y-1">
+                <label class="block text-xs font-bold text-slate-700">Badge Verifikasi Kiri Bawah (Baris 2)</label>
+                <input type="text" id="cmsHeroVerified2" value="Aman &amp; Terpercaya" class="focus-ring w-full p-2 rounded-lg border border-slate-300 bg-white text-xs" />
+              </div>
             </div>
           </div>
 
           <!-- LIVE PREVIEW BOX -->
-          <div class="mt-4 p-5 rounded-2xl bg-slate-50 border border-slate-200/80 space-y-3">
+          <div class="p-5 rounded-2xl bg-slate-50 border border-slate-200/80 space-y-3">
             <div class="text-[10px] uppercase font-bold tracking-wider text-slate-600 flex items-center justify-between">
-              <span>👁️ Pratinjau Langsung (Live Preview)</span>
+              <span>👁️ Pratinjau Langsung (Live Preview Hero)</span>
               <span class="text-amber-700 bg-amber-100 px-2 py-0.5 rounded-full">Tampilan Halaman Depan</span>
             </div>
             <div class="bg-gradient-to-b from-[#F8FAFC] to-white p-5 rounded-xl border border-slate-200/60 shadow-2xs space-y-3">
@@ -577,7 +726,7 @@
                 <span id="previewHeroPrefix">Serba Bisa, Semua</span> <span id="previewHeroHighlight" class="text-amber-500 underline decoration-amber-400 decoration-wavy">Bisa Disuruh!</span>
               </h3>
               <p id="previewHeroDesc" class="text-slate-600 text-xs leading-relaxed max-w-xl">
-                Apapun kebutuhan harianmu di Surabaya, serahkan pada tim mahasiswa: dari Pindahan &amp; Titip Kos, Antar-Jemput Stasiun/Bandara, Urus Berkas & Dokumen, Rakit Perabot, belanja darurat, sampai Kru Event &amp; Tutor. Cekatan, terpercaya, dan harga transparan.
+                Apapun kebutuhan harianmu di Surabaya, serahkan pada tim mahasiswa: dari Pindahan &amp; Titip Kos, Antar-Jemput Stasiun/Bandara, Urus Berkas &amp; Dokumen, Rakit Perabot, belanja darurat, sampai Kru Event &amp; Tutor. Cekatan, terpercaya, dan harga transparan.
               </p>
               <div class="pt-1">
                 <button type="button" class="px-4 py-2 rounded-xl bg-amber-400 text-navy-950 font-bold text-xs shadow-xs pointer-events-none">
@@ -587,27 +736,347 @@
             </div>
           </div>
 
-          <!-- ACTION BUTTONS -->
-          <div class="pt-3 flex flex-wrap items-center gap-3">
-            <button onclick="saveCmsSettings()" class="btn-spring focus-ring px-6 py-3 rounded-xl bg-navy-900 hover:bg-navy-800 text-amber-300 font-extrabold text-xs shadow-sm flex items-center gap-2">
-              <svg class="w-4 h-4 fill-none stroke-current stroke-2" viewBox="0 0 24 24"><path d="M19 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11l5 5v11a2 2 0 0 1-2 2z"/><polyline points="17 21 17 13 7 13 7 21"/><polyline points="7 3 7 8 15 8"/></svg>
-              <span>Simpan Konten Laman</span>
+          <div class="pt-2 flex flex-wrap items-center gap-3">
+            <button type="button" onclick="saveCmsSettings()" class="btn-spring focus-ring px-6 py-3 rounded-xl bg-navy-900 hover:bg-navy-800 text-amber-300 font-extrabold text-xs shadow-sm">
+              Simpan &amp; Terapkan ke Website
             </button>
-            <button onclick="resetCmsSettings()" class="btn-spring focus-ring px-4 py-3 rounded-xl border border-slate-300 hover:bg-slate-100 text-slate-700 font-bold text-xs">
-              Reset ke Default
+            <button type="button" onclick="resetCmsSettings()" class="btn-spring focus-ring px-4 py-3 rounded-xl border border-slate-300 hover:bg-slate-100 text-slate-700 font-bold text-xs">
+              Reset Default
             </button>
-            <a href="index.html" target="_blank" class="btn-spring focus-ring px-4 py-3 rounded-xl border border-slate-300 hover:bg-slate-100 text-slate-700 font-bold text-xs flex items-center gap-1.5 ml-auto">
-              <span>Buka Web Publik (Tab Baru)</span>
-              <svg class="w-3.5 h-3.5 stroke-current fill-none stroke-2" viewBox="0 0 24 24"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6M15 3h6v6M10 14L21 3"/></svg>
-            </a>
           </div>
-
         </div>
 
-        <!-- ================================================================= -->
-        <!-- TESTIMONIALS CMS SECTION (REAL TIKTOK COMMENTS)                   -->
-        <!-- ================================================================= -->
-        <div class="bg-white rounded-2xl border border-slate-200 shadow-xs overflow-hidden mt-6">
+        <!-- =============================================================== -->
+        <!-- SUB-PANEL 2: SPOTLIGHT CUSTOM SURUH (BEBAS REQUEST APA SAJA)    -->
+        <!-- =============================================================== -->
+        <div id="cmsSubPanel-custom" class="bg-white p-5 sm:p-7 rounded-2xl border border-slate-200 shadow-xs space-y-6 text-xs sm:text-sm hidden">
+          <div class="border-b border-slate-100 pb-4 flex flex-col sm:flex-row sm:items-center justify-between gap-3">
+            <div>
+              <h2 class="font-heading font-black text-base text-navy-900 flex items-center gap-2">
+                <span class="w-2.5 h-2.5 rounded-full bg-amber-500"></span>
+                <span>2. Pengaturan Spotlight Utama: Custom SURUH (Bebas Request)</span>
+              </h2>
+              <p class="text-xs text-slate-500 mt-0.5">Banner besar biru tua di atas daftar 8 layanan tempat pengunjung mengetik kebutuhan bebas.</p>
+            </div>
+            <label class="inline-flex items-center gap-2 cursor-pointer bg-slate-100 px-3.5 py-2 rounded-xl border border-slate-200">
+              <input type="checkbox" id="cmsCustomActive" checked class="rounded text-navy-900 focus:ring-amber-500 w-4 h-4" />
+              <span class="text-xs font-bold text-navy-900">Tampilkan Spotlight Ini di Web</span>
+            </label>
+          </div>
+
+          <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
+            <div class="space-y-1">
+              <label class="block font-bold text-navy-900">Teks Badge Spotlight</label>
+              <input type="text" id="cmsCustomBadge" value="✨ LAYANAN PALING FLEKSIBEL • BEBAS REQUEST APA SAJA" class="focus-ring w-full p-2.5 rounded-xl border border-slate-300 text-xs font-bold" />
+            </div>
+            <div class="space-y-1">
+              <label class="block font-bold text-navy-900">Judul Baris 1 (Putih)</label>
+              <input type="text" id="cmsCustomTitle1" value="Punya Kebutuhan Unik?" class="focus-ring w-full p-2.5 rounded-xl border border-slate-300 text-xs font-bold" />
+            </div>
+            <div class="space-y-1">
+              <label class="block font-bold text-amber-700">Judul Baris 2 (Emas Highlight)</label>
+              <input type="text" id="cmsCustomTitle2" value="Suruh Apa Saja, Tinggal Tulis!" class="focus-ring w-full p-2.5 rounded-xl border border-amber-300 bg-amber-50/40 text-xs font-bold text-amber-800" />
+            </div>
+          </div>
+
+          <div class="space-y-1">
+            <label class="block font-bold text-navy-900">Deskripsi Penjelasan Custom SURUH</label>
+            <textarea id="cmsCustomDesc" rows="2" class="focus-ring w-full p-2.5 rounded-xl border border-slate-300 text-xs leading-relaxed">Tidak menemukan kategori yang pas di bawah? Tenang! Di UNAIR SURUH kamu bebas request bantuan apa saja (selama positif &amp; legal). Mulai dari antri tiket, beliin kado mendadak, cek kondisi kos, temani urus keperluan, hingga tugas dadakan lainnya di Surabaya.</textarea>
+          </div>
+
+          <!-- 6 Quick Idea Chips -->
+          <div class="p-4 rounded-xl bg-slate-50 border border-slate-200 space-y-3">
+            <div class="font-heading font-bold text-xs text-navy-900 uppercase tracking-wider">6 Tombol Contoh Tugas Cepat (Klik Otomatis Mengisi Form)</div>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3">
+              <div class="p-3 bg-white rounded-xl border border-slate-200 space-y-1.5">
+                <label class="block text-[10px] font-bold text-slate-500 uppercase">Tombol Chip 1</label>
+                <input type="text" id="cmsChipLabel0" value="🍜 Titip Beli Makanan / Obat" class="focus-ring w-full p-2 rounded-lg border border-slate-300 text-xs font-bold" placeholder="Label Tombol" />
+                <input type="text" id="cmsChipVal0" value="Tolong belikan makanan / obat malam ini" class="focus-ring w-full p-2 rounded-lg border border-slate-200 text-[11px] text-slate-600" placeholder="Isi teks saat diklik" />
+              </div>
+              <div class="p-3 bg-white rounded-xl border border-slate-200 space-y-1.5">
+                <label class="block text-[10px] font-bold text-slate-500 uppercase">Tombol Chip 2</label>
+                <input type="text" id="cmsChipLabel1" value="🏠 Cek Kondisi Kamar Kos" class="focus-ring w-full p-2 rounded-lg border border-slate-300 text-xs font-bold" />
+                <input type="text" id="cmsChipVal1" value="Tolong bantu cek kondisi kamar kos / ambilkan barang tertinggal" class="focus-ring w-full p-2 rounded-lg border border-slate-200 text-[11px] text-slate-600" />
+              </div>
+              <div class="p-3 bg-white rounded-xl border border-slate-200 space-y-1.5">
+                <label class="block text-[10px] font-bold text-slate-500 uppercase">Tombol Chip 3</label>
+                <input type="text" id="cmsChipLabel2" value="📄 Print &amp; Jilid Berkas" class="focus-ring w-full p-2 rounded-lg border border-slate-300 text-xs font-bold" />
+                <input type="text" id="cmsChipVal2" value="Tolong bantu print, jilid, dan antarkan berkas dokumen" class="focus-ring w-full p-2 rounded-lg border border-slate-200 text-[11px] text-slate-600" />
+              </div>
+              <div class="p-3 bg-white rounded-xl border border-slate-200 space-y-1.5">
+                <label class="block text-[10px] font-bold text-slate-500 uppercase">Tombol Chip 4</label>
+                <input type="text" id="cmsChipLabel3" value="🎁 Beli &amp; Antar Kado/Buket" class="focus-ring w-full p-2 rounded-lg border border-slate-300 text-xs font-bold" />
+                <input type="text" id="cmsChipVal3" value="Tolong belikan kado / buket wisuda dan antarkan ke lokasi" class="focus-ring w-full p-2 rounded-lg border border-slate-200 text-[11px] text-slate-600" />
+              </div>
+              <div class="p-3 bg-white rounded-xl border border-slate-200 space-y-1.5">
+                <label class="block text-[10px] font-bold text-slate-500 uppercase">Tombol Chip 5</label>
+                <input type="text" id="cmsChipLabel4" value="🧹 Bersih Kamar Kos" class="focus-ring w-full p-2 rounded-lg border border-slate-300 text-xs font-bold" />
+                <input type="text" id="cmsChipVal4" value="Tolong bantu bereskan &amp; sapu pel kamar kos" class="focus-ring w-full p-2 rounded-lg border border-slate-200 text-[11px] text-slate-600" />
+              </div>
+              <div class="p-3 bg-white rounded-xl border border-slate-200 space-y-1.5">
+                <label class="block text-[10px] font-bold text-slate-500 uppercase">Tombol Chip 6</label>
+                <input type="text" id="cmsChipLabel5" value="🛵 Bantuan Darurat Jalan" class="focus-ring w-full p-2 rounded-lg border border-slate-300 text-xs font-bold" />
+                <input type="text" id="cmsChipVal5" value="Tolong bantuan darurat motor mogok / ban bocor / habis bensin" class="focus-ring w-full p-2 rounded-lg border border-slate-200 text-[11px] text-slate-600" />
+              </div>
+            </div>
+          </div>
+
+          <!-- 3 Bullets & Form Texts -->
+          <div class="grid grid-cols-1 sm:grid-cols-3 gap-3">
+            <div class="space-y-1">
+              <label class="block text-xs font-bold text-slate-700">Poin Keunggulan 1</label>
+              <input type="text" id="cmsCustomBullet1" value="Tarif Fleksibel Mulai Rp 5.000" class="focus-ring w-full p-2.5 rounded-xl border border-slate-300 text-xs" />
+            </div>
+            <div class="space-y-1">
+              <label class="block text-xs font-bold text-slate-700">Poin Keunggulan 2</label>
+              <input type="text" id="cmsCustomBullet2" value="Deal Harga di Awal Sebelum Jalan" class="focus-ring w-full p-2.5 rounded-xl border border-slate-300 text-xs" />
+            </div>
+            <div class="space-y-1">
+              <label class="block text-xs font-bold text-slate-700">Poin Keunggulan 3</label>
+              <input type="text" id="cmsCustomBullet3" value="Bebas Pilih Mitra Cowok / Cewek" class="focus-ring w-full p-2.5 rounded-xl border border-slate-300 text-xs" />
+            </div>
+          </div>
+
+          <div class="grid grid-cols-1 sm:grid-cols-3 gap-3">
+            <div class="space-y-1">
+              <label class="block text-xs font-bold text-slate-700">Judul Kartu Form Kanan</label>
+              <input type="text" id="cmsCustomFormTitle" value="Form Request Bebas (Custom)" class="focus-ring w-full p-2.5 rounded-xl border border-slate-300 text-xs font-bold" />
+            </div>
+            <div class="space-y-1">
+              <label class="block text-xs font-bold text-slate-700">Teks Tombol Kirim WA</label>
+              <input type="text" id="cmsCustomFormBtnText" value="Kirim Request &amp; Tanya Tarif via WA" class="focus-ring w-full p-2.5 rounded-xl border border-slate-300 text-xs font-bold" />
+            </div>
+            <div class="space-y-1">
+              <label class="block text-xs font-bold text-slate-700">Catatan Bawah Tombol</label>
+              <input type="text" id="cmsCustomFormNote" value="Gratis tanya-tanya dulu • Admin langsung balas estimasi biaya" class="focus-ring w-full p-2.5 rounded-xl border border-slate-300 text-xs" />
+            </div>
+          </div>
+
+          <div class="pt-2">
+            <button type="button" onclick="saveCmsSettings()" class="btn-spring focus-ring px-6 py-3 rounded-xl bg-navy-900 hover:bg-navy-800 text-amber-300 font-extrabold text-xs shadow-sm">
+              Simpan Pengaturan Custom SURUH
+            </button>
+          </div>
+        </div>
+
+        <!-- =============================================================== -->
+        <!-- SUB-PANEL 3: MENGAPA MEMILIH KAMI (6 KEUNGGULAN)                -->
+        <!-- =============================================================== -->
+        <div id="cmsSubPanel-why" class="bg-white p-5 sm:p-7 rounded-2xl border border-slate-200 shadow-xs space-y-6 text-xs sm:text-sm hidden">
+          <div class="border-b border-slate-100 pb-4">
+            <h2 class="font-heading font-black text-base text-navy-900 flex items-center gap-2">
+              <span class="w-2.5 h-2.5 rounded-full bg-amber-500"></span>
+              <span>3. Pengaturan Seksi Mengapa Memilih Kami (6 Kartu Keunggulan)</span>
+            </h2>
+            <p class="text-xs text-slate-500 mt-0.5">Ubah judul seksi dan isi 6 kartu keunggulan operasional UNAIR SURUH.</p>
+          </div>
+
+          <div class="grid grid-cols-1 sm:grid-cols-3 gap-3">
+            <div class="space-y-1">
+              <label class="block text-xs font-bold text-slate-700">Badge Atas Seksi</label>
+              <input type="text" id="cmsWhyBadge" value="Standar Layanan Terpercaya • Transparan &amp; Profesional" class="focus-ring w-full p-2.5 rounded-xl border border-slate-300 text-xs font-bold" />
+            </div>
+            <div class="space-y-1">
+              <label class="block text-xs font-bold text-slate-700">Judul Utama Seksi</label>
+              <input type="text" id="cmsWhyTitle" value="Mengapa Memilih UNAIR SURUH?" class="focus-ring w-full p-2.5 rounded-xl border border-slate-300 text-xs font-bold" />
+            </div>
+            <div class="space-y-1">
+              <label class="block text-xs font-bold text-slate-700">Subjudul Seksi</label>
+              <input type="text" id="cmsWhySubtitle" value="Komitmen pelayanan mahasiswa yang mengutamakan keamanan identitas, transparansi biaya di awal, serta kenyamanan privasi pelanggan." class="focus-ring w-full p-2.5 rounded-xl border border-slate-300 text-xs" />
+            </div>
+          </div>
+
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+            <div class="p-4 rounded-xl bg-slate-50 border border-slate-200 space-y-2">
+              <span class="text-[10px] font-bold text-navy-900 uppercase">Kartu Keunggulan 1</span>
+              <input type="text" id="cmsWhyCardTitle0" value="Transparansi Tarif di Awal" class="focus-ring w-full p-2.5 rounded-lg border border-slate-300 bg-white text-xs font-bold" />
+              <textarea id="cmsWhyCardDesc0" rows="2" class="focus-ring w-full p-2.5 rounded-lg border border-slate-300 bg-white text-xs">Rincian tugas, jarak, dan total biaya disepakati bersama di awal lewat WhatsApp sebelum mitra berangkat. Tanpa biaya tersembunyi.</textarea>
+            </div>
+            <div class="p-4 rounded-xl bg-slate-50 border border-slate-200 space-y-2">
+              <span class="text-[10px] font-bold text-navy-900 uppercase">Kartu Keunggulan 2</span>
+              <input type="text" id="cmsWhyCardTitle1" value="Jaminan Keamanan Barang" class="focus-ring w-full p-2.5 rounded-lg border border-slate-300 bg-white text-xs font-bold" />
+              <textarea id="cmsWhyCardDesc1" rows="2" class="focus-ring w-full p-2.5 rounded-lg border border-slate-300 bg-white text-xs">Seluruh barang titipan, dokumen, maupun belanjaan dijaga dengan penuh tanggung jawab dan disertai bukti foto serta struk belanja asli.</textarea>
+            </div>
+            <div class="p-4 rounded-xl bg-slate-50 border border-slate-200 space-y-2">
+              <span class="text-[10px] font-bold text-navy-900 uppercase">Kartu Keunggulan 3</span>
+              <input type="text" id="cmsWhyCardTitle2" value="Klien Cewek? Bisa Request Worker Cewek" class="focus-ring w-full p-2.5 rounded-lg border border-slate-300 bg-white text-xs font-bold" />
+              <textarea id="cmsWhyCardDesc2" rows="2" class="focus-ring w-full p-2.5 rounded-lg border border-slate-300 bg-white text-xs">Untuk kenyamanan dan privasi ekstra di dalam kos atau hunian, klien perempuan bebas me-request mitra mahasiswi perempuan.</textarea>
+            </div>
+            <div class="p-4 rounded-xl bg-slate-50 border border-slate-200 space-y-2">
+              <span class="text-[10px] font-bold text-navy-900 uppercase">Kartu Keunggulan 4</span>
+              <input type="text" id="cmsWhyCardTitle3" value="Mitra Mahasiswa Terverifikasi" class="focus-ring w-full p-2.5 rounded-lg border border-slate-300 bg-white text-xs font-bold" />
+              <textarea id="cmsWhyCardDesc3" rows="2" class="focus-ring w-full p-2.5 rounded-lg border border-slate-300 bg-white text-xs">Setiap mitra pelaksana adalah mahasiswa aktif yang telah melewati verifikasi identitas resmi oleh tim manajemen operasional.</textarea>
+            </div>
+            <div class="p-4 rounded-xl bg-slate-50 border border-slate-200 space-y-2">
+              <span class="text-[10px] font-bold text-navy-900 uppercase">Kartu Keunggulan 5</span>
+              <input type="text" id="cmsWhyCardTitle4" value="Layanan Positif &amp; Profesional" class="focus-ring w-full p-2.5 rounded-lg border border-slate-300 bg-white text-xs font-bold" />
+              <textarea id="cmsWhyCardDesc4" rows="2" class="focus-ring w-full p-2.5 rounded-lg border border-slate-300 bg-white text-xs">Hanya melayani penugasan yang positif, legal, dan bermanfaat. Menolak segala bentuk kecurangan akademik maupun barang terlarang.</textarea>
+            </div>
+            <div class="p-4 rounded-xl bg-slate-50 border border-slate-200 space-y-2">
+              <span class="text-[10px] font-bold text-navy-900 uppercase">Kartu Keunggulan 6</span>
+              <input type="text" id="cmsWhyCardTitle5" value="Pemberdayaan Ekonomi Mahasiswa" class="focus-ring w-full p-2.5 rounded-lg border border-slate-300 bg-white text-xs font-bold" />
+              <textarea id="cmsWhyCardDesc5" rows="2" class="focus-ring w-full p-2.5 rounded-lg border border-slate-300 bg-white text-xs">Setiap pesananmu turut membantu mahasiswa menambah penghasilan secara produktif di sela jadwal perkuliahan.</textarea>
+            </div>
+          </div>
+
+          <div class="pt-2">
+            <button type="button" onclick="saveCmsSettings()" class="btn-spring focus-ring px-6 py-3 rounded-xl bg-navy-900 hover:bg-navy-800 text-amber-300 font-extrabold text-xs shadow-sm">
+              Simpan Seksi Mengapa Kami
+            </button>
+          </div>
+        </div>
+
+        <!-- =============================================================== -->
+        <!-- SUB-PANEL 4: JADI MITRA MAHASISWA & BANNER CTA BAWAH            -->
+        <!-- =============================================================== -->
+        <div id="cmsSubPanel-mitra" class="bg-white p-5 sm:p-7 rounded-2xl border border-slate-200 shadow-xs space-y-6 text-xs sm:text-sm hidden">
+          <div class="border-b border-slate-100 pb-4">
+            <h2 class="font-heading font-black text-base text-navy-900 flex items-center gap-2">
+              <span class="w-2.5 h-2.5 rounded-full bg-amber-500"></span>
+              <span>4. Pengaturan Banner CTA Bawah &amp; Seksi Rekrutmen Mitra Mahasiswa</span>
+            </h2>
+            <p class="text-xs text-slate-500 mt-0.5">Ubah ajakan memesan di bagian bawah dan informasi pendaftaran mitra mahasiswa.</p>
+          </div>
+
+          <!-- Banner CTA -->
+          <div class="p-4 rounded-xl bg-slate-50 border border-slate-200 space-y-3">
+            <div class="font-heading font-bold text-xs text-navy-900 uppercase tracking-wider">A. Banner Ajakan Pesan (CTA Bawah)</div>
+            <div class="grid grid-cols-1 sm:grid-cols-3 gap-3">
+              <div class="space-y-1">
+                <label class="block text-xs font-bold text-slate-700">Badge Banner CTA</label>
+                <input type="text" id="cmsCtaBadge" value="Siap Membantu Kebutuhanmu Hari Ini" class="focus-ring w-full p-2.5 rounded-xl border border-slate-300 bg-white text-xs font-bold" />
+              </div>
+              <div class="space-y-1">
+                <label class="block text-xs font-bold text-slate-700">Judul Banner CTA</label>
+                <input type="text" id="cmsCtaTitle" value="Ada Kerjaan yang Perlu Diselesaikan Sekarang?" class="focus-ring w-full p-2.5 rounded-xl border border-slate-300 bg-white text-xs font-bold" />
+              </div>
+              <div class="space-y-1">
+                <label class="block text-xs font-bold text-slate-700">Teks Tombol Banner CTA</label>
+                <input type="text" id="cmsCtaBtnText" value="Pesan Jasa Sekarang" class="focus-ring w-full p-2.5 rounded-xl border border-slate-300 bg-white text-xs font-bold" />
+              </div>
+            </div>
+            <div class="space-y-1">
+              <label class="block text-xs font-bold text-slate-700">Deskripsi Banner CTA</label>
+              <input type="text" id="cmsCtaDesc" value="Tidak perlu sungkan bertanya tarif terlebih dahulu. Pilih layanan yang kamu butuhkan, isi form singkat, dan langsung terhubung ke WhatsApp Admin." class="focus-ring w-full p-2.5 rounded-xl border border-slate-300 bg-white text-xs" />
+            </div>
+          </div>
+
+          <!-- Seksi Jadi Mitra -->
+          <div class="p-4 rounded-xl bg-slate-50 border border-slate-200 space-y-4">
+            <div class="font-heading font-bold text-xs text-navy-900 uppercase tracking-wider">B. Seksi Gabung Mitra Worker Mahasiswa (#jadi-mitra)</div>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3">
+              <div class="space-y-1">
+                <label class="block text-xs font-bold text-slate-700">Badge Seksi Mitra</label>
+                <input type="text" id="cmsMitraBadge" value="Pemberdayaan Ekonomi Mahasiswa" class="focus-ring w-full p-2.5 rounded-xl border border-slate-300 bg-white text-xs font-bold" />
+              </div>
+              <div class="space-y-1">
+                <label class="block text-xs font-bold text-slate-700">Judul Mitra (Baris 1)</label>
+                <input type="text" id="cmsMitraTitle1" value="Mahasiswa Aktif?" class="focus-ring w-full p-2.5 rounded-xl border border-slate-300 bg-white text-xs font-bold" />
+              </div>
+              <div class="space-y-1">
+                <label class="block text-xs font-bold text-amber-700">Judul Mitra (Baris 2 Emas)</label>
+                <input type="text" id="cmsMitraTitle2" value="Yuk Gabung Jadi Mitra Worker!" class="focus-ring w-full p-2.5 rounded-xl border border-amber-300 bg-white text-xs font-bold" />
+              </div>
+              <div class="space-y-1">
+                <label class="block text-xs font-bold text-slate-700">Teks Tombol Daftar Mitra</label>
+                <input type="text" id="cmsMitraBtnText" value="Daftar Jadi Mitra via WA" class="focus-ring w-full p-2.5 rounded-xl border border-slate-300 bg-white text-xs font-bold" />
+              </div>
+            </div>
+            <div class="space-y-1">
+              <label class="block text-xs font-bold text-slate-700">Deskripsi Ajakan Mitra</label>
+              <textarea id="cmsMitraDesc" rows="2" class="focus-ring w-full p-2.5 rounded-xl border border-slate-300 bg-white text-xs">Punya waktu luang di sela jadwal kuliah, punya kendaraan, atau punya keahlian khusus? Ubah waktu luangmu menjadi penghasilan tambahan yang fleksibel bersama tim mahasiswa UNAIR SURUH.</textarea>
+            </div>
+            <div class="grid grid-cols-1 sm:grid-cols-3 gap-3">
+              <div class="p-3 bg-white rounded-xl border border-slate-200 space-y-1.5">
+                <span class="text-[10px] font-bold text-amber-600 uppercase">Pilar Keuntungan 1</span>
+                <input type="text" id="cmsMitraP1Title" value="80% – 85% Bagi Hasil Mitra" class="focus-ring w-full p-2 rounded-lg border border-slate-300 text-xs font-bold" />
+                <input type="text" id="cmsMitraP1Desc" value="Mayoritas tarif jasa langsung masuk ke kantong mitra mahasiswa pelaksana." class="focus-ring w-full p-2 rounded-lg border border-slate-200 text-[11px]" />
+              </div>
+              <div class="p-3 bg-white rounded-xl border border-slate-200 space-y-1.5">
+                <span class="text-[10px] font-bold text-amber-600 uppercase">Pilar Keuntungan 2</span>
+                <input type="text" id="cmsMitraP2Title" value="100% Bebas Pilih Jadwal" class="focus-ring w-full p-2 rounded-lg border border-slate-300 text-xs font-bold" />
+                <input type="text" id="cmsMitraP2Desc" value="Kuliah tetap prioritas utama. Ambil order hanya saat kamu sedang luang." class="focus-ring w-full p-2 rounded-lg border border-slate-200 text-[11px]" />
+              </div>
+              <div class="p-3 bg-white rounded-xl border border-slate-200 space-y-1.5">
+                <span class="text-[10px] font-bold text-amber-600 uppercase">Pilar Keuntungan 3</span>
+                <input type="text" id="cmsMitraP3Title" value="Komunitas Positif &amp; Aman" class="focus-ring w-full p-2 rounded-lg border border-slate-300 text-xs font-bold" />
+                <input type="text" id="cmsMitraP3Desc" value="Didukung tim koordinator admin yang responsif dan penugasan yang jelas." class="focus-ring w-full p-2 rounded-lg border border-slate-200 text-[11px]" />
+              </div>
+            </div>
+          </div>
+
+          <div class="pt-2">
+            <button type="button" onclick="saveCmsSettings()" class="btn-spring focus-ring px-6 py-3 rounded-xl bg-navy-900 hover:bg-navy-800 text-amber-300 font-extrabold text-xs shadow-sm">
+              Simpan Pengaturan Mitra &amp; CTA
+            </button>
+          </div>
+        </div>
+
+        <!-- =============================================================== -->
+        <!-- SUB-PANEL 5: TANYA JAWAB (FAQ) & JUDUL SEKSI LAINNYA            -->
+        <!-- =============================================================== -->
+        <div id="cmsSubPanel-faq" class="bg-white p-5 sm:p-7 rounded-2xl border border-slate-200 shadow-xs space-y-6 text-xs sm:text-sm hidden">
+          <div class="border-b border-slate-100 pb-4 flex flex-col sm:flex-row sm:items-center justify-between gap-3">
+            <div>
+              <h2 class="font-heading font-black text-base text-navy-900 flex items-center gap-2">
+                <span class="w-2.5 h-2.5 rounded-full bg-amber-500"></span>
+                <span>5. Pengaturan Tanya Jawab (FAQ) &amp; Judul Seksi Halaman</span>
+              </h2>
+              <p class="text-xs text-slate-500 mt-0.5">Kelola pertanyaan yang sering diajukan pelanggan serta judul seksi Layanan, Reels, dan Testimoni.</p>
+            </div>
+            <div class="flex items-center gap-2">
+              <button type="button" onclick="resetFaqsToDefault()" class="btn-spring px-3 py-2 rounded-xl bg-slate-100 hover:bg-slate-200 text-slate-700 font-bold text-xs">Reset FAQ Bawaan</button>
+              <button type="button" onclick="openFaqEditor()" class="btn-spring px-4 py-2 rounded-xl bg-amber-400 hover:bg-amber-300 text-navy-950 font-bold text-xs shadow-xs">+ Tambah Pertanyaan FAQ</button>
+            </div>
+          </div>
+
+          <!-- Section Titles -->
+          <div class="p-4 rounded-xl bg-slate-50 border border-slate-200 space-y-3">
+            <div class="font-heading font-bold text-xs text-navy-900 uppercase tracking-wider">Judul &amp; Subjudul Seksi di Halaman Utama</div>
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+              <div class="space-y-1">
+                <label class="block text-xs font-bold text-slate-700">Judul Seksi 8 Layanan</label>
+                <input type="text" id="cmsLayananTitle" value="Pilih Layanan Sesuai Kebutuhanmu" class="focus-ring w-full p-2.5 rounded-xl border border-slate-300 bg-white text-xs font-bold" />
+              </div>
+              <div class="space-y-1">
+                <label class="block text-xs font-bold text-slate-700">Subjudul Seksi 8 Layanan</label>
+                <input type="text" id="cmsLayananSubtitle" value="Mulai dari Rp 5.000! Semua layanan dikerjakan oleh mitra mahasiswa terverifikasi dengan standar kerja rapi, sopan, dan transparan." class="focus-ring w-full p-2.5 rounded-xl border border-slate-300 bg-white text-xs" />
+              </div>
+              <div class="space-y-1">
+                <label class="block text-xs font-bold text-slate-700">Judul Seksi Video Reels</label>
+                <input type="text" id="cmsReelsTitle" value="Kegiatan Kami di Lapangan" class="focus-ring w-full p-2.5 rounded-xl border border-slate-300 bg-white text-xs font-bold" />
+              </div>
+              <div class="space-y-1">
+                <label class="block text-xs font-bold text-slate-700">Judul Seksi Testimoni TikTok</label>
+                <input type="text" id="cmsTestiTitle" value="Kata Mereka di Komentar TikTok" class="focus-ring w-full p-2.5 rounded-xl border border-slate-300 bg-white text-xs font-bold" />
+              </div>
+              <div class="space-y-1">
+                <label class="block text-xs font-bold text-slate-700">Judul Seksi FAQ</label>
+                <input type="text" id="cmsFaqTitle" value="Pertanyaan yang Sering Diajukan (FAQ)" class="focus-ring w-full p-2.5 rounded-xl border border-slate-300 bg-white text-xs font-bold" />
+              </div>
+              <div class="space-y-1">
+                <label class="block text-xs font-bold text-slate-700">Subjudul Seksi FAQ</label>
+                <input type="text" id="cmsFaqSubtitle" value="Informasi lengkap seputar cara pemesanan, tarif, dan jaminan keamanan layanan UNAIR SURUH." class="focus-ring w-full p-2.5 rounded-xl border border-slate-300 bg-white text-xs" />
+              </div>
+            </div>
+            <div class="pt-1">
+              <button type="button" onclick="saveCmsSettings()" class="btn-spring px-4 py-2 rounded-xl bg-navy-900 text-amber-300 font-bold text-xs">Simpan Judul Seksi</button>
+            </div>
+          </div>
+
+          <!-- FAQ List Table -->
+          <div class="space-y-2">
+            <div class="font-heading font-bold text-xs text-navy-900 uppercase tracking-wider">Daftar Pertanyaan &amp; Jawaban FAQ</div>
+            <div id="adminFaqListContainer" class="space-y-2.5">
+              <!-- Populated by JS -->
+            </div>
+          </div>
+        </div>
+
+        <!-- =============================================================== -->
+        <!-- SUB-PANEL 6: TESTIMONIALS CMS SECTION (REAL TIKTOK COMMENTS)    -->
+        <!-- =============================================================== -->
+        <div id="cmsSubPanel-testi" class="bg-white rounded-2xl border border-slate-200 shadow-xs overflow-hidden hidden">
           <div class="p-5 sm:p-6 border-b border-slate-100 flex flex-col sm:flex-row sm:items-center justify-between gap-4">
             <div>
               <div class="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full bg-slate-900 text-white text-[10px] font-bold tracking-wide uppercase mb-1">
@@ -615,8 +1084,7 @@
                 <span>Live TikTok Reviews CMS</span>
               </div>
               <h2 class="font-heading font-black text-lg text-navy-900">Testimoni Komentar TikTok (Kata Mereka)</h2>
-              <p class="text-xs text-slate-400 mb-1">Disclaimer: Dashboard kendali operasional inisiatif independen UNAIR SURUH. Tidak terafiliasi resmi dengan institusi Universitas Airlangga.</p>
-    <p class="text-xs text-slate-500">Kelola ulasan komentar asli di TikTok yang tayang di website publik. Klik link untuk membuktikan keasliannya.</p>
+              <p class="text-xs text-slate-500">Kelola ulasan komentar asli di TikTok yang tayang di website publik. Klik link untuk membuktikan keasliannya.</p>
             </div>
             <div class="flex items-center gap-2">
               <button onclick="resetTestimonialsToDefault()" class="btn-spring focus-ring px-3.5 py-2 rounded-xl bg-slate-100 hover:bg-slate-200 text-slate-700 text-xs font-bold transition flex items-center gap-1.5">
@@ -653,70 +1121,144 @@
       </section>
 
       <!-- ================================================================= -->
-      <!-- PANEL 6: LAPORAN & REKAP                                          -->
+      <!-- PANEL 6: LAPORAN, REKAP & BACKUP RESTORE JSON                     -->
       <!-- ================================================================= -->
       <section id="panel-reports" class="space-y-6 hidden">
         
         <div>
-          <h1 class="font-heading font-black text-2xl text-navy-900 tracking-tight">Laporan & Statistik</h1>
-          <p class="text-xs text-slate-600">Performa layanan dan kepatuhan SOP kerja mitra</p>
+          <h1 class="font-heading font-black text-2xl text-navy-900 tracking-tight">Laporan, Ekspor CSV &amp; Backup Sistem</h1>
+          <p class="text-xs text-slate-600">Rekap performa layanan, unduh laporan order CSV, serta cadangkan (Backup/Restore) seluruh konfigurasi Web Admin</p>
         </div>
 
         <div class="grid md:grid-cols-3 gap-4">
           <div class="bg-white p-5 rounded-2xl border border-slate-200 shadow-xs space-y-2">
             <div class="text-xs font-semibold text-slate-500">Layanan Paling Banyak Diminati</div>
-            <div class="font-heading font-bold text-lg text-navy-900">Antar Jemput Amerta</div>
-            <div class="text-[11px] text-slate-500">38% dari total pesanan masuk</div>
+            <div class="font-heading font-bold text-lg text-navy-900">Custom SURUH &amp; Go SURUH</div>
+            <div class="text-[11px] text-slate-500">Mayoritas dari total pesanan masuk</div>
           </div>
           <div class="bg-white p-5 rounded-2xl border border-slate-200 shadow-xs space-y-2">
             <div class="text-xs font-semibold text-slate-500">Kepatuhan Gender Match</div>
-            <div class="font-heading font-bold text-lg text-emerald-600">100% Sesuai</div>
+            <div class="font-heading font-bold text-lg text-emerald-600">100% Sesuai SOP</div>
             <div class="text-[11px] text-slate-500">Klien cewek dilayani mitra mahasiswi cewek</div>
           </div>
           <div class="bg-white p-5 rounded-2xl border border-slate-200 shadow-xs space-y-2">
             <div class="text-xs font-semibold text-slate-500">Waktu Respon WhatsApp</div>
-            <div class="font-heading font-bold text-lg text-navy-900">&lt; 8 Menit</div>
+            <div class="font-heading font-bold text-lg text-navy-900">&lt; 5 Menit</div>
             <div class="text-[11px] text-slate-500">Standar operasional tercapai</div>
           </div>
         </div>
 
-        <div class="bg-white p-5 rounded-2xl border border-slate-200 shadow-xs space-y-3">
-          <h3 class="font-heading font-bold text-sm text-navy-900">Ekspor Arsip Pesanan</h3>
-          <p class="text-xs text-slate-600">Unduh data seluruh pesanan untuk pelaporan tim operasional.</p>
-          <button onclick="exportOrdersToCSV()" class="btn-spring focus-ring px-5 py-2.5 rounded-xl bg-navy-900 text-gold-500 font-bold text-xs flex items-center gap-2">
-            <svg class="w-4 h-4 stroke-current fill-none stroke-2 stroke-linecap-round stroke-linejoin-round" viewBox="0 0 24 24"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
-            <span>Unduh Berkas CSV Lengkap</span>
-          </button>
+        <div class="grid md:grid-cols-2 gap-4">
+          <div class="bg-white p-5 rounded-2xl border border-slate-200 shadow-xs space-y-3">
+            <h3 class="font-heading font-bold text-sm text-navy-900">1. Ekspor Arsip Pesanan (Excel / CSV)</h3>
+            <p class="text-xs text-slate-600">Unduh data seluruh pesanan pelanggan untuk pelaporan tim operasional.</p>
+            <button onclick="exportOrdersToCSV()" class="btn-spring focus-ring px-5 py-2.5 rounded-xl bg-navy-900 text-gold-500 font-bold text-xs flex items-center gap-2">
+              <svg class="w-4 h-4 stroke-current fill-none stroke-2 stroke-linecap-round stroke-linejoin-round" viewBox="0 0 24 24"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+              <span>Unduh Berkas CSV Lengkap</span>
+            </button>
+          </div>
+
+          <div class="bg-white p-5 rounded-2xl border border-slate-200 shadow-xs space-y-3">
+            <h3 class="font-heading font-bold text-sm text-navy-900">2. Backup &amp; Restore Semua Pengaturan Web (JSON)</h3>
+            <p class="text-xs text-slate-600">Simpan seluruh settingan tampilan, harga layanan, mitra, dan order ke file JSON atau pulihkan kembali.</p>
+            <div class="flex flex-wrap items-center gap-2">
+              <button onclick="exportFullAdminBackup()" class="btn-spring focus-ring px-4 py-2.5 rounded-xl bg-emerald-600 hover:bg-emerald-500 text-white font-bold text-xs flex items-center gap-1.5">
+                <span>⬇️ Download Backup (.json)</span>
+              </button>
+              <label class="btn-spring px-4 py-2.5 rounded-xl bg-slate-100 hover:bg-slate-200 text-navy-900 font-bold text-xs border border-slate-300 cursor-pointer">
+                <span>⬆️ Restore File (.json)</span>
+                <input type="file" accept=".json" onchange="importFullAdminBackup(event)" class="hidden" />
+              </label>
+              <button onclick="factoryResetAllAdminData()" class="btn-spring px-3.5 py-2.5 rounded-xl bg-rose-50 hover:bg-rose-100 text-rose-700 font-bold text-xs border border-rose-200">
+                Reset Semua ke Pabrik
+              </button>
+            </div>
+          </div>
         </div>
 
       </section>
 
       <!-- ================================================================= -->
-      <!-- PANEL 7: PENGATURAN TOKO & WHATSAPP                               -->
+      <!-- PANEL 7: PENGATURAN WA, FOOTER, SOSMED & PIN KEAMANAN             -->
       <!-- ================================================================= -->
       <section id="panel-settings" class="space-y-6 hidden">
         
-        <div>
-          <h1 class="font-heading font-black text-2xl text-navy-900 tracking-tight">Pengaturan WhatsApp & Operasional</h1>
-          <p class="text-xs text-slate-600">Nomor kontak utama WhatsApp, jam kerja, dan tim pengelola</p>
+        <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-4">
+          <div>
+            <h1 class="font-heading font-black text-2xl text-navy-900 tracking-tight">Pengaturan Kontak WA, Footer &amp; PIN Admin</h1>
+            <p class="text-xs text-slate-600">Nomor WhatsApp penerima order, akun media sosial resmi, teks footer bawah, dan PIN keamanan Web Admin</p>
+          </div>
+          <button onclick="saveAdminSettings()" class="btn-spring focus-ring px-5 py-2.5 rounded-xl bg-navy-900 text-gold-500 font-bold text-xs hover:bg-navy-800 shadow-xs">
+            Simpan Pengaturan Kontak &amp; Footer
+          </button>
         </div>
 
-        <div class="bg-white p-6 rounded-2xl border border-slate-200 shadow-xs space-y-5 text-xs sm:text-sm">
+        <div class="bg-white p-6 rounded-2xl border border-slate-200 shadow-xs space-y-6 text-xs sm:text-sm">
           
-          <div class="space-y-2">
-            <label class="block font-bold text-navy-900">Nomor WhatsApp Resmi Admin (Format 628...)</label>
-            <input type="text" id="settingWaNumber" value="6289677772336" class="focus-ring w-full p-3 rounded-xl border border-slate-300 font-mono text-sm" />
-            <p class="text-[11px] text-slate-500">Nomor ini yang akan menerima seluruh order otomatis dari tombol website.</p>
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+            <div class="space-y-1.5">
+              <label class="block font-bold text-navy-900">1. Nomor WhatsApp Resmi Admin (Format 628...)</label>
+              <input type="text" id="settingWaNumber" value="6289677772336" class="focus-ring w-full p-3 rounded-xl border border-slate-300 font-mono text-sm font-bold text-emerald-700" />
+              <p class="text-[11px] text-slate-500">Otomatis mengubah seluruh tombol WhatsApp dan tujuan form order di website utama.</p>
+            </div>
+            <div class="space-y-1.5">
+              <label class="block font-bold text-navy-900">2. Label Tombol WA Mengambang (Pojok Kanan Bawah Web)</label>
+              <input type="text" id="settingFloatingWaLabel" value="Chat WA" class="focus-ring w-full p-3 rounded-xl border border-slate-300 text-xs sm:text-sm font-bold" />
+              <p class="text-[11px] text-slate-500">Teks pada tombol hijau WhatsApp yang melayang di pojok kanan bawah.</p>
+            </div>
           </div>
 
-          <div class="space-y-2">
-            <label class="block font-bold text-navy-900">Jam Operasional Layanan</label>
-            <input type="text" id="settingHours" value="06.00 - 24.00 WIB (Kebutuhan Urgent Siaga 24 Jam)" class="focus-ring w-full p-3 rounded-xl border border-slate-300 text-xs sm:text-sm" />
+          <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
+            <div class="space-y-1.5">
+              <label class="block font-bold text-navy-900">3. Email Resmi (Footer)</label>
+              <input type="email" id="settingFooterEmail" value="unairsuruh@gmail.com" class="focus-ring w-full p-2.5 rounded-xl border border-slate-300 text-xs" />
+            </div>
+            <div class="space-y-1.5">
+              <label class="block font-bold text-navy-900">4. Username Instagram</label>
+              <input type="text" id="settingFooterIg" value="@unair.suruh" class="focus-ring w-full p-2.5 rounded-xl border border-slate-300 text-xs" />
+            </div>
+            <div class="space-y-1.5">
+              <label class="block font-bold text-navy-900">5. Username TikTok</label>
+              <input type="text" id="settingFooterTiktok" value="@unair_suruh" class="focus-ring w-full p-2.5 rounded-xl border border-slate-300 text-xs" />
+            </div>
+          </div>
+
+          <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
+            <div class="space-y-1.5">
+              <label class="block font-bold text-navy-900">6. Badge PJ Operasional (Footer)</label>
+              <input type="text" id="settingFooterPj" value="PJ Operasional: Afif (FTMM)" class="focus-ring w-full p-2.5 rounded-xl border border-slate-300 text-xs font-bold" />
+            </div>
+            <div class="space-y-1.5">
+              <label class="block font-bold text-navy-900">7. Badge Jumlah Mitra (Footer)</label>
+              <input type="text" id="settingFooterWorker" value="25+ Mitra Mahasiswa Terverifikasi" class="focus-ring w-full p-2.5 rounded-xl border border-slate-300 text-xs font-bold" />
+            </div>
+            <div class="space-y-1.5">
+              <label class="block font-bold text-navy-900">8. Area &amp; Jam Operasional</label>
+              <input type="text" id="settingHours" value="Area Kampus A, B, C &amp; Seluruh Surabaya • Setiap Hari 06.00 – 23.00 WIB" class="focus-ring w-full p-2.5 rounded-xl border border-slate-300 text-xs" />
+            </div>
+          </div>
+
+          <div class="space-y-1.5">
+            <label class="block font-bold text-navy-900">9. Deskripsi Singkat Brand di Footer</label>
+            <textarea id="settingFooterDesc" rows="2" class="focus-ring w-full p-2.5 rounded-xl border border-slate-300 text-xs">Ekosistem layanan bantuan harian on-demand serba bisa yang dikelola oleh mahasiswa di Surabaya. Menghubungkan warga kampus, anak kos, dan masyarakat umum dengan mitra mahasiswa yang cekatan, jujur, dan terverifikasi.</textarea>
+          </div>
+
+          <div class="space-y-1.5">
+            <label class="block font-bold text-navy-900">10. Teks Disclaimer Footer Paling Bawah</label>
+            <input type="text" id="settingFooterDisclaimer" value="Disclaimer: UNAIR SURUH adalah inisiatif kewirausahaan mandiri mahasiswa dan tidak berafiliasi secara kelembagaan resmi dengan birokrasi rektorat Universitas Airlangga." class="focus-ring w-full p-2.5 rounded-xl border border-slate-300 text-xs text-slate-600" />
+          </div>
+
+          <div class="p-4 rounded-xl bg-amber-50/70 border border-amber-200 space-y-2">
+            <label class="block font-bold text-navy-900">🔒 PIN Keamanan Masuk Web Admin (Default: 1954)</label>
+            <div class="flex flex-col sm:flex-row sm:items-center gap-3">
+              <input type="text" id="settingAdminPin" value="1954" maxlength="8" class="focus-ring w-full sm:w-48 p-2.5 rounded-xl border border-amber-300 bg-white font-mono font-bold text-sm text-center" />
+              <span class="text-xs text-slate-600">Ganti kode PIN untuk mengunci halaman `admin.html` agar hanya tim admin yang bisa mengakses.</span>
+            </div>
           </div>
 
           <div class="pt-2">
             <button onclick="saveAdminSettings()" class="btn-spring focus-ring px-6 py-3 rounded-xl bg-navy-900 text-gold-500 font-bold text-xs hover:bg-navy-800">
-              Simpan Pengaturan
+              Simpan Semua Pengaturan Kontak &amp; Footer
             </button>
           </div>
 
@@ -729,7 +1271,7 @@
   </div>
 
   <!-- ===================================================================== -->
-  <!-- 3. MODALS (DETAIL ORDER, ASSIGN WORKER, NEW ORDER, ADD WORKER)        -->
+  <!-- 3. MODALS (DETAIL ORDER, NEW ORDER, ADD/EDIT WORKER, SERVICE, FAQ)    -->
   <!-- ===================================================================== -->
 
   <!-- MODAL DETAIL & KELOLA ORDER -->
@@ -783,13 +1325,15 @@
         </div>
       </div>
 
-      <div class="flex items-center gap-2 pt-2">
+      <div class="flex flex-wrap items-center gap-2 pt-2">
         <button onclick="saveOrderDetailAction()" class="btn-spring focus-ring flex-1 py-2.5 rounded-xl bg-navy-900 text-gold-500 font-bold text-xs hover:bg-navy-800">
           Simpan Perubahan
         </button>
         <button onclick="openWaChatDirect()" class="btn-spring focus-ring px-4 py-2.5 rounded-xl bg-emerald-600 text-white font-bold text-xs flex items-center gap-1.5 hover:bg-emerald-500" title="Chat WhatsApp Pemesan">
-          <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/></svg>
           <span>Chat WA</span>
+        </button>
+        <button onclick="deleteCurrentOrder()" class="btn-spring focus-ring px-3 py-2.5 rounded-xl bg-rose-50 hover:bg-rose-100 text-rose-600 font-bold text-xs border border-rose-200" title="Hapus Order">
+          Hapus
         </button>
       </div>
 
@@ -807,18 +1351,20 @@
       <div>
         <label class="block font-semibold text-slate-700 mb-1">Pilih Layanan</label>
         <select id="newOrderSvc" class="focus-ring w-full p-2.5 rounded-lg border border-slate-300">
-          <option value="Pindah Kos">Pindah Kos (Tossa / Van)</option>
-          <option value="Bersihin Kos">Bersihin Kos (Deep Cleaning)</option>
-          <option value="Rakit Barang">Rakit Barang (Meja / Lemari)</option>
-          <option value="Antar Jemput">Antar Jemput (Mobil AC / Motor)</option>
-          <option value="Antar Paket / Dokumen">Antar Paket & Dokumen</option>
-          <option value="Kebutuhan Urgent">Kebutuhan Urgent 24 Jam</option>
-          <option value="Beliin Barang">Beliin Barang / Jastip</option>
+          <option value="Custom SURUH (Bebas Request)">Custom SURUH (Bebas Request)</option>
+          <option value="Go SURUH">Go SURUH (Antar Jemput &amp; Mobilitas)</option>
+          <option value="Move SURUH">Move SURUH (Pindahan Kos &amp; Angkut)</option>
+          <option value="Keep SURUH">Keep SURUH (Titip Barang Kos)</option>
+          <option value="Fix SURUH">Fix SURUH (Rakit Perabot &amp; Teknis)</option>
+          <option value="Task SURUH">Task SURUH (Titip Beli &amp; Bersih Kos)</option>
+          <option value="Desk SURUH">Desk SURUH (Urus Berkas &amp; Dokumen)</option>
+          <option value="Crew SURUH">Crew SURUH (Kru Event &amp; Kepanitiaan)</option>
+          <option value="Talent SURUH">Talent SURUH (Tutor &amp; Asistensi)</option>
         </select>
       </div>
 
       <div>
-        <label class="block font-semibold text-slate-700 mb-1">Satuan & Rincian Tugas</label>
+        <label class="block font-semibold text-slate-700 mb-1">Satuan &amp; Rincian Tugas</label>
         <input type="text" id="newOrderSatuan" placeholder="cth: 1 Tossa + 1 Helper (Lantai 2)" class="focus-ring w-full p-2.5 rounded-lg border border-slate-300" />
       </div>
 
@@ -834,7 +1380,7 @@
       </div>
 
       <div>
-        <label class="block font-semibold text-slate-700 mb-1">Lokasi Jemput & Antar</label>
+        <label class="block font-semibold text-slate-700 mb-1">Lokasi Jemput &amp; Antar</label>
         <input type="text" id="newOrderLocation" placeholder="Lokasi Asal / Tujuan" class="focus-ring w-full p-2.5 rounded-lg border border-slate-300" />
       </div>
 
@@ -850,6 +1396,150 @@
         <button onclick="closeModalNewOrder()" class="btn-spring focus-ring px-4 py-2.5 rounded-xl border border-slate-300 text-slate-700 font-bold hover:bg-slate-50">
           Batal
         </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- MODAL TAMBAH / EDIT MITRA MAHASISWA (WORKER) -->
+  <div id="modalWorkerEditor" class="fixed inset-0 bg-navy-900/70 backdrop-blur-xs z-50 hidden flex items-center justify-center p-4">
+    <div class="bg-white rounded-2xl max-w-md w-full max-h-[90vh] overflow-y-auto shadow-2xl p-6 space-y-4 text-xs">
+      <div class="flex items-center justify-between pb-3 border-b border-slate-200">
+        <h3 id="workerModalTitle" class="font-heading font-black text-base text-navy-900">Tambah Mitra Mahasiswa Baru</h3>
+        <button onclick="closeModalWorker()" class="text-slate-400 hover:text-slate-600">✕</button>
+      </div>
+      <input type="hidden" id="editWorkerIdx" value="" />
+      <div>
+        <label class="block font-semibold text-slate-700 mb-1">Nama Lengkap Mitra</label>
+        <input type="text" id="editWorkerName" placeholder="Contoh: Raka Pratama" class="focus-ring w-full p-2.5 rounded-lg border border-slate-300 font-bold" />
+      </div>
+      <div class="grid grid-cols-2 gap-2">
+        <div>
+          <label class="block font-semibold text-slate-700 mb-1">Fakultas &amp; Angkatan</label>
+          <input type="text" id="editWorkerFaculty" placeholder="FEB UNAIR 2023" class="focus-ring w-full p-2.5 rounded-lg border border-slate-300" />
+        </div>
+        <div>
+          <label class="block font-semibold text-slate-700 mb-1">Gender</label>
+          <select id="editWorkerGender" class="focus-ring w-full p-2.5 rounded-lg border border-slate-300">
+            <option value="Laki-laki">Laki-laki</option>
+            <option value="Perempuan">Perempuan (Worker Cewek)</option>
+          </select>
+        </div>
+      </div>
+      <div>
+        <label class="block font-semibold text-slate-700 mb-1">Spesialisasi / Peran</label>
+        <input type="text" id="editWorkerRole" placeholder="Go SURUH &amp; Pindahan Kos" class="focus-ring w-full p-2.5 rounded-lg border border-slate-300" />
+      </div>
+      <div class="grid grid-cols-2 gap-2">
+        <div>
+          <label class="block font-semibold text-slate-700 mb-1">Armada Kendaraan</label>
+          <input type="text" id="editWorkerVehicle" placeholder="Motor Matic / Mobil / Tossa" class="focus-ring w-full p-2.5 rounded-lg border border-slate-300" />
+        </div>
+        <div>
+          <label class="block font-semibold text-slate-700 mb-1">Status Mitra</label>
+          <select id="editWorkerStatus" class="focus-ring w-full p-2.5 rounded-lg border border-slate-300 font-bold">
+            <option value="Aktif">Aktif (Siap Tugas)</option>
+            <option value="Pending">Pending Verifikasi</option>
+            <option value="Nonaktif">Nonaktif</option>
+          </select>
+        </div>
+      </div>
+      <div class="pt-2 flex items-center gap-2">
+        <button onclick="saveWorkerAction()" class="btn-spring focus-ring flex-1 py-2.5 rounded-xl bg-navy-900 text-gold-500 font-bold hover:bg-navy-800">
+          Simpan Mitra
+        </button>
+        <button onclick="closeModalWorker()" class="btn-spring focus-ring px-4 py-2.5 rounded-xl border border-slate-300 text-slate-700 font-bold hover:bg-slate-50">
+          Batal
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- MODAL TAMBAH / EDIT LAYANAN & TARIF HARGA -->
+  <div id="modalServiceEditor" class="fixed inset-0 bg-navy-900/70 backdrop-blur-xs z-50 hidden flex items-center justify-center p-4">
+    <div class="bg-white rounded-2xl max-w-lg w-full max-h-[90vh] overflow-y-auto shadow-2xl p-6 space-y-4 text-xs">
+      <div class="flex items-center justify-between pb-3 border-b border-slate-200">
+        <h3 id="serviceModalTitle" class="font-heading font-black text-base text-navy-900">Edit Layanan &amp; Tarif</h3>
+        <button onclick="closeServiceEditor()" class="text-slate-400 hover:text-slate-600">✕</button>
+      </div>
+      <input type="hidden" id="editSvcIdx" value="" />
+      <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+        <div>
+          <label class="block font-bold text-slate-700 mb-1">Nama Layanan (Judul Kartu)</label>
+          <input type="text" id="editSvcTitle" placeholder="Contoh: Go SURUH" class="focus-ring w-full p-2.5 rounded-xl border border-slate-300 font-bold" />
+        </div>
+        <div>
+          <label class="block font-bold text-slate-700 mb-1">Label Badge Pojok Kanan</label>
+          <input type="text" id="editSvcBadge" placeholder="Mobilitas &amp; Antar Jemput" class="focus-ring w-full p-2.5 rounded-xl border border-slate-300" />
+        </div>
+      </div>
+      <div class="grid grid-cols-1 sm:grid-cols-3 gap-3">
+        <div>
+          <label class="block font-bold text-amber-700 mb-1">Tarif Mulai Rp</label>
+          <input type="text" id="editSvcPrice" placeholder="5.000" class="focus-ring w-full p-2.5 rounded-xl border border-amber-300 bg-amber-50/40 font-black text-navy-900" />
+        </div>
+        <div>
+          <label class="block font-bold text-slate-700 mb-1">Satuan Utama</label>
+          <input type="text" id="editSvcUnitPrimary" placeholder="/ trip" class="focus-ring w-full p-2.5 rounded-xl border border-slate-300 font-bold" />
+        </div>
+        <div>
+          <label class="block font-bold text-slate-700 mb-1">Keterangan Satuan</label>
+          <input type="text" id="editSvcUnitDetail" placeholder="Antar jemput &amp; bantuan jalan" class="focus-ring w-full p-2.5 rounded-xl border border-slate-300" />
+        </div>
+      </div>
+      <div>
+        <label class="block font-bold text-slate-700 mb-1">Deskripsi Layanan</label>
+        <textarea id="editSvcDesc" rows="3" class="focus-ring w-full p-2.5 rounded-xl border border-slate-300 leading-relaxed" placeholder="Jelaskan rincian layanan..."></textarea>
+      </div>
+      <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+        <div>
+          <label class="block font-bold text-slate-700 mb-1">Teks Tombol Pesan</label>
+          <input type="text" id="editSvcBtnText" placeholder="Pesan Go SURUH" class="focus-ring w-full p-2.5 rounded-xl border border-slate-300 font-bold" />
+        </div>
+        <div>
+          <label class="block font-bold text-slate-700 mb-1">Status Ketersediaan</label>
+          <select id="editSvcActive" class="focus-ring w-full p-2.5 rounded-xl border border-slate-300 font-bold">
+            <option value="true">Aktif (Bisa Dipesan)</option>
+            <option value="false">Penuh Sementara (Nonaktif)</option>
+          </select>
+        </div>
+      </div>
+      <div class="pt-2 flex items-center justify-end gap-2">
+        <button onclick="closeServiceEditor()" class="btn-spring px-4 py-2.5 rounded-xl border border-slate-300 text-slate-700 font-bold hover:bg-slate-50">
+          Batal
+        </button>
+        <button onclick="saveServiceChanges()" class="btn-spring px-5 py-2.5 rounded-xl bg-navy-900 text-gold-500 font-bold hover:bg-navy-800">
+          Simpan Layanan &amp; Sinkronkan
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- MODAL TAMBAH / EDIT FAQ -->
+  <div id="modalFaqEditor" class="fixed inset-0 bg-navy-900/70 backdrop-blur-xs z-50 hidden flex items-center justify-center p-4">
+    <div class="bg-white rounded-2xl max-w-lg w-full max-h-[90vh] overflow-y-auto shadow-2xl p-6 space-y-4 text-xs">
+      <div class="flex items-center justify-between pb-3 border-b border-slate-200">
+        <h3 id="faqModalTitle" class="font-heading font-black text-base text-navy-900">Tambah / Edit Pertanyaan FAQ</h3>
+        <button onclick="closeFaqEditor()" class="text-slate-400 hover:text-slate-600">✕</button>
+      </div>
+      <input type="hidden" id="editFaqId" value="" />
+      <div>
+        <label class="block font-bold text-slate-700 mb-1">Pertanyaan (Q)</label>
+        <input type="text" id="editFaqQ" placeholder="Tulis pertanyaan pelanggan..." class="focus-ring w-full p-2.5 rounded-xl border border-slate-300 font-bold" />
+      </div>
+      <div>
+        <label class="block font-bold text-slate-700 mb-1">Jawaban Lengkap (A)</label>
+        <textarea id="editFaqA" rows="4" placeholder="Tulis jawaban jelas..." class="focus-ring w-full p-2.5 rounded-xl border border-slate-300 leading-relaxed"></textarea>
+      </div>
+      <div>
+        <label class="block font-bold text-slate-700 mb-1">Status Tampil</label>
+        <select id="editFaqActive" class="focus-ring w-full p-2.5 rounded-xl border border-slate-300 font-bold">
+          <option value="true">Aktif (Tampil di Website)</option>
+          <option value="false">Nonaktif (Sembunyikan)</option>
+        </select>
+      </div>
+      <div class="pt-2 flex items-center justify-end gap-2">
+        <button onclick="closeFaqEditor()" class="btn-spring px-4 py-2.5 rounded-xl border border-slate-300 text-slate-700 font-bold hover:bg-slate-50">Batal</button>
+        <button onclick="saveFaqItem()" class="btn-spring px-5 py-2.5 rounded-xl bg-navy-900 text-gold-500 font-bold hover:bg-navy-800">Simpan FAQ</button>
       </div>
     </div>
   </div>
@@ -1021,65 +1711,193 @@
 
     const DEFAULT_SERVICES = [
       {
-        name: 'Custom SURUH (Bebas Request)',
-        satuan: 'Per Permintaan / Sesuai Kesepakatan',
-        desc: 'Layanan bebas apa saja sesuai kebutuhan khusus pelanggan, tarif disepakati di awal.',
+        slug: 'go-suruh',
+        title: 'Go SURUH',
+        name: 'Go SURUH',
+        badge: 'Mobilitas & Antar Jemput',
+        price: '5.000',
+        unitPrimary: '/ trip',
+        unitDetail: 'Antar jemput & bantuan jalan',
+        satuan: '/ trip • Antar jemput & bantuan jalan',
+        desc: 'Antar jemput stasiun, bandara, terminal, kampus, serta bantuan darurat di jalan (ban bocor, mogok, kehabisan bensin, atau helm cadangan). Tersedia armada motor dan mobil AC.',
+        btnText: 'Pesan Go SURUH',
         active: true
       },
       {
-        name: 'Mobilitas & Transportasi (Go SURUH)',
-        satuan: 'Per Trip / Rute Perjalanan',
-        desc: 'Antar jemput stasiun, bandara, kampus, dan bantuan darurat di jalan.',
+        slug: 'move-suruh',
+        title: 'Move SURUH',
+        name: 'Move SURUH',
+        badge: 'Pindahan & Angkut Barang',
+        price: '35.000',
+        unitPrimary: '/ pindahan',
+        unitDetail: 'Motor, Tossa Roda 3 & Mobil',
+        satuan: '/ pindahan • Motor, Tossa Roda 3 & Mobil',
+        desc: 'Jasa pindahan kos, kontrakan, dan angkut barang besar dengan armada Motor, Tossa Roda 3, hingga Mobil/Pick-up, lengkap tenaga mahasiswa angkut sampai dalam kamar.',
+        btnText: 'Pesan Move SURUH',
         active: true
       },
       {
-        name: 'Logistik, Pindahan & Pengangkutan (Move SURUH)',
-        satuan: 'Per Muatan Armada (Tossa / Motor / Van)',
-        desc: 'Bantu pindahan kos & rumah + tenaga mahasiswa angkut sampai kamar.',
+        slug: 'keep-suruh',
+        title: 'Keep SURUH',
+        name: 'Keep SURUH',
+        badge: 'Penitipan Barang Kos',
+        price: '15.000',
+        unitPrimary: '/ barang',
+        unitDetail: 'Harian / Mingguan / Bulanan',
+        satuan: '/ barang • Harian / Mingguan / Bulanan',
+        desc: 'Solusi penitipan dan penyimpanan barang anak kos yang aman saat mudik liburan semester, magang luar kota, atau masa transisi pindah kos tanpa harus sewa kamar penuh.',
+        btnText: 'Pesan Keep SURUH',
         active: true
       },
       {
-        name: 'Penitipan & Penyimpanan Barang (Keep SURUH)',
-        satuan: 'Per Box / Per Item Barang / Bulan',
-        desc: 'Titip barang aman mahasiswa KKN, magang, liburan semester.',
+        slug: 'fix-suruh',
+        title: 'Fix SURUH',
+        name: 'Fix SURUH',
+        badge: 'Rakit Perabot & Teknis',
+        price: '15.000',
+        unitPrimary: '/ panggilan',
+        unitDetail: 'Rakit perabot & perbaikan',
+        satuan: '/ panggilan • Rakit perabot & perbaikan',
+        desc: 'Jasa perakitan perabot dan furnitur baru (meja belajar, kursi, lemari rakitan), ganti lampu/kran kos, hingga pengecekan ringan laptop, HP, dan kendaraan.',
+        btnText: 'Pesan Fix SURUH',
         active: true
       },
       {
-        name: 'Perakitan & Bantuan Teknis (Fix SURUH)',
-        satuan: 'Per Unit Furniture / Panggilan',
-        desc: 'Rakit meja, lemari knock-down, servis motor & HP sistem panggilan.',
+        slug: 'task-suruh',
+        title: 'Task SURUH',
+        name: 'Task SURUH',
+        badge: 'Titip Beli & Beres Kos',
+        price: '5.000',
+        unitPrimary: '/ tugas',
+        unitDetail: 'Beli makan, bersih kos & antri',
+        satuan: '/ tugas • Beli makan, bersih kos & antri',
+        desc: 'Bantuan asisten harian serba bisa: titip beli makanan/obat, belanja kebutuhan harian, bersih-bersih & beres kamar kos (tersedia mitra worker cewek), hingga antri layanan.',
+        btnText: 'Pesan Task SURUH',
         active: true
       },
       {
-        name: 'Personal Assistance & Titip Beli (Task SURUH)',
-        satuan: 'Per Tugas / Per Titik Antar',
-        desc: 'Membelikan makanan, ambil barang belanjaan, delegasi tugas harian.',
+        slug: 'desk-suruh',
+        title: 'Desk SURUH',
+        name: 'Desk SURUH',
+        badge: 'Urus Berkas & Dokumen',
+        price: '10.000',
+        unitPrimary: '/ dokumen',
+        unitDetail: 'Print, jilid & antar berkas',
+        satuan: '/ dokumen • Print, jilid & antar berkas',
+        desc: 'Bantuan pengurusan berkas dan dokumen fisik di Surabaya: print & jilid laporan, ambil/antar dokumen penting, pengurusan surat menyurat, hingga kirim paket ekspedisi.',
+        btnText: 'Pesan Desk SURUH',
         active: true
       },
       {
-        name: 'Administrasi & Pengurusan (Desk SURUH)',
-        satuan: 'Per Dokumen / Berkas Fisik',
-        desc: 'Urus berkas fisik, cetak print file, legalisir & dokumen instansi resmi.',
+        slug: 'crew-suruh',
+        title: 'Crew SURUH',
+        name: 'Crew SURUH',
+        badge: 'Kru Event & Kepanitiaan',
+        price: '25.000',
+        unitPrimary: '/ jam / kru',
+        unitDetail: 'Kru acara, bazar & wisuda',
+        satuan: '/ jam / kru • Kru acara, bazar & wisuda',
+        desc: 'Penyediaan tenaga kru mahasiswa cekatan untuk operasional acara kampus maupun umum: bantu persiapan venue, angkut perlengkapan, jaga stand bazar, registrasi tamu, & dokumentasi.',
+        btnText: 'Pesan Crew SURUH',
         active: true
       },
       {
-        name: 'Bantuan Operasional Event (Crew SURUH)',
-        satuan: 'Per Shift / Kru Mahasiswa (4-8 Jam)',
-        desc: 'Event crew mahasiswa untuk setup panggung, registrasi & clearing.',
-        active: true
-      },
-      {
-        name: 'Tutor & Skill-Based Worker (Talent SURUH)',
-        satuan: 'Per Sesi (90 Menit) / Proyek',
-        desc: 'Tutor akademik, asisten riset, proofreading, dan olah data SPSS/R.',
+        slug: 'talent-suruh',
+        title: 'Talent SURUH',
+        name: 'Talent SURUH',
+        badge: 'Tutor & Skill Mahasiswa',
+        price: '25.000',
+        unitPrimary: '/ sesi',
+        unitDetail: 'Tutor belajar, desain & riset',
+        satuan: '/ sesi • Tutor belajar, desain & riset',
+        desc: 'Layanan berbasis keahlian mahasiswa terverifikasi: teman belajar & tutor privat, diskusi pengolahan data/statistik, desain presentasi, translasi, hingga fotografi wisuda.',
+        btnText: 'Pesan Talent SURUH',
         active: true
       }
     ];
 
+    const DEFAULT_FAQS = [
+      {
+        id: 1,
+        q: 'Apakah UNAIR SURUH hanya untuk mahasiswa UNAIR?',
+        a: 'Tidak. Meskipun digagas dan dijalankan oleh mahasiswa UNAIR, layanan kami terbuka penuh untuk mahasiswa dari kampus mana pun, anak kos, pekerja, maupun warga umum di seluruh area Surabaya.',
+        active: true
+      },
+      {
+        id: 2,
+        q: 'Bagaimana sistem penentuan tarifnya? Apakah ada biaya tambahan?',
+        a: 'Tarif dasar mulai dari Rp 5.000 untuk bantuan ringan, dan menyesuaikan jarak serta beban kerja (seperti pindahan Tossa atau mobil). Seluruh estimasi biaya disampaikan dan disepakati bersama di awal lewat WhatsApp sebelum mitra berangkat—dijamin transparan tanpa biaya tersembunyi.',
+        active: true
+      },
+      {
+        id: 3,
+        q: 'Saya klien perempuan di kos putri, apakah bisa request worker perempuan?',
+        a: 'Bisa banget! Cukup centang opsi "Klien Cewek: Request Worker Cewek" saat memesan. Kami memiliki tim mitra mahasiswi perempuan terverifikasi sehingga aman dan nyaman masuk ke area kos putri.',
+        active: true
+      },
+      {
+        id: 4,
+        q: 'Bagaimana jika tugas saya tidak ada di daftar 8 layanan?',
+        a: 'Gunakan fitur utama Custom SURUH di bagian atas halaman! Kamu bebas menuliskan permintaan apa saja selama positif, legal, dan tidak melanggar aturan akademik/hukum.',
+        active: true
+      }
+    ];
+
+    // BroadcastChannel for instant real-time sync with index.html
+    var adminSyncChannel = null;
+    try {
+      if ('BroadcastChannel' in window) {
+        adminSyncChannel = new BroadcastChannel('unair_suruh_sync');
+        adminSyncChannel.onmessage = function(ev) {
+          if (ev.data && ev.data.type === 'NEW_ORDER') {
+            orders = JSON.parse(localStorage.getItem('UNAIR_ORDERS')) || orders;
+            renderAll();
+            showToast('🔔 Pesanan baru masuk dari Website Utama!');
+          }
+        };
+      }
+    } catch (e) {}
+
+    function notifyWebsiteSync(type) {
+      try {
+        if (adminSyncChannel) {
+          adminSyncChannel.postMessage({ type: type || 'CONFIG_UPDATED', ts: Date.now() });
+        }
+      } catch (e) {}
+    }
+
+    function loadStoredServices() {
+      try {
+        const raw = localStorage.getItem('UNAIR_SERVICES');
+        if (raw) {
+          const parsed = JSON.parse(raw);
+          if (Array.isArray(parsed) && parsed.length > 0) {
+            // Upgrade old 4-field objects if needed
+            if (parsed[0].price && parsed[0].title) return parsed;
+          }
+        }
+      } catch (e) {}
+      localStorage.setItem('UNAIR_SERVICES', JSON.stringify(DEFAULT_SERVICES));
+      return JSON.parse(JSON.stringify(DEFAULT_SERVICES));
+    }
+
+    function loadStoredFaqs() {
+      try {
+        const raw = localStorage.getItem('UNAIR_FAQ_DATA');
+        if (raw) {
+          const parsed = JSON.parse(raw);
+          if (Array.isArray(parsed) && parsed.length > 0) return parsed;
+        }
+      } catch (e) {}
+      localStorage.setItem('UNAIR_FAQ_DATA', JSON.stringify(DEFAULT_FAQS));
+      return JSON.parse(JSON.stringify(DEFAULT_FAQS));
+    }
+
     // Initialize or load from LocalStorage
     let orders = JSON.parse(localStorage.getItem('UNAIR_ORDERS')) || DEFAULT_ORDERS;
     let workers = JSON.parse(localStorage.getItem('UNAIR_WORKERS')) || DEFAULT_WORKERS;
-    let services = JSON.parse(localStorage.getItem('UNAIR_SERVICES')) || DEFAULT_SERVICES;
+    let services = loadStoredServices();
+    let adminFaqsList = loadStoredFaqs();
     let activeFilterStatus = 'all';
     let currentSelectedOrderIndex = null;
 
@@ -1087,7 +1905,17 @@
       localStorage.setItem('UNAIR_ORDERS', JSON.stringify(orders));
       localStorage.setItem('UNAIR_WORKERS', JSON.stringify(workers));
       localStorage.setItem('UNAIR_SERVICES', JSON.stringify(services));
+      localStorage.setItem('UNAIR_FAQ_DATA', JSON.stringify(adminFaqsList));
+      notifyWebsiteSync('STATE_UPDATED');
     }
+
+    window.addEventListener('storage', function(e) {
+      if (e.key === 'UNAIR_ORDERS') {
+        orders = JSON.parse(localStorage.getItem('UNAIR_ORDERS')) || orders;
+        renderAll();
+        showToast('🔔 Data pesanan diperbarui dari Website Utama!');
+      }
+    });
 
     // UI Tab Navigation
     function switchTab(tabId) {
@@ -1103,6 +1931,20 @@
         document.getElementById('adminSidebar').classList.add('hidden');
       }
       renderAll();
+    }
+
+    function switchCmsSubTab(subId) {
+      const subs = ['hero', 'custom', 'why', 'mitra', 'faq', 'testi'];
+      subs.forEach(s => {
+        const panel = document.getElementById('cmsSubPanel-' + s);
+        const btn = document.getElementById('cmsSubBtn-' + s);
+        if (panel) panel.classList.toggle('hidden', s !== subId);
+        if (btn) {
+          btn.className = (s === subId)
+            ? 'px-3.5 py-2 rounded-xl bg-navy-900 text-amber-300 font-bold whitespace-nowrap transition'
+            : 'px-3.5 py-2 rounded-xl bg-slate-100 text-slate-600 hover:bg-slate-200 font-semibold whitespace-nowrap transition';
+        }
+      });
     }
 
     function toggleMobileSidebar() {
@@ -1165,10 +2007,10 @@
         if (activeFilterStatus === 'privat') return o.isPrivat;
         if (activeFilterStatus !== 'all' && o.status !== activeFilterStatus) return false;
         if (query) {
-          const matchCode = o.code.toLowerCase().includes(query);
-          const matchName = o.name.toLowerCase().includes(query);
-          const matchWa = o.wa.toLowerCase().includes(query);
-          const matchSvc = o.service.toLowerCase().includes(query);
+          const matchCode = (o.code || '').toLowerCase().includes(query);
+          const matchName = (o.name || '').toLowerCase().includes(query);
+          const matchWa = (o.wa || '').toLowerCase().includes(query);
+          const matchSvc = (o.service || '').toLowerCase().includes(query);
           return matchCode || matchName || matchWa || matchSvc;
         }
         return true;
@@ -1200,7 +2042,7 @@
           </td>
           <td class="p-3.5">
             <div class="font-semibold text-slate-900">${o.name}</div>
-            <a href="https://wa.me/${o.wa.replace(/[^0-9]/g, '')}" target="_blank" class="font-mono text-emerald-600 hover:underline text-[11px]">${o.wa}</a>
+            <a href="https://wa.me/${(o.wa || '').replace(/[^0-9]/g, '')}" target="_blank" class="font-mono text-emerald-600 hover:underline text-[11px]">${o.wa}</a>
           </td>
           <td class="p-3.5">
             <div class="text-slate-800 font-medium">${o.time}</div>
@@ -1226,36 +2068,42 @@
 
       workers.forEach((w, idx) => {
         const card = document.createElement('div');
-        card.className = 'bg-white p-5 rounded-2xl border border-slate-200 shadow-xs space-y-3';
+        card.className = 'bg-white p-5 rounded-2xl border border-slate-200 shadow-xs space-y-3 flex flex-col justify-between';
         
         const badgeGender = w.gender === 'Perempuan' 
           ? '<span class="bg-rose-100 text-rose-700 px-2 py-0.5 rounded text-[10px] font-bold">Perempuan (Worker Cewek)</span>' 
           : '<span class="bg-blue-100 text-blue-700 px-2 py-0.5 rounded text-[10px] font-bold">Laki-laki</span>';
 
         const verifiedBadge = w.verified 
-          ? '<span class="text-emerald-600 font-bold text-[11px] flex items-center gap-1"><svg class="w-3.5 h-3.5 fill-current" viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L10 19 21 8l-1.41-1.41z"/></svg> Identitas Terverifikasi</span>' 
-          : '<span class="text-amber-600 font-bold text-[11px]">Pending Verifikasi Identitas</span>';
+          ? '<span class="text-emerald-600 font-bold text-[11px] flex items-center gap-1"><svg class="w-3.5 h-3.5 fill-current" viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L10 19 21 8l-1.41-1.41z"/></svg> Terverifikasi</span>' 
+          : '<span class="text-amber-600 font-bold text-[11px]">Pending Verifikasi</span>';
 
         card.innerHTML = `
-          <div class="flex items-start justify-between">
-            <div>
-              <h3 class="font-heading font-bold text-base text-navy-900">${w.name}</h3>
-              <p class="text-xs text-slate-500 font-medium">${w.role} • ${w.faculty}</p>
+          <div>
+            <div class="flex items-start justify-between gap-2">
+              <div>
+                <h3 class="font-heading font-bold text-base text-navy-900">${w.name}</h3>
+                <p class="text-xs text-slate-500 font-medium">${w.role} • ${w.faculty}</p>
+              </div>
+              <span class="text-xs font-bold px-2 py-0.5 rounded-full ${w.status === 'Aktif' ? 'bg-emerald-100 text-emerald-800' : 'bg-slate-100 text-slate-600'}">${w.status}</span>
             </div>
-            <span class="text-xs font-bold px-2 py-0.5 rounded-full ${w.status === 'Aktif' ? 'bg-emerald-100 text-emerald-800' : 'bg-slate-100 text-slate-600'}">${w.status}</span>
-          </div>
 
-          <div class="text-xs space-y-1.5 text-slate-600 border-t border-b border-slate-100 py-2.5">
-            <div class="flex justify-between"><span>Gender:</span> ${badgeGender}</div>
-            <div class="flex justify-between"><span>Kendaraan:</span> <span class="font-semibold text-slate-800">${w.vehicle}</span></div>
-            <div class="flex justify-between"><span>Rating Mitra:</span> <span class="font-bold text-gold-600">★ ${w.rating} (${w.jobs} Job)</span></div>
+            <div class="text-xs space-y-1.5 text-slate-600 border-t border-b border-slate-100 py-2.5 mt-3">
+              <div class="flex justify-between"><span>Gender:</span> ${badgeGender}</div>
+              <div class="flex justify-between"><span>Kendaraan:</span> <span class="font-semibold text-slate-800">${w.vehicle}</span></div>
+              <div class="flex justify-between"><span>Rating Mitra:</span> <span class="font-bold text-gold-600">★ ${w.rating || '5.0'} (${w.jobs || 0} Job)</span></div>
+            </div>
           </div>
 
           <div class="flex items-center justify-between pt-1">
             ${verifiedBadge}
-            <button onclick="toggleWorkerStatus(${idx})" class="text-xs font-bold text-navy-900 hover:text-gold-500">
-              ${w.status === 'Aktif' ? 'Nonaktifkan' : 'Aktifkan'}
-            </button>
+            <div class="flex items-center gap-2">
+              <button onclick="openModalAddWorker(${idx})" class="px-2.5 py-1 rounded-lg bg-slate-100 hover:bg-slate-200 text-slate-700 text-xs font-bold">Edit</button>
+              <button onclick="toggleWorkerStatus(${idx})" class="px-2.5 py-1 rounded-lg bg-navy-900/10 hover:bg-navy-900/20 text-navy-900 text-xs font-bold">
+                ${w.status === 'Aktif' ? 'Nonaktifkan' : 'Aktifkan'}
+              </button>
+              <button onclick="deleteWorker(${idx})" class="px-2 py-1 rounded-lg bg-rose-50 hover:bg-rose-100 text-rose-600 text-xs font-bold" title="Hapus Mitra">✕</button>
+            </div>
           </div>
         `;
         grid.appendChild(card);
@@ -1268,25 +2116,77 @@
       grid.innerHTML = '';
 
       services.forEach((s, idx) => {
+        const title = s.title || s.name || ('Layanan #' + (idx + 1));
+        const badge = s.badge || 'Layanan Aktif';
+        const price = s.price || '5.000';
+        const unitPrimary = s.unitPrimary || s.satuan || '/ tugas';
+        const unitDetail = s.unitDetail || 'Tarif mahasiswa transparan';
+        const btnText = s.btnText || ('Pesan ' + title);
+
         const card = document.createElement('div');
-        card.className = 'bg-white p-5 rounded-2xl border border-slate-200 shadow-xs space-y-3';
+        card.className = 'bg-white p-5 rounded-2xl border border-slate-200 shadow-xs space-y-3 flex flex-col justify-between ' + (s.active === false ? 'opacity-65 bg-slate-50' : '');
         card.innerHTML = `
-          <div class="flex items-start justify-between">
-            <div>
-              <h3 class="font-heading font-bold text-base text-navy-900">${s.name}</h3>
-              <div class="inline-block bg-gold-100 text-gold-800 text-[10px] font-bold px-2 py-0.5 rounded-md mt-1">
-                Satuan: ${s.satuan}
+          <div class="space-y-2.5">
+            <div class="flex items-start justify-between gap-2">
+              <div>
+                <div class="flex items-center gap-2">
+                  <h3 class="font-heading font-extrabold text-base text-navy-900">${title}</h3>
+                  <span class="px-2 py-0.5 rounded-full text-[10px] font-bold bg-amber-50 text-amber-800 border border-amber-200">${badge}</span>
+                </div>
+                <div class="text-[11px] text-slate-500 mt-0.5">Tombol: <strong>${btnText}</strong></div>
               </div>
+              <label class="relative inline-flex items-center cursor-pointer shrink-0" title="Aktif / Nonaktifkan Layanan">
+                <input type="checkbox" ${s.active !== false ? 'checked' : ''} onchange="toggleServiceActive(${idx})" class="sr-only peer">
+                <div class="w-9 h-5 bg-slate-200 peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border-slate-300 after:border after:rounded-full after:h-4 after:w-4 after:transition-all peer-checked:bg-emerald-600"></div>
+              </label>
             </div>
-            <label class="relative inline-flex items-center cursor-pointer">
-              <input type="checkbox" ${s.active ? 'checked' : ''} onchange="toggleServiceActive(${idx})" class="sr-only peer">
-              <div class="w-9 h-5 bg-slate-200 peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border-slate-300 after:border after:rounded-full after:h-4 after:w-4 after:transition-all peer-checked:bg-navy-900"></div>
-            </label>
+            <p class="text-xs text-slate-600 leading-relaxed">${s.desc || ''}</p>
           </div>
-          <p class="text-xs text-slate-600 leading-relaxed">${s.desc}</p>
+
+          <div class="pt-3 border-t border-slate-100 flex items-center justify-between gap-2">
+            <div class="bg-slate-50 px-3 py-1.5 rounded-xl border border-slate-200/80">
+              <span class="text-[10px] text-slate-400 font-bold uppercase block">Mulai Dari</span>
+              <span class="font-heading font-black text-sm text-navy-900">Rp ${price}</span>
+              <span class="text-[11px] text-slate-600 font-semibold">${unitPrimary}</span>
+              <span class="text-[10px] text-slate-400 block">${unitDetail}</span>
+            </div>
+            <div class="flex items-center gap-1.5">
+              <button onclick="openServiceEditor(${idx})" class="btn-spring px-3 py-2 rounded-xl bg-navy-900 hover:bg-navy-800 text-amber-300 font-bold text-xs">
+                ✏️ Edit Layanan &amp; Tarif
+              </button>
+              <button onclick="deleteService(${idx})" class="btn-spring p-2 rounded-xl bg-rose-50 hover:bg-rose-100 text-rose-600 font-bold text-xs" title="Hapus Layanan">
+                🗑️
+              </button>
+            </div>
+          </div>
         `;
         grid.appendChild(card);
       });
+    }
+
+    function renderAdminFaqs() {
+      const container = document.getElementById('adminFaqListContainer');
+      if (!container) return;
+      if (!Array.isArray(adminFaqsList) || adminFaqsList.length === 0) {
+        container.innerHTML = '<div class="p-4 text-center text-slate-400 text-xs">Belum ada item FAQ.</div>';
+        return;
+      }
+      container.innerHTML = adminFaqsList.map(f => `
+        <div class="p-4 rounded-xl bg-slate-50 border border-slate-200 flex flex-col sm:flex-row sm:items-center justify-between gap-3">
+          <div class="space-y-1">
+            <div class="font-heading font-bold text-xs sm:text-sm text-navy-900 flex items-center gap-2">
+              <span>${f.q}</span>
+              <span class="px-2 py-0.5 rounded-full text-[10px] font-bold ${f.active !== false ? 'bg-emerald-100 text-emerald-800' : 'bg-slate-200 text-slate-500'}">${f.active !== false ? 'Aktif' : 'Nonaktif'}</span>
+            </div>
+            <p class="text-xs text-slate-600 leading-relaxed">${f.a}</p>
+          </div>
+          <div class="flex items-center gap-1.5 shrink-0">
+            <button type="button" onclick="openFaqEditor(${f.id})" class="px-3 py-1.5 rounded-lg bg-white border border-slate-300 hover:bg-slate-100 text-navy-900 font-bold text-xs">Edit</button>
+            <button type="button" onclick="toggleFaqStatus(${f.id})" class="px-2.5 py-1.5 rounded-lg bg-slate-200 hover:bg-slate-300 text-slate-700 font-bold text-xs">${f.active !== false ? 'Sembunyikan' : 'Tampilkan'}</button>
+            <button type="button" onclick="deleteFaqItem(${f.id})" class="px-2.5 py-1.5 rounded-lg bg-rose-50 hover:bg-rose-100 text-rose-600 font-bold text-xs">Hapus</button>
+          </div>
+        </div>
+      `).join('');
     }
 
     
@@ -1310,6 +2210,7 @@
 
     function persistAdminReels() {
       localStorage.setItem('unair_suruh_reels_data', JSON.stringify(adminReelsList));
+      notifyWebsiteSync('REELS_UPDATED');
       showToast('Perubahan video reels berhasil disimpan');
     }
 
@@ -1556,6 +2457,7 @@
 
     function persistAdminTestimonials() {
       localStorage.setItem('unair_suruh_testimonials_data', JSON.stringify(adminTestimonialsList));
+      notifyWebsiteSync('TESTIMONIALS_UPDATED');
       showToast('Perubahan testimoni ulasan TikTok berhasil disimpan!');
     }
 
@@ -1728,17 +2630,21 @@
       renderOrdersTable();
       renderWorkersGrid();
       renderServicesGrid();
+      renderAdminFaqs();
     }
 
-    // Modal Operations
+    // =========================================================================
+    // ORDER MODAL & CRUD OPERATIONS
+    // =========================================================================
     function openModalOrder(idx) {
       currentSelectedOrderIndex = idx;
       const o = orders[idx];
+      if (!o) return;
       document.getElementById('modalOrderCode').textContent = o.code;
       document.getElementById('modalOrderSvc').textContent = o.service;
       document.getElementById('modalOrderName').textContent = o.name;
       document.getElementById('modalOrderWaLink').textContent = o.wa;
-      document.getElementById('modalOrderWaLink').href = 'https://wa.me/' + o.wa.replace(/[^0-9]/g, '');
+      document.getElementById('modalOrderWaLink').href = 'https://wa.me/' + (o.wa || '').replace(/[^0-9]/g, '');
       document.getElementById('modalOrderSatuan').textContent = o.satuan;
       document.getElementById('modalOrderPickup').textContent = o.pickup;
       document.getElementById('modalOrderDropoff').textContent = o.dropoff || '-';
@@ -1763,11 +2669,11 @@
       select.innerHTML = '<option value="Belum Ditugaskan">-- Pilih Mitra Mahasiswa --</option>';
 
       workers.filter(w => w.status === 'Aktif').forEach(w => {
-        if (o.isPrivat && w.gender !== 'Perempuan') return; // Enforce Gender Match rule
+        if (o.isPrivat && w.gender !== 'Perempuan') return;
         const opt = document.createElement('option');
         opt.value = w.name + ' (' + w.faculty + ')';
         opt.textContent = w.name + ' • ' + w.gender + ' (' + w.vehicle + ')';
-        if (o.worker.includes(w.name)) opt.selected = true;
+        if ((o.worker || '').includes(w.name)) opt.selected = true;
         select.appendChild(opt);
       });
 
@@ -1790,10 +2696,21 @@
       showToast('Perubahan pesanan ' + o.code + ' berhasil disimpan');
     }
 
+    function deleteCurrentOrder() {
+      if (currentSelectedOrderIndex === null) return;
+      const o = orders[currentSelectedOrderIndex];
+      if (!confirm('Hapus pesanan ' + o.code + ' (' + o.name + ')?')) return;
+      orders.splice(currentSelectedOrderIndex, 1);
+      saveState();
+      renderAll();
+      closeModalOrder();
+      showToast('Pesanan berhasil dihapus');
+    }
+
     function openWaChatDirect() {
       if (currentSelectedOrderIndex === null) return;
       const o = orders[currentSelectedOrderIndex];
-      const cleanNum = o.wa.replace(/[^0-9]/g, '');
+      const cleanNum = (o.wa || '').replace(/[^0-9]/g, '').replace(/^0/, '62');
       const waMsg = `Halo Kak ${o.name}, kami dari Tim Admin UNAIR SURUH terkait pesanan *${o.service}* (${o.code}). Mitra yang ditugaskan: *${o.worker}*. Jadwal: ${o.time}. Mohon konfirmasi ketersediaannya ya kak, terima kasih!`;
       window.open('https://wa.me/' + cleanNum + '?text=' + encodeURIComponent(waMsg), '_blank');
     }
@@ -1860,25 +2777,306 @@
       showToast('Order baru ' + code + ' berhasil ditambahkan');
     }
 
+    // =========================================================================
+    // WORKER CRUD OPERATIONS (MITRA MAHASISWA)
+    // =========================================================================
+    function openModalAddWorker(idx) {
+      const modal = document.getElementById('modalWorkerEditor');
+      const title = document.getElementById('workerModalTitle');
+      if (idx !== undefined && idx !== null && workers[idx]) {
+        const w = workers[idx];
+        title.textContent = 'Edit Mitra Mahasiswa: ' + w.name;
+        document.getElementById('editWorkerIdx').value = String(idx);
+        document.getElementById('editWorkerName').value = w.name || '';
+        document.getElementById('editWorkerFaculty').value = w.faculty || '';
+        document.getElementById('editWorkerGender').value = w.gender || 'Laki-laki';
+        document.getElementById('editWorkerRole').value = w.role || '';
+        document.getElementById('editWorkerVehicle').value = w.vehicle || '';
+        document.getElementById('editWorkerStatus').value = w.status || 'Aktif';
+      } else {
+        title.textContent = 'Tambah Mitra Mahasiswa Baru';
+        document.getElementById('editWorkerIdx').value = '';
+        document.getElementById('editWorkerName').value = '';
+        document.getElementById('editWorkerFaculty').value = 'UNAIR 2024';
+        document.getElementById('editWorkerGender').value = 'Laki-laki';
+        document.getElementById('editWorkerRole').value = 'Mitra Multi-Layanan SURUH';
+        document.getElementById('editWorkerVehicle').value = 'Motor Matic';
+        document.getElementById('editWorkerStatus').value = 'Aktif';
+      }
+      modal.classList.remove('hidden');
+    }
+
+    function closeModalWorker() {
+      document.getElementById('modalWorkerEditor').classList.add('hidden');
+    }
+
+    function saveWorkerAction() {
+      const idxStr = document.getElementById('editWorkerIdx').value;
+      const name = document.getElementById('editWorkerName').value.trim();
+      const faculty = document.getElementById('editWorkerFaculty').value.trim() || 'UNAIR';
+      const gender = document.getElementById('editWorkerGender').value;
+      const role = document.getElementById('editWorkerRole').value.trim() || 'Mitra SURUH';
+      const vehicle = document.getElementById('editWorkerVehicle').value.trim() || 'Motor';
+      const status = document.getElementById('editWorkerStatus').value;
+
+      if (!name) {
+        alert('Nama mitra harus diisi.');
+        return;
+      }
+
+      if (idxStr !== '') {
+        const idx = parseInt(idxStr, 10);
+        if (workers[idx]) {
+          workers[idx].name = name;
+          workers[idx].faculty = faculty;
+          workers[idx].gender = gender;
+          workers[idx].role = role;
+          workers[idx].vehicle = vehicle;
+          workers[idx].status = status;
+          workers[idx].verified = (status === 'Aktif');
+        }
+      } else {
+        workers.push({
+          name,
+          role,
+          faculty,
+          gender,
+          vehicle,
+          rating: 5.0,
+          jobs: 1,
+          status,
+          verified: (status === 'Aktif')
+        });
+      }
+
+      saveState();
+      renderAll();
+      closeModalWorker();
+      showToast('Data mitra ' + name + ' berhasil disimpan');
+    }
+
+    function deleteWorker(idx) {
+      if (!workers[idx]) return;
+      if (!confirm('Hapus mitra ' + workers[idx].name + ' dari daftar?')) return;
+      workers.splice(idx, 1);
+      saveState();
+      renderAll();
+      showToast('Mitra berhasil dihapus');
+    }
+
     function toggleWorkerStatus(idx) {
       workers[idx].status = workers[idx].status === 'Aktif' ? 'Nonaktif' : 'Aktif';
+      workers[idx].verified = (workers[idx].status === 'Aktif');
       saveState();
-      renderWorkersGrid();
+      renderAll();
       showToast('Status mitra ' + workers[idx].name + ' diperbarui');
     }
 
+    // =========================================================================
+    // SERVICES & TARIF CRUD OPERATIONS (8 LINI LAYANAN)
+    // =========================================================================
     function toggleServiceActive(idx) {
-      services[idx].active = !services[idx].active;
+      services[idx].active = !(services[idx].active !== false);
       saveState();
-      showToast('Status layanan ' + services[idx].name + ' diperbarui');
+      renderServicesGrid();
+      showToast('Status layanan ' + (services[idx].title || services[idx].name) + ' diperbarui di Website!');
     }
 
+    function openServiceEditor(idx) {
+      const modal = document.getElementById('modalServiceEditor');
+      const titleEl = document.getElementById('serviceModalTitle');
+      if (idx !== undefined && idx !== null && services[idx]) {
+        const s = services[idx];
+        titleEl.textContent = 'Edit Layanan: ' + (s.title || s.name);
+        document.getElementById('editSvcIdx').value = String(idx);
+        document.getElementById('editSvcTitle').value = s.title || s.name || '';
+        document.getElementById('editSvcBadge').value = s.badge || 'Layanan Aktif';
+        document.getElementById('editSvcPrice').value = s.price || '5.000';
+        document.getElementById('editSvcUnitPrimary').value = s.unitPrimary || s.satuan || '/ tugas';
+        document.getElementById('editSvcUnitDetail').value = s.unitDetail || 'Tarif mahasiswa transparan';
+        document.getElementById('editSvcDesc').value = s.desc || '';
+        document.getElementById('editSvcBtnText').value = s.btnText || ('Pesan ' + (s.title || s.name));
+        document.getElementById('editSvcActive').value = (s.active !== false) ? 'true' : 'false';
+      } else {
+        titleEl.textContent = 'Tambah Layanan Baru';
+        document.getElementById('editSvcIdx').value = '';
+        document.getElementById('editSvcTitle').value = '';
+        document.getElementById('editSvcBadge').value = 'Layanan Baru';
+        document.getElementById('editSvcPrice').value = '10.000';
+        document.getElementById('editSvcUnitPrimary').value = '/ tugas';
+        document.getElementById('editSvcUnitDetail').value = 'Tarif mahasiswa transparan';
+        document.getElementById('editSvcDesc').value = '';
+        document.getElementById('editSvcBtnText').value = 'Pesan Layanan Ini';
+        document.getElementById('editSvcActive').value = 'true';
+      }
+      modal.classList.remove('hidden');
+    }
+
+    function closeServiceEditor() {
+      document.getElementById('modalServiceEditor').classList.add('hidden');
+    }
+
+    function saveServiceChanges() {
+      const idxStr = document.getElementById('editSvcIdx').value;
+      const title = document.getElementById('editSvcTitle').value.trim();
+      const badge = document.getElementById('editSvcBadge').value.trim() || 'Layanan Aktif';
+      const price = document.getElementById('editSvcPrice').value.trim() || '5.000';
+      const unitPrimary = document.getElementById('editSvcUnitPrimary').value.trim() || '/ tugas';
+      const unitDetail = document.getElementById('editSvcUnitDetail').value.trim() || 'Tarif mahasiswa transparan';
+      const desc = document.getElementById('editSvcDesc').value.trim();
+      const btnText = document.getElementById('editSvcBtnText').value.trim() || ('Pesan ' + title);
+      const active = document.getElementById('editSvcActive').value === 'true';
+
+      if (!title) {
+        alert('Nama layanan harus diisi.');
+        return;
+      }
+
+      if (idxStr !== '') {
+        const idx = parseInt(idxStr, 10);
+        if (services[idx]) {
+          services[idx].title = title;
+          services[idx].name = title;
+          services[idx].badge = badge;
+          services[idx].price = price;
+          services[idx].unitPrimary = unitPrimary;
+          services[idx].unitDetail = unitDetail;
+          services[idx].satuan = unitPrimary + ' • ' + unitDetail;
+          services[idx].desc = desc;
+          services[idx].btnText = btnText;
+          services[idx].active = active;
+        }
+      } else {
+        const slug = title.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '') || ('layanan-' + Date.now());
+        services.push({
+          slug,
+          title,
+          name: title,
+          badge,
+          price,
+          unitPrimary,
+          unitDetail,
+          satuan: unitPrimary + ' • ' + unitDetail,
+          desc,
+          btnText,
+          active
+        });
+      }
+
+      saveState();
+      renderServicesGrid();
+      closeServiceEditor();
+      showToast('Layanan "' + title + '" berhasil disimpan & diterapkan ke Website!');
+    }
+
+    function deleteService(idx) {
+      if (!services[idx]) return;
+      const t = services[idx].title || services[idx].name;
+      if (!confirm('Hapus layanan "' + t + '" dari daftar?')) return;
+      services.splice(idx, 1);
+      saveState();
+      renderServicesGrid();
+      showToast('Layanan berhasil dihapus');
+    }
+
+    function resetServicesToDefault() {
+      if (!confirm('Kembalikan 8 layanan utama & tarif ke pengaturan default bawaan?')) return;
+      services = JSON.parse(JSON.stringify(DEFAULT_SERVICES));
+      saveState();
+      renderServicesGrid();
+      showToast('8 Layanan dikembalikan ke default!');
+    }
+
+    // =========================================================================
+    // FAQ CRUD OPERATIONS
+    // =========================================================================
+    function openFaqEditor(id) {
+      const modal = document.getElementById('modalFaqEditor');
+      const titleEl = document.getElementById('faqModalTitle');
+      if (id) {
+        const f = adminFaqsList.find(item => item.id === id);
+        if (!f) return;
+        titleEl.textContent = 'Edit Pertanyaan FAQ #' + id;
+        document.getElementById('editFaqId').value = String(f.id);
+        document.getElementById('editFaqQ').value = f.q || '';
+        document.getElementById('editFaqA').value = f.a || '';
+        document.getElementById('editFaqActive').value = f.active !== false ? 'true' : 'false';
+      } else {
+        titleEl.textContent = 'Tambah Pertanyaan FAQ Baru';
+        document.getElementById('editFaqId').value = '';
+        document.getElementById('editFaqQ').value = '';
+        document.getElementById('editFaqA').value = '';
+        document.getElementById('editFaqActive').value = 'true';
+      }
+      modal.classList.remove('hidden');
+    }
+
+    function closeFaqEditor() {
+      document.getElementById('modalFaqEditor').classList.add('hidden');
+    }
+
+    function saveFaqItem() {
+      const idStr = document.getElementById('editFaqId').value;
+      const q = document.getElementById('editFaqQ').value.trim();
+      const a = document.getElementById('editFaqA').value.trim();
+      const active = document.getElementById('editFaqActive').value === 'true';
+      if (!q || !a) {
+        alert('Pertanyaan dan Jawaban harus diisi.');
+        return;
+      }
+      if (idStr) {
+        const id = parseInt(idStr, 10);
+        const item = adminFaqsList.find(f => f.id === id);
+        if (item) {
+          item.q = q;
+          item.a = a;
+          item.active = active;
+        }
+      } else {
+        const nextId = adminFaqsList.length > 0 ? Math.max(...adminFaqsList.map(f => f.id)) + 1 : 1;
+        adminFaqsList.push({ id: nextId, q, a, active });
+      }
+      saveState();
+      renderAdminFaqs();
+      closeFaqEditor();
+      showToast('FAQ berhasil disimpan & diterapkan ke Website!');
+    }
+
+    function toggleFaqStatus(id) {
+      const item = adminFaqsList.find(f => f.id === id);
+      if (item) {
+        item.active = item.active === false ? true : false;
+        saveState();
+        renderAdminFaqs();
+        showToast('Status FAQ diperbarui');
+      }
+    }
+
+    function deleteFaqItem(id) {
+      if (!confirm('Hapus pertanyaan FAQ ini?')) return;
+      adminFaqsList = adminFaqsList.filter(f => f.id !== id);
+      saveState();
+      renderAdminFaqs();
+      showToast('Pertanyaan FAQ dihapus');
+    }
+
+    function resetFaqsToDefault() {
+      if (!confirm('Kembalikan daftar FAQ ke bawaan awal?')) return;
+      adminFaqsList = JSON.parse(JSON.stringify(DEFAULT_FAQS));
+      saveState();
+      renderAdminFaqs();
+      showToast('FAQ dikembalikan ke default');
+    }
+
+    // =========================================================================
+    // FULL WEBSITE CMS SETTINGS (UNAIR_SITE_CONFIG)
+    // =========================================================================
     function updateCmsPreview() {
-      const badge = document.getElementById('cmsHeroBadge').value || '⚡ Serba Bisa untuk Mahasiswa...';
-      const prefix = document.getElementById('cmsHeroPrefix').value || 'Serba Bisa, Semua';
-      const highlight = document.getElementById('cmsHeroHighlight').value || 'Bisa Disuruh!';
-      const desc = document.getElementById('cmsHeroDesc').value || 'Apapun kebutuhan harianmu di Surabaya...';
-      const cta = document.getElementById('cmsHeroCta').value || 'Pesan Sekarang (WA)';
+      const badge = (document.getElementById('cmsHeroBadge') && document.getElementById('cmsHeroBadge').value) || '⚡ Serba Bisa untuk Mahasiswa...';
+      const prefix = (document.getElementById('cmsHeroPrefix') && document.getElementById('cmsHeroPrefix').value) || 'Serba Bisa, Semua';
+      const highlight = (document.getElementById('cmsHeroHighlight') && document.getElementById('cmsHeroHighlight').value) || 'Bisa Disuruh!';
+      const desc = (document.getElementById('cmsHeroDesc') && document.getElementById('cmsHeroDesc').value) || 'Apapun kebutuhan harianmu di Surabaya...';
+      const cta = (document.getElementById('cmsHeroCta') && document.getElementById('cmsHeroCta').value) || 'Pesan Sekarang (WA)';
 
       const pBadge = document.getElementById('previewHeroBadge');
       if (pBadge) pBadge.textContent = badge;
@@ -1892,52 +3090,286 @@
       if (pCta) pCta.textContent = cta;
     }
 
+    function getVal(id, fallback) {
+      const el = document.getElementById(id);
+      return (el && el.value !== undefined) ? el.value.trim() : (fallback || '');
+    }
+
+    function setValIf(id, val) {
+      if (val === undefined || val === null) return;
+      const el = document.getElementById(id);
+      if (el) el.value = val;
+    }
+
+    function buildSiteConfigFromInputs() {
+      const existingRaw = localStorage.getItem('UNAIR_SITE_CONFIG');
+      let cfg = {};
+      try {
+        if (existingRaw) cfg = JSON.parse(existingRaw) || {};
+      } catch (e) {}
+
+      // 1. Header & Hero
+      cfg.topBarBadge = getVal('cmsTopBarBadge', 'INISIATIF MAHASISWA');
+      cfg.topBarText = getVal('cmsBannerText', 'Layanan On-Demand Mahasiswa di Surabaya • 8 Pilihan SURUH Series');
+      cfg.brandName = getVal('cmsBrandName', 'UNAIR SURUH');
+      cfg.brandTaglineMobile = getVal('cmsBrandSubMobile', 'Layanan Mahasiswa Surabaya');
+      cfg.brandTaglineDesktop = getVal('cmsBrandSubDesktop', 'Layanan On-Demand Mahasiswa Surabaya');
+
+      cfg.heroBadge = getVal('cmsHeroBadge', '⚡ Serba Bisa untuk Mahasiswa, Anak Kos & Warga Surabaya');
+      cfg.heroPrefix = getVal('cmsHeroPrefix', 'Serba Bisa, Semua');
+      cfg.heroHighlight = getVal('cmsHeroHighlight', 'Bisa Disuruh!');
+      cfg.heroDesc = getVal('cmsHeroDesc', '');
+      cfg.heroCtaPrimary = getVal('cmsHeroCta', 'Pesan Sekarang (WA)');
+      cfg.heroCtaSecondary = getVal('cmsHeroSecondaryCta', 'Lihat 8 Layanan');
+
+      cfg.metric1Val = getVal('cmsMetric1Val', 'Mulai 5rb');
+      cfg.metric1Sub = getVal('cmsMetric1Sub', 'Tarif Mahasiswa');
+      cfg.metric2Val = getVal('cmsMetric2Val', '25+ Mitra');
+      cfg.metric2Sub = getVal('cmsMetric2Sub', 'Mahasiswa Terverifikasi');
+      cfg.metric3Val = getVal('cmsMetric3Val', '8 Layanan');
+      cfg.metric3Sub = getVal('cmsMetric3Sub', 'Ekosistem SURUH');
+      cfg.metric4Val = getVal('cmsMetric4Val', 'Worker Cewek');
+      cfg.metric4Sub = getVal('cmsMetric4Sub', 'Klien Cewek Nyaman');
+
+      cfg.heroDispatchBadge = getVal('cmsHeroDispatchBadge', 'Siaga Surabaya • Fast Response');
+      cfg.heroCardTitle = getVal('cmsHeroCardTitle', 'Tim Mahasiswa & Armada Siap Bantu!');
+      cfg.heroCardSub = getVal('cmsHeroCardSub', 'Mitra Terverifikasi • Cekatan, Aman & Ramah Kantong');
+      cfg.heroVerifiedLine1 = getVal('cmsHeroVerified1', 'Identitas Mahasiswa Terverifikasi');
+      cfg.heroVerifiedLine2 = getVal('cmsHeroVerified2', 'Aman & Terpercaya');
+
+      // 2. Spotlight Custom SURUH
+      const customCheck = document.getElementById('cmsCustomActive');
+      cfg.customActive = customCheck ? customCheck.checked : true;
+      cfg.customBadge = getVal('cmsCustomBadge', '✨ LAYANAN PALING FLEKSIBEL • BEBAS REQUEST APA SAJA');
+      cfg.customTitle1 = getVal('cmsCustomTitle1', 'Punya Kebutuhan Unik?');
+      cfg.customTitle2 = getVal('cmsCustomTitle2', 'Suruh Apa Saja, Tinggal Tulis!');
+      cfg.customDesc = getVal('cmsCustomDesc', '');
+      cfg.customBullet1 = getVal('cmsCustomBullet1', 'Tarif Fleksibel Mulai Rp 5.000');
+      cfg.customBullet2 = getVal('cmsCustomBullet2', 'Deal Harga di Awal Sebelum Jalan');
+      cfg.customBullet3 = getVal('cmsCustomBullet3', 'Bebas Pilih Mitra Cowok / Cewek');
+      cfg.customFormTitle = getVal('cmsCustomFormTitle', 'Form Request Bebas (Custom)');
+      cfg.customFormBtnText = getVal('cmsCustomFormBtnText', 'Kirim Request & Tanya Tarif via WA');
+      cfg.customFormNote = getVal('cmsCustomFormNote', 'Gratis tanya-tanya dulu • Admin langsung balas estimasi biaya');
+
+      cfg.customChips = [];
+      for (let i = 0; i < 6; i++) {
+        const lbl = getVal('cmsChipLabel' + i, '');
+        const val = getVal('cmsChipVal' + i, '');
+        if (lbl) cfg.customChips.push({ label: lbl, value: val || lbl });
+      }
+
+      // 3. Mengapa Kami (6 Keunggulan)
+      cfg.whyBadge = getVal('cmsWhyBadge', 'Standar Layanan Terpercaya • Transparan & Profesional');
+      cfg.whyTitle = getVal('cmsWhyTitle', 'Mengapa Memilih UNAIR SURUH?');
+      cfg.whySubtitle = getVal('cmsWhySubtitle', '');
+      cfg.whyCards = [];
+      for (let j = 0; j < 6; j++) {
+        cfg.whyCards.push({
+          title: getVal('cmsWhyCardTitle' + j, ''),
+          desc: getVal('cmsWhyCardDesc' + j, '')
+        });
+      }
+
+      // 4. CTA Banner & Seksi Jadi Mitra
+      cfg.ctaBadge = getVal('cmsCtaBadge', 'Siap Membantu Kebutuhanmu Hari Ini');
+      cfg.ctaTitle = getVal('cmsCtaTitle', 'Ada Kerjaan yang Perlu Diselesaikan Sekarang?');
+      cfg.ctaDesc = getVal('cmsCtaDesc', '');
+      cfg.ctaBtnText = getVal('cmsCtaBtnText', 'Pesan Jasa Sekarang');
+
+      cfg.mitraBadge = getVal('cmsMitraBadge', 'Pemberdayaan Ekonomi Mahasiswa');
+      cfg.mitraTitle1 = getVal('cmsMitraTitle1', 'Mahasiswa Aktif?');
+      cfg.mitraTitle2 = getVal('cmsMitraTitle2', 'Yuk Gabung Jadi Mitra Worker!');
+      cfg.mitraDesc = getVal('cmsMitraDesc', '');
+      cfg.mitraBtnText = getVal('cmsMitraBtnText', 'Daftar Jadi Mitra via WA');
+      cfg.mitraPillar1Title = getVal('cmsMitraP1Title', '');
+      cfg.mitraPillar1Desc = getVal('cmsMitraP1Desc', '');
+      cfg.mitraPillar2Title = getVal('cmsMitraP2Title', '');
+      cfg.mitraPillar2Desc = getVal('cmsMitraP2Desc', '');
+      cfg.mitraPillar3Title = getVal('cmsMitraP3Title', '');
+      cfg.mitraPillar3Desc = getVal('cmsMitraP3Desc', '');
+
+      // 5. Section Titles
+      cfg.layananTitle = getVal('cmsLayananTitle', 'Pilih Layanan Sesuai Kebutuhanmu');
+      cfg.layananSubtitle = getVal('cmsLayananSubtitle', '');
+      cfg.reelsTitle = getVal('cmsReelsTitle', 'Kegiatan Kami di Lapangan');
+      cfg.testiTitle = getVal('cmsTestiTitle', 'Kata Mereka di Komentar TikTok');
+      cfg.faqTitle = getVal('cmsFaqTitle', 'Pertanyaan yang Sering Diajukan (FAQ)');
+      cfg.faqSubtitle = getVal('cmsFaqSubtitle', '');
+
+      // 6. Contacts & Footer
+      cfg.waNumber = getVal('settingWaNumber', '6289677772336');
+      cfg.floatingWaLabel = getVal('settingFloatingWaLabel', 'Chat WA');
+      cfg.footerEmail = getVal('settingFooterEmail', 'unairsuruh@gmail.com');
+      cfg.footerInstagram = getVal('settingFooterIg', '@unair.suruh');
+      cfg.footerTiktok = getVal('settingFooterTiktok', '@unair_suruh');
+      cfg.footerPjBadge = getVal('settingFooterPj', 'PJ Operasional: Afif (FTMM)');
+      cfg.footerWorkerBadge = getVal('settingFooterWorker', '25+ Mitra Mahasiswa Terverifikasi');
+      cfg.footerCoverage = getVal('settingHours', 'Area Kampus A, B, C & Seluruh Surabaya • Setiap Hari 06.00 – 23.00 WIB');
+      cfg.footerDesc = getVal('settingFooterDesc', '');
+      cfg.footerDisclaimer = getVal('settingFooterDisclaimer', '');
+
+      return cfg;
+    }
+
     function saveCmsSettings() {
-      const badge = document.getElementById('cmsHeroBadge').value.trim();
-      const prefix = document.getElementById('cmsHeroPrefix').value.trim();
-      const highlight = document.getElementById('cmsHeroHighlight').value.trim();
-      const desc = document.getElementById('cmsHeroDesc').value.trim();
-      const cta = document.getElementById('cmsHeroCta').value.trim();
-      const banner = document.getElementById('cmsBannerText').value.trim();
+      const cfg = buildSiteConfigFromInputs();
+      localStorage.setItem('UNAIR_SITE_CONFIG', JSON.stringify(cfg));
 
-      localStorage.setItem('UNAIR_SURUH_HERO_BADGE', badge);
-      localStorage.setItem('UNAIR_SURUH_HERO_PREFIX', prefix);
-      localStorage.setItem('UNAIR_SURUH_HERO_HIGHLIGHT', highlight);
-      localStorage.setItem('UNAIR_SURUH_HERO_DESC', desc);
-      localStorage.setItem('UNAIR_SURUH_HERO_CTA', cta);
-      localStorage.setItem('UNAIR_SURUH_BANNER_TEXT', banner);
+      // Keep legacy keys in sync
+      localStorage.setItem('UNAIR_SURUH_HERO_BADGE', cfg.heroBadge);
+      localStorage.setItem('UNAIR_SURUH_HERO_PREFIX', cfg.heroPrefix);
+      localStorage.setItem('UNAIR_SURUH_HERO_HIGHLIGHT', cfg.heroHighlight);
+      localStorage.setItem('UNAIR_SURUH_HERO_DESC', cfg.heroDesc);
+      localStorage.setItem('UNAIR_SURUH_HERO_CTA', cfg.heroCtaPrimary);
+      localStorage.setItem('UNAIR_SURUH_BANNER_TEXT', cfg.topBarText);
+      if (cfg.waNumber) localStorage.setItem('UNAIR_SURUH_WA', cfg.waNumber);
 
-      showToast('Konten Hero Website berhasil disimpan & disinkronkan!');
+      notifyWebsiteSync('SITE_CONFIG_SAVED');
+      showToast('✅ Semua tampilan Website Utama berhasil disimpan & disinkronkan!');
+    }
+
+    function loadCmsSettingsIntoForm() {
+      try {
+        const savedWa = localStorage.getItem('UNAIR_SURUH_WA');
+        if (savedWa) setValIf('settingWaNumber', savedWa);
+
+        const savedPin = localStorage.getItem('UNAIR_ADMIN_PIN');
+        if (savedPin) setValIf('settingAdminPin', savedPin);
+
+        const raw = localStorage.getItem('UNAIR_SITE_CONFIG');
+        if (!raw) return;
+        const cfg = JSON.parse(raw);
+        if (!cfg || typeof cfg !== 'object') return;
+
+        setValIf('cmsTopBarBadge', cfg.topBarBadge);
+        setValIf('cmsBannerText', cfg.topBarText);
+        setValIf('cmsBrandName', cfg.brandName);
+        setValIf('cmsBrandSubMobile', cfg.brandTaglineMobile);
+        setValIf('cmsBrandSubDesktop', cfg.brandTaglineDesktop);
+
+        setValIf('cmsHeroBadge', cfg.heroBadge);
+        setValIf('cmsHeroPrefix', cfg.heroPrefix);
+        setValIf('cmsHeroHighlight', cfg.heroHighlight);
+        setValIf('cmsHeroDesc', cfg.heroDesc);
+        setValIf('cmsHeroCta', cfg.heroCtaPrimary);
+        setValIf('cmsHeroSecondaryCta', cfg.heroCtaSecondary);
+
+        setValIf('cmsMetric1Val', cfg.metric1Val);
+        setValIf('cmsMetric1Sub', cfg.metric1Sub);
+        setValIf('cmsMetric2Val', cfg.metric2Val);
+        setValIf('cmsMetric2Sub', cfg.metric2Sub);
+        setValIf('cmsMetric3Val', cfg.metric3Val);
+        setValIf('cmsMetric3Sub', cfg.metric3Sub);
+        setValIf('cmsMetric4Val', cfg.metric4Val);
+        setValIf('cmsMetric4Sub', cfg.metric4Sub);
+
+        setValIf('cmsHeroDispatchBadge', cfg.heroDispatchBadge);
+        setValIf('cmsHeroCardTitle', cfg.heroCardTitle);
+        setValIf('cmsHeroCardSub', cfg.heroCardSub);
+        setValIf('cmsHeroVerified1', cfg.heroVerifiedLine1);
+        setValIf('cmsHeroVerified2', cfg.heroVerifiedLine2);
+
+        const customCheck = document.getElementById('cmsCustomActive');
+        if (customCheck && cfg.customActive !== undefined) customCheck.checked = (cfg.customActive !== false);
+        setValIf('cmsCustomBadge', cfg.customBadge);
+        setValIf('cmsCustomTitle1', cfg.customTitle1);
+        setValIf('cmsCustomTitle2', cfg.customTitle2);
+        setValIf('cmsCustomDesc', cfg.customDesc);
+        setValIf('cmsCustomBullet1', cfg.customBullet1);
+        setValIf('cmsCustomBullet2', cfg.customBullet2);
+        setValIf('cmsCustomBullet3', cfg.customBullet3);
+        setValIf('cmsCustomFormTitle', cfg.customFormTitle);
+        setValIf('cmsCustomFormBtnText', cfg.customFormBtnText);
+        setValIf('cmsCustomFormNote', cfg.customFormNote);
+
+        if (Array.isArray(cfg.customChips)) {
+          cfg.customChips.forEach((chip, i) => {
+            if (!chip) return;
+            setValIf('cmsChipLabel' + i, chip.label);
+            setValIf('cmsChipVal' + i, chip.value);
+          });
+        }
+
+        setValIf('cmsWhyBadge', cfg.whyBadge);
+        setValIf('cmsWhyTitle', cfg.whyTitle);
+        setValIf('cmsWhySubtitle', cfg.whySubtitle);
+        if (Array.isArray(cfg.whyCards)) {
+          cfg.whyCards.forEach((w, j) => {
+            if (!w) return;
+            setValIf('cmsWhyCardTitle' + j, w.title);
+            setValIf('cmsWhyCardDesc' + j, w.desc);
+          });
+        }
+
+        setValIf('cmsCtaBadge', cfg.ctaBadge);
+        setValIf('cmsCtaTitle', cfg.ctaTitle);
+        setValIf('cmsCtaDesc', cfg.ctaDesc);
+        setValIf('cmsCtaBtnText', cfg.ctaBtnText);
+
+        setValIf('cmsMitraBadge', cfg.mitraBadge);
+        setValIf('cmsMitraTitle1', cfg.mitraTitle1);
+        setValIf('cmsMitraTitle2', cfg.mitraTitle2);
+        setValIf('cmsMitraDesc', cfg.mitraDesc);
+        setValIf('cmsMitraBtnText', cfg.mitraBtnText);
+        setValIf('cmsMitraP1Title', cfg.mitraPillar1Title);
+        setValIf('cmsMitraP1Desc', cfg.mitraPillar1Desc);
+        setValIf('cmsMitraP2Title', cfg.mitraPillar2Title);
+        setValIf('cmsMitraP2Desc', cfg.mitraPillar2Desc);
+        setValIf('cmsMitraP3Title', cfg.mitraPillar3Title);
+        setValIf('cmsMitraP3Desc', cfg.mitraPillar3Desc);
+
+        setValIf('cmsLayananTitle', cfg.layananTitle);
+        setValIf('cmsLayananSubtitle', cfg.layananSubtitle);
+        setValIf('cmsReelsTitle', cfg.reelsTitle);
+        setValIf('cmsTestiTitle', cfg.testiTitle);
+        setValIf('cmsFaqTitle', cfg.faqTitle);
+        setValIf('cmsFaqSubtitle', cfg.faqSubtitle);
+
+        setValIf('settingWaNumber', cfg.waNumber);
+        setValIf('settingFloatingWaLabel', cfg.floatingWaLabel);
+        setValIf('settingFooterEmail', cfg.footerEmail);
+        setValIf('settingFooterIg', cfg.footerInstagram);
+        setValIf('settingFooterTiktok', cfg.footerTiktok);
+        setValIf('settingFooterPj', cfg.footerPjBadge);
+        setValIf('settingFooterWorker', cfg.footerWorkerBadge);
+        setValIf('settingHours', cfg.footerCoverage);
+        setValIf('settingFooterDesc', cfg.footerDesc);
+        setValIf('settingFooterDisclaimer', cfg.footerDisclaimer);
+      } catch (e) {
+        console.warn('Error loading CMS form:', e);
+      }
     }
 
     function resetCmsSettings() {
-      if (!confirm('Yakin ingin mereset konten teks hero kembali ke bawaan awal?')) return;
+      if (!confirm('Yakin ingin mereset seluruh teks tampilan website kembali ke bawaan awal?')) return;
+      localStorage.removeItem('UNAIR_SITE_CONFIG');
       localStorage.removeItem('UNAIR_SURUH_HERO_BADGE');
       localStorage.removeItem('UNAIR_SURUH_HERO_PREFIX');
       localStorage.removeItem('UNAIR_SURUH_HERO_HIGHLIGHT');
       localStorage.removeItem('UNAIR_SURUH_HERO_DESC');
       localStorage.removeItem('UNAIR_SURUH_HERO_CTA');
       localStorage.removeItem('UNAIR_SURUH_BANNER_TEXT');
-
-      document.getElementById('cmsHeroBadge').value = '⚡ Serba Bisa untuk Mahasiswa, Anak Kos & Warga Surabaya';
-      document.getElementById('cmsHeroPrefix').value = 'Serba Bisa, Semua';
-      document.getElementById('cmsHeroHighlight').value = 'Bisa Disuruh!';
-      document.getElementById('cmsHeroDesc').value = 'Apapun kebutuhan harianmu di Surabaya, serahkan pada tim mahasiswa: dari Pindahan & Titip Kos, Antar-Jemput Stasiun/Bandara, Urus Berkas & Dokumen, Rakit Perabot, belanja darurat, sampai Kru Event & Tutor. Cekatan, terpercaya, dan harga transparan.';
-      document.getElementById('cmsHeroCta').value = 'Pesan Sekarang (WA)';
-      document.getElementById('cmsBannerText').value = '[INISIATIF MAHASISWA] Layanan On-Demand Mahasiswa di Surabaya • 8 Pilihan SURUH Series';
-
-      updateCmsPreview();
-      showToast('Konten teks hero direset ke pengaturan default.');
+      notifyWebsiteSync('SITE_CONFIG_RESET');
+      window.location.reload();
     }
 
     function saveAdminSettings() {
-      const wa = document.getElementById('settingWaNumber').value.trim();
+      const wa = getVal('settingWaNumber', '6289677772336').replace(/^0/, '62').replace(/[^0-9]/g, '');
       localStorage.setItem('UNAIR_SURUH_WA', wa);
-      showToast('Nomor WhatsApp operasional disimpan: ' + wa);
+      setValIf('settingWaNumber', wa);
+
+      const newPin = getVal('settingAdminPin', '1954');
+      if (newPin) localStorage.setItem('UNAIR_ADMIN_PIN', newPin);
+
+      saveCmsSettings();
+      showToast('✅ Pengaturan WA, Footer & PIN berhasil disimpan!');
     }
 
+    // =========================================================================
+    // CSV EXPORT & FULL JSON BACKUP / RESTORE
+    // =========================================================================
     function exportOrdersToCSV() {
-      let csv = 'Kode Order,Layanan,Satuan,Nama,WhatsApp,Waktu,Lokasi Asal,Lokasi Tujuan,Privasi Putri,Status,Worker\n';
+      let csv = 'Kode Order,Layanan,Satuan,Nama,WhatsApp,Waktu,Lokasi Asal,Lokasi Tujuan,Worker Cewek,Status,Worker\n';
       orders.forEach(o => {
         csv += `"${o.code}","${o.service}","${o.satuan}","${o.name}","${o.wa}","${o.time}","${o.pickup}","${o.dropoff || '-'}","${o.isPrivat ? 'Ya' : 'Tidak'}","${o.status}","${o.worker}"\n`;
       });
@@ -1949,6 +3381,68 @@
       a.click();
       window.URL.revokeObjectURL(url);
       showToast('Berkas CSV pesanan berhasil diunduh');
+    }
+
+    function exportFullAdminBackup() {
+      const backup = {
+        exportedAt: new Date().toISOString(),
+        siteConfig: buildSiteConfigFromInputs(),
+        services: services,
+        faqs: adminFaqsList,
+        reels: adminReelsList,
+        testimonials: adminTestimonialsList,
+        workers: workers,
+        orders: orders,
+        waNumber: localStorage.getItem('UNAIR_SURUH_WA') || '6289677772336'
+      };
+      const blob = new Blob([JSON.stringify(backup, null, 2)], { type: 'application/json' });
+      const url = window.URL.createObjectURL(blob);
+      const a = document.createElement('a');
+      a.href = url;
+      a.download = 'UNAIR-SURUH-FullBackup-' + new Date().toISOString().slice(0, 10) + '.json';
+      a.click();
+      window.URL.revokeObjectURL(url);
+      showToast('Backup seluruh pengaturan (.json) berhasil diunduh!');
+    }
+
+    function importFullAdminBackup(ev) {
+      const file = ev.target && ev.target.files && ev.target.files[0];
+      if (!file) return;
+      const reader = new FileReader();
+      reader.onload = function(e) {
+        try {
+          const data = JSON.parse(e.target.result);
+          if (data.siteConfig) localStorage.setItem('UNAIR_SITE_CONFIG', JSON.stringify(data.siteConfig));
+          if (Array.isArray(data.services)) localStorage.setItem('UNAIR_SERVICES', JSON.stringify(data.services));
+          if (Array.isArray(data.faqs)) localStorage.setItem('UNAIR_FAQ_DATA', JSON.stringify(data.faqs));
+          if (Array.isArray(data.reels)) localStorage.setItem('unair_suruh_reels_data', JSON.stringify(data.reels));
+          if (Array.isArray(data.testimonials)) localStorage.setItem('unair_suruh_testimonials_data', JSON.stringify(data.testimonials));
+          if (Array.isArray(data.workers)) localStorage.setItem('UNAIR_WORKERS', JSON.stringify(data.workers));
+          if (Array.isArray(data.orders)) localStorage.setItem('UNAIR_ORDERS', JSON.stringify(data.orders));
+          if (data.waNumber) localStorage.setItem('UNAIR_SURUH_WA', data.waNumber);
+          notifyWebsiteSync('FULL_RESTORE');
+          showToast('Restore berhasil! Memuat ulang halaman...');
+          setTimeout(() => window.location.reload(), 900);
+        } catch (err) {
+          alert('File JSON tidak valid: ' + err.message);
+        }
+      };
+      reader.readAsText(file);
+    }
+
+    function factoryResetAllAdminData() {
+      if (!confirm('PERINGATAN: Kembalikan SEMUA pengaturan website, layanan, reels, testimoni, dan daftar order ke pengaturan awal bawaan pabrik?')) return;
+      const keys = [
+        'UNAIR_SITE_CONFIG', 'UNAIR_SERVICES', 'UNAIR_FAQ_DATA',
+        'unair_suruh_reels_data', 'unair_suruh_testimonials_data',
+        'UNAIR_WORKERS', 'UNAIR_ORDERS', 'UNAIR_SURUH_WA',
+        'UNAIR_SURUH_HERO_BADGE', 'UNAIR_SURUH_HERO_PREFIX',
+        'UNAIR_SURUH_HERO_HIGHLIGHT', 'UNAIR_SURUH_HERO_DESC',
+        'UNAIR_SURUH_HERO_CTA', 'UNAIR_SURUH_BANNER_TEXT'
+      ];
+      keys.forEach(k => localStorage.removeItem(k));
+      notifyWebsiteSync('FACTORY_RESET');
+      window.location.reload();
     }
 
     function changeAdminRole(role) {
@@ -1965,34 +3459,8 @@
 
     // Init Page on Load
     window.addEventListener('DOMContentLoaded', () => {
-      // Load saved settings if any
-      const savedWa = localStorage.getItem('UNAIR_SURUH_WA');
-      if (savedWa) {
-        document.getElementById('settingWaNumber').value = savedWa;
-      }
-      // Load saved Hero CMS
-      const savedBadge = localStorage.getItem('UNAIR_SURUH_HERO_BADGE');
-      if (savedBadge && document.getElementById('cmsHeroBadge')) document.getElementById('cmsHeroBadge').value = savedBadge;
-
-      const savedPrefix = localStorage.getItem('UNAIR_SURUH_HERO_PREFIX');
-      if (savedPrefix && document.getElementById('cmsHeroPrefix')) document.getElementById('cmsHeroPrefix').value = savedPrefix;
-
-      const savedHighlight = localStorage.getItem('UNAIR_SURUH_HERO_HIGHLIGHT');
-      if (savedHighlight && document.getElementById('cmsHeroHighlight')) document.getElementById('cmsHeroHighlight').value = savedHighlight;
-
-      const savedDesc = localStorage.getItem('UNAIR_SURUH_HERO_DESC');
-      if (savedDesc && document.getElementById('cmsHeroDesc')) document.getElementById('cmsHeroDesc').value = savedDesc;
-
-      const savedCta = localStorage.getItem('UNAIR_SURUH_HERO_CTA');
-      if (savedCta && document.getElementById('cmsHeroCta')) document.getElementById('cmsHeroCta').value = savedCta;
-
-      const savedBanner = localStorage.getItem('UNAIR_SURUH_BANNER_TEXT');
-      if (savedBanner && document.getElementById('cmsBannerText')) document.getElementById('cmsBannerText').value = savedBanner;
-
+      loadCmsSettingsIntoForm();
       if (typeof updateCmsPreview === 'function') updateCmsPreview();
-      
-// Legacy title/desc replaced by Hero CMS
-
       renderReelsTable();
       renderAll();
     });

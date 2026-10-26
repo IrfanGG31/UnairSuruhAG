@@ -96,13 +96,13 @@
   <aside class="bg-navy-950 text-white py-2 border-b border-navy-800 shadow-xs relative z-50">
     <div class="w-full px-3.5 sm:px-8 lg:px-12 xl:px-16 flex items-center justify-between gap-2">
       <div class="flex items-center gap-2 min-w-0 flex-1">
-        <span class="bg-amber-400 text-navy-950 text-[10px] sm:text-xs font-black px-2 sm:px-2.5 py-0.5 rounded-full uppercase tracking-wider shrink-0 shadow-xs">Inisiatif Mahasiswa</span>
+        <span id="announcementBadgeText" class="bg-amber-400 text-navy-950 text-[10px] sm:text-xs font-black px-2 sm:px-2.5 py-0.5 rounded-full uppercase tracking-wider shrink-0 shadow-xs">Inisiatif Mahasiswa</span>
         <span id="announcementBarText" class="text-slate-200 text-[11px] sm:text-sm font-medium truncate">Layanan On-Demand Mahasiswa Surabaya • 8 Lini Siaga + Custom SURUH</span>
       </div>
       <div class="hidden sm:flex items-center gap-6 text-slate-200 text-xs sm:text-sm shrink-0">
         <span class="flex items-center gap-2">
           <svg class="w-4 h-4 text-emerald-400 fill-none stroke-current stroke-2" viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
-          <span class="font-bold text-white tracking-wide">+62 896-7777-2336</span>
+          <span id="topBarWaDisplay" data-wa-display class="font-bold text-white tracking-wide">+62 896-7777-2336</span>
         </span>
       </div>
     </div>
@@ -120,10 +120,10 @@
           <img src="/img/unair-suruh-logo.webp" alt="Logo Maskot UNAIR SURUH" class="w-full h-full object-contain rounded-lg" />
         </div>
         <div class="min-w-0">
-          <span class="font-heading font-black text-base sm:text-xl lg:text-2xl text-navy-950 tracking-tight block leading-tight truncate">UNAIR SURUH</span>
+          <span id="navBrandTitle" class="font-heading font-black text-base sm:text-xl lg:text-2xl text-navy-950 tracking-tight block leading-tight truncate">UNAIR SURUH</span>
           <span class="text-[10px] sm:text-xs font-semibold text-slate-500 block truncate">
-            <span class="sm:hidden">Jasa On-Demand Surabaya</span>
-            <span class="hidden sm:inline">Solusi Praktis Mahasiswa &amp; Anak Kos Surabaya</span>
+            <span id="navBrandSubMobile" class="sm:hidden">Jasa On-Demand Surabaya</span>
+            <span id="navBrandSubDesktop" class="hidden sm:inline">Solusi Praktis Mahasiswa &amp; Anak Kos Surabaya</span>
           </span>
         </div>
       </a>
@@ -239,7 +239,7 @@
               <svg class="w-5 h-5 fill-current shrink-0" viewBox="0 0 24 24"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/></svg>
               <span id="heroCtaText">Pesan Sekarang</span>
             </button>
-            <a href="#layanan" class="btn-spring focus-ring px-6 sm:px-8 py-3.5 sm:py-4 rounded-xl border-2 border-navy-900/20 hover:border-navy-900/40 text-navy-950 font-heading font-bold text-sm sm:text-base bg-white/95 hover:bg-white transition shadow-2xs w-full sm:w-auto text-center justify-center inline-flex items-center">
+            <a href="#layanan" id="heroSecondaryCtaText" class="btn-spring focus-ring px-6 sm:px-8 py-3.5 sm:py-4 rounded-xl border-2 border-navy-900/20 hover:border-navy-900/40 text-navy-950 font-heading font-bold text-sm sm:text-base bg-white/95 hover:bg-white transition shadow-2xs w-full sm:w-auto text-center justify-center inline-flex items-center">
               Lihat 8 Lini Layanan
             </a>
           </div>
@@ -253,8 +253,8 @@
                 ★
               </div>
               <div class="leading-tight min-w-0">
-                <div class="font-black text-xs sm:text-base text-navy-950 truncate">22 Worker</div>
-                <div class="text-[10px] sm:text-xs text-slate-500 font-semibold truncate">Mitra Mahasiswa</div>
+                <div id="heroMetric1Val" class="font-black text-xs sm:text-base text-navy-950 truncate">22 Worker</div>
+                <div id="heroMetric1Sub" class="text-[10px] sm:text-xs text-slate-500 font-semibold truncate">Mitra Mahasiswa</div>
               </div>
             </div>
 
@@ -264,8 +264,8 @@
                 <svg class="w-4 h-4 sm:w-5 sm:h-5 stroke-current fill-none stroke-2" viewBox="0 0 24 24"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
               </div>
               <div class="leading-tight min-w-0">
-                <div class="font-black text-xs sm:text-base text-navy-950 truncate">83% Repeat</div>
-                <div class="text-[10px] sm:text-xs text-slate-500 font-semibold truncate">Pelanggan Setia</div>
+                <div id="heroMetric2Val" class="font-black text-xs sm:text-base text-navy-950 truncate">83% Repeat</div>
+                <div id="heroMetric2Sub" class="text-[10px] sm:text-xs text-slate-500 font-semibold truncate">Pelanggan Setia</div>
               </div>
             </div>
 
@@ -275,8 +275,8 @@
                 <svg class="w-4 h-4 sm:w-5 sm:h-5 stroke-current fill-none stroke-2" viewBox="0 0 24 24"><polyline points="23 6 13.5 15.5 8.5 10.5 1 18"/><polyline points="17 6 23 6 23 12"/></svg>
               </div>
               <div class="leading-tight min-w-0">
-                <div class="font-black text-xs sm:text-base text-navy-950 truncate">81% / Bulan</div>
-                <div class="text-[10px] sm:text-xs text-slate-500 font-semibold truncate">Pertumbuhan</div>
+                <div id="heroMetric3Val" class="font-black text-xs sm:text-base text-navy-950 truncate">81% / Bulan</div>
+                <div id="heroMetric3Sub" class="text-[10px] sm:text-xs text-slate-500 font-semibold truncate">Pertumbuhan</div>
               </div>
             </div>
 
@@ -286,8 +286,8 @@
                 <svg class="w-4 h-4 sm:w-5 sm:h-5 stroke-current fill-none stroke-2" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="m9 12 2 2 4-4"/></svg>
               </div>
               <div class="leading-tight min-w-0">
-                <div class="font-black text-xs sm:text-base text-navy-950 truncate">Harga Pasti</div>
-                <div class="text-[10px] sm:text-xs text-slate-500 font-semibold truncate">Jelas di Awal</div>
+                <div id="heroMetric4Val" class="font-black text-xs sm:text-base text-navy-950 truncate">Harga Pasti</div>
+                <div id="heroMetric4Sub" class="text-[10px] sm:text-xs text-slate-500 font-semibold truncate">Jelas di Awal</div>
               </div>
             </div>
 
@@ -311,7 +311,7 @@
             <!-- FLOATING GAMIFIED MICRO-CHIP (DISPATCH SPEED) -->
             <div class="hidden sm:flex absolute top-5 -left-3 sm:-left-5 bg-white/95 backdrop-blur-md px-3.5 py-2 rounded-xl shadow-lg border border-slate-200/90 items-center gap-2.5 card-spring z-10">
               <span class="w-2.5 h-2.5 rounded-full bg-emerald-500 animate-ping"></span>
-              <span class="text-xs sm:text-sm font-bold text-navy-950">⚡ Dispatch Cepat &lt; 15 Mnt</span>
+              <span id="heroDispatchBadgeText" class="text-xs sm:text-sm font-bold text-navy-950">⚡ Dispatch Cepat &lt; 15 Mnt</span>
             </div>
 
             <!-- FLOATING MASCOT BADGE (OFFICIAL MASCOT LOGO) -->
@@ -321,10 +321,10 @@
               </div>
               <div class="min-w-0">
                 <div class="text-xs sm:text-sm font-black text-navy-950 flex items-center gap-1.5">
-                  <span class="truncate">Maskot UNAIR SURUH</span>
+                  <span id="heroMascotTitleText" class="truncate">Maskot UNAIR SURUH</span>
                   <span class="w-2 h-2 rounded-full bg-emerald-500 shrink-0"></span>
                 </div>
-                <div class="text-[11px] sm:text-xs text-slate-500 font-semibold truncate">Siaga 8 Lini SURUH Series</div>
+                <div id="heroMascotSubText" class="text-[11px] sm:text-xs text-slate-500 font-semibold truncate">Siaga 8 Lini SURUH Series</div>
               </div>
             </div>
 
@@ -333,7 +333,7 @@
               <div class="w-6 h-6 sm:w-8 sm:h-8 rounded-full bg-amber-400 text-navy-950 flex items-center justify-center font-bold text-xs sm:text-sm shrink-0 shadow-2xs">
                 ★
               </div>
-              <div class="text-[11px] sm:text-sm font-bold leading-tight">Mitra Terverifikasi<br><span class="text-amber-300 font-medium">Mahasiswa Surabaya</span></div>
+              <div class="text-[11px] sm:text-sm font-bold leading-tight"><span id="heroVerifiedLine1">Mitra Terverifikasi</span><br><span id="heroVerifiedLine2" class="text-amber-300 font-medium">Mahasiswa Surabaya</span></div>
             </div>
 
           </div>
@@ -350,10 +350,10 @@
       
       <!-- SECTION HEADER -->
       <div class="text-center max-w-3xl mx-auto mb-10 sm:mb-12">
-        <h2 class="font-heading font-black text-2xl sm:text-3xl lg:text-4xl text-navy-900 tracking-tight">
+        <h2 id="layananSectionTitle" class="font-heading font-black text-2xl sm:text-3xl lg:text-4xl text-navy-900 tracking-tight">
           Lini Layanan &amp; Satuan Kerja
         </h2>
-        <p class="text-slate-600 text-xs sm:text-sm mt-2 max-w-2xl mx-auto leading-relaxed">
+        <p id="layananSectionSubtitle" class="text-slate-600 text-xs sm:text-sm mt-2 max-w-2xl mx-auto leading-relaxed">
           Tiap jenis tugas memiliki satuan dan batasan kerja yang transparan. Tidak ada biaya tersembunyi, langsung diskusikan di WhatsApp dengan format chat otomatis.
         </p>
       </div>
@@ -378,17 +378,17 @@
             <!-- SPOTLIGHT BADGE -->
             <div class="inline-flex items-center gap-2 px-3 sm:px-3.5 py-1.5 rounded-xl sm:rounded-full bg-gradient-to-r from-amber-400/25 to-yellow-300/15 border border-amber-400/40 text-amber-300 text-[10px] sm:text-xs font-bold uppercase tracking-wider shadow-xs max-w-full leading-snug">
               <span class="w-2 h-2 rounded-full bg-amber-400 animate-ping shrink-0"></span>
-              <span>⭐ SPOTLIGHT UTAMA • LAYANAN APA SAJA BEBAS REQUEST</span>
+              <span id="customSpotlightBadge">⭐ SPOTLIGHT UTAMA • LAYANAN APA SAJA BEBAS REQUEST</span>
             </div>
 
             <!-- TITLE -->
             <h3 class="font-heading font-black text-xl sm:text-3xl lg:text-[2.25rem] text-white leading-tight tracking-tight">
-              Punya Kebutuhan Lain?<br>
-              <span class="text-amber-400 underline decoration-amber-400/40 decoration-wavy">Semua Bebas Kamu Suruh!</span>
+              <span id="customTitleLine1">Punya Kebutuhan Lain?</span><br>
+              <span id="customTitleHighlight" class="text-amber-400 underline decoration-amber-400/40 decoration-wavy">Semua Bebas Kamu Suruh!</span>
             </h3>
 
             <!-- DESCRIPTION -->
-            <p class="text-slate-300 text-xs sm:text-sm lg:text-base leading-relaxed font-medium max-w-xl">
+            <p id="customSpotlightDesc" class="text-slate-300 text-xs sm:text-sm lg:text-base leading-relaxed font-medium max-w-xl">
               Nggak nemu layanan yang cocok di 8 pilihan bawah? Tenang! Dari urusan antre tiket/tempat, titip jaga stand event, survei lokasi kosan, cari barang unik, sampai bantuan mendadak apa saja di Surabaya—tulis tugasmu, harga disepakati di awal tanpa biaya siluman.
             </p>
 
@@ -397,7 +397,7 @@
               <div class="text-[11px] sm:text-xs font-bold uppercase tracking-wider text-amber-300/90 flex items-center gap-1.5">
                 <span>💡 Klik contoh tugas yang sering direquest:</span>
               </div>
-              <div class="flex flex-wrap gap-2">
+              <div id="customChipsContainer" class="flex flex-wrap gap-2">
                 <button type="button" onclick="fillCustomChip('Tolong survei kamar kosan & fotokan video detail lokasinya kak')" class="text-xs font-semibold px-3 py-1.5 rounded-xl bg-white/10 hover:bg-amber-400 hover:text-navy-950 border border-white/15 text-slate-200 transition card-spring cursor-pointer">
                   🎯 Survei Kosan / Cek Lokasi
                 </button>
@@ -423,15 +423,15 @@
             <div class="pt-2 flex flex-wrap items-center gap-3 sm:gap-4 text-[11px] sm:text-xs text-slate-300 font-semibold border-t border-white/10">
               <span class="flex items-center gap-1.5 text-emerald-400">
                 <svg class="w-4 h-4 fill-current shrink-0" viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg>
-                <span>Tarif Disepakati di Awal</span>
+                <span id="customBullet1">Tarif Disepakati di Awal</span>
               </span>
               <span class="flex items-center gap-1.5 text-amber-300">
                 <svg class="w-4 h-4 fill-current shrink-0" viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg>
-                <span>Mitra Mahasiswa Terpercaya</span>
+                <span id="customBullet2">Mitra Mahasiswa Terpercaya</span>
               </span>
               <span class="flex items-center gap-1.5 text-blue-300">
                 <svg class="w-4 h-4 fill-current shrink-0" viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg>
-                <span>Respon Kilat &lt; 15 Mnt</span>
+                <span id="customBullet3">Respon Kilat &lt; 15 Mnt</span>
               </span>
             </div>
 
@@ -444,7 +444,7 @@
               <div class="flex items-center justify-between pb-2 border-b border-white/10 gap-2">
                 <div class="flex items-center gap-2 min-w-0">
                   <span class="w-8 h-8 rounded-xl bg-amber-400 text-navy-950 flex items-center justify-center font-bold text-sm shadow-xs shrink-0">✍️</span>
-                  <span class="font-heading font-black text-sm sm:text-base text-white truncate">Form Kilat Custom SURUH</span>
+                  <span id="customFormTitle" class="font-heading font-black text-sm sm:text-base text-white truncate">Form Kilat Custom SURUH</span>
                 </div>
                 <span class="text-[10px] sm:text-xs font-bold px-2.5 py-0.5 rounded-full bg-emerald-500/20 text-emerald-300 border border-emerald-400/30 shrink-0">Nego Bebas</span>
               </div>
@@ -491,12 +491,12 @@
               <!-- SUBMIT BUTTON DIRECT TO WHATSAPP -->
               <button type="button" onclick="sendCustomOrderToWA()" class="btn-spring focus-ring w-full py-3.5 sm:py-4 rounded-xl bg-amber-400 hover:bg-amber-300 text-navy-950 font-heading font-black text-sm sm:text-base flex items-center justify-center gap-2.5 shadow-xl hover:shadow-2xl transition cursor-pointer">
                 <svg class="w-5 h-5 fill-current shrink-0" viewBox="0 0 24 24"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/></svg>
-                <span>Kirim Request Custom ke WA</span>
+                <span id="customFormBtnText">Kirim Request Custom ke WA</span>
               </button>
 
               <p class="text-[11px] text-center text-slate-300 flex items-center justify-center gap-1.5 pt-0.5">
                 <span class="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-pulse"></span>
-                <span>Pesan otomatis diformat rapi ke WA Mas Afif</span>
+                <span id="customFormNoteText">Pesan otomatis diformat rapi ke WA Mas Afif</span>
               </p>
 
             </div>
@@ -518,12 +518,12 @@
         </div>
         <div class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-white border border-slate-200 text-slate-600 text-xs font-bold shrink-0 self-start sm:self-auto shadow-2xs">
           <span class="w-2 h-2 rounded-full bg-amber-400"></span>
-          <span>8 Paket Terstandarisasi</span>
+          <span id="layananCountBadge">8 Paket Terstandarisasi</span>
         </div>
       </div>
 
       <!-- 8 OFFICIAL CARE SERVICES GRID (PERSIS SCREENSHOT 4-COLUMN / RESPONSIVE) -->
-      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6 sm:gap-7">
+      <div id="servicesGridContainer" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6 sm:gap-7">
         <!-- SERVICE CARD 1: Mobilitas & Transportasi (Go SURUH) -->
         <div data-service-name="Mobilitas & Transportasi (Go SURUH)" class="bg-white rounded-3xl p-6 border border-slate-200/90 shadow-xs hover:shadow-md transition duration-300 flex flex-col justify-between card-spring group">
           <div class="space-y-4">
@@ -912,19 +912,19 @@
       
       <!-- HEADING & SUBTITLE -->
       <div class="text-center max-w-3xl mx-auto mb-12 sm:mb-16">
-        <div class="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-amber-50 border border-amber-200 text-amber-800 text-xs font-bold uppercase tracking-wider mb-3">
+        <div id="whySectionBadge" class="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-amber-50 border border-amber-200 text-amber-800 text-xs font-bold uppercase tracking-wider mb-3">
           Standar Layanan &amp; Keunggulan Kami
         </div>
-        <h2 class="font-heading font-black text-2xl sm:text-3xl lg:text-4xl text-navy-900 tracking-tight">
+        <h2 id="whySectionTitle" class="font-heading font-black text-2xl sm:text-3xl lg:text-4xl text-navy-900 tracking-tight">
           Mengapa Memilih UNAIR SURUH?
         </h2>
-        <p class="text-slate-600 text-sm sm:text-base mt-2 leading-relaxed">
+        <p id="whySectionSubtitle" class="text-slate-600 text-sm sm:text-base mt-2 leading-relaxed">
           Pembeda utama kami adalah kesepakatan harga yang jelas di awal, perlindungan privasi pelanggan, dan pembagian komisi pekerja yang transparan
         </p>
       </div>
 
       <!-- 6 FEATURE CARDS SESUAI PROPOSAL BISNIS BAB 2 & BAB 3 -->
-      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
+      <div id="whyGridContainer" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
         
         <!-- ITEM 1: HARGA & RUANG LINGKUP DISEPAKATI DI AWAL -->
         <div class="bg-white rounded-3xl border border-slate-200/90 p-6 sm:p-7 flex items-start gap-4 shadow-xs hover:shadow-md transition card-spring hover:border-amber-400">
@@ -932,8 +932,8 @@
             <svg class="w-6 h-6 stroke-current fill-none stroke-2" viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7.5L14 2z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg>
           </div>
           <div>
-            <h3 class="font-heading font-bold text-base sm:text-lg text-navy-950">Harga Disepakati di Awal</h3>
-            <p class="text-xs sm:text-sm text-slate-600 mt-1.5 leading-relaxed">
+            <h3 id="whyCardTitle-0" class="font-heading font-bold text-base sm:text-lg text-navy-950">Harga Disepakati di Awal</h3>
+            <p id="whyCardDesc-0" class="text-xs sm:text-sm text-slate-600 mt-1.5 leading-relaxed">
               Ruang lingkup tugas dan total biaya sudah jelas sebelum pengerjaan dimulai. 100% tanpa biaya siluman atau kenaikan tarif mendadak.
             </p>
           </div>
@@ -945,8 +945,8 @@
             <svg class="w-6 h-6 stroke-current fill-none stroke-2" viewBox="0 0 24 24"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
           </div>
           <div>
-            <h3 class="font-heading font-bold text-base sm:text-lg text-navy-950">Fee Worker Terbuka &amp; Adil</h3>
-            <p class="text-xs sm:text-sm text-slate-600 mt-1.5 leading-relaxed">
+            <h3 id="whyCardTitle-1" class="font-heading font-bold text-base sm:text-lg text-navy-950">Fee Worker Terbuka &amp; Adil</h3>
+            <p id="whyCardDesc-1" class="text-xs sm:text-sm text-slate-600 mt-1.5 leading-relaxed">
               Pekerja mengetahui besaran fee sebelum mengambil order. Tidak ada pemotongan sepihak, sehingga mitra bekerja maksimal, profesional, dan tuntas.
             </p>
           </div>
@@ -958,8 +958,8 @@
             <svg class="w-6 h-6 stroke-current fill-none stroke-2" viewBox="0 0 24 24"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
           </div>
           <div>
-            <h3 class="font-heading font-bold text-base sm:text-lg text-navy-950">Gender Matching di Ruang Privat</h3>
-            <p class="text-xs sm:text-sm text-slate-600 mt-1.5 leading-relaxed">
+            <h3 id="whyCardTitle-2" class="font-heading font-bold text-base sm:text-lg text-navy-950">Gender Matching di Ruang Privat</h3>
+            <p id="whyCardDesc-2" class="text-xs sm:text-sm text-slate-600 mt-1.5 leading-relaxed">
               Klien cewek bebas request penugasan 100% mitra mahasiswi cewek untuk pengerjaan di kos atau tempat tinggal demi kenyamanan, etika, dan privasi terjaga.
             </p>
           </div>
@@ -971,8 +971,8 @@
             <svg class="w-6 h-6 stroke-current fill-none stroke-2" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="m9 12 2 2 4-4"/></svg>
           </div>
           <div>
-            <h3 class="font-heading font-bold text-base sm:text-lg text-navy-950">Layanan 1 Pintu Serba Bisa</h3>
-            <p class="text-xs sm:text-sm text-slate-600 mt-1.5 leading-relaxed">
+            <h3 id="whyCardTitle-3" class="font-heading font-bold text-base sm:text-lg text-navy-950">Layanan 1 Pintu Serba Bisa</h3>
+            <p id="whyCardDesc-3" class="text-xs sm:text-sm text-slate-600 mt-1.5 leading-relaxed">
               Cukup 1 kontak untuk 8 kategori kebutuhan harian: pindahan kos, angkutan armada Tossa/Pick-up, titip barang, rakit meja, sampai urus berkas kampus.
             </p>
           </div>
@@ -984,8 +984,8 @@
             <svg class="w-6 h-6 stroke-current fill-none stroke-2" viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
           </div>
           <div>
-            <h3 class="font-heading font-bold text-base sm:text-lg text-navy-950">Mitra Mahasiswa Terverifikasi</h3>
-            <p class="text-xs sm:text-sm text-slate-600 mt-1.5 leading-relaxed">
+            <h3 id="whyCardTitle-4" class="font-heading font-bold text-base sm:text-lg text-navy-950">Mitra Mahasiswa Terverifikasi</h3>
+            <p id="whyCardDesc-4" class="text-xs sm:text-sm text-slate-600 mt-1.5 leading-relaxed">
               Dikerjakan langsung oleh mahasiswa aktif di Surabaya yang telah diverifikasi identitasnya, komunikatif, ramah, dan bertanggung jawab penuh.
             </p>
           </div>
@@ -997,8 +997,8 @@
             <svg class="w-6 h-6 stroke-current fill-none stroke-2" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
           </div>
           <div>
-            <h3 class="font-heading font-bold text-base sm:text-lg text-navy-950">Respon Tanggap Kebutuhan Urgent</h3>
-            <p class="text-xs sm:text-sm text-slate-600 mt-1.5 leading-relaxed">
+            <h3 id="whyCardTitle-5" class="font-heading font-bold text-base sm:text-lg text-navy-950">Respon Tanggap Kebutuhan Urgent</h3>
+            <p id="whyCardDesc-5" class="text-xs sm:text-sm text-slate-600 mt-1.5 leading-relaxed">
               Siaga membantu kebutuhan mendadak: motor mogok di jalan, antar-jemput stasiun dini hari, hingga titip obat saat sakit di kos di seluruh penjuru Surabaya.
             </p>
           </div>
@@ -1016,10 +1016,10 @@
       
       <!-- HEADING & SUBTITLE -->
       <div class="text-center max-w-2xl mx-auto mb-10 sm:mb-14">
-        <h2 class="font-heading font-black text-2xl sm:text-3xl text-navy-900 tracking-tight">
+        <h2 id="reelsSectionTitle" class="font-heading font-black text-2xl sm:text-3xl text-navy-900 tracking-tight">
           Kegiatan Kami
         </h2>
-        <p class="text-slate-600 text-sm sm:text-base mt-2">
+        <p id="reelsSectionSubtitle" class="text-slate-600 text-sm sm:text-base mt-2">
           Follow TikTok &amp; IG kami <a href="https://www.tiktok.com/@unair_suruh" target="_blank" class="text-amber-600 font-bold hover:underline">@unair_suruh</a> agar terus update keseruan crew UNAIR SURUH
         </p>
       </div>
@@ -1449,8 +1449,8 @@
           <svg class="w-3.5 h-3.5 fill-current text-[#FE2C55]" viewBox="0 0 24 24"><path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-2.88 2.89 2.89 2.89 0 0 1-2.89-2.89 2.89 2.89 0 0 1 2.89-2.89c.28 0 .54.04.79.1v-3.5a6.37 6.37 0 0 0-.79-.05A6.34 6.34 0 0 0 3 15.67a6.34 6.34 0 0 0 6.34 6.33c3.5 0 6.34-2.84 6.34-6.33v-5.2a8.21 8.21 0 0 0 4.91 1.62v-3.45a4.88 4.88 0 0 1-1-.05z"/></svg>
           <span>Real TikTok Comments</span>
         </div>
-        <h2 class="font-heading font-black text-2xl sm:text-3xl lg:text-4xl text-navy-900 tracking-tight">Kata Mereka di TikTok</h2>
-        <p class="text-slate-600 text-xs sm:text-base mt-2">
+        <h2 id="testiSectionTitle" class="font-heading font-black text-2xl sm:text-3xl lg:text-4xl text-navy-900 tracking-tight">Kata Mereka di TikTok</h2>
+        <p id="testiSectionSubtitle" class="text-slate-600 text-xs sm:text-base mt-2">
           Bukan ulasan rekayasa. Diambil langsung dari kolom komentar video resmi <span class="font-bold text-navy-900">@unair_suruh</span>. Klik kartu mana saja untuk verifikasi langsung di aplikasi TikTok.
         </p>
       </div>
@@ -1749,13 +1749,13 @@
     <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
       
       <div class="text-center mb-12 sm:mb-16">
-        <h2 class="font-heading font-black text-2xl sm:text-3xl text-navy-900 tracking-tight">
+        <h2 id="faqSectionTitle" class="font-heading font-black text-2xl sm:text-3xl text-navy-900 tracking-tight">
           Pertanyaan yang Sering Ditanyakan
         </h2>
-        <p class="text-slate-600 text-sm sm:text-base mt-2">Segala hal yang perlu kamu ketahui tentang 8 lini layanan kami</p>
+        <p id="faqSectionSubtitle" class="text-slate-600 text-sm sm:text-base mt-2">Segala hal yang perlu kamu ketahui tentang 8 lini layanan kami</p>
       </div>
 
-      <div class="space-y-4">
+      <div id="faqListContainer" class="space-y-4">
         
         <details class="group bg-white rounded-2xl p-5 border border-slate-200/90 shadow-xs transition duration-200">
           <summary class="flex items-center justify-between font-heading font-bold text-sm sm:text-base text-navy-900 cursor-pointer list-none">
@@ -1806,19 +1806,19 @@
   <!-- ===================================================================== -->
   <section class="py-16 sm:py-20 bg-navy-900 text-white relative overflow-hidden">
     <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10 space-y-6">
-      <span class="inline-block px-3.5 py-1 rounded-full bg-amber-400 text-navy-900 font-bold text-xs uppercase tracking-wider">
+      <span id="ctaBannerBadge" class="inline-block px-3.5 py-1 rounded-full bg-amber-400 text-navy-900 font-bold text-xs uppercase tracking-wider">
         Siap Untuk Memulai?
       </span>
-      <h2 class="font-heading font-black text-2xl sm:text-4xl tracking-tight max-w-2xl mx-auto leading-tight">
+      <h2 id="ctaBannerTitle" class="font-heading font-black text-2xl sm:text-4xl tracking-tight max-w-2xl mx-auto leading-tight">
         Butuh Bantuan Kos atau Urusan Kampus Hari Ini?
       </h2>
-      <p class="text-slate-300 text-sm sm:text-base max-w-xl mx-auto leading-relaxed">
+      <p id="ctaBannerDesc" class="text-slate-300 text-sm sm:text-base max-w-xl mx-auto leading-relaxed">
         Tim mahasiswa UNAIR siap membantu kapan saja. Konsultasi kebutuhanmu via WhatsApp sekarang tanpa ribet.
       </p>
       <div class="pt-2">
         <a href="https://wa.me/6289677772336?text=Halo%20Admin%20UNAIR%20SURUH,%20saya%20butuh%20bantuan%20layanan" target="_blank" rel="noopener noreferrer" class="btn-spring focus-ring inline-flex items-center gap-2.5 px-8 py-4 rounded-xl bg-amber-400 hover:bg-amber-300 text-navy-900 font-heading font-extrabold text-sm sm:text-base shadow-lg transition">
           <svg class="w-5 h-5 fill-current shrink-0" viewBox="0 0 24 24"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/></svg>
-          <span>Chat WhatsApp: +62 896-7777-2336</span>
+          <span id="ctaBannerBtnText">Chat WhatsApp: +62 896-7777-2336</span>
         </a>
       </div>
     </div>
@@ -1836,22 +1836,22 @@
       <div class="max-w-4xl mx-auto text-center space-y-6">
         
         <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-amber-400/20 border border-amber-400/30 text-amber-300 text-xs sm:text-sm font-bold uppercase tracking-wider">
-          <span>🤝 Rekrutmen Mitra Mahasiswa Surabaya</span>
+          <span id="mitraBadgeText">🤝 Rekrutmen Mitra Mahasiswa Surabaya</span>
         </div>
 
         <h2 class="font-heading font-black text-3xl sm:text-4xl lg:text-5xl tracking-tight text-white leading-tight">
-          Ingin Penghasilan Fleksibel?<br>
-          <span class="text-amber-400">Gabung Jadi Mitra Worker @unair_suruh</span>
+          <span id="mitraTitle1">Ingin Penghasilan Fleksibel?</span><br>
+          <span id="mitraTitle2" class="text-amber-400">Gabung Jadi Mitra Worker @unair_suruh</span>
         </h2>
 
-        <p class="text-slate-300 text-sm sm:text-base lg:text-lg leading-relaxed max-w-2xl mx-auto font-medium">
+        <p id="mitraDescText" class="text-slate-300 text-sm sm:text-base lg:text-lg leading-relaxed max-w-2xl mx-auto font-medium">
           Buka peluang pendapatan bagi mahasiswa dan masyarakat tanpa meninggalkan kuliah atau aktivitas utama. Fee pekerja transparan disepakati di awal tanpa potongan sepihak.
         </p>
 
         <div class="pt-4 flex flex-col sm:flex-row flex-wrap items-stretch sm:items-center justify-center gap-3 sm:gap-4">
           <a href="https://wa.me/6289677772336?text=Halo%20kak%20Afif%20%2F%20Admin%20UNAIR%20SURUH!%20%F0%9F%91%8B%20Saya%20mahasiswa%20di%20Surabaya%20yang%20tertarik%20bergabung%20menjadi%20Mitra%20Worker%20UNAIR%20SURUH.%20Boleh%20minta%20info%20alur%20pendaftarannya%20kak%3F%20%F0%9F%99%8F" target="_blank" rel="noopener noreferrer" class="btn-spring focus-ring inline-flex items-center justify-center gap-3 px-6 sm:px-10 py-3.5 sm:py-4 rounded-2xl bg-amber-400 hover:bg-amber-300 text-navy-950 font-heading font-black text-sm sm:text-lg shadow-xl hover:shadow-2xl transition w-full sm:w-auto">
             <svg class="w-5 h-5 fill-current shrink-0" viewBox="0 0 24 24"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/></svg>
-            <span>Daftar Jadi Mitra via WA</span>
+            <span id="mitraBtnText">Daftar Jadi Mitra via WA</span>
           </a>
           <a href="#layanan" class="btn-spring focus-ring px-6 sm:px-7 py-3.5 sm:py-4 rounded-2xl border-2 border-white/25 hover:border-white text-white font-heading font-bold text-sm sm:text-base hover:bg-white/10 transition w-full sm:w-auto text-center">
             Lihat 8 Lini Tugas
@@ -1862,25 +1862,25 @@
         <div class="grid grid-cols-1 sm:grid-cols-3 gap-5 pt-8 text-left border-t border-navy-800/80">
           <div class="bg-white/5 backdrop-blur-sm rounded-2xl p-5 border border-white/10">
             <div class="font-bold text-amber-400 text-sm sm:text-base flex items-center gap-2 mb-1.5">
-              <span>⏱️ Jam Kerja Fleksibel</span>
+              <span id="mitraPillar1Title">⏱️ Jam Kerja Fleksibel</span>
             </div>
-            <p class="text-xs sm:text-sm text-slate-300 leading-relaxed">
+            <p id="mitraPillar1Desc" class="text-xs sm:text-sm text-slate-300 leading-relaxed">
               Bebas memilih order saat tidak ada kelas kuliah. Mandiri finansial tanpa mengganggu kegiatan akademik utama.
             </p>
           </div>
           <div class="bg-white/5 backdrop-blur-sm rounded-2xl p-5 border border-white/10">
             <div class="font-bold text-amber-400 text-sm sm:text-base flex items-center gap-2 mb-1.5">
-              <span>💰 Fee Terbuka &amp; Utuh</span>
+              <span id="mitraPillar2Title">💰 Fee Terbuka &amp; Utuh</span>
             </div>
-            <p class="text-xs sm:text-sm text-slate-300 leading-relaxed">
+            <p id="mitraPillar2Desc" class="text-xs sm:text-sm text-slate-300 leading-relaxed">
               Besaran fee pekerja disepakati di awal sebelum kamu terima tugas. Fee dibagikan terbuka tanpa potongan sepihak.
             </p>
           </div>
           <div class="bg-white/5 backdrop-blur-sm rounded-2xl p-5 border border-white/10">
             <div class="font-bold text-amber-400 text-sm sm:text-base flex items-center gap-2 mb-1.5">
-              <span>🛡️ Gender Matching &amp; Aman</span>
+              <span id="mitraPillar3Title">🛡️ Gender Matching &amp; Aman</span>
             </div>
-            <p class="text-xs sm:text-sm text-slate-300 leading-relaxed">
+            <p id="mitraPillar3Desc" class="text-xs sm:text-sm text-slate-300 leading-relaxed">
               Klien cewek bebas request worker cewek (100% mitra mahasiswi). Didukung koordinator tim siaga di lapangan.
             </p>
           </div>
@@ -1901,14 +1901,14 @@
             <div class="w-10 h-10 rounded-xl bg-white border border-slate-200 p-0.5 overflow-hidden shadow-xs">
               <img src="/img/unair-suruh-logo.webp" alt="Logo UNAIR SURUH" class="w-full h-full object-contain rounded-lg" />
             </div>
-            <span class="font-heading font-black text-xl text-navy-950">UNAIR SURUH</span>
+            <span id="footerBrandTitle" class="font-heading font-black text-xl text-navy-950">UNAIR SURUH</span>
           </div>
-          <p class="text-xs sm:text-sm text-slate-500 max-w-md leading-relaxed font-medium">
+          <p id="footerDescText" class="text-xs sm:text-sm text-slate-500 max-w-md leading-relaxed font-medium">
             Usaha jasa satu pintu independen oleh mahasiswa di Surabaya yang membantu menyelesaikan kebutuhan harian dengan harga disepakati di awal dan fee pekerja transparan.
           </p>
-          <div class="pt-2 flex items-center gap-3 text-xs font-semibold text-slate-700">
-            <span class="bg-amber-100 text-amber-900 px-3 py-1 rounded-full">PJ Operasional: Mas Afif</span>
-            <span class="bg-blue-50 text-blue-800 px-3 py-1 rounded-full">22 Mitra Aktif</span>
+          <div class="pt-2 flex flex-wrap items-center gap-2 sm:gap-3 text-xs font-semibold text-slate-700">
+            <span id="footerPjBadge" class="bg-amber-100 text-amber-900 px-3 py-1 rounded-full">PJ Operasional: Mas Afif</span>
+            <span id="footerWorkerBadge" class="bg-blue-50 text-blue-800 px-3 py-1 rounded-full">22 Mitra Aktif</span>
           </div>
         </div>
 
@@ -1932,21 +1932,21 @@
           <ul class="space-y-2 text-xs text-slate-600 font-medium">
             <li class="flex items-center gap-2">
               <span class="font-bold text-navy-950">WhatsApp:</span>
-              <a href="https://wa.me/6289677772336" target="_blank" rel="noopener noreferrer" class="text-amber-600 font-bold hover:underline">+62 896-7777-2336</a>
+              <a href="https://wa.me/6289677772336" target="_blank" rel="noopener noreferrer" data-wa-display class="text-amber-600 font-bold hover:underline">+62 896-7777-2336</a>
             </li>
             <li class="flex items-center gap-2">
               <span class="font-bold text-navy-950">Email:</span>
-              <a href="mailto:unairsuruh@gmail.com" class="text-amber-600 hover:underline">unairsuruh@gmail.com</a>
+              <a id="footerEmailLink" href="mailto:unairsuruh@gmail.com" class="text-amber-600 hover:underline">unairsuruh@gmail.com</a>
             </li>
             <li class="flex items-center gap-2">
               <span class="font-bold text-navy-950">Instagram:</span>
-              <a href="https://www.instagram.com/unair_suruh" target="_blank" rel="noopener noreferrer" class="text-amber-600 hover:underline">@unair_suruh</a>
+              <a id="footerIgLink" href="https://www.instagram.com/unair_suruh" target="_blank" rel="noopener noreferrer" class="text-amber-600 hover:underline">@unair_suruh</a>
             </li>
             <li class="flex items-center gap-2">
               <span class="font-bold text-navy-950">TikTok:</span>
-              <a href="https://www.tiktok.com/@unair_suruh" target="_blank" rel="noopener noreferrer" class="text-amber-600 hover:underline">@unair_suruh</a>
+              <a id="footerTiktokLink" href="https://www.tiktok.com/@unair_suruh" target="_blank" rel="noopener noreferrer" class="text-amber-600 hover:underline">@unair_suruh</a>
             </li>
-            <li class="pt-1 text-[11px] text-slate-500">
+            <li id="footerCoverageText" class="pt-1 text-[11px] text-slate-500">
               Cakupan: Seluruh Surabaya &amp; Jawa Timur (Kampus A, B, C UNAIR, kawasan kos &amp; pemukiman).
             </li>
           </ul>
@@ -1954,7 +1954,7 @@
       </div>
 
       <!-- DISCLAIMER INDEPENDENSI KAMPUS SESUAI PROPOSAL -->
-      <div class="py-3.5 my-4 border-y border-slate-100 text-[11px] text-slate-500 text-center leading-relaxed font-medium">
+      <div id="footerDisclaimerText" class="py-3.5 my-4 border-y border-slate-100 text-[11px] text-slate-500 text-center leading-relaxed font-medium">
         <strong class="text-slate-700">Pemberitahuan &amp; Disclaimer Independensi:</strong> UNAIR SURUH adalah inisiatif mandiri oleh mahasiswa dan masyarakat di Surabaya untuk menyelesaikan kebutuhan harian secara profesional. Layanan ini <u>tidak berafiliasi resmi, tidak disponsori, dan tidak dikelola secara institusional oleh Universitas Airlangga</u>.
       </div>
 
@@ -2156,7 +2156,7 @@
         </button>
         <p class="text-[11px] text-center text-slate-500 flex items-center justify-center gap-1.5 pt-1">
           <span class="w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span>
-          <span>Admin WhatsApp Resmi: <strong class="text-slate-700">+62 896-7777-2336</strong></span>
+          <span>Admin WhatsApp Resmi: <strong id="modalWaDisplay" data-wa-display class="text-slate-700">+62 896-7777-2336</strong></span>
         </p>
       </div>
 
@@ -2168,6 +2168,7 @@
   <!-- ===================================================================== -->
   <script>
     let FEED_DATA = [{"id":1,"src":"tiktok/tiktok-real-6.mp4","poster":"/tiktok/tiktok-real-6-poster.webp","user":"unair_suruh","timeAgo":"KONTEN PILIHAN","likes":67,"caption":"POV pindah kosan Surabaya beres dalam 3 jam pakai Tossa roda 3 bareng kru Move SURUH! Driver + kru mahasiswa bantu angkut sampai lantai atas 🛵📦","tiktokUrl":"https://www.tiktok.com/@unair_suruh/video/7643032747786784020","active":true},{"id":2,"src":"tiktok/tiktok-real-2.mp4","poster":"/tiktok/tiktok-real-2-poster.webp","user":"unair_suruh","timeAgo":"2 HARI LALU","likes":48,"caption":"Cuaca Surabaya lagi terik-teriknya? Naik Go SURUH mobil van ber-AC dingin, no ribet, no nunggu. Antar jemput stasiun & kosan langsung sat set ❄️🚗","tiktokUrl":"https://www.tiktok.com/@unair_suruh/video/7653709528361389332","active":true},{"id":3,"src":"tiktok/tiktok-real-5.mp4","poster":"/tiktok/tiktok-real-5-poster.webp","user":"unair_suruh","timeAgo":"3 HARI LALU","likes":124,"caption":"Klien cewek request worker cewek, privasi kamu nomor satu! Dikerjakan langsung sama mitra mahasiswi yang rapi, teliti, dan bisa dipercaya 🌸🧹","tiktokUrl":"https://www.tiktok.com/@unair_suruh/video/7650823166306323733","active":true},{"id":4,"src":"tiktok/tiktok-real-4.mp4","poster":"/tiktok/tiktok-real-4-poster.webp","user":"unair_suruh","timeAgo":"4 HARI LALU","likes":92,"caption":"Lagi di luar kota tapi ada berkas fisik atau dokumen penting yang harus segera diambil? Tim Desk SURUH siap bantu ambilkan dan kirim ke alamat / ekspedisi 📄📦","tiktokUrl":"https://www.tiktok.com/@unair_suruh/video/7651856659639291156","active":true},{"id":5,"src":"tiktok/tiktok-real-1.mp4","poster":"/tiktok/tiktok-real-1-poster.webp","user":"unair_suruh","timeAgo":"5 HARI LALU","likes":58,"caption":"Solusi anti telat buat teman-teman mahasiswa! Go SURUH siap antar jemput rute kosan - kampus - stasiun tepat waktu 🛵💨","tiktokUrl":"https://www.tiktok.com/@unair_suruh/video/7653711312844999956","active":true},{"id":6,"src":"tiktok/tiktok-real-3.mp4","poster":"/tiktok/tiktok-real-3-poster.webp","user":"unair_suruh","timeAgo":"6 HARI LALU","likes":185,"caption":"Armada mobil siap muat barang banyak untuk kebutuhan angkut barang, pindahan, dan rombongan di Surabaya 🚙📦","tiktokUrl":"https://www.tiktok.com/@unair_suruh/video/7653329107001953556","active":true}];
+    const DEFAULT_SERVICES_DATA = [{"slug":"go-suruh","title":"Mobilitas & Transportasi (Go SURUH)","badge":"Mobil AC & Motor","badgeClass":"bg-blue-50 text-blue-700 border-blue-200","iconBg":"bg-blue-50","iconColor":"text-blue-600","iconBorder":"border border-blue-200","iconSvg":"<svg class=\"w-5 h-5 stroke-current fill-none stroke-2 stroke-linecap-round stroke-linejoin-round\" viewBox=\"0 0 24 24\"><path d=\"M19 17h2c.6 0 1-.4 1-1v-3c0-.9-.7-1.7-1.5-1.9C18.7 10.6 16 10 16 10s-1.3-1.4-2.2-2.3c-.5-.4-1.1-.7-1.8-.7H5c-.6 0-1.1.4-1.4.9l-1.4 2.9A3 3 0 0 0 2 12v4c0 .6.4 1 1 1h2\"/><circle cx=\"7\" cy=\"17\" r=\"2\"/><circle cx=\"17\" cy=\"17\" r=\"2\"/></svg>","desc":"Layanan antar-jemput ke stasiun Gubeng/Pasar Turi, bandara Juanda, kampus, tempat kerja, maupun lokasi lainnya. Layanan juga mencakup bantuan darurat ketika kendaraan mogok di perjalanan.","unitPrimary":"Per Trip / Rute Perjalanan (One Way / Pulang-Pergi)","unitDetail":"Pilihan armada: Mobil van ber-AC dingin atau motor gesit","price":20000,"unit":"trip","btnText":"Pesan Go SURUH"},{"slug":"move-suruh","title":"Logistik, Pindahan & Pengangkutan (Move SURUH)","badge":"1 Driver + 1 SDM","badgeClass":"bg-navy-900 text-amber-400 border-navy-800","iconBg":"bg-navy-50","iconColor":"text-navy-900","iconBorder":"border border-navy-200","iconSvg":"<svg class=\"w-5 h-5 stroke-current fill-none stroke-2 stroke-linecap-round stroke-linejoin-round\" viewBox=\"0 0 24 24\"><path d=\"M10 17h4V5H2v12h3m11 0h2a2 2 0 0 0 2-2v-3.5a2 2 0 0 0-.6-1.4l-2.4-2.4a2 2 0 0 0-1.4-.7H14v10h2Z\"/><circle cx=\"7.5\" cy=\"17.5\" r=\"2.5\"/><circle cx=\"17.5\" cy=\"17.5\" r=\"2.5\"/></svg>","desc":"Membantu pindahan kos, rumah, maupun kebutuhan pengangkutan lainnya dengan menyediakan armada kendaraan dan tenaga mahasiswa tambahan untuk angkut barang sampai masuk kamar.","unitPrimary":"Per Muatan Armada (Motor / Tossa Roda 3 / Pick-up)","unitDetail":"Termasuk bantuan angkut barang sampai lantai atas","price":65000,"unit":"muatan","btnText":"Pesan Move SURUH"},{"slug":"keep-suruh","title":"Penitipan & Penyimpanan Barang (Keep SURUH)","badge":"Aman KKN & Liburan","badgeClass":"bg-amber-50 text-amber-800 border-amber-200","iconBg":"bg-amber-50","iconColor":"text-amber-700","iconBorder":"border border-amber-200","iconSvg":"<svg class=\"w-5 h-5 stroke-current fill-none stroke-2 stroke-linecap-round stroke-linejoin-round\" viewBox=\"0 0 24 24\"><path d=\"M21 8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16Z\"/><path d=\"m3.3 7 8.7 5 8.7-5\"/><path d=\"M12 22V12\"/></svg>","desc":"Menyediakan layanan penitipan barang sementara yang aman, berguna bagi mahasiswa yang mengikuti KKN, magang, liburan semester, atau sedang transit pindah tempat tinggal.","unitPrimary":"Per Box / Per Item Barang / Paket Bulanan","unitDetail":"Ruang penyimpanan bersih, kering, aman bergaransi & foto berkala","price":15000,"unit":"box/bulan","btnText":"Pesan Keep SURUH"},{"slug":"fix-suruh","title":"Perakitan & Bantuan Teknis (Fix SURUH)","badge":"Toolkit Lengkap","badgeClass":"bg-orange-50 text-orange-700 border-orange-200","iconBg":"bg-orange-50","iconColor":"text-orange-600","iconBorder":"border border-orange-200","iconSvg":"<svg class=\"w-5 h-5 stroke-current fill-none stroke-2 stroke-linecap-round stroke-linejoin-round\" viewBox=\"0 0 24 24\"><path d=\"m14 12-8.5 8.5a2.12 2.12 0 1 1-3-3L11 9\"/><path d=\"M15 13 9 7l4-4 6 6-4 4Z\"/></svg>","desc":"Membantu pelanggan merakit meja, laci, lemari, rak, dan berbagai perabot knock-down. Selain itu, siap melayani bantuan teknis panggilan seperti servis motor darurat dan cek HP.","unitPrimary":"Per Unit Furniture (Meja / Lemari / Rak / Ambalan)","unitDetail":"Estimasi waktu perakitan 30-90 menit dengan perkakas lengkap","price":40000,"unit":"unit","btnText":"Pesan Fix SURUH"},{"slug":"task-suruh","title":"Personal Assistance & Titip Beli (Task SURUH)","badge":"Titip Beli & Antar","badgeClass":"bg-emerald-50 text-emerald-700 border-emerald-200","iconBg":"bg-emerald-50","iconColor":"text-emerald-600","iconBorder":"border border-emerald-200","iconSvg":"<svg class=\"w-5 h-5 stroke-current fill-none stroke-2 stroke-linecap-round stroke-linejoin-round\" viewBox=\"0 0 24 24\"><path d=\"M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4Z\"/><path d=\"M3 6h18\"/><path d=\"M16 10a4 4 0 0 1-8 0\"/></svg>","desc":"Membantu membelikan makanan, mengambil belanjaan, atau mengantarkan barang sesuai kebutuhan pelanggan. Mendelegasikan pekerjaan sederhana saat sibuk kuliah atau sakit di kos.","unitPrimary":"Per Tugas / Per Titik Antar-Jemput Belanjaan","unitDetail":"100% transparan sesuai struk belanja toko asli, terpercaya","price":15000,"unit":"tugas","btnText":"Pesan Task SURUH"},{"slug":"desk-suruh","title":"Administrasi & Pengurusan (Desk SURUH)","badge":"Birokrasi & Berkas","badgeClass":"bg-purple-50 text-purple-700 border-purple-200","iconBg":"bg-purple-50","iconColor":"text-purple-600","iconBorder":"border border-purple-200","iconSvg":"<svg class=\"w-5 h-5 stroke-current fill-none stroke-2 stroke-linecap-round stroke-linejoin-round\" viewBox=\"0 0 24 24\"><path d=\"M14.5 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7.5L14.5 2z\"/><polyline points=\"14 2 14 8 20 8\"/><line x1=\"16\" y1=\"13\" x2=\"8\" y2=\"13\"/><line x1=\"16\" y1=\"17\" x2=\"8\" y2=\"17\"/></svg>","desc":"Membantu mengurus dan mengambil kebutuhan dokumen fisik, surat perizinan, cetak/fotokopi berkas tugas, hingga pengurusan berkas administrasi instansi resmi secara cepat, rapi, dan terpercaya.","unitPrimary":"Per Dokumen / Berkas Fisik / Per Lokasi Pengurusan","unitDetail":"Bukti foto serah terima dokumen fisik langsung ke pemesan","price":15000,"unit":"berkas","btnText":"Pesan Desk SURUH"},{"slug":"crew-suruh","title":"Bantuan Operasional Event (Crew SURUH)","badge":"Event & Kampus","badgeClass":"bg-indigo-50 text-indigo-700 border-indigo-200","iconBg":"bg-indigo-50","iconColor":"text-indigo-600","iconBorder":"border border-indigo-200","iconSvg":"<svg class=\"w-5 h-5 stroke-current fill-none stroke-2 stroke-linecap-round stroke-linejoin-round\" viewBox=\"0 0 24 24\"><path d=\"M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2\"/><circle cx=\"9\" cy=\"7\" r=\"4\"/><path d=\"M22 21v-2a4 4 0 0 0-3-3.87\"/><path d=\"M16 3.13a4 4 0 0 1 0 7.75\"/></svg>","desc":"Menyediakan event crew mahasiswa untuk setup panggung & sound, registrasi peserta, clearing venue, hingga bantuan operasional kegiatan kepanitiaan atau acara kampus.","unitPrimary":"Per Shift / Per Kru Mahasiswa (Durasi 4 - 8 Jam)","unitDetail":"Mitra mahasiswa sigap, komunikatif, dan terbiasa ritme acara","price":75000,"unit":"shift","btnText":"Pesan Crew SURUH"},{"slug":"talent-suruh","title":"Tutor & Skill-Based (Talent SURUH)","badge":"Akademik & Skill","badgeClass":"bg-rose-50 text-rose-700 border-rose-200","iconBg":"bg-rose-50","iconColor":"text-rose-600","iconBorder":"border border-rose-200","iconSvg":"<svg class=\"w-5 h-5 stroke-current fill-none stroke-2 stroke-linecap-round stroke-linejoin-round\" viewBox=\"0 0 24 24\"><path d=\"M22 10v6M2 10l10-5 10 5-10 5z\"/><path d=\"M6 12v5c3 3 9 3 12 0v-5\"/></svg>","desc":"Layanan tutor akademik, pendamping belajar, asisten riset, penerjemahan/proofreading, pengolah data olahan SPSS/R, dan pekerja berbasis keahlian mahasiswa berprestasi UNAIR.","unitPrimary":"Per Sesi (90 Menit) / Per Proyek Pengolahan Data","unitDetail":"Dilayani mahasiswa ber-IPK tinggi dan kompeten di bidangnya","price":50000,"unit":"sesi","btnText":"Pesan Talent SURUH"}];
 
     // Escape text before injecting into innerHTML (CMS / localStorage data)
     function esc(s) {
@@ -2176,16 +2177,37 @@
       });
     }
 
+    function formatIdr(num) {
+      var n = parseInt(String(num || 0).replace(/[^0-9]/g, ''), 10) || 0;
+      return n.toLocaleString('id-ID');
+    }
+
+    function formatWaReadable(raw) {
+      var clean = String(raw || '6289677772336').replace(/[^0-9]/g, '');
+      if (clean.indexOf('0') === 0) clean = '62' + clean.slice(1);
+      if (clean.indexOf('62') === 0 && clean.length >= 11) {
+        var rest = clean.slice(2);
+        return '+62 ' + rest.slice(0, 3) + '-' + rest.slice(3, 7) + '-' + rest.slice(7);
+      }
+      return '+' + clean;
+    }
+
     // Reels added from Admin have no poster: fall back to "<video>-poster.webp"
     function posterFor(c) {
       return c.poster || String(c.src || '').replace(/[.]mp4$/, '-poster.webp');
     }
 
-    
     // DYNAMIC WHATSAPP NUMBER SYNC (DARI WEB ADMIN CMS)
     function getWaNumber() {
       try {
-        const saved = localStorage.getItem('UNAIR_SURUH_WA');
+        var cfgRaw = localStorage.getItem('UNAIR_SITE_CONFIG');
+        if (cfgRaw) {
+          var cfg = JSON.parse(cfgRaw);
+          if (cfg && cfg.waNumber && String(cfg.waNumber).trim()) {
+            return String(cfg.waNumber).trim().replace(/^0/, '62').replace(/[^0-9]/g, '');
+          }
+        }
+        var saved = localStorage.getItem('UNAIR_SURUH_WA');
         if (saved && saved.trim()) {
           return saved.trim().replace(/^0/, '62').replace(/[^0-9]/g, '');
         }
@@ -2194,90 +2216,390 @@
     }
 
     function applyDynamicWaNumber() {
-      const num = getWaNumber();
+      var num = getWaNumber();
+      var readable = formatWaReadable(num);
       document.querySelectorAll('a[href*="wa.me/"]').forEach(function(el) {
         el.href = el.href.replace(new RegExp('wa\.me/\d+'), 'wa.me/' + num);
       });
+      document.querySelectorAll('[data-wa-display]').forEach(function(el) {
+        el.textContent = readable;
+      });
     }
 
-    // DYNAMIC SERVICE ACTIVE/INACTIVE SYNC (DARI WEB ADMIN CMS)
+    function setTextIf(id, val) {
+      if (val === undefined || val === null || val === '') return;
+      var el = document.getElementById(id);
+      if (el) el.textContent = val;
+    }
+
+    // DYNAMIC SERVICE CARDS & ORDER MODAL SYNC (DARI WEB ADMIN CMS)
     function applyServiceState() {
       try {
-        const stored = localStorage.getItem('UNAIR_SERVICES');
+        var stored = localStorage.getItem('UNAIR_SERVICES');
         if (!stored) return;
-        const list = JSON.parse(stored);
-        if (!Array.isArray(list)) return;
-        list.forEach(function(s) {
-          const cards = document.querySelectorAll('[data-service-name]');
-          cards.forEach(function(card) {
-            if (card.getAttribute('data-service-name') === s.name) {
-              const btn = card.querySelector('button');
-              if (s.active === false) {
-                card.classList.add('opacity-60');
-                if (btn) {
-                  btn.disabled = true;
-                  btn.classList.add('bg-slate-400', 'cursor-not-allowed');
-                  btn.classList.remove('bg-navy-900', 'hover:bg-navy-800');
-                  const span = btn.querySelector('span');
-                  if (span) span.textContent = 'Penuh Sementara';
-                }
-              } else {
-                card.classList.remove('opacity-60');
-                if (btn) {
-                  btn.disabled = false;
-                  btn.classList.remove('bg-slate-400', 'cursor-not-allowed');
-                  btn.classList.add('bg-navy-900', 'hover:bg-navy-800');
-                  const span = btn.querySelector('span');
-                  if (span) span.textContent = 'Pesan Sekarang →';
-                }
+        var list = JSON.parse(stored);
+        if (!Array.isArray(list) || list.length === 0) return;
+
+        // Merge with DEFAULT_SERVICES_DATA so icons/colors are always preserved
+        var merged = list.map(function(item, idx) {
+          var def = DEFAULT_SERVICES_DATA.find(function(d) {
+            return d.slug === item.slug || d.title === (item.title || item.name);
+          }) || DEFAULT_SERVICES_DATA[idx % DEFAULT_SERVICES_DATA.length] || DEFAULT_SERVICES_DATA[0];
+
+          return {
+            slug: item.slug || def.slug || ('layanan-' + (idx + 1)),
+            title: item.title || item.name || def.title,
+            badge: item.badge || def.badge || 'Layanan Aktif',
+            badgeClass: item.badgeClass || def.badgeClass || 'bg-amber-50 text-amber-800 border-amber-200',
+            iconBg: item.iconBg || def.iconBg || 'bg-navy-900',
+            iconColor: item.iconColor || def.iconColor || 'text-amber-300',
+            iconBorder: item.iconBorder || def.iconBorder || 'border-slate-200/80 hover:border-navy-900',
+            iconSvg: item.iconSvg || def.iconSvg,
+            desc: item.desc || def.desc || '',
+            unitPrimary: item.unitPrimary || item.satuan || def.unitPrimary || '/ penugasan',
+            unitDetail: item.unitDetail || def.unitDetail || 'Tarif mahasiswa transparan',
+            price: item.price || def.price || '5.000',
+            unit: item.unit || item.unitPrimary || item.satuan || def.unit || '/ penugasan',
+            btnText: item.btnText || def.btnText || 'Pesan Layanan Ini',
+            active: item.active !== false
+          };
+        });
+
+        var grid = document.getElementById('servicesGridContainer');
+        if (grid) {
+          var html = '';
+          merged.forEach(function(s) {
+            var isInactive = s.active === false;
+            html += '<div data-service-name="' + esc(s.title) + '" data-service-slug="' + esc(s.slug) + '" class="group bg-white rounded-3xl p-5 sm:p-6 border ' + esc(s.iconBorder) + ' shadow-card hover:shadow-card-hover transition-all duration-300 flex flex-col justify-between card-spring relative overflow-hidden ' + (isInactive ? 'opacity-60' : '') + '">' +
+              '<div>' +
+                '<div class="flex items-start justify-between gap-3 mb-4">' +
+                  '<div class="w-12 h-12 rounded-2xl ' + esc(s.iconBg) + ' ' + esc(s.iconColor) + ' flex items-center justify-center shadow-xs group-hover:scale-105 transition-transform shrink-0">' +
+                    '<svg class="w-6 h-6 stroke-current fill-none stroke-2 stroke-linecap-round stroke-linejoin-round" viewBox="0 0 24 24">' + s.iconSvg + '</svg>' +
+                  '</div>' +
+                  '<span class="px-2.5 py-1 rounded-full text-[11px] font-bold border ' + esc(isInactive ? 'bg-slate-100 text-slate-600 border-slate-300' : s.badgeClass) + '">' + esc(isInactive ? 'Penuh Sementara' : s.badge) + '</span>' +
+                '</div>' +
+                '<h3 class="font-heading font-extrabold text-lg sm:text-xl text-navy-900 mb-2 group-hover:text-blue-900 transition-colors">' + esc(s.title) + '</h3>' +
+                '<p class="text-xs sm:text-sm text-slate-600 leading-relaxed mb-4">' + esc(s.desc) + '</p>' +
+              '</div>' +
+              '<div class="pt-4 border-t border-slate-100 mt-auto space-y-3">' +
+                '<div class="flex items-baseline justify-between gap-2 bg-slate-50/90 px-3.5 py-2.5 rounded-xl border border-slate-200/60">' +
+                  '<div>' +
+                    '<span class="text-[10px] font-bold uppercase tracking-wider text-slate-400 block">Tarif Mulai</span>' +
+                    '<div class="flex items-baseline gap-1">' +
+                      '<span class="text-xs font-extrabold text-navy-900">Rp</span>' +
+                      '<span class="font-heading font-black text-xl sm:text-2xl text-navy-900 tracking-tight">' + esc(s.price) + '</span>' +
+                    '</div>' +
+                  '</div>' +
+                  '<div class="text-right">' +
+                    '<span class="text-xs font-bold text-slate-700 block">' + esc(s.unitPrimary) + '</span>' +
+                    '<span class="text-[10px] text-slate-500 font-medium block">' + esc(s.unitDetail) + '</span>' +
+                  '</div>' +
+                '</div>' +
+                (isInactive
+                  ? '<button disabled class="w-full py-2.5 px-4 rounded-xl bg-slate-400 text-white font-bold text-xs sm:text-sm flex items-center justify-center gap-2 cursor-not-allowed"><span>Penuh Sementara</span></button>'
+                  : '<button data-slug="' + esc(s.slug) + '" onclick="openOrderModal(this.getAttribute(&quot;data-slug&quot;))" class="btn-spring focus-ring w-full py-2.5 px-4 rounded-xl bg-navy-900 hover:bg-navy-800 text-white font-bold text-xs sm:text-sm flex items-center justify-center gap-2 shadow-xs transition"><span>' + esc(s.btnText) + '</span><svg class="w-4 h-4 stroke-current fill-none stroke-2" viewBox="0 0 24 24"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg></button>') +
+              '</div>' +
+            '</div>';
+          });
+          grid.innerHTML = html;
+        }
+
+        // Update count badge & Wizard Dropdown options
+        var activeServices = merged.filter(function(s) { return s.active !== false; });
+        var countBadge = document.getElementById('layananCountBadge');
+        if (countBadge) {
+          countBadge.textContent = merged.length + ' Lini Layanan Aktif • Tarif Mahasiswa Transparan';
+        }
+        var wizardSel = document.getElementById('wizardService');
+        if (wizardSel) {
+          var currentVal = wizardSel.value;
+          var optHtml = '<option value="custom-suruh">✨ Custom SURUH (Bebas Request Apa Saja) • Mulai Rp 5.000</option>';
+          activeServices.forEach(function(s) {
+            optHtml += '<option value="' + esc(s.slug) + '">' + esc(s.title) + ' • Mulai Rp ' + esc(s.price) + ' ' + esc(s.unitPrimary) + '</option>';
+          });
+          wizardSel.innerHTML = optHtml;
+          if (currentVal) wizardSel.value = currentVal;
+        }
+      } catch (e) {
+        console.warn('applyServiceState error:', e);
+      }
+    }
+
+    // DYNAMIC FAQ SYNC (DARI WEB ADMIN CMS)
+    function applyFaqData() {
+      try {
+        var raw = localStorage.getItem('UNAIR_FAQ_DATA');
+        if (!raw) return;
+        var faqs = JSON.parse(raw);
+        if (!Array.isArray(faqs) || faqs.length === 0) return;
+        var container = document.getElementById('faqListContainer');
+        if (!container) return;
+        var activeFaqs = faqs.filter(function(f) { return f.active !== false; });
+        if (activeFaqs.length === 0) return;
+        var html = '';
+        activeFaqs.forEach(function(f) {
+          html += '<details class="faq-item group bg-white rounded-2xl border border-slate-200/90 px-6 py-4 shadow-xs transition">' +
+            '<summary class="flex items-center justify-between cursor-pointer font-heading font-bold text-sm sm:text-base text-navy-900 py-1">' +
+              '<span>' + esc(f.q) + '</span>' +
+              '<span class="faq-icon w-6 h-6 rounded-full bg-slate-100 text-slate-600 flex items-center justify-center transition duration-200 shrink-0 ml-4">+</span>' +
+            '</summary>' +
+            '<p class="text-xs sm:text-sm text-slate-600 leading-relaxed pt-3 pb-1 border-t border-slate-100 mt-3">' +
+              esc(f.a) +
+            '</p>' +
+          '</details>';
+        });
+        container.innerHTML = html;
+      } catch (e) {
+        console.warn('applyFaqData error:', e);
+      }
+    }
+
+    // =========================================================================
+    // FULL WEBSITE CMS SYNC (LOAD FROM UNAIR_SITE_CONFIG & LEGACY KEYS)
+    // =========================================================================
+    function applyFullSiteConfig() {
+      try {
+        // Legacy keys support
+        var badge = localStorage.getItem('UNAIR_SURUH_HERO_BADGE');
+        if (badge) setTextIf('heroPillBadgeText', badge);
+
+        var pTitle = localStorage.getItem('UNAIR_SURUH_HERO_PREFIX');
+        var hTitle = localStorage.getItem('UNAIR_SURUH_HERO_HIGHLIGHT');
+        var headEl = document.getElementById('heroHeadlineTitle');
+        if ((pTitle || hTitle) && headEl) {
+          var prefix = pTitle || 'Serba Bisa, Semua';
+          var highlight = hTitle || 'Bisa Disuruh!';
+          headEl.innerHTML = esc(prefix) + ' <span class="relative inline-block text-amber-600 underline decoration-amber-500 decoration-wavy">' + esc(highlight) + '</span>';
+        }
+
+        var desc = localStorage.getItem('UNAIR_SURUH_HERO_DESC');
+        if (desc) setTextIf('heroSubtitleText', desc);
+
+        var cta = localStorage.getItem('UNAIR_SURUH_HERO_CTA');
+        if (cta) setTextIf('heroCtaText', cta);
+
+        var banner = localStorage.getItem('UNAIR_SURUH_BANNER_TEXT');
+        if (banner) {
+          var cleanBanner = (banner.charAt(0) === '[' && banner.indexOf(']') > 0) ? banner.slice(banner.indexOf(']') + 1).trim() : banner;
+          setTextIf('announcementBarText', cleanBanner);
+        }
+
+        // Full Site Config object from Easy Web Admin
+        var cfgRaw = localStorage.getItem('UNAIR_SITE_CONFIG');
+        if (cfgRaw) {
+          var cfg = JSON.parse(cfgRaw);
+          if (cfg && typeof cfg === 'object') {
+            // 1. Top Bar & Navbar
+            setTextIf('announcementBadgeText', cfg.topBarBadge);
+            setTextIf('announcementBarText', cfg.topBarText);
+            setTextIf('navBrandTitle', cfg.brandName);
+            setTextIf('footerBrandTitle', cfg.brandName);
+            setTextIf('navBrandSubMobile', cfg.brandTaglineMobile);
+            setTextIf('navBrandSubDesktop', cfg.brandTaglineDesktop);
+
+            // 2. Hero Section
+            setTextIf('heroPillBadgeText', cfg.heroBadge);
+            if ((cfg.heroPrefix || cfg.heroHighlight) && headEl) {
+              var hp = cfg.heroPrefix || 'Serba Bisa, Semua';
+              var hh = cfg.heroHighlight || 'Bisa Disuruh!';
+              headEl.innerHTML = esc(hp) + ' <span class="relative inline-block text-amber-600 underline decoration-amber-500 decoration-wavy">' + esc(hh) + '</span>';
+            }
+            setTextIf('heroSubtitleText', cfg.heroDesc);
+            setTextIf('heroCtaText', cfg.heroCtaPrimary);
+            setTextIf('heroSecondaryCtaText', cfg.heroCtaSecondary);
+
+            // Hero Metrics 1..4
+            setTextIf('heroMetric1Val', cfg.metric1Val);
+            setTextIf('heroMetric1Sub', cfg.metric1Sub);
+            setTextIf('heroMetric2Val', cfg.metric2Val);
+            setTextIf('heroMetric2Sub', cfg.metric2Sub);
+            setTextIf('heroMetric3Val', cfg.metric3Val);
+            setTextIf('heroMetric3Sub', cfg.metric3Sub);
+            setTextIf('heroMetric4Val', cfg.metric4Val);
+            setTextIf('heroMetric4Sub', cfg.metric4Sub);
+
+            // Hero Photo Floating Badges
+            setTextIf('heroDispatchBadgeText', cfg.heroDispatchBadge);
+            setTextIf('heroMascotTitleText', cfg.heroCardTitle);
+            setTextIf('heroMascotSubText', cfg.heroCardSub);
+            setTextIf('heroVerifiedLine1', cfg.heroVerifiedLine1);
+            setTextIf('heroVerifiedLine2', cfg.heroVerifiedLine2);
+
+            // 3. Spotlight Custom SURUH
+            var customSection = document.getElementById('custom-suruh');
+            if (customSection) {
+              customSection.style.display = (cfg.customActive === false) ? 'none' : '';
+            }
+            setTextIf('customSpotlightBadge', cfg.customBadge);
+            setTextIf('customTitleLine1', cfg.customTitle1);
+            setTextIf('customTitleHighlight', cfg.customTitle2);
+            setTextIf('customSpotlightDesc', cfg.customDesc);
+            setTextIf('customBullet1', cfg.customBullet1);
+            setTextIf('customBullet2', cfg.customBullet2);
+            setTextIf('customBullet3', cfg.customBullet3);
+            setTextIf('customFormTitle', cfg.customFormTitle);
+            setTextIf('customFormBtnText', cfg.customFormBtnText);
+            setTextIf('customFormNoteText', cfg.customFormNote);
+            if (cfg.customPlaceholder) {
+              var cInput = document.getElementById('customTaskInput');
+              if (cInput) cInput.setAttribute('placeholder', cfg.customPlaceholder);
+            }
+            if (Array.isArray(cfg.customChips) && cfg.customChips.length > 0) {
+              var chipsWrap = document.getElementById('customChipsContainer');
+              if (chipsWrap) {
+                chipsWrap.innerHTML = cfg.customChips.map(function(chip) {
+                  var label = chip.label || chip.text || '';
+                  var val = chip.value || chip.text || label;
+                  return '<button type="button" data-chip-val="' + esc(val) + '" onclick="fillCustomChip(this.getAttribute(&quot;data-chip-val&quot;))" class="px-3 py-1.5 rounded-xl bg-white/10 hover:bg-amber-400 hover:text-navy-950 text-white text-xs font-semibold border border-white/15 transition cursor-pointer">' + esc(label) + '</button>';
+                }).join('');
               }
             }
-          });
-        });
-      } catch (e) {}
+
+            // 4. Lini Layanan Header
+            setTextIf('layananSectionTitle', cfg.layananTitle);
+            setTextIf('layananSectionSubtitle', cfg.layananSubtitle);
+            setTextIf('layananCountBadge', cfg.layananBadge);
+
+            // 5. Mengapa Memilih Kami (6 Keunggulan)
+            setTextIf('whySectionBadge', cfg.whyBadge);
+            setTextIf('whySectionTitle', cfg.whyTitle);
+            setTextIf('whySectionSubtitle', cfg.whySubtitle);
+            if (Array.isArray(cfg.whyCards)) {
+              cfg.whyCards.forEach(function(w, idx) {
+                if (!w) return;
+                setTextIf('whyCardTitle-' + idx, w.title);
+                setTextIf('whyCardDesc-' + idx, w.desc);
+              });
+            }
+
+            // 6. Reels & Testimoni Headers
+            setTextIf('reelsSectionTitle', cfg.reelsTitle);
+            setTextIf('reelsSectionSubtitle', cfg.reelsSubtitle);
+            setTextIf('testiSectionTitle', cfg.testiTitle);
+            setTextIf('testiSectionSubtitle', cfg.testiSubtitle);
+
+            // 7. FAQ Header
+            setTextIf('faqSectionTitle', cfg.faqTitle);
+            setTextIf('faqSectionSubtitle', cfg.faqSubtitle);
+
+            // 8. Banner CTA
+            setTextIf('ctaBannerBadge', cfg.ctaBadge);
+            setTextIf('ctaBannerTitle', cfg.ctaTitle);
+            setTextIf('ctaBannerDesc', cfg.ctaDesc);
+            setTextIf('ctaBannerBtnText', cfg.ctaBtnText);
+
+            // 9. Jadi Mitra Mahasiswa
+            setTextIf('mitraBadgeText', cfg.mitraBadge);
+            setTextIf('mitraTitle1', cfg.mitraTitle1);
+            setTextIf('mitraTitle2', cfg.mitraTitle2);
+            setTextIf('mitraDescText', cfg.mitraDesc);
+            setTextIf('mitraBtnText', cfg.mitraBtnText);
+            setTextIf('mitraPillar1Title', cfg.mitraPillar1Title);
+            setTextIf('mitraPillar1Desc', cfg.mitraPillar1Desc);
+            setTextIf('mitraPillar2Title', cfg.mitraPillar2Title);
+            setTextIf('mitraPillar2Desc', cfg.mitraPillar2Desc);
+            setTextIf('mitraPillar3Title', cfg.mitraPillar3Title);
+            setTextIf('mitraPillar3Desc', cfg.mitraPillar3Desc);
+
+            // 10. Footer & Kontak
+            setTextIf('footerDescText', cfg.footerDesc);
+            setTextIf('footerPjBadge', cfg.footerPjBadge);
+            setTextIf('footerWorkerBadge', cfg.footerWorkerBadge);
+            setTextIf('footerCoverageText', cfg.footerCoverage);
+            setTextIf('footerDisclaimerText', cfg.footerDisclaimer);
+            setTextIf('floatingWaLabel', cfg.floatingWaLabel);
+
+            if (cfg.footerEmail) {
+              var em = document.getElementById('footerEmailLink');
+              if (em) {
+                em.textContent = cfg.footerEmail;
+                em.href = 'mailto:' + cfg.footerEmail;
+              }
+            }
+            if (cfg.footerInstagram) {
+              var ig = document.getElementById('footerIgLink');
+              if (ig) {
+                ig.textContent = 'Instagram ' + cfg.footerInstagram;
+                var igClean = cfg.footerInstagram.replace(/^@/, '');
+                ig.href = 'https://instagram.com/' + igClean;
+              }
+            }
+            if (cfg.footerTiktok) {
+              var tt = document.getElementById('footerTiktokLink');
+              if (tt) {
+                tt.textContent = 'TikTok ' + cfg.footerTiktok;
+                var ttClean = cfg.footerTiktok.replace(/^@/, '');
+                tt.href = 'https://www.tiktok.com/@' + ttClean;
+              }
+            }
+          }
+        }
+      } catch(e) {
+        console.warn('CMS sync skipped:', e);
+      }
     }
 
-    // =========================================================================
-    // DYNAMIC CMS HERO SYNC (LOAD FROM LOCALSTORAGE OR ADMIN CHANGES)
-    // =========================================================================
-    function initHeroCmsSync() {
-      function applyCms() {
-        try {
-          const badge = localStorage.getItem('UNAIR_SURUH_HERO_BADGE');
-          const badgeEl = document.getElementById('heroPillBadgeText');
-          if (badge && badgeEl) badgeEl.textContent = badge;
-
-          const pTitle = localStorage.getItem('UNAIR_SURUH_HERO_PREFIX');
-          const hTitle = localStorage.getItem('UNAIR_SURUH_HERO_HIGHLIGHT');
-          const headEl = document.getElementById('heroHeadlineTitle');
-          if ((pTitle || hTitle) && headEl) {
-            const prefix = pTitle || 'Serba Bisa, Semua';
-            const highlight = hTitle || 'Bisa Disuruh!';
-            headEl.innerHTML = esc(prefix) + ' <span class="relative inline-block text-amber-600 underline decoration-amber-500 decoration-wavy">' + esc(highlight) + '</span>';
-          }
-
-          const desc = localStorage.getItem('UNAIR_SURUH_HERO_DESC');
-          const descEl = document.getElementById('heroSubtitleText');
-          if (desc && descEl) descEl.textContent = desc;
-
-          const cta = localStorage.getItem('UNAIR_SURUH_HERO_CTA');
-          const ctaEl = document.getElementById('heroCtaText');
-          if (cta && ctaEl) ctaEl.textContent = cta;
-
-          const banner = localStorage.getItem('UNAIR_SURUH_BANNER_TEXT');
-          const bannerEl = document.getElementById('announcementBarText');
-          if (banner && bannerEl) bannerEl.textContent = (banner.charAt(0) === '[' && banner.indexOf(']') > 0) ? banner.slice(banner.indexOf(']') + 1).trim() : banner;
-        } catch(e) {
-          console.warn('CMS sync skipped:', e);
-        }
-      }
-
-      applyCms();
+    function syncAllAdminData() {
+      applyFullSiteConfig();
       applyDynamicWaNumber();
       applyServiceState();
-      window.addEventListener('storage', function() { applyCms(); applyDynamicWaNumber(); applyServiceState(); });
+      applyFaqData();
     }
-    initHeroCmsSync();
+
+    syncAllAdminData();
+    window.addEventListener('storage', function() {
+      syncAllAdminData();
+    });
+
+    // Listen to BroadcastChannel for instant real-time updates from Web Admin
+    var unairSyncChannel = null;
+    try {
+      if ('BroadcastChannel' in window) {
+        unairSyncChannel = new BroadcastChannel('unair_suruh_sync');
+        unairSyncChannel.onmessage = function(ev) {
+          syncAllAdminData();
+          loadAndRenderDynamicFeed();
+          loadAndRenderDynamicTestimonials();
+        };
+      }
+    } catch (e) {}
+
+    // Record orders submitted on main website directly into Web Admin's UNAIR_ORDERS
+    function recordWebsiteOrderToAdmin(orderData) {
+      try {
+        var existing = [];
+        var raw = localStorage.getItem('UNAIR_ORDERS');
+        if (raw) {
+          var parsed = JSON.parse(raw);
+          if (Array.isArray(parsed)) existing = parsed;
+        }
+        var now = new Date();
+        var pad = function(n) { return String(n).padStart(2, '0'); };
+        var timeStr = 'Hari ini jam ' + pad(now.getHours()) + '.' + pad(now.getMinutes()) + ' WIB';
+        var randCode = '#US-' + pad(now.getDate()) + pad(now.getMonth() + 1) + '-' + String(Math.floor(Math.random() * 900) + 100);
+        var newOrder = {
+          code: randCode,
+          service: orderData.service || 'Custom SURUH',
+          satuan: orderData.satuan || 'Order dari Website Utama',
+          name: orderData.clientName || 'Pelanggan Website',
+          wa: orderData.clientWa || 'Via Chat WhatsApp',
+          pickup: orderData.pickup || 'Surabaya (Lihat WA)',
+          dropoff: orderData.dropoff || '-',
+          time: timeStr,
+          isPrivat: Boolean(orderData.isFemale),
+          status: 'Menunggu Konfirmasi',
+          worker: 'Belum Ditugaskan',
+          notes: orderData.notes || '-'
+        };
+        existing.unshift(newOrder);
+        localStorage.setItem('UNAIR_ORDERS', JSON.stringify(existing));
+        if (unairSyncChannel) {
+          unairSyncChannel.postMessage({ type: 'NEW_ORDER', order: newOrder });
+        }
+      } catch (e) {
+        console.warn('Could not save order to localStorage:', e);
+      }
+    }
     let activeModalIndex = 0;
     let isModalLiked = false;
     let unmutedCardIdx = null;
@@ -2527,6 +2849,7 @@
     }
 
     window.addEventListener('DOMContentLoaded', function() {
+      syncAllAdminData();
       loadAndRenderDynamicFeed();
       loadAndRenderDynamicTestimonials();
       observeReelVideos();
@@ -2694,6 +3017,17 @@
       const time = timeSelect ? timeSelect.value : 'Fleksibel';
       const isFemale = femaleCheck ? femaleCheck.checked : false;
 
+      // Record order into Web Admin
+      recordWebsiteOrderToAdmin({
+        clientName: 'Pelanggan Custom Web',
+        clientWa: 'Via Chat WA',
+        isFemale: isFemale,
+        service: 'Custom SURUH (Bebas Request)',
+        satuan: 'Waktu: ' + time,
+        pickup: area,
+        notes: task
+      });
+
       const lines = [
         'Halo Mas Afif / Admin UNAIR SURUH! 👋✨',
         '',
@@ -2722,10 +3056,21 @@
     function sendOrderToWhatsApp() {
       const sel = document.getElementById('wizardService');
       const opt = sel.options[sel.selectedIndex];
-      const svcName = opt.text.split(' • ')[0].trim();
+      const svcName = opt.text.split(' • ')[0].replace(/^✨s*/, '').trim();
       const name = document.getElementById('wizardName').value.trim() || 'Teman UNAIR';
       const notes = document.getElementById('wizardNotes').value.trim();
       const isFemale = document.getElementById('wizardIsFemaleKos').checked;
+
+      // Record order into Web Admin
+      recordWebsiteOrderToAdmin({
+        clientName: name,
+        clientWa: 'Via Chat WA',
+        isFemale: isFemale,
+        service: svcName,
+        satuan: opt.text.split(' • ')[1] || 'Order Website Utama',
+        pickup: notes || 'Surabaya',
+        notes: notes || 'Order dari Popup Website Utama'
+      });
 
       const lines = [
         'Halo kak Admin UNAIR SURUH! 👋✨',
