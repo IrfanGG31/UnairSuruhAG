@@ -568,8 +568,8 @@
         <div class="bg-white p-2 rounded-2xl border border-slate-200 shadow-xs flex items-center gap-1.5 overflow-x-auto scrollbar-none text-xs">
           <button type="button" onclick="switchCmsSubTab('hero')" id="cmsSubBtn-hero" class="px-3.5 py-2 rounded-xl bg-navy-900 text-amber-300 font-bold whitespace-nowrap transition">1. Header &amp; Hero Utama</button>
           <button type="button" onclick="switchCmsSubTab('custom')" id="cmsSubBtn-custom" class="px-3.5 py-2 rounded-xl bg-slate-100 text-slate-600 hover:bg-slate-200 font-semibold whitespace-nowrap transition">2. Spotlight Custom SURUH</button>
-          <button type="button" onclick="switchCmsSubTab('why')" id="cmsSubBtn-why" class="px-3.5 py-2 rounded-xl bg-slate-100 text-slate-600 hover:bg-slate-200 font-semibold whitespace-nowrap transition">3. Mengapa Kami (6 Keunggulan)</button>
-          <button type="button" onclick="switchCmsSubTab('mitra')" id="cmsSubBtn-mitra" class="px-3.5 py-2 rounded-xl bg-slate-100 text-slate-600 hover:bg-slate-200 font-semibold whitespace-nowrap transition">4. Seksi Mitra &amp; Banner CTA</button>
+          <button type="button" onclick="switchCmsSubTab('why')" id="cmsSubBtn-why" class="px-3.5 py-2 rounded-xl bg-slate-100 text-slate-600 hover:bg-slate-200 font-semibold whitespace-nowrap transition">3. Mengapa Kami (5 Keunggulan)</button>
+          <button type="button" onclick="switchCmsSubTab('mitra')" id="cmsSubBtn-mitra" class="px-3.5 py-2 rounded-xl bg-slate-100 text-slate-600 hover:bg-slate-200 font-semibold whitespace-nowrap transition">4. Rekrutmen Worker &amp; Banner CTA</button>
           <button type="button" onclick="switchCmsSubTab('faq')" id="cmsSubBtn-faq" class="px-3.5 py-2 rounded-xl bg-slate-100 text-slate-600 hover:bg-slate-200 font-semibold whitespace-nowrap transition">5. Tanya Jawab (FAQ) &amp; Judul</button>
           <button type="button" onclick="switchCmsSubTab('testi')" id="cmsSubBtn-testi" class="px-3.5 py-2 rounded-xl bg-slate-100 text-slate-600 hover:bg-slate-200 font-semibold whitespace-nowrap transition">6. Testimoni Komentar TikTok</button>
         </div>
@@ -600,7 +600,7 @@
               </div>
               <div class="sm:col-span-8 space-y-1">
                 <label class="block text-xs font-bold text-slate-700">Teks Pengumuman Bar Paling Atas</label>
-                <input type="text" id="cmsBannerText" value="Layanan On-Demand Mahasiswa di Surabaya • 8 Pilihan SURUH Series" class="focus-ring w-full p-2.5 rounded-xl border border-slate-300 bg-white text-xs" />
+                <input type="text" id="cmsBannerText" value="Solusi Praktis Mahasiswa &amp; Warga Surabaya • 8 Lini Layanan SURUH Series" class="focus-ring w-full p-2.5 rounded-xl border border-slate-300 bg-white text-xs" />
               </div>
             </div>
             <div class="grid grid-cols-1 sm:grid-cols-3 gap-3">
@@ -610,11 +610,11 @@
               </div>
               <div class="space-y-1">
                 <label class="block text-xs font-bold text-slate-700">Sub-judul Brand (Tampilan HP)</label>
-                <input type="text" id="cmsBrandSubMobile" value="Layanan Mahasiswa Surabaya" class="focus-ring w-full p-2.5 rounded-xl border border-slate-300 bg-white text-xs" />
+                <input type="text" id="cmsBrandSubMobile" value="@unair_suruh • Surabaya" class="focus-ring w-full p-2.5 rounded-xl border border-slate-300 bg-white text-xs" />
               </div>
               <div class="space-y-1">
                 <label class="block text-xs font-bold text-slate-700">Sub-judul Brand (Tampilan Laptop)</label>
-                <input type="text" id="cmsBrandSubDesktop" value="Layanan On-Demand Mahasiswa Surabaya" class="focus-ring w-full p-2.5 rounded-xl border border-slate-300 bg-white text-xs" />
+                <input type="text" id="cmsBrandSubDesktop" value="Solusi Praktis Mahasiswa &amp; Warga Surabaya" class="focus-ring w-full p-2.5 rounded-xl border border-slate-300 bg-white text-xs" />
               </div>
             </div>
           </div>
@@ -623,8 +623,8 @@
           <div class="space-y-4">
             <div class="font-heading font-bold text-xs text-navy-900 uppercase tracking-wider">B. Judul &amp; Copywriting Hero Utama</div>
             <div class="space-y-1.5">
-              <label class="block font-bold text-navy-900">1. Teks Pill Badge Atas Hero</label>
-              <input type="text" id="cmsHeroBadge" value="⚡ Serba Bisa untuk Mahasiswa, Anak Kos &amp; Warga Surabaya" class="focus-ring w-full p-3 rounded-xl border border-slate-300 font-semibold text-xs sm:text-sm" oninput="updateCmsPreview()" />
+              <label class="block font-bold text-navy-900">1. Teks Pill Badge Atas Hero (Kiri Atas)</label>
+              <input type="text" id="cmsHeroBadge" value="Solusi Praktis Mahasiswa &amp; Warga Surabaya" class="focus-ring w-full p-3 rounded-xl border border-slate-300 font-semibold text-xs sm:text-sm" oninput="updateCmsPreview()" />
             </div>
 
             <div class="grid grid-cols-1 sm:grid-cols-12 gap-4">
@@ -639,14 +639,14 @@
             </div>
 
             <div class="space-y-1.5">
-              <label class="block font-bold text-navy-900">3. Deskripsi Paragraf Hero</label>
-              <textarea id="cmsHeroDesc" rows="3" class="focus-ring w-full p-3 rounded-xl border border-slate-300 text-xs sm:text-sm leading-relaxed" oninput="updateCmsPreview()">Apapun kebutuhan harianmu di Surabaya, serahkan pada tim mahasiswa: dari Pindahan &amp; Titip Kos, Antar-Jemput Stasiun/Bandara, Urus Berkas &amp; Dokumen, Rakit Perabot, belanja darurat, sampai Kru Event &amp; Tutor. Cekatan, terpercaya, dan harga transparan.</textarea>
+              <label class="block font-bold text-navy-900">3. Deskripsi Utama (Sub-Headline Cover)</label>
+              <textarea id="cmsHeroDesc" rows="3" class="focus-ring w-full p-3 rounded-xl border border-slate-300 text-xs sm:text-sm leading-relaxed" oninput="updateCmsPreview()">Apapun kebutuhan harianmu di Surabaya, serahkan pada @Unair_Suruh: dari Pindahan Kos, Titip Barang, Antar-Jemput Stasiun/Bandara, Urus Berkas &amp; Dokumen, Rakit Perabot, Belanja Darurat, sampai Crew Event &amp; Tenaga Pengajar/Tutor. Cekatan, terpercaya, dan harga transparan.</textarea>
             </div>
 
             <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
               <div class="space-y-1.5">
                 <label class="block font-bold text-navy-900">4a. Teks Tombol Utama (Kuning)</label>
-                <input type="text" id="cmsHeroCta" value="Pesan Sekarang (WA)" class="focus-ring w-full p-2.5 rounded-xl border border-slate-300 text-xs font-bold" oninput="updateCmsPreview()" />
+                <input type="text" id="cmsHeroCta" value="Pesan Jasa Sekarang" class="focus-ring w-full p-2.5 rounded-xl border border-slate-300 text-xs font-bold" oninput="updateCmsPreview()" />
               </div>
               <div class="space-y-1.5">
                 <label class="block font-bold text-navy-900">4b. Teks Tombol Kedua (Putih)</label>
@@ -662,51 +662,51 @@
               <div class="p-3 bg-white rounded-xl border border-slate-200 space-y-2">
                 <span class="text-[10px] font-bold text-amber-600 uppercase">Kotak Statistik 1</span>
                 <input type="text" id="cmsMetric1Val" value="Mulai 5rb" class="focus-ring w-full p-2 rounded-lg border border-slate-300 text-xs font-bold" placeholder="Angka/Judul" />
-                <input type="text" id="cmsMetric1Sub" value="Tarif Mahasiswa" class="focus-ring w-full p-2 rounded-lg border border-slate-300 text-[11px]" placeholder="Keterangan" />
+                <input type="text" id="cmsMetric1Sub" value="Harga Transparan" class="focus-ring w-full p-2 rounded-lg border border-slate-300 text-[11px]" placeholder="Keterangan" />
               </div>
               <div class="p-3 bg-white rounded-xl border border-slate-200 space-y-2">
                 <span class="text-[10px] font-bold text-amber-600 uppercase">Kotak Statistik 2</span>
-                <input type="text" id="cmsMetric2Val" value="25+ Mitra" class="focus-ring w-full p-2 rounded-lg border border-slate-300 text-xs font-bold" placeholder="Angka/Judul" />
-                <input type="text" id="cmsMetric2Sub" value="Mahasiswa Terverifikasi" class="focus-ring w-full p-2 rounded-lg border border-slate-300 text-[11px]" placeholder="Keterangan" />
+                <input type="text" id="cmsMetric2Val" value="Worker Terverifikasi" class="focus-ring w-full p-2 rounded-lg border border-slate-300 text-xs font-bold" placeholder="Angka/Judul" />
+                <input type="text" id="cmsMetric2Sub" value="Mahasiswa &amp; Warga Surabaya" class="focus-ring w-full p-2 rounded-lg border border-slate-300 text-[11px]" placeholder="Keterangan" />
               </div>
               <div class="p-3 bg-white rounded-xl border border-slate-200 space-y-2">
                 <span class="text-[10px] font-bold text-amber-600 uppercase">Kotak Statistik 3</span>
-                <input type="text" id="cmsMetric3Val" value="8 Layanan" class="focus-ring w-full p-2 rounded-lg border border-slate-300 text-xs font-bold" placeholder="Angka/Judul" />
-                <input type="text" id="cmsMetric3Sub" value="Ekosistem SURUH" class="focus-ring w-full p-2 rounded-lg border border-slate-300 text-[11px]" placeholder="Keterangan" />
+                <input type="text" id="cmsMetric3Val" value="8 Lini Layanan" class="focus-ring w-full p-2 rounded-lg border border-slate-300 text-xs font-bold" placeholder="Angka/Judul" />
+                <input type="text" id="cmsMetric3Sub" value="SURUH Series" class="focus-ring w-full p-2 rounded-lg border border-slate-300 text-[11px]" placeholder="Keterangan" />
               </div>
               <div class="p-3 bg-white rounded-xl border border-slate-200 space-y-2">
                 <span class="text-[10px] font-bold text-amber-600 uppercase">Kotak Statistik 4</span>
-                <input type="text" id="cmsMetric4Val" value="Worker Cewek" class="focus-ring w-full p-2 rounded-lg border border-slate-300 text-xs font-bold" placeholder="Angka/Judul" />
-                <input type="text" id="cmsMetric4Sub" value="Klien Cewek Nyaman" class="focus-ring w-full p-2 rounded-lg border border-slate-300 text-[11px]" placeholder="Keterangan" />
+                <input type="text" id="cmsMetric4Val" value="100% Worker Cewek" class="focus-ring w-full p-2 rounded-lg border border-slate-300 text-xs font-bold" placeholder="Angka/Judul" />
+                <input type="text" id="cmsMetric4Sub" value="Opsi Klien Cewek" class="focus-ring w-full p-2 rounded-lg border border-slate-300 text-[11px]" placeholder="Keterangan" />
               </div>
             </div>
           </div>
 
           <!-- Hero Floating Photo Badges -->
           <div class="p-4 rounded-xl bg-slate-50 border border-slate-200/80 space-y-3">
-            <div class="font-heading font-bold text-xs text-navy-900 uppercase tracking-wider">D. Teks Kartu &amp; Badge pada Foto Hero Kanan</div>
+            <div class="font-heading font-bold text-xs text-navy-900 uppercase tracking-wider">D. Teks Kartu Maskot &amp; Badge Kepercayaan pada Hero Kanan</div>
             <div class="grid grid-cols-1 sm:grid-cols-3 gap-3">
               <div class="space-y-1">
                 <label class="block text-xs font-bold text-slate-700">Badge Pojok Atas Foto</label>
-                <input type="text" id="cmsHeroDispatchBadge" value="Siaga Surabaya • Fast Response" class="focus-ring w-full p-2 rounded-lg border border-slate-300 bg-white text-xs" />
+                <input type="text" id="cmsHeroDispatchBadge" value="Siaga 8 Lini SURUH Series" class="focus-ring w-full p-2 rounded-lg border border-slate-300 bg-white text-xs" />
               </div>
               <div class="space-y-1">
-                <label class="block text-xs font-bold text-slate-700">Judul Kartu Foto Tim</label>
-                <input type="text" id="cmsHeroCardTitle" value="Tim Mahasiswa &amp; Armada Siap Bantu!" class="focus-ring w-full p-2 rounded-lg border border-slate-300 bg-white text-xs font-bold" />
+                <label class="block text-xs font-bold text-slate-700">Judul Kartu Maskot</label>
+                <input type="text" id="cmsHeroCardTitle" value="Maskot UNAIR SURUH" class="focus-ring w-full p-2 rounded-lg border border-slate-300 bg-white text-xs font-bold" />
               </div>
               <div class="space-y-1">
-                <label class="block text-xs font-bold text-slate-700">Subjudul Kartu Foto Tim</label>
-                <input type="text" id="cmsHeroCardSub" value="Mitra Terverifikasi • Cekatan, Aman &amp; Ramah Kantong" class="focus-ring w-full p-2 rounded-lg border border-slate-300 bg-white text-xs" />
+                <label class="block text-xs font-bold text-slate-700">Sub-label / Badge Maskot</label>
+                <input type="text" id="cmsHeroCardSub" value="Siaga 8 Lini SURUH Series" class="focus-ring w-full p-2 rounded-lg border border-slate-300 bg-white text-xs" />
               </div>
             </div>
             <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
               <div class="space-y-1">
-                <label class="block text-xs font-bold text-slate-700">Badge Verifikasi Kiri Bawah (Baris 1)</label>
-                <input type="text" id="cmsHeroVerified1" value="Identitas Mahasiswa Terverifikasi" class="focus-ring w-full p-2 rounded-lg border border-slate-300 bg-white text-xs font-bold" />
+                <label class="block text-xs font-bold text-slate-700">Badge/Pill Kepercayaan Worker (Baris 1)</label>
+                <input type="text" id="cmsHeroVerified1" value="Worker Terverifikasi (Mahasiswa &amp; Warga Surabaya)" class="focus-ring w-full p-2 rounded-lg border border-slate-300 bg-white text-xs font-bold" />
               </div>
               <div class="space-y-1">
-                <label class="block text-xs font-bold text-slate-700">Badge Verifikasi Kiri Bawah (Baris 2)</label>
-                <input type="text" id="cmsHeroVerified2" value="Aman &amp; Terpercaya" class="focus-ring w-full p-2 rounded-lg border border-slate-300 bg-white text-xs" />
+                <label class="block text-xs font-bold text-slate-700">Badge Kepercayaan Worker (Baris 2)</label>
+                <input type="text" id="cmsHeroVerified2" value="Aman, Cekatan &amp; Harga Transparan" class="focus-ring w-full p-2 rounded-lg border border-slate-300 bg-white text-xs" />
               </div>
             </div>
           </div>
@@ -720,17 +720,17 @@
             <div class="bg-gradient-to-b from-[#F8FAFC] to-white p-5 rounded-xl border border-slate-200/60 shadow-2xs space-y-3">
               <div class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-amber-100 border border-amber-300 text-amber-950 text-[11px] font-bold">
                 <span class="w-1.5 h-1.5 rounded-full bg-amber-500 animate-pulse"></span>
-                <span id="previewHeroBadge">⚡ Serba Bisa untuk Mahasiswa, Anak Kos &amp; Warga Surabaya</span>
+                <span id="previewHeroBadge">Solusi Praktis Mahasiswa &amp; Warga Surabaya</span>
               </div>
               <h3 class="font-heading font-black text-xl sm:text-2xl text-navy-900 tracking-tight leading-snug">
                 <span id="previewHeroPrefix">Serba Bisa, Semua</span> <span id="previewHeroHighlight" class="text-amber-500 underline decoration-amber-400 decoration-wavy">Bisa Disuruh!</span>
               </h3>
               <p id="previewHeroDesc" class="text-slate-600 text-xs leading-relaxed max-w-xl">
-                Apapun kebutuhan harianmu di Surabaya, serahkan pada tim mahasiswa: dari Pindahan &amp; Titip Kos, Antar-Jemput Stasiun/Bandara, Urus Berkas &amp; Dokumen, Rakit Perabot, belanja darurat, sampai Kru Event &amp; Tutor. Cekatan, terpercaya, dan harga transparan.
+                Apapun kebutuhan harianmu di Surabaya, serahkan pada @Unair_Suruh: dari Pindahan Kos, Titip Barang, Antar-Jemput Stasiun/Bandara, Urus Berkas &amp; Dokumen, Rakit Perabot, Belanja Darurat, sampai Crew Event &amp; Tenaga Pengajar/Tutor. Cekatan, terpercaya, dan harga transparan.
               </p>
               <div class="pt-1">
                 <button type="button" class="px-4 py-2 rounded-xl bg-amber-400 text-navy-950 font-bold text-xs shadow-xs pointer-events-none">
-                  <span id="previewHeroCta">Pesan Sekarang (WA)</span> &rarr;
+                  <span id="previewHeroCta">Pesan Jasa Sekarang</span> &rarr;
                 </button>
               </div>
             </div>
@@ -767,21 +767,21 @@
           <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
             <div class="space-y-1">
               <label class="block font-bold text-navy-900">Teks Badge Spotlight</label>
-              <input type="text" id="cmsCustomBadge" value="✨ LAYANAN PALING FLEKSIBEL • BEBAS REQUEST APA SAJA" class="focus-ring w-full p-2.5 rounded-xl border border-slate-300 text-xs font-bold" />
+              <input type="text" id="cmsCustomBadge" value="✨ Highlight Utama • Layanan Customize Bebas Request" class="focus-ring w-full p-2.5 rounded-xl border border-slate-300 text-xs font-bold" />
             </div>
             <div class="space-y-1">
               <label class="block font-bold text-navy-900">Judul Baris 1 (Putih)</label>
-              <input type="text" id="cmsCustomTitle1" value="Punya Kebutuhan Unik?" class="focus-ring w-full p-2.5 rounded-xl border border-slate-300 text-xs font-bold" />
+              <input type="text" id="cmsCustomTitle1" value="Custom SURUH:" class="focus-ring w-full p-2.5 rounded-xl border border-slate-300 text-xs font-bold" />
             </div>
             <div class="space-y-1">
               <label class="block font-bold text-amber-700">Judul Baris 2 (Emas Highlight)</label>
-              <input type="text" id="cmsCustomTitle2" value="Suruh Apa Saja, Tinggal Tulis!" class="focus-ring w-full p-2.5 rounded-xl border border-amber-300 bg-amber-50/40 text-xs font-bold text-amber-800" />
+              <input type="text" id="cmsCustomTitle2" value="Suruh Apa Saja, Bebas Request!" class="focus-ring w-full p-2.5 rounded-xl border border-amber-300 bg-amber-50/40 text-xs font-bold text-amber-800" />
             </div>
           </div>
 
           <div class="space-y-1">
             <label class="block font-bold text-navy-900">Deskripsi Penjelasan Custom SURUH</label>
-            <textarea id="cmsCustomDesc" rows="2" class="focus-ring w-full p-2.5 rounded-xl border border-slate-300 text-xs leading-relaxed">Tidak menemukan kategori yang pas di bawah? Tenang! Di UNAIR SURUH kamu bebas request bantuan apa saja (selama positif &amp; legal). Mulai dari antri tiket, beliin kado mendadak, cek kondisi kos, temani urus keperluan, hingga tugas dadakan lainnya di Surabaya.</textarea>
+            <textarea id="cmsCustomDesc" rows="2" class="focus-ring w-full p-2.5 rounded-xl border border-slate-300 text-xs leading-relaxed">Punya kebutuhan unik di luar 8 kategori di bawah? Tinggal tulis apa saja yang kamu butuhkan! Mulai dari antri tiket, cari barang langka, temani urus keperluan mendadak, hingga bantuan kustom lainnya di Surabaya.</textarea>
           </div>
 
           <!-- 6 Quick Idea Chips -->
@@ -791,32 +791,32 @@
               <div class="p-3 bg-white rounded-xl border border-slate-200 space-y-1.5">
                 <label class="block text-[10px] font-bold text-slate-500 uppercase">Tombol Chip 1</label>
                 <input type="text" id="cmsChipLabel0" value="🍜 Titip Beli Makanan / Obat" class="focus-ring w-full p-2 rounded-lg border border-slate-300 text-xs font-bold" placeholder="Label Tombol" />
-                <input type="text" id="cmsChipVal0" value="Tolong belikan makanan / obat malam ini" class="focus-ring w-full p-2 rounded-lg border border-slate-200 text-[11px] text-slate-600" placeholder="Isi teks saat diklik" />
+                <input type="text" id="cmsChipVal0" value="Tolong belikan makanan / obat darurat dan antar ke kos saya" class="focus-ring w-full p-2 rounded-lg border border-slate-200 text-[11px] text-slate-600" placeholder="Isi teks saat diklik" />
               </div>
               <div class="p-3 bg-white rounded-xl border border-slate-200 space-y-1.5">
                 <label class="block text-[10px] font-bold text-slate-500 uppercase">Tombol Chip 2</label>
                 <input type="text" id="cmsChipLabel1" value="🏠 Cek Kondisi Kamar Kos" class="focus-ring w-full p-2 rounded-lg border border-slate-300 text-xs font-bold" />
-                <input type="text" id="cmsChipVal1" value="Tolong bantu cek kondisi kamar kos / ambilkan barang tertinggal" class="focus-ring w-full p-2 rounded-lg border border-slate-200 text-[11px] text-slate-600" />
+                <input type="text" id="cmsChipVal1" value="Tolong cek kondisi kamar kos / ambilkan barang tertinggal lalu kirim ekspedisi" class="focus-ring w-full p-2 rounded-lg border border-slate-200 text-[11px] text-slate-600" />
               </div>
               <div class="p-3 bg-white rounded-xl border border-slate-200 space-y-1.5">
                 <label class="block text-[10px] font-bold text-slate-500 uppercase">Tombol Chip 3</label>
-                <input type="text" id="cmsChipLabel2" value="📄 Print &amp; Jilid Berkas" class="focus-ring w-full p-2 rounded-lg border border-slate-300 text-xs font-bold" />
-                <input type="text" id="cmsChipVal2" value="Tolong bantu print, jilid, dan antarkan berkas dokumen" class="focus-ring w-full p-2 rounded-lg border border-slate-200 text-[11px] text-slate-600" />
+                <input type="text" id="cmsChipLabel2" value="📄 Print &amp; Antar Berkas" class="focus-ring w-full p-2 rounded-lg border border-slate-300 text-xs font-bold" />
+                <input type="text" id="cmsChipVal2" value="Tolong print, jilid, dan antarkan berkas &amp; file dokumen ke lokasi tujuan" class="focus-ring w-full p-2 rounded-lg border border-slate-200 text-[11px] text-slate-600" />
               </div>
               <div class="p-3 bg-white rounded-xl border border-slate-200 space-y-1.5">
                 <label class="block text-[10px] font-bold text-slate-500 uppercase">Tombol Chip 4</label>
                 <input type="text" id="cmsChipLabel3" value="🎁 Beli &amp; Antar Kado/Buket" class="focus-ring w-full p-2 rounded-lg border border-slate-300 text-xs font-bold" />
-                <input type="text" id="cmsChipVal3" value="Tolong belikan kado / buket wisuda dan antarkan ke lokasi" class="focus-ring w-full p-2 rounded-lg border border-slate-200 text-[11px] text-slate-600" />
+                <input type="text" id="cmsChipVal3" value="Tolong belikan kado / buket wisuda dan antarkan ke lokasi acara" class="focus-ring w-full p-2 rounded-lg border border-slate-200 text-[11px] text-slate-600" />
               </div>
               <div class="p-3 bg-white rounded-xl border border-slate-200 space-y-1.5">
                 <label class="block text-[10px] font-bold text-slate-500 uppercase">Tombol Chip 5</label>
-                <input type="text" id="cmsChipLabel4" value="🧹 Bersih Kamar Kos" class="focus-ring w-full p-2 rounded-lg border border-slate-300 text-xs font-bold" />
-                <input type="text" id="cmsChipVal4" value="Tolong bantu bereskan &amp; sapu pel kamar kos" class="focus-ring w-full p-2 rounded-lg border border-slate-200 text-[11px] text-slate-600" />
+                <input type="text" id="cmsChipLabel4" value="🧹 Beres &amp; Bersih Kamar Kos" class="focus-ring w-full p-2 rounded-lg border border-slate-300 text-xs font-bold" />
+                <input type="text" id="cmsChipVal4" value="Tolong bantu bereskan, sapu, dan pel kamar kos saya hari ini" class="focus-ring w-full p-2 rounded-lg border border-slate-200 text-[11px] text-slate-600" />
               </div>
               <div class="p-3 bg-white rounded-xl border border-slate-200 space-y-1.5">
                 <label class="block text-[10px] font-bold text-slate-500 uppercase">Tombol Chip 6</label>
-                <input type="text" id="cmsChipLabel5" value="🛵 Bantuan Darurat Jalan" class="focus-ring w-full p-2 rounded-lg border border-slate-300 text-xs font-bold" />
-                <input type="text" id="cmsChipVal5" value="Tolong bantuan darurat motor mogok / ban bocor / habis bensin" class="focus-ring w-full p-2 rounded-lg border border-slate-200 text-[11px] text-slate-600" />
+                <input type="text" id="cmsChipLabel5" value="🛵 Bantuan Darurat di Jalan" class="focus-ring w-full p-2 rounded-lg border border-slate-300 text-xs font-bold" />
+                <input type="text" id="cmsChipVal5" value="Tolong bantuan darurat motor mogok / ban bocor / habis bensin di jalan" class="focus-ring w-full p-2 rounded-lg border border-slate-200 text-[11px] text-slate-600" />
               </div>
             </div>
           </div>
@@ -825,15 +825,15 @@
           <div class="grid grid-cols-1 sm:grid-cols-3 gap-3">
             <div class="space-y-1">
               <label class="block text-xs font-bold text-slate-700">Poin Keunggulan 1</label>
-              <input type="text" id="cmsCustomBullet1" value="Tarif Fleksibel Mulai Rp 5.000" class="focus-ring w-full p-2.5 rounded-xl border border-slate-300 text-xs" />
+              <input type="text" id="cmsCustomBullet1" value="Harga Disepakati di Awal" class="focus-ring w-full p-2.5 rounded-xl border border-slate-300 text-xs" />
             </div>
             <div class="space-y-1">
-              <label class="block text-xs font-bold text-slate-700">Poin Keunggulan 2</label>
-              <input type="text" id="cmsCustomBullet2" value="Deal Harga di Awal Sebelum Jalan" class="focus-ring w-full p-2.5 rounded-xl border border-slate-300 text-xs" />
+              <label class="block text-xs font-bold text-slate-700">Poin Keunggulan 2 (Bawah Kiri)</label>
+              <input type="text" id="cmsCustomBullet2" value="Worker Terpercaya" class="focus-ring w-full p-2.5 rounded-xl border border-slate-300 text-xs font-bold" />
             </div>
             <div class="space-y-1">
               <label class="block text-xs font-bold text-slate-700">Poin Keunggulan 3</label>
-              <input type="text" id="cmsCustomBullet3" value="Bebas Pilih Mitra Cowok / Cewek" class="focus-ring w-full p-2.5 rounded-xl border border-slate-300 text-xs" />
+              <input type="text" id="cmsCustomBullet3" value="Bisa Request Worker Cewek" class="focus-ring w-full p-2.5 rounded-xl border border-slate-300 text-xs" />
             </div>
           </div>
 
@@ -844,11 +844,11 @@
             </div>
             <div class="space-y-1">
               <label class="block text-xs font-bold text-slate-700">Teks Tombol Kirim WA</label>
-              <input type="text" id="cmsCustomFormBtnText" value="Kirim Request &amp; Tanya Tarif via WA" class="focus-ring w-full p-2.5 rounded-xl border border-slate-300 text-xs font-bold" />
+              <input type="text" id="cmsCustomFormBtnText" value="Kirim Request Custom via WhatsApp" class="focus-ring w-full p-2.5 rounded-xl border border-slate-300 text-xs font-bold" />
             </div>
             <div class="space-y-1">
               <label class="block text-xs font-bold text-slate-700">Catatan Bawah Tombol</label>
-              <input type="text" id="cmsCustomFormNote" value="Gratis tanya-tanya dulu • Admin langsung balas estimasi biaya" class="focus-ring w-full p-2.5 rounded-xl border border-slate-300 text-xs" />
+              <input type="text" id="cmsCustomFormNote" value="Bebas konsultasi dulu • Harga disepakati di awal tanpa biaya siluman" class="focus-ring w-full p-2.5 rounded-xl border border-slate-300 text-xs" />
             </div>
           </div>
 
@@ -860,21 +860,21 @@
         </div>
 
         <!-- =============================================================== -->
-        <!-- SUB-PANEL 3: MENGAPA MEMILIH KAMI (6 KEUNGGULAN)                -->
+        <!-- SUB-PANEL 3: MENGAPA MEMILIH KAMI (5 KEUNGGULAN)                -->
         <!-- =============================================================== -->
         <div id="cmsSubPanel-why" class="bg-white p-5 sm:p-7 rounded-2xl border border-slate-200 shadow-xs space-y-6 text-xs sm:text-sm hidden">
           <div class="border-b border-slate-100 pb-4">
             <h2 class="font-heading font-black text-base text-navy-900 flex items-center gap-2">
               <span class="w-2.5 h-2.5 rounded-full bg-amber-500"></span>
-              <span>3. Pengaturan Seksi Mengapa Memilih Kami (6 Kartu Keunggulan)</span>
+              <span>3. Pengaturan Seksi Mengapa Memilih UNAIR SURUH? (5 Kartu Keunggulan)</span>
             </h2>
-            <p class="text-xs text-slate-500 mt-0.5">Ubah judul seksi dan isi 6 kartu keunggulan operasional UNAIR SURUH.</p>
+            <p class="text-xs text-slate-500 mt-0.5">Ubah judul seksi dan isi 5 kartu keunggulan operasional UNAIR SURUH.</p>
           </div>
 
           <div class="grid grid-cols-1 sm:grid-cols-3 gap-3">
             <div class="space-y-1">
               <label class="block text-xs font-bold text-slate-700">Badge Atas Seksi</label>
-              <input type="text" id="cmsWhyBadge" value="Standar Layanan Terpercaya • Transparan &amp; Profesional" class="focus-ring w-full p-2.5 rounded-xl border border-slate-300 text-xs font-bold" />
+              <input type="text" id="cmsWhyBadge" value="Standar Operasional &amp; Keunggulan" class="focus-ring w-full p-2.5 rounded-xl border border-slate-300 text-xs font-bold" />
             </div>
             <div class="space-y-1">
               <label class="block text-xs font-bold text-slate-700">Judul Utama Seksi</label>
@@ -882,40 +882,35 @@
             </div>
             <div class="space-y-1">
               <label class="block text-xs font-bold text-slate-700">Subjudul Seksi</label>
-              <input type="text" id="cmsWhySubtitle" value="Komitmen pelayanan mahasiswa yang mengutamakan keamanan identitas, transparansi biaya di awal, serta kenyamanan privasi pelanggan." class="focus-ring w-full p-2.5 rounded-xl border border-slate-300 text-xs" />
+              <input type="text" id="cmsWhySubtitle" value="5 alasan utama mengapa ribuan mahasiswa dan warga Surabaya mempercayakan urusan hariannya kepada @unair_suruh." class="focus-ring w-full p-2.5 rounded-xl border border-slate-300 text-xs" />
             </div>
           </div>
 
           <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
             <div class="p-4 rounded-xl bg-slate-50 border border-slate-200 space-y-2">
               <span class="text-[10px] font-bold text-navy-900 uppercase">Kartu Keunggulan 1</span>
-              <input type="text" id="cmsWhyCardTitle0" value="Transparansi Tarif di Awal" class="focus-ring w-full p-2.5 rounded-lg border border-slate-300 bg-white text-xs font-bold" />
-              <textarea id="cmsWhyCardDesc0" rows="2" class="focus-ring w-full p-2.5 rounded-lg border border-slate-300 bg-white text-xs">Rincian tugas, jarak, dan total biaya disepakati bersama di awal lewat WhatsApp sebelum mitra berangkat. Tanpa biaya tersembunyi.</textarea>
+              <input type="text" id="cmsWhyCardTitle0" value="Fee Worker Terbuka &amp; Adil" class="focus-ring w-full p-2.5 rounded-lg border border-slate-300 bg-white text-xs font-bold" />
+              <textarea id="cmsWhyCardDesc0" rows="2" class="focus-ring w-full p-2.5 rounded-lg border border-slate-300 bg-white text-xs">Worker mengetahui besaran fee sebelum mengambil order. Tidak ada pemotongan sepihak, sehingga worker bekerja maksimal, profesional, dan tuntas.</textarea>
             </div>
             <div class="p-4 rounded-xl bg-slate-50 border border-slate-200 space-y-2">
               <span class="text-[10px] font-bold text-navy-900 uppercase">Kartu Keunggulan 2</span>
-              <input type="text" id="cmsWhyCardTitle1" value="Jaminan Keamanan Barang" class="focus-ring w-full p-2.5 rounded-lg border border-slate-300 bg-white text-xs font-bold" />
-              <textarea id="cmsWhyCardDesc1" rows="2" class="focus-ring w-full p-2.5 rounded-lg border border-slate-300 bg-white text-xs">Seluruh barang titipan, dokumen, maupun belanjaan dijaga dengan penuh tanggung jawab dan disertai bukti foto serta struk belanja asli.</textarea>
+              <input type="text" id="cmsWhyCardTitle1" value="Gender Matching di Ruang Privat" class="focus-ring w-full p-2.5 rounded-lg border border-slate-300 bg-white text-xs font-bold" />
+              <textarea id="cmsWhyCardDesc1" rows="2" class="focus-ring w-full p-2.5 rounded-lg border border-slate-300 bg-white text-xs">Klien cewek bebas request pengerjaan, 100% worker cewek untuk pengerjaan di kos atau tempat tinggal demi kenyamanan, etika, dan privasi terjaga.</textarea>
             </div>
             <div class="p-4 rounded-xl bg-slate-50 border border-slate-200 space-y-2">
               <span class="text-[10px] font-bold text-navy-900 uppercase">Kartu Keunggulan 3</span>
-              <input type="text" id="cmsWhyCardTitle2" value="Klien Cewek? Bisa Request Worker Cewek" class="focus-ring w-full p-2.5 rounded-lg border border-slate-300 bg-white text-xs font-bold" />
-              <textarea id="cmsWhyCardDesc2" rows="2" class="focus-ring w-full p-2.5 rounded-lg border border-slate-300 bg-white text-xs">Untuk kenyamanan dan privasi ekstra di dalam kos atau hunian, klien perempuan bebas me-request mitra mahasiswi perempuan.</textarea>
+              <input type="text" id="cmsWhyCardTitle2" value="Layanan 1 Pintu Serba Bisa" class="focus-ring w-full p-2.5 rounded-lg border border-slate-300 bg-white text-xs font-bold" />
+              <textarea id="cmsWhyCardDesc2" rows="3" class="focus-ring w-full p-2.5 rounded-lg border border-slate-300 bg-white text-xs">Cukup 1 kontak untuk 8 kategori kebutuhan harian: Go SURUH (Mobilitas &amp; Antar-Jemput), Move SURUH (Pindahan &amp; Angkut), Keep SURUH (Penitipan Barang), Fix SURUH (Rakit &amp; Teknis), Task SURUH (Titip Beli &amp; Kurir), Desk SURUH (Urus Dokumen), Crew SURUH (Tenaga Event), dan Talent SURUH (Tutor &amp; Talent Kreatif).</textarea>
             </div>
             <div class="p-4 rounded-xl bg-slate-50 border border-slate-200 space-y-2">
               <span class="text-[10px] font-bold text-navy-900 uppercase">Kartu Keunggulan 4</span>
-              <input type="text" id="cmsWhyCardTitle3" value="Mitra Mahasiswa Terverifikasi" class="focus-ring w-full p-2.5 rounded-lg border border-slate-300 bg-white text-xs font-bold" />
-              <textarea id="cmsWhyCardDesc3" rows="2" class="focus-ring w-full p-2.5 rounded-lg border border-slate-300 bg-white text-xs">Setiap mitra pelaksana adalah mahasiswa aktif yang telah melewati verifikasi identitas resmi oleh tim manajemen operasional.</textarea>
+              <input type="text" id="cmsWhyCardTitle3" value="Worker Terverifikasi" class="focus-ring w-full p-2.5 rounded-lg border border-slate-300 bg-white text-xs font-bold" />
+              <textarea id="cmsWhyCardDesc3" rows="2" class="focus-ring w-full p-2.5 rounded-lg border border-slate-300 bg-white text-xs">Dikerjakan langsung oleh worker dari Mahasiswa Unair / Warga lokal Surabaya yang telah diverifikasi identitasnya, komunikatif, ramah, dan bertanggung jawab penuh.</textarea>
             </div>
-            <div class="p-4 rounded-xl bg-slate-50 border border-slate-200 space-y-2">
+            <div class="p-4 rounded-xl bg-slate-50 border border-slate-200 space-y-2 md:col-span-2">
               <span class="text-[10px] font-bold text-navy-900 uppercase">Kartu Keunggulan 5</span>
-              <input type="text" id="cmsWhyCardTitle4" value="Layanan Positif &amp; Profesional" class="focus-ring w-full p-2.5 rounded-lg border border-slate-300 bg-white text-xs font-bold" />
-              <textarea id="cmsWhyCardDesc4" rows="2" class="focus-ring w-full p-2.5 rounded-lg border border-slate-300 bg-white text-xs">Hanya melayani penugasan yang positif, legal, dan bermanfaat. Menolak segala bentuk kecurangan akademik maupun barang terlarang.</textarea>
-            </div>
-            <div class="p-4 rounded-xl bg-slate-50 border border-slate-200 space-y-2">
-              <span class="text-[10px] font-bold text-navy-900 uppercase">Kartu Keunggulan 6</span>
-              <input type="text" id="cmsWhyCardTitle5" value="Pemberdayaan Ekonomi Mahasiswa" class="focus-ring w-full p-2.5 rounded-lg border border-slate-300 bg-white text-xs font-bold" />
-              <textarea id="cmsWhyCardDesc5" rows="2" class="focus-ring w-full p-2.5 rounded-lg border border-slate-300 bg-white text-xs">Setiap pesananmu turut membantu mahasiswa menambah penghasilan secara produktif di sela jadwal perkuliahan.</textarea>
+              <input type="text" id="cmsWhyCardTitle4" value="Respon Tanggap Kebutuhan Urgent" class="focus-ring w-full p-2.5 rounded-lg border border-slate-300 bg-white text-xs font-bold" />
+              <textarea id="cmsWhyCardDesc4" rows="2" class="focus-ring w-full p-2.5 rounded-lg border border-slate-300 bg-white text-xs">Siaga membantu kebutuhan mendadak: motor mogok di jalan, antar-jemput stasiun dini hari, hingga titip obat saat sakit di kos di seluruh penjuru Surabaya, dll.</textarea>
             </div>
           </div>
 
@@ -927,87 +922,87 @@
         </div>
 
         <!-- =============================================================== -->
-        <!-- SUB-PANEL 4: JADI MITRA MAHASISWA & BANNER CTA BAWAH            -->
+        <!-- SUB-PANEL 4: REKRUTMEN WORKER & BANNER CTA BAWAH                -->
         <!-- =============================================================== -->
         <div id="cmsSubPanel-mitra" class="bg-white p-5 sm:p-7 rounded-2xl border border-slate-200 shadow-xs space-y-6 text-xs sm:text-sm hidden">
           <div class="border-b border-slate-100 pb-4">
             <h2 class="font-heading font-black text-base text-navy-900 flex items-center gap-2">
               <span class="w-2.5 h-2.5 rounded-full bg-amber-500"></span>
-              <span>4. Pengaturan Banner CTA Bawah &amp; Seksi Rekrutmen Mitra Mahasiswa</span>
+              <span>4. Pengaturan Banner CTA ("Siap untuk memulai?") &amp; Seksi Rekrutmen Worker</span>
             </h2>
-            <p class="text-xs text-slate-500 mt-0.5">Ubah ajakan memesan di bagian bawah dan informasi pendaftaran mitra mahasiswa.</p>
+            <p class="text-xs text-slate-500 mt-0.5">Ubah ajakan memesan di bagian bawah dan informasi rekrutmen worker @unair_suruh.</p>
           </div>
 
           <!-- Banner CTA -->
           <div class="p-4 rounded-xl bg-slate-50 border border-slate-200 space-y-3">
-            <div class="font-heading font-bold text-xs text-navy-900 uppercase tracking-wider">A. Banner Ajakan Pesan (CTA Bawah)</div>
+            <div class="font-heading font-bold text-xs text-navy-900 uppercase tracking-wider">A. Banner CTA ("Siap untuk memulai?")</div>
             <div class="grid grid-cols-1 sm:grid-cols-3 gap-3">
               <div class="space-y-1">
-                <label class="block text-xs font-bold text-slate-700">Badge Banner CTA</label>
-                <input type="text" id="cmsCtaBadge" value="Siap Membantu Kebutuhanmu Hari Ini" class="focus-ring w-full p-2.5 rounded-xl border border-slate-300 bg-white text-xs font-bold" />
+                <label class="block text-xs font-bold text-slate-700">Label Kecil Banner CTA</label>
+                <input type="text" id="cmsCtaBadge" value="Siap untuk memulai?" class="focus-ring w-full p-2.5 rounded-xl border border-slate-300 bg-white text-xs font-bold" />
               </div>
               <div class="space-y-1">
-                <label class="block text-xs font-bold text-slate-700">Judul Banner CTA</label>
-                <input type="text" id="cmsCtaTitle" value="Ada Kerjaan yang Perlu Diselesaikan Sekarang?" class="focus-ring w-full p-2.5 rounded-xl border border-slate-300 bg-white text-xs font-bold" />
+                <label class="block text-xs font-bold text-slate-700">Judul Utama Banner CTA</label>
+                <input type="text" id="cmsCtaTitle" value="Butuh Bantuan Mendadak atau Urusan Kampus Hari Ini?" class="focus-ring w-full p-2.5 rounded-xl border border-slate-300 bg-white text-xs font-bold" />
               </div>
               <div class="space-y-1">
                 <label class="block text-xs font-bold text-slate-700">Teks Tombol Banner CTA</label>
-                <input type="text" id="cmsCtaBtnText" value="Pesan Jasa Sekarang" class="focus-ring w-full p-2.5 rounded-xl border border-slate-300 bg-white text-xs font-bold" />
+                <input type="text" id="cmsCtaBtnText" value="Chat WhatsApp: 089509960815" class="focus-ring w-full p-2.5 rounded-xl border border-slate-300 bg-white text-xs font-bold" />
               </div>
             </div>
             <div class="space-y-1">
-              <label class="block text-xs font-bold text-slate-700">Deskripsi Banner CTA</label>
-              <input type="text" id="cmsCtaDesc" value="Tidak perlu sungkan bertanya tarif terlebih dahulu. Pilih layanan yang kamu butuhkan, isi form singkat, dan langsung terhubung ke WhatsApp Admin." class="focus-ring w-full p-2.5 rounded-xl border border-slate-300 bg-white text-xs" />
+              <label class="block text-xs font-bold text-slate-700">Sub-judul Banner CTA</label>
+              <input type="text" id="cmsCtaDesc" value="Kami siap membantu kapan saja. Konsultasi kebutuhanmu via WhatsApp sekarang tanpa ribet." class="focus-ring w-full p-2.5 rounded-xl border border-slate-300 bg-white text-xs" />
             </div>
           </div>
 
-          <!-- Seksi Jadi Mitra -->
+          <!-- Seksi Rekrutmen Worker -->
           <div class="p-4 rounded-xl bg-slate-50 border border-slate-200 space-y-4">
-            <div class="font-heading font-bold text-xs text-navy-900 uppercase tracking-wider">B. Seksi Gabung Mitra Worker Mahasiswa (#jadi-mitra)</div>
+            <div class="font-heading font-bold text-xs text-navy-900 uppercase tracking-wider">B. Seksi Rekrutmen Worker (#mitra)</div>
             <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3">
               <div class="space-y-1">
-                <label class="block text-xs font-bold text-slate-700">Badge Seksi Mitra</label>
-                <input type="text" id="cmsMitraBadge" value="Pemberdayaan Ekonomi Mahasiswa" class="focus-ring w-full p-2.5 rounded-xl border border-slate-300 bg-white text-xs font-bold" />
+                <label class="block text-xs font-bold text-slate-700">Badge/Label Kategori</label>
+                <input type="text" id="cmsMitraBadge" value="Rekrutmen Mitra Worker UNAIR SURUH" class="focus-ring w-full p-2.5 rounded-xl border border-slate-300 bg-white text-xs font-bold" />
               </div>
               <div class="space-y-1">
-                <label class="block text-xs font-bold text-slate-700">Judul Mitra (Baris 1)</label>
-                <input type="text" id="cmsMitraTitle1" value="Mahasiswa Aktif?" class="focus-ring w-full p-2.5 rounded-xl border border-slate-300 bg-white text-xs font-bold" />
+                <label class="block text-xs font-bold text-slate-700">Sub-header (Baris 1)</label>
+                <input type="text" id="cmsMitraTitle1" value="Ingin Penghasilan Fleksibel?" class="focus-ring w-full p-2.5 rounded-xl border border-slate-300 bg-white text-xs font-bold" />
               </div>
               <div class="space-y-1">
-                <label class="block text-xs font-bold text-amber-700">Judul Mitra (Baris 2 Emas)</label>
-                <input type="text" id="cmsMitraTitle2" value="Yuk Gabung Jadi Mitra Worker!" class="focus-ring w-full p-2.5 rounded-xl border border-amber-300 bg-white text-xs font-bold" />
+                <label class="block text-xs font-bold text-amber-700">Judul Utama (Baris 2 Emas)</label>
+                <input type="text" id="cmsMitraTitle2" value="Gabung Jadi Worker @unair_suruh" class="focus-ring w-full p-2.5 rounded-xl border border-amber-300 bg-white text-xs font-bold" />
               </div>
               <div class="space-y-1">
-                <label class="block text-xs font-bold text-slate-700">Teks Tombol Daftar Mitra</label>
-                <input type="text" id="cmsMitraBtnText" value="Daftar Jadi Mitra via WA" class="focus-ring w-full p-2.5 rounded-xl border border-slate-300 bg-white text-xs font-bold" />
+                <label class="block text-xs font-bold text-slate-700">Teks Tombol Daftar Worker</label>
+                <input type="text" id="cmsMitraBtnText" value="Daftar Jadi Worker via WA" class="focus-ring w-full p-2.5 rounded-xl border border-slate-300 bg-white text-xs font-bold" />
               </div>
             </div>
             <div class="space-y-1">
-              <label class="block text-xs font-bold text-slate-700">Deskripsi Ajakan Mitra</label>
-              <textarea id="cmsMitraDesc" rows="2" class="focus-ring w-full p-2.5 rounded-xl border border-slate-300 bg-white text-xs">Punya waktu luang di sela jadwal kuliah, punya kendaraan, atau punya keahlian khusus? Ubah waktu luangmu menjadi penghasilan tambahan yang fleksibel bersama tim mahasiswa UNAIR SURUH.</textarea>
+              <label class="block text-xs font-bold text-slate-700">Deskripsi Rekrutmen Worker</label>
+              <textarea id="cmsMitraDesc" rows="2" class="focus-ring w-full p-2.5 rounded-xl border border-slate-300 bg-white text-xs">Buka peluang pendapatan bagi mahasiswa UNAIR dan Warga Surabaya tanpa meninggalkan kuliah atau aktivitas utama. Fee pekerja transparan disepakati di awal tanpa potongan sepihak.</textarea>
             </div>
             <div class="grid grid-cols-1 sm:grid-cols-3 gap-3">
               <div class="p-3 bg-white rounded-xl border border-slate-200 space-y-1.5">
                 <span class="text-[10px] font-bold text-amber-600 uppercase">Pilar Keuntungan 1</span>
-                <input type="text" id="cmsMitraP1Title" value="80% – 85% Bagi Hasil Mitra" class="focus-ring w-full p-2 rounded-lg border border-slate-300 text-xs font-bold" />
-                <input type="text" id="cmsMitraP1Desc" value="Mayoritas tarif jasa langsung masuk ke kantong mitra mahasiswa pelaksana." class="focus-ring w-full p-2 rounded-lg border border-slate-200 text-[11px]" />
+                <input type="text" id="cmsMitraP1Title" value="⏱️ Jam Kerja Fleksibel" class="focus-ring w-full p-2 rounded-lg border border-slate-300 text-xs font-bold" />
+                <input type="text" id="cmsMitraP1Desc" value="Bebas memilih order saat tidak ada kelas kuliah. Mandiri finansial tanpa mengganggu kegiatan akademik utama." class="focus-ring w-full p-2 rounded-lg border border-slate-200 text-[11px]" />
               </div>
               <div class="p-3 bg-white rounded-xl border border-slate-200 space-y-1.5">
                 <span class="text-[10px] font-bold text-amber-600 uppercase">Pilar Keuntungan 2</span>
-                <input type="text" id="cmsMitraP2Title" value="100% Bebas Pilih Jadwal" class="focus-ring w-full p-2 rounded-lg border border-slate-300 text-xs font-bold" />
-                <input type="text" id="cmsMitraP2Desc" value="Kuliah tetap prioritas utama. Ambil order hanya saat kamu sedang luang." class="focus-ring w-full p-2 rounded-lg border border-slate-200 text-[11px]" />
+                <input type="text" id="cmsMitraP2Title" value="💰 Fee Terbuka &amp; Adil" class="focus-ring w-full p-2 rounded-lg border border-slate-300 text-xs font-bold" />
+                <input type="text" id="cmsMitraP2Desc" value="Besaran fee pekerja disepakati di awal sebelum kamu terima tugas. Fee dibagikan terbuka tanpa potongan sepihak." class="focus-ring w-full p-2 rounded-lg border border-slate-200 text-[11px]" />
               </div>
               <div class="p-3 bg-white rounded-xl border border-slate-200 space-y-1.5">
                 <span class="text-[10px] font-bold text-amber-600 uppercase">Pilar Keuntungan 3</span>
-                <input type="text" id="cmsMitraP3Title" value="Komunitas Positif &amp; Aman" class="focus-ring w-full p-2 rounded-lg border border-slate-300 text-xs font-bold" />
-                <input type="text" id="cmsMitraP3Desc" value="Didukung tim koordinator admin yang responsif dan penugasan yang jelas." class="focus-ring w-full p-2 rounded-lg border border-slate-200 text-[11px]" />
+                <input type="text" id="cmsMitraP3Title" value="🛡️ Gender Matching &amp; Aman" class="focus-ring w-full p-2 rounded-lg border border-slate-300 text-xs font-bold" />
+                <input type="text" id="cmsMitraP3Desc" value="Klien cewek bebas request 100% worker cewek. Didukung koordinator tim siaga di lapangan." class="focus-ring w-full p-2 rounded-lg border border-slate-200 text-[11px]" />
               </div>
             </div>
           </div>
 
           <div class="pt-2">
             <button type="button" onclick="saveCmsSettings()" class="btn-spring focus-ring px-6 py-3 rounded-xl bg-navy-900 hover:bg-navy-800 text-amber-300 font-extrabold text-xs shadow-sm">
-              Simpan Pengaturan Mitra &amp; CTA
+              Simpan Pengaturan Worker &amp; CTA
             </button>
           </div>
         </div>
@@ -1022,7 +1017,7 @@
                 <span class="w-2.5 h-2.5 rounded-full bg-amber-500"></span>
                 <span>5. Pengaturan Tanya Jawab (FAQ) &amp; Judul Seksi Halaman</span>
               </h2>
-              <p class="text-xs text-slate-500 mt-0.5">Kelola pertanyaan yang sering diajukan pelanggan serta judul seksi Layanan, Reels, dan Testimoni.</p>
+              <p class="text-xs text-slate-500 mt-0.5">Kelola pertanyaan yang sering ditanyakan pelanggan serta judul seksi Lini Layanan, Kegiatan Kami, dan Testimoni.</p>
             </div>
             <div class="flex items-center gap-2">
               <button type="button" onclick="resetFaqsToDefault()" class="btn-spring px-3 py-2 rounded-xl bg-slate-100 hover:bg-slate-200 text-slate-700 font-bold text-xs">Reset FAQ Bawaan</button>
@@ -1035,16 +1030,24 @@
             <div class="font-heading font-bold text-xs text-navy-900 uppercase tracking-wider">Judul &amp; Subjudul Seksi di Halaman Utama</div>
             <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
               <div class="space-y-1">
-                <label class="block text-xs font-bold text-slate-700">Judul Seksi 8 Layanan</label>
-                <input type="text" id="cmsLayananTitle" value="Pilih Layanan Sesuai Kebutuhanmu" class="focus-ring w-full p-2.5 rounded-xl border border-slate-300 bg-white text-xs font-bold" />
+                <label class="block text-xs font-bold text-slate-700">Judul Seksi 8 Lini Layanan</label>
+                <input type="text" id="cmsLayananTitle" value="Lini Layanan" class="focus-ring w-full p-2.5 rounded-xl border border-slate-300 bg-white text-xs font-bold" />
               </div>
               <div class="space-y-1">
-                <label class="block text-xs font-bold text-slate-700">Subjudul Seksi 8 Layanan</label>
-                <input type="text" id="cmsLayananSubtitle" value="Mulai dari Rp 5.000! Semua layanan dikerjakan oleh mitra mahasiswa terverifikasi dengan standar kerja rapi, sopan, dan transparan." class="focus-ring w-full p-2.5 rounded-xl border border-slate-300 bg-white text-xs" />
+                <label class="block text-xs font-bold text-slate-700">Subjudul Seksi Lini Layanan (Bold)</label>
+                <input type="text" id="cmsLayananSubtitle" value="Tulis tugasmu, harga disepakati di awal tanpa biaya siluman." class="focus-ring w-full p-2.5 rounded-xl border border-slate-300 bg-white text-xs font-bold" />
               </div>
               <div class="space-y-1">
-                <label class="block text-xs font-bold text-slate-700">Judul Seksi Video Reels</label>
-                <input type="text" id="cmsReelsTitle" value="Kegiatan Kami di Lapangan" class="focus-ring w-full p-2.5 rounded-xl border border-slate-300 bg-white text-xs font-bold" />
+                <label class="block text-xs font-bold text-slate-700">Label Atas Seksi Kegiatan &amp; Sosmed</label>
+                <input type="text" id="cmsReelsBadge" value="Layanan Unair Suruh" class="focus-ring w-full p-2.5 rounded-xl border border-slate-300 bg-white text-xs font-bold" />
+              </div>
+              <div class="space-y-1">
+                <label class="block text-xs font-bold text-slate-700">Judul Seksi Kegiatan &amp; Sosmed</label>
+                <input type="text" id="cmsReelsTitle" value="Kegiatan Kami" class="focus-ring w-full p-2.5 rounded-xl border border-slate-300 bg-white text-xs font-bold" />
+              </div>
+              <div class="space-y-1 sm:col-span-2">
+                <label class="block text-xs font-bold text-slate-700">Sub-judul / Deskripsi Seksi Kegiatan &amp; Sosmed</label>
+                <input type="text" id="cmsReelsSubtitle" value="Follow TikTok &amp; IG kami @unair_suruh agar terus update keseruan kami." class="focus-ring w-full p-2.5 rounded-xl border border-slate-300 bg-white text-xs" />
               </div>
               <div class="space-y-1">
                 <label class="block text-xs font-bold text-slate-700">Judul Seksi Testimoni TikTok</label>
@@ -1052,11 +1055,11 @@
               </div>
               <div class="space-y-1">
                 <label class="block text-xs font-bold text-slate-700">Judul Seksi FAQ</label>
-                <input type="text" id="cmsFaqTitle" value="Pertanyaan yang Sering Diajukan (FAQ)" class="focus-ring w-full p-2.5 rounded-xl border border-slate-300 bg-white text-xs font-bold" />
+                <input type="text" id="cmsFaqTitle" value="Pertanyaan yang Sering Ditanyakan" class="focus-ring w-full p-2.5 rounded-xl border border-slate-300 bg-white text-xs font-bold" />
               </div>
-              <div class="space-y-1">
+              <div class="space-y-1 sm:col-span-2">
                 <label class="block text-xs font-bold text-slate-700">Subjudul Seksi FAQ</label>
-                <input type="text" id="cmsFaqSubtitle" value="Informasi lengkap seputar cara pemesanan, tarif, dan jaminan keamanan layanan UNAIR SURUH." class="focus-ring w-full p-2.5 rounded-xl border border-slate-300 bg-white text-xs" />
+                <input type="text" id="cmsFaqSubtitle" value="Segala hal yang perlu kamu ketahui tentang 8 lini layanan kami" class="focus-ring w-full p-2.5 rounded-xl border border-slate-300 bg-white text-xs" />
               </div>
             </div>
             <div class="pt-1">
@@ -1139,7 +1142,7 @@
           <div class="bg-white p-5 rounded-2xl border border-slate-200 shadow-xs space-y-2">
             <div class="text-xs font-semibold text-slate-500">Kepatuhan Gender Match</div>
             <div class="font-heading font-bold text-lg text-emerald-600">100% Sesuai SOP</div>
-            <div class="text-[11px] text-slate-500">Klien cewek dilayani mitra mahasiswi cewek</div>
+            <div class="text-[11px] text-slate-500">Klien cewek dilayani 100% worker cewek</div>
           </div>
           <div class="bg-white p-5 rounded-2xl border border-slate-200 shadow-xs space-y-2">
             <div class="text-xs font-semibold text-slate-500">Waktu Respon WhatsApp</div>
@@ -1185,8 +1188,8 @@
         
         <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-4">
           <div>
-            <h1 class="font-heading font-black text-2xl text-navy-900 tracking-tight">Pengaturan Kontak WA, Footer &amp; PIN Admin</h1>
-            <p class="text-xs text-slate-600">Nomor WhatsApp penerima order, akun media sosial resmi, teks footer bawah, dan PIN keamanan Web Admin</p>
+            <h1 class="font-heading font-black text-2xl text-navy-900 tracking-tight">Pengaturan Kontak Owner, WA, Footer &amp; PIN Admin</h1>
+            <p class="text-xs text-slate-600">Nomor WhatsApp Owner Afif (6289509960815), akun media sosial resmi, deskripsi usaha di footer, dan PIN keamanan Web Admin</p>
           </div>
           <button onclick="saveAdminSettings()" class="btn-spring focus-ring px-5 py-2.5 rounded-xl bg-navy-900 text-gold-500 font-bold text-xs hover:bg-navy-800 shadow-xs">
             Simpan Pengaturan Kontak &amp; Footer
@@ -1197,13 +1200,13 @@
           
           <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
             <div class="space-y-1.5">
-              <label class="block font-bold text-navy-900">1. Nomor WhatsApp Resmi Admin (Format 628...)</label>
-              <input type="text" id="settingWaNumber" value="6289677772336" class="focus-ring w-full p-3 rounded-xl border border-slate-300 font-mono text-sm font-bold text-emerald-700" />
-              <p class="text-[11px] text-slate-500">Otomatis mengubah seluruh tombol WhatsApp dan tujuan form order di website utama.</p>
+              <label class="block font-bold text-navy-900">1. Nomor WhatsApp Resmi Owner (Format 628...)</label>
+              <input type="text" id="settingWaNumber" value="6289509960815" class="focus-ring w-full p-3 rounded-xl border border-slate-300 font-mono text-sm font-bold text-emerald-700" />
+              <p class="text-[11px] text-slate-500">Default Owner Afif: 6289509960815. Otomatis mengubah seluruh tombol WhatsApp di website utama.</p>
             </div>
             <div class="space-y-1.5">
               <label class="block font-bold text-navy-900">2. Label Tombol WA Mengambang (Pojok Kanan Bawah Web)</label>
-              <input type="text" id="settingFloatingWaLabel" value="Chat WA" class="focus-ring w-full p-3 rounded-xl border border-slate-300 text-xs sm:text-sm font-bold" />
+              <input type="text" id="settingFloatingWaLabel" value="Chat Admin Fast Respon" class="focus-ring w-full p-3 rounded-xl border border-slate-300 text-xs sm:text-sm font-bold" />
               <p class="text-[11px] text-slate-500">Teks pada tombol hijau WhatsApp yang melayang di pojok kanan bawah.</p>
             </div>
           </div>
@@ -1215,7 +1218,7 @@
             </div>
             <div class="space-y-1.5">
               <label class="block font-bold text-navy-900">4. Username Instagram</label>
-              <input type="text" id="settingFooterIg" value="@unair.suruh" class="focus-ring w-full p-2.5 rounded-xl border border-slate-300 text-xs" />
+              <input type="text" id="settingFooterIg" value="@unair_suruh" class="focus-ring w-full p-2.5 rounded-xl border border-slate-300 text-xs" />
             </div>
             <div class="space-y-1.5">
               <label class="block font-bold text-navy-900">5. Username TikTok</label>
@@ -1225,27 +1228,27 @@
 
           <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
             <div class="space-y-1.5">
-              <label class="block font-bold text-navy-900">6. Badge PJ Operasional (Footer)</label>
-              <input type="text" id="settingFooterPj" value="PJ Operasional: Afif (FTMM)" class="focus-ring w-full p-2.5 rounded-xl border border-slate-300 text-xs font-bold" />
+              <label class="block font-bold text-navy-900">6. Kontak Owner (Footer)</label>
+              <input type="text" id="settingFooterPj" value="Owner: Afif (089509960815)" class="focus-ring w-full p-2.5 rounded-xl border border-slate-300 text-xs font-bold" />
             </div>
             <div class="space-y-1.5">
-              <label class="block font-bold text-navy-900">7. Badge Jumlah Mitra (Footer)</label>
-              <input type="text" id="settingFooterWorker" value="25+ Mitra Mahasiswa Terverifikasi" class="focus-ring w-full p-2.5 rounded-xl border border-slate-300 text-xs font-bold" />
+              <label class="block font-bold text-navy-900">7. Badge Worker (Footer)</label>
+              <input type="text" id="settingFooterWorker" value="Worker Terverifikasi (Mahasiswa &amp; Warga Surabaya)" class="focus-ring w-full p-2.5 rounded-xl border border-slate-300 text-xs font-bold" />
             </div>
             <div class="space-y-1.5">
-              <label class="block font-bold text-navy-900">8. Area &amp; Jam Operasional</label>
-              <input type="text" id="settingHours" value="Area Kampus A, B, C &amp; Seluruh Surabaya • Setiap Hari 06.00 – 23.00 WIB" class="focus-ring w-full p-2.5 rounded-xl border border-slate-300 text-xs" />
+              <label class="block font-bold text-navy-900">8. Area Cakupan</label>
+              <input type="text" id="settingHours" value="Cakupan: Seluruh Surabaya &amp; Jawa Timur (Kampus A, B, C UNAIR, kawasan kos &amp; pemukiman)." class="focus-ring w-full p-2.5 rounded-xl border border-slate-300 text-xs" />
             </div>
           </div>
 
           <div class="space-y-1.5">
-            <label class="block font-bold text-navy-900">9. Deskripsi Singkat Brand di Footer</label>
-            <textarea id="settingFooterDesc" rows="2" class="focus-ring w-full p-2.5 rounded-xl border border-slate-300 text-xs">Ekosistem layanan bantuan harian on-demand serba bisa yang dikelola oleh mahasiswa di Surabaya. Menghubungkan warga kampus, anak kos, dan masyarakat umum dengan mitra mahasiswa yang cekatan, jujur, dan terverifikasi.</textarea>
+            <label class="block font-bold text-navy-900">9. Deskripsi Usaha di Footer / Tentang Kami</label>
+            <textarea id="settingFooterDesc" rows="2" class="focus-ring w-full p-2.5 rounded-xl border border-slate-300 text-xs">Usaha jasa satu pintu independen oleh mahasiswa UNAIR di Surabaya yang membantu semua kalangan untuk menyelesaikan kebutuhan harian dengan harga disepakati di awal dan fee pekerja transparan.</textarea>
           </div>
 
           <div class="space-y-1.5">
             <label class="block font-bold text-navy-900">10. Teks Disclaimer Footer Paling Bawah</label>
-            <input type="text" id="settingFooterDisclaimer" value="Disclaimer: UNAIR SURUH adalah inisiatif kewirausahaan mandiri mahasiswa dan tidak berafiliasi secara kelembagaan resmi dengan birokrasi rektorat Universitas Airlangga." class="focus-ring w-full p-2.5 rounded-xl border border-slate-300 text-xs text-slate-600" />
+            <input type="text" id="settingFooterDisclaimer" value="Pemberitahuan &amp; Disclaimer Independensi: UNAIR SURUH adalah inisiatif mandiri oleh mahasiswa UNAIR dan warga di Surabaya untuk menyelesaikan kebutuhan harian secara profesional. Layanan ini tidak berafiliasi resmi, tidak disponsori, dan tidak dikelola secara institusional oleh Universitas Airlangga." class="focus-ring w-full p-2.5 rounded-xl border border-slate-300 text-xs text-slate-600" />
           </div>
 
           <div class="p-4 rounded-xl bg-amber-50/70 border border-amber-200 space-y-2">
@@ -1709,109 +1712,128 @@
       }
     ];
 
+    // ONE-TIME REVISION MIGRATION: Ensure stale pre-revision localStorage keys do not overwrite the 9-point precision revision
+    try {
+      var CURRENT_REV_VER = '2026-10-26-rev9-v1';
+      if (localStorage.getItem('UNAIR_REV_VER') !== CURRENT_REV_VER) {
+        localStorage.removeItem('UNAIR_SITE_CONFIG');
+        localStorage.removeItem('UNAIR_SERVICES');
+        localStorage.removeItem('UNAIR_FAQ_DATA');
+        localStorage.removeItem('UNAIR_SURUH_WA');
+        localStorage.removeItem('UNAIR_SURUH_HERO_BADGE');
+        localStorage.removeItem('UNAIR_SURUH_HERO_PREFIX');
+        localStorage.removeItem('UNAIR_SURUH_HERO_HIGHLIGHT');
+        localStorage.removeItem('UNAIR_SURUH_HERO_DESC');
+        localStorage.removeItem('UNAIR_SURUH_HERO_CTA');
+        localStorage.removeItem('UNAIR_SURUH_BANNER_TEXT');
+        localStorage.setItem('UNAIR_REV_VER', CURRENT_REV_VER);
+      }
+    } catch (e) {}
+
     const DEFAULT_SERVICES = [
       {
         slug: 'go-suruh',
         title: 'Go SURUH',
         name: 'Go SURUH',
-        badge: 'Mobilitas & Antar Jemput',
+        badge: 'Mobil, Tossa, Hiace, Bus, dan Motor',
         price: '5.000',
-        unitPrimary: '/ trip',
-        unitDetail: 'Antar jemput & bantuan jalan',
-        satuan: '/ trip • Antar jemput & bantuan jalan',
-        desc: 'Antar jemput stasiun, bandara, terminal, kampus, serta bantuan darurat di jalan (ban bocor, mogok, kehabisan bensin, atau helm cadangan). Tersedia armada motor dan mobil AC.',
-        btnText: 'Pesan Go SURUH',
+        unitPrimary: 'Per Trip (1x Jalan)',
+        unitDetail: 'Pilihan Armada: Mobil, Tossa, Hiace, Bus, dan Motor',
+        satuan: 'Per Trip (1x Jalan) • Mobil, Tossa, Hiace, Bus, dan Motor',
+        fleetOptions: ['Mobil', 'Tossa', 'Hiace', 'Bus', 'Motor'],
+        desc: 'Antar-jemput kampus, kos, stasiun, terminal, atau bandara dengan pilihan armada lengkap (Mobil, Tossa, Hiace, Bus, dan Motor), termasuk bantuan darurat saat kendaraan mogok di jalan.',
+        btnText: 'Pesan Layanan Ini',
         active: true
       },
       {
         slug: 'move-suruh',
         title: 'Move SURUH',
         name: 'Move SURUH',
-        badge: 'Pindahan & Angkut Barang',
-        price: '35.000',
-        unitPrimary: '/ pindahan',
-        unitDetail: 'Motor, Tossa Roda 3 & Mobil',
-        satuan: '/ pindahan • Motor, Tossa Roda 3 & Mobil',
-        desc: 'Jasa pindahan kos, kontrakan, dan angkut barang besar dengan armada Motor, Tossa Roda 3, hingga Mobil/Pick-up, lengkap tenaga mahasiswa angkut sampai dalam kamar.',
-        btnText: 'Pesan Move SURUH',
+        badge: 'Tossa, Pick-up & Angkut',
+        price: '15.000',
+        unitPrimary: 'Per Muatan Armada',
+        unitDetail: 'Termasuk bantuan angkut barang sampai ke dalam tempat baru',
+        satuan: 'Per Muatan Armada • Termasuk bantuan angkut barang sampai ke dalam tempat baru',
+        desc: 'Pindahan kamar kos atau kontrakan terima beres dengan armada Tossa roda 3 maupun Pick-up. Termasuk bantuan angkut barang sampai ke dalam tempat baru.',
+        btnText: 'Pesan Layanan Ini',
         active: true
       },
       {
         slug: 'keep-suruh',
         title: 'Keep SURUH',
         name: 'Keep SURUH',
-        badge: 'Penitipan Barang Kos',
+        badge: 'Penitipan Barang',
         price: '15.000',
-        unitPrimary: '/ barang',
-        unitDetail: 'Harian / Mingguan / Bulanan',
-        satuan: '/ barang • Harian / Mingguan / Bulanan',
-        desc: 'Solusi penitipan dan penyimpanan barang anak kos yang aman saat mudik liburan semester, magang luar kota, atau masa transisi pindah kos tanpa harus sewa kamar penuh.',
-        btnText: 'Pesan Keep SURUH',
+        unitPrimary: 'Per Box / Per Bulan',
+        unitDetail: 'Ruang simpan terkunci, bersegel & terdata rapi',
+        satuan: 'Per Box / Per Bulan • Ruang simpan terkunci, bersegel & terdata rapi',
+        desc: 'Titip barang kos (kardus, koper, kasur, kulkas mini, sepeda) di ruang penyimpanan kering dan terkunci aman selama masa KKN, magang, atau libur semester.',
+        btnText: 'Pesan Layanan Ini',
         active: true
       },
       {
         slug: 'fix-suruh',
         title: 'Fix SURUH',
         name: 'Fix SURUH',
-        badge: 'Rakit Perabot & Teknis',
+        badge: 'Rakit & Bantuan Teknis',
         price: '15.000',
-        unitPrimary: '/ panggilan',
-        unitDetail: 'Rakit perabot & perbaikan',
-        satuan: '/ panggilan • Rakit perabot & perbaikan',
-        desc: 'Jasa perakitan perabot dan furnitur baru (meja belajar, kursi, lemari rakitan), ganti lampu/kran kos, hingga pengecekan ringan laptop, HP, dan kendaraan.',
-        btnText: 'Pesan Fix SURUH',
+        unitPrimary: 'Per Unit Perabot / Titik',
+        unitDetail: 'Peralatan kerja lengkap dibawa langsung oleh worker',
+        satuan: 'Per Unit Perabot / Titik • Peralatan kerja lengkap dibawa langsung oleh worker',
+        desc: 'Perakitan meja belajar, lemari knockdown, rak kos, ganti lampu/keran bocor, hingga bantuan teknis ringan harian langsung di tempat tinggalmu.',
+        btnText: 'Pesan Layanan Ini',
         active: true
       },
       {
         slug: 'task-suruh',
         title: 'Task SURUH',
         name: 'Task SURUH',
-        badge: 'Titip Beli & Beres Kos',
-        price: '5.000',
-        unitPrimary: '/ tugas',
-        unitDetail: 'Beli makan, bersih kos & antri',
-        satuan: '/ tugas • Beli makan, bersih kos & antri',
-        desc: 'Bantuan asisten harian serba bisa: titip beli makanan/obat, belanja kebutuhan harian, bersih-bersih & beres kamar kos (tersedia mitra worker cewek), hingga antri layanan.',
-        btnText: 'Pesan Task SURUH',
+        badge: 'Titip Beli & Kurir',
+        price: '10.000',
+        unitPrimary: 'Per 1x Penugasan',
+        unitDetail: 'Termasuk konfirmasi nota & laporan foto real-time',
+        satuan: 'Per 1x Penugasan • Termasuk konfirmasi nota & laporan foto real-time',
+        desc: 'Titip beli makanan, obat saat sakit di kos, belanja kebutuhan mendadak, bersih-bersih kamar kos, hingga antre tiket atau layanan harian.',
+        btnText: 'Pesan Layanan Ini',
         active: true
       },
       {
         slug: 'desk-suruh',
         title: 'Desk SURUH',
         name: 'Desk SURUH',
-        badge: 'Urus Berkas & Dokumen',
-        price: '10.000',
-        unitPrimary: '/ dokumen',
-        unitDetail: 'Print, jilid & antar berkas',
-        satuan: '/ dokumen • Print, jilid & antar berkas',
-        desc: 'Bantuan pengurusan berkas dan dokumen fisik di Surabaya: print & jilid laporan, ambil/antar dokumen penting, pengurusan surat menyurat, hingga kirim paket ekspedisi.',
-        btnText: 'Pesan Desk SURUH',
+        badge: 'Urus Dokumen & Berkas',
+        price: '15.000',
+        unitPrimary: 'Per Pengurusan Berkas',
+        unitDetail: 'Kerahasiaan dokumen & tanda terima terjamin',
+        satuan: 'Per Pengurusan Berkas • Kerahasiaan dokumen & tanda terima terjamin',
+        desc: 'Perwakilan urus berkas, cetak & jilid dokumen, ambil/antar surat resmi, legalisir, serta administrasi fisik di Surabaya saat kamu berhalangan hadir.',
+        btnText: 'Pesan Layanan Ini',
         active: true
       },
       {
         slug: 'crew-suruh',
         title: 'Crew SURUH',
         name: 'Crew SURUH',
-        badge: 'Kru Event & Kepanitiaan',
-        price: '25.000',
-        unitPrimary: '/ jam / kru',
-        unitDetail: 'Kru acara, bazar & wisuda',
-        satuan: '/ jam / kru • Kru acara, bazar & wisuda',
-        desc: 'Penyediaan tenaga kru mahasiswa cekatan untuk operasional acara kampus maupun umum: bantu persiapan venue, angkut perlengkapan, jaga stand bazar, registrasi tamu, & dokumentasi.',
-        btnText: 'Pesan Crew SURUH',
+        badge: 'Kru Operasional Event',
+        price: '35.000',
+        unitPrimary: 'Per Shift / Kru',
+        unitDetail: 'Siap tugas untuk acara kampus & event eksternal',
+        satuan: 'Per Shift / Kru • Siap tugas untuk acara kampus & event eksternal',
+        desc: 'Menyediakan crew event untuk setup panggung & sound, registrasi peserta, clearing venue, hingga bantuan operasional kegiatan kepanitiaan / acara kampus / event eksternal.',
+        btnText: 'Pesan Layanan Ini',
         active: true
       },
       {
         slug: 'talent-suruh',
         title: 'Talent SURUH',
         name: 'Talent SURUH',
-        badge: 'Tutor & Skill Mahasiswa',
-        price: '25.000',
-        unitPrimary: '/ sesi',
-        unitDetail: 'Tutor belajar, desain & riset',
-        satuan: '/ sesi • Tutor belajar, desain & riset',
-        desc: 'Layanan berbasis keahlian mahasiswa terverifikasi: teman belajar & tutor privat, diskusi pengolahan data/statistik, desain presentasi, translasi, hingga fotografi wisuda.',
-        btnText: 'Pesan Talent SURUH',
+        badge: 'Tutor & Talent Kreatif',
+        price: '30.000',
+        unitPrimary: 'Per Sesi (60 Menit+) / Per Proyek',
+        unitDetail: 'Menyediakan worker dengan kompetensi akademik, kreativitas, dan keahlian sesuai bidangnya.',
+        satuan: 'Per Sesi (60 Menit+) / Per Proyek • Menyediakan worker dengan kompetensi akademik, kreativitas, dan keahlian sesuai bidangnya.',
+        desc: 'Layanan tutor akademik, pendamping belajar, pengolahan data, penerjemahan, proofreading, serta penyediaan talent untuk kebutuhan brand, foto, video, dan produksi konten kreatif.',
+        btnText: 'Pesan Layanan Ini',
         active: true
       }
     ];
@@ -1819,26 +1841,26 @@
     const DEFAULT_FAQS = [
       {
         id: 1,
-        q: 'Apakah UNAIR SURUH hanya untuk mahasiswa UNAIR?',
-        a: 'Tidak. Meskipun digagas dan dijalankan oleh mahasiswa UNAIR, layanan kami terbuka penuh untuk mahasiswa dari kampus mana pun, anak kos, pekerja, maupun warga umum di seluruh area Surabaya.',
+        q: 'Bagaimana cara memesan layanan di UNAIR SURUH?',
+        a: 'Cukup klik tombol "Pesan Layanan Ini" pada layanan yang diinginkan atau isi form Custom SURUH, pilih tanggal & jam kebutuhan, dan pesan akan langsung terformat rapi untuk dikirim via WhatsApp ke Owner Afif (089509960815).',
         active: true
       },
       {
         id: 2,
-        q: 'Bagaimana sistem penentuan tarifnya? Apakah ada biaya tambahan?',
-        a: 'Tarif dasar mulai dari Rp 5.000 untuk bantuan ringan, dan menyesuaikan jarak serta beban kerja (seperti pindahan Tossa atau mobil). Seluruh estimasi biaya disampaikan dan disepakati bersama di awal lewat WhatsApp sebelum mitra berangkat—dijamin transparan tanpa biaya tersembunyi.',
+        q: 'Bagaimana sistem tarif dan penentuan satuannya?',
+        a: 'Tarif dihitung sangat transparan dengan satuan kerja baku:\n- **/trip** untuk **Go SURUH** (Antar-Jemput & Mobilitas)\n- **/muatan armada** untuk **Move SURUH** (Pindahan & Angkut Barang)\n- **/box/bulan** untuk **Keep SURUH** (Penitipan Barang)\n- **/unit** untuk **Fix SURUH** (Rakit Perabot & Bantuan Teknis)\n- **/tugas** untuk **Task SURUH** (Titip Beli & Asisten Harian)\n- **/berkas** untuk **Desk SURUH** (Urus Dokumen & Administrasi)\n- **/shift** untuk **Crew SURUH** (Kru Operasional Event)\n- **/sesi** (atau **/proyek**) untuk **Talent SURUH** (Tutor & Talent Kreatif)\n\n**Tidak ada biaya siluman.**',
         active: true
       },
       {
         id: 3,
-        q: 'Saya klien perempuan di kos putri, apakah bisa request worker perempuan?',
-        a: 'Bisa banget! Cukup centang opsi "Klien Cewek: Request Worker Cewek" saat memesan. Kami memiliki tim mitra mahasiswi perempuan terverifikasi sehingga aman dan nyaman masuk ke area kos putri.',
+        q: 'Apakah bisa request worker cewek untuk klien cewek?',
+        a: 'Sangat bisa dan aman! Klien cewek bebas request pengerjaan 100% worker cewek untuk pengerjaan di kos atau tempat tinggal demi kenyamanan, etika, dan privasi terjaga.',
         active: true
       },
       {
         id: 4,
-        q: 'Bagaimana jika tugas saya tidak ada di daftar 8 layanan?',
-        a: 'Gunakan fitur utama Custom SURUH di bagian atas halaman! Kamu bebas menuliskan permintaan apa saja selama positif, legal, dan tidak melanggar aturan akademik/hukum.',
+        q: 'Apakah Keep SURUH aman?',
+        a: 'Sangat aman! Barang disimpan di ruangan khusus yang bersih, kering, dan terkunci aman. Setiap kardus atau barang diberi label segel identitas, dibuatkan tanda terima digital, dan dapat dimonitor secara berkala selama masa KKN, magang, atau liburan.',
         active: true
       }
     ];
@@ -2193,7 +2215,7 @@
     // =========================================================================
     // REELS CMS MANAGEMENT LOGIC
     // =========================================================================
-    const DEFAULT_ADMIN_REELS = [{"id":1,"src":"tiktok/tiktok-real-6.mp4","poster":"","user":"unair_suruh","timeAgo":"9 HOURS AGO","likes":48,"caption":"POV pindah kos 3 jam selesai pakai Tossa roda 3 bareng crew Move SURUH UNAIR SURUH. Driver + kru mahasiswa bantu angkut sampai lantai 3 kamar kosan gasss 0896-7777-2336 (whatsapp)","tiktokUrl":"https://www.tiktok.com/@unair_suruh/video/7643032747786784020","active":true},{"id":2,"src":"tiktok/tiktok-real-2.mp4","poster":"","user":"unair_suruh","timeAgo":"2 DAYS AGO","likes":36,"caption":"Kak aku gabisa kena panas! Mau yg dingin & nyaman ber-AC bisa ga? Go SURUH transportasi ospek Amerta UNAIR no nunggu club. Booking via WA 0896-7777-2336","tiktokUrl":"https://www.tiktok.com/@unair_suruh/video/7653709528361389332","active":true},{"id":3,"src":"tiktok/tiktok-real-5.mp4","poster":"","user":"unair_suruh","timeAgo":"3 DAYS AGO","likes":124,"caption":"Video singkat POV ketika kamarmu dibersihin sama crew UNAIR SURUH. Ready all role: mitra mahasiswi request worker cewek aman, rapi, privasi terjaga 0896-7777-2336","tiktokUrl":"https://www.tiktok.com/@unair_suruh/video/7650823166306323733","active":true},{"id":4,"src":"tiktok/tiktok-real-1.mp4","poster":"","user":"unair_suruh","timeAgo":"4 DAYS AGO","likes":58,"caption":"For Maba UNAIR! Go SURUH exclusive anti scam & anti ribet berangkat kampus gak pake drama war ojol. Antar jemput Kampus B - Kampus C tepat waktu 0896-7777-2336","tiktokUrl":"https://www.tiktok.com/@unair_suruh/video/7653711312844999956","active":true},{"id":5,"src":"tiktok/tiktok-real-4.mp4","poster":"","user":"unair_suruh","timeAgo":"5 DAYS AGO","likes":92,"caption":"Desk SURUH: Urus berkas penting & ambil dokumen fisik kirim kilat ke alamat tujuan Surabaya via WA 0896-7777-2336","tiktokUrl":"https://www.tiktok.com/@unair_suruh/video/7651856659639291156","active":true},{"id":6,"src":"tiktok/tiktok-real-3.mp4","poster":"","user":"unair_suruh","timeAgo":"6 DAYS AGO","likes":185,"caption":"ANTAR JEMPUT AMERTA 2026: Go SURUH armada mobil van nyaman, dingin ber-AC, no drama no nunggu. Layanan eksklusif mahasiswa UNAIR 0896-7777-2336","tiktokUrl":"https://www.tiktok.com/@unair_suruh/video/7653329107001953556","active":true}];
+    const DEFAULT_ADMIN_REELS = [{"id":1,"src":"tiktok/tiktok-real-6.mp4","poster":"","user":"unair_suruh","timeAgo":"9 HOURS AGO","likes":48,"caption":"POV pindah kos 3 jam selesai pakai Tossa roda 3 bareng crew Move SURUH UNAIR SURUH. Driver + kru bantu angkut sampai lantai 3 kamar kosan gasss 089509960815 (whatsapp)","tiktokUrl":"https://www.tiktok.com/@unair_suruh/video/7643032747786784020","active":true},{"id":2,"src":"tiktok/tiktok-real-2.mp4","poster":"","user":"unair_suruh","timeAgo":"2 DAYS AGO","likes":36,"caption":"Kak aku gabisa kena panas! Mau yg dingin & nyaman ber-AC bisa ga? Go SURUH transportasi ospek Amerta UNAIR no nunggu club. Booking via WA 089509960815","tiktokUrl":"https://www.tiktok.com/@unair_suruh/video/7653709528361389332","active":true},{"id":3,"src":"tiktok/tiktok-real-5.mp4","poster":"","user":"unair_suruh","timeAgo":"3 DAYS AGO","likes":124,"caption":"Video singkat POV ketika kamarmu dibersihin sama crew UNAIR SURUH. Ready all role: request worker cewek aman, rapi, privasi terjaga 089509960815","tiktokUrl":"https://www.tiktok.com/@unair_suruh/video/7650823166306323733","active":true},{"id":4,"src":"tiktok/tiktok-real-1.mp4","poster":"","user":"unair_suruh","timeAgo":"4 DAYS AGO","likes":58,"caption":"For Maba UNAIR! Go SURUH exclusive anti scam & anti ribet berangkat kampus gak pake drama war ojol. Antar jemput Kampus B - Kampus C tepat waktu 089509960815","tiktokUrl":"https://www.tiktok.com/@unair_suruh/video/7653711312844999956","active":true},{"id":5,"src":"tiktok/tiktok-real-4.mp4","poster":"","user":"unair_suruh","timeAgo":"5 DAYS AGO","likes":92,"caption":"Desk SURUH: Urus berkas penting & ambil dokumen fisik kirim kilat ke alamat tujuan Surabaya via WA 089509960815","tiktokUrl":"https://www.tiktok.com/@unair_suruh/video/7651856659639291156","active":true},{"id":6,"src":"tiktok/tiktok-real-3.mp4","poster":"","user":"unair_suruh","timeAgo":"6 DAYS AGO","likes":185,"caption":"ANTAR JEMPUT AMERTA 2026: Go SURUH armada mobil van nyaman, dingin ber-AC, no drama no nunggu. Layanan eksklusif mahasiswa UNAIR 089509960815","tiktokUrl":"https://www.tiktok.com/@unair_suruh/video/7653329107001953556","active":true}];
 
     function getAdminReels() {
       try {
@@ -3115,26 +3137,26 @@
       cfg.brandTaglineMobile = getVal('cmsBrandSubMobile', 'Layanan Mahasiswa Surabaya');
       cfg.brandTaglineDesktop = getVal('cmsBrandSubDesktop', 'Layanan On-Demand Mahasiswa Surabaya');
 
-      cfg.heroBadge = getVal('cmsHeroBadge', '⚡ Serba Bisa untuk Mahasiswa, Anak Kos & Warga Surabaya');
+      cfg.heroBadge = getVal('cmsHeroBadge', 'Solusi Praktis Mahasiswa & Warga Surabaya');
       cfg.heroPrefix = getVal('cmsHeroPrefix', 'Serba Bisa, Semua');
       cfg.heroHighlight = getVal('cmsHeroHighlight', 'Bisa Disuruh!');
-      cfg.heroDesc = getVal('cmsHeroDesc', '');
+      cfg.heroDesc = getVal('cmsHeroDesc', 'Apapun kebutuhan harianmu di Surabaya, serahkan pada @Unair_Suruh: dari Pindahan Kos, Titip Barang, Antar-Jemput Stasiun/Bandara, Urus Berkas & Dokumen, Rakit Perabot, Belanja Darurat, sampai Crew Event & Tenaga Pengajar/Tutor. Cekatan, terpercaya, dan harga transparan.');
       cfg.heroCtaPrimary = getVal('cmsHeroCta', 'Pesan Sekarang (WA)');
       cfg.heroCtaSecondary = getVal('cmsHeroSecondaryCta', 'Lihat 8 Layanan');
 
       cfg.metric1Val = getVal('cmsMetric1Val', 'Mulai 5rb');
       cfg.metric1Sub = getVal('cmsMetric1Sub', 'Tarif Mahasiswa');
-      cfg.metric2Val = getVal('cmsMetric2Val', '25+ Mitra');
-      cfg.metric2Sub = getVal('cmsMetric2Sub', 'Mahasiswa Terverifikasi');
+      cfg.metric2Val = getVal('cmsMetric2Val', '25+ Worker');
+      cfg.metric2Sub = getVal('cmsMetric2Sub', 'Worker Terverifikasi');
       cfg.metric3Val = getVal('cmsMetric3Val', '8 Layanan');
       cfg.metric3Sub = getVal('cmsMetric3Sub', 'Ekosistem SURUH');
       cfg.metric4Val = getVal('cmsMetric4Val', 'Worker Cewek');
       cfg.metric4Sub = getVal('cmsMetric4Sub', 'Klien Cewek Nyaman');
 
-      cfg.heroDispatchBadge = getVal('cmsHeroDispatchBadge', 'Siaga Surabaya • Fast Response');
-      cfg.heroCardTitle = getVal('cmsHeroCardTitle', 'Tim Mahasiswa & Armada Siap Bantu!');
-      cfg.heroCardSub = getVal('cmsHeroCardSub', 'Mitra Terverifikasi • Cekatan, Aman & Ramah Kantong');
-      cfg.heroVerifiedLine1 = getVal('cmsHeroVerified1', 'Identitas Mahasiswa Terverifikasi');
+      cfg.heroDispatchBadge = getVal('cmsHeroDispatchBadge', 'Siaga 8 Lini SURUH Series');
+      cfg.heroCardTitle = getVal('cmsHeroCardTitle', 'Maskot UNAIR SURUH');
+      cfg.heroCardSub = getVal('cmsHeroCardSub', 'Worker Terverifikasi (Mahasiswa & Warga Surabaya)');
+      cfg.heroVerifiedLine1 = getVal('cmsHeroVerified1', 'Worker Terverifikasi (Mahasiswa & Warga Surabaya)');
       cfg.heroVerifiedLine2 = getVal('cmsHeroVerified2', 'Aman & Terpercaya');
 
       // 2. Spotlight Custom SURUH
@@ -3146,7 +3168,7 @@
       cfg.customDesc = getVal('cmsCustomDesc', '');
       cfg.customBullet1 = getVal('cmsCustomBullet1', 'Tarif Fleksibel Mulai Rp 5.000');
       cfg.customBullet2 = getVal('cmsCustomBullet2', 'Deal Harga di Awal Sebelum Jalan');
-      cfg.customBullet3 = getVal('cmsCustomBullet3', 'Bebas Pilih Mitra Cowok / Cewek');
+      cfg.customBullet3 = getVal('cmsCustomBullet3', 'Worker Terpercaya');
       cfg.customFormTitle = getVal('cmsCustomFormTitle', 'Form Request Bebas (Custom)');
       cfg.customFormBtnText = getVal('cmsCustomFormBtnText', 'Kirim Request & Tanya Tarif via WA');
       cfg.customFormNote = getVal('cmsCustomFormNote', 'Gratis tanya-tanya dulu • Admin langsung balas estimasi biaya');
@@ -3158,12 +3180,12 @@
         if (lbl) cfg.customChips.push({ label: lbl, value: val || lbl });
       }
 
-      // 3. Mengapa Kami (6 Keunggulan)
+      // 3. Mengapa Kami (5 Keunggulan)
       cfg.whyBadge = getVal('cmsWhyBadge', 'Standar Layanan Terpercaya • Transparan & Profesional');
       cfg.whyTitle = getVal('cmsWhyTitle', 'Mengapa Memilih UNAIR SURUH?');
       cfg.whySubtitle = getVal('cmsWhySubtitle', '');
       cfg.whyCards = [];
-      for (let j = 0; j < 6; j++) {
+      for (let j = 0; j < 5; j++) {
         cfg.whyCards.push({
           title: getVal('cmsWhyCardTitle' + j, ''),
           desc: getVal('cmsWhyCardDesc' + j, '')
@@ -3171,16 +3193,16 @@
       }
 
       // 4. CTA Banner & Seksi Jadi Mitra
-      cfg.ctaBadge = getVal('cmsCtaBadge', 'Siap Membantu Kebutuhanmu Hari Ini');
-      cfg.ctaTitle = getVal('cmsCtaTitle', 'Ada Kerjaan yang Perlu Diselesaikan Sekarang?');
-      cfg.ctaDesc = getVal('cmsCtaDesc', '');
+      cfg.ctaBadge = getVal('cmsCtaBadge', 'Siap untuk memulai?');
+      cfg.ctaTitle = getVal('cmsCtaTitle', 'Butuh Bantuan Mendadak atau Urusan Kampus Hari Ini?');
+      cfg.ctaDesc = getVal('cmsCtaDesc', 'Kami siap membantu kapan saja. Konsultasi kebutuhanmu via WhatsApp sekarang tanpa ribet.');
       cfg.ctaBtnText = getVal('cmsCtaBtnText', 'Pesan Jasa Sekarang');
 
-      cfg.mitraBadge = getVal('cmsMitraBadge', 'Pemberdayaan Ekonomi Mahasiswa');
-      cfg.mitraTitle1 = getVal('cmsMitraTitle1', 'Mahasiswa Aktif?');
-      cfg.mitraTitle2 = getVal('cmsMitraTitle2', 'Yuk Gabung Jadi Mitra Worker!');
-      cfg.mitraDesc = getVal('cmsMitraDesc', '');
-      cfg.mitraBtnText = getVal('cmsMitraBtnText', 'Daftar Jadi Mitra via WA');
+      cfg.mitraBadge = getVal('cmsMitraBadge', 'Rekrutmen Mitra Worker UNAIR SURUH');
+      cfg.mitraTitle1 = getVal('cmsMitraTitle1', 'Ingin Penghasilan Fleksibel?');
+      cfg.mitraTitle2 = getVal('cmsMitraTitle2', 'Gabung Jadi Worker @unair_suruh');
+      cfg.mitraDesc = getVal('cmsMitraDesc', 'Buka peluang pendapatan bagi mahasiswa UNAIR dan Warga Surabaya tanpa meninggalkan kuliah atau aktivitas utama. Fee pekerja transparan disepakati di awal tanpa potongan sepihak.');
+      cfg.mitraBtnText = getVal('cmsMitraBtnText', 'Daftar Jadi Worker via WA');
       cfg.mitraPillar1Title = getVal('cmsMitraP1Title', '');
       cfg.mitraPillar1Desc = getVal('cmsMitraP1Desc', '');
       cfg.mitraPillar2Title = getVal('cmsMitraP2Title', '');
@@ -3190,22 +3212,24 @@
 
       // 5. Section Titles
       cfg.layananTitle = getVal('cmsLayananTitle', 'Pilih Layanan Sesuai Kebutuhanmu');
-      cfg.layananSubtitle = getVal('cmsLayananSubtitle', '');
-      cfg.reelsTitle = getVal('cmsReelsTitle', 'Kegiatan Kami di Lapangan');
+      cfg.layananSubtitle = getVal('cmsLayananSubtitle', 'Tulis tugasmu, harga disepakati di awal tanpa biaya siluman.');
+      cfg.reelsBadge = getVal('cmsReelsBadge', 'Layanan Unair Suruh');
+      cfg.reelsTitle = getVal('cmsReelsTitle', 'Kegiatan Kami');
+      cfg.reelsSubtitle = getVal('cmsReelsSubtitle', 'Follow TikTok & IG kami @unair_suruh agar terus update keseruan kami.');
       cfg.testiTitle = getVal('cmsTestiTitle', 'Kata Mereka di Komentar TikTok');
       cfg.faqTitle = getVal('cmsFaqTitle', 'Pertanyaan yang Sering Diajukan (FAQ)');
       cfg.faqSubtitle = getVal('cmsFaqSubtitle', '');
 
       // 6. Contacts & Footer
-      cfg.waNumber = getVal('settingWaNumber', '6289677772336');
+      cfg.waNumber = getVal('settingWaNumber', '6289509960815');
       cfg.floatingWaLabel = getVal('settingFloatingWaLabel', 'Chat WA');
       cfg.footerEmail = getVal('settingFooterEmail', 'unairsuruh@gmail.com');
       cfg.footerInstagram = getVal('settingFooterIg', '@unair.suruh');
       cfg.footerTiktok = getVal('settingFooterTiktok', '@unair_suruh');
-      cfg.footerPjBadge = getVal('settingFooterPj', 'PJ Operasional: Afif (FTMM)');
-      cfg.footerWorkerBadge = getVal('settingFooterWorker', '25+ Mitra Mahasiswa Terverifikasi');
+      cfg.footerPjBadge = getVal('settingFooterPj', 'Owner: Afif (089509960815)');
+      cfg.footerWorkerBadge = getVal('settingFooterWorker', 'Worker Terverifikasi (Mahasiswa & Warga Surabaya)');
       cfg.footerCoverage = getVal('settingHours', 'Area Kampus A, B, C & Seluruh Surabaya • Setiap Hari 06.00 – 23.00 WIB');
-      cfg.footerDesc = getVal('settingFooterDesc', '');
+      cfg.footerDesc = getVal('settingFooterDesc', 'Usaha jasa satu pintu independen oleh mahasiswa UNAIR di Surabaya yang membantu semua kalangan untuk menyelesaikan kebutuhan harian dengan harga disepakati di awal dan fee pekerja transparan.');
       cfg.footerDisclaimer = getVal('settingFooterDisclaimer', '');
 
       return cfg;
@@ -3320,7 +3344,9 @@
 
         setValIf('cmsLayananTitle', cfg.layananTitle);
         setValIf('cmsLayananSubtitle', cfg.layananSubtitle);
+        setValIf('cmsReelsBadge', cfg.reelsBadge);
         setValIf('cmsReelsTitle', cfg.reelsTitle);
+        setValIf('cmsReelsSubtitle', cfg.reelsSubtitle);
         setValIf('cmsTestiTitle', cfg.testiTitle);
         setValIf('cmsFaqTitle', cfg.faqTitle);
         setValIf('cmsFaqSubtitle', cfg.faqSubtitle);
@@ -3354,7 +3380,7 @@
     }
 
     function saveAdminSettings() {
-      const wa = getVal('settingWaNumber', '6289677772336').replace(/^0/, '62').replace(/[^0-9]/g, '');
+      const wa = getVal('settingWaNumber', '6289509960815').replace(/^0/, '62').replace(/[^0-9]/g, '');
       localStorage.setItem('UNAIR_SURUH_WA', wa);
       setValIf('settingWaNumber', wa);
 
@@ -3393,7 +3419,7 @@
         testimonials: adminTestimonialsList,
         workers: workers,
         orders: orders,
-        waNumber: localStorage.getItem('UNAIR_SURUH_WA') || '6289677772336'
+        waNumber: localStorage.getItem('UNAIR_SURUH_WA') || '6289509960815'
       };
       const blob = new Blob([JSON.stringify(backup, null, 2)], { type: 'application/json' });
       const url = window.URL.createObjectURL(blob);
