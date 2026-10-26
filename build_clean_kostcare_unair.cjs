@@ -898,85 +898,100 @@ ${servicesData.map(renderServiceCard).join('\n\n')}
   <!-- ===================================================================== -->
   <!-- 4. SECTION MENGAPA MEMILIH UNAIR SURUH? (REVISI BAGIAN 4: 5 POIN)     -->
   <!-- ===================================================================== -->
+  <!-- 4. MENGAPA KAMI (5 KEUNGGULAN UTAMA) - 2-1-2 SYMMETRICAL BENTO GRID   -->
+  <!-- ===================================================================== -->
   <section id="mengapa-kami" class="py-16 sm:py-24 bg-white border-y border-slate-200/80">
-    <div class="w-full px-4 sm:px-8 lg:px-12 xl:px-16 2xl:px-20">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
       
       <!-- HEADING & SUBTITLE -->
-      <div class="text-center max-w-3xl mx-auto mb-12 sm:mb-16">
+      <div class="text-center max-w-2xl mx-auto mb-10 sm:mb-14">
         <div id="whySectionBadge" class="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-amber-50 border border-amber-200 text-amber-800 text-xs font-bold uppercase tracking-wider mb-3">
           Standar Layanan &amp; Keunggulan Kami
         </div>
         <h2 id="whySectionTitle" class="font-heading font-black text-2xl sm:text-3xl lg:text-4xl text-navy-900 tracking-tight">
           Mengapa Memilih UNAIR SURUH?
         </h2>
-        <p id="whySectionSubtitle" class="text-slate-600 text-sm sm:text-base mt-2 leading-relaxed">
+        <p id="whySectionSubtitle" class="text-slate-600 text-sm sm:text-base mt-2.5 leading-relaxed">
           Pembeda utama kami adalah pembagian fee worker yang terbuka, perlindungan privasi pelanggan, dan kesiapsiagaan tim di lapangan
         </p>
       </div>
 
-      <!-- 5 FEATURE CARDS PERSIS SESUAI REVISI BAGIAN 4 -->
-      <div id="whyGridContainer" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
+      <!-- 5 FEATURE CARDS: 2 CARDS (ROW 1) + 1 FEATURED CENTERPIECE (ROW 2) + 2 CARDS (ROW 3) -->
+      <div id="whyGridContainer" class="grid grid-cols-1 md:grid-cols-2 gap-5 sm:gap-6">
         
         <!-- ITEM 1: FEE WORKER TERBUKA & ADIL -->
-        <div class="bg-white rounded-3xl border border-slate-200/90 p-6 sm:p-7 flex items-start gap-4 shadow-xs hover:shadow-md transition card-spring hover:border-amber-400">
-          <div class="w-12 h-12 rounded-2xl bg-amber-400 text-navy-900 flex items-center justify-center shrink-0 shadow-xs">
+        <div class="bg-white rounded-3xl border border-slate-200/90 p-6 sm:p-7 flex items-start gap-4 shadow-xs hover:shadow-md transition-all duration-300 card-spring hover:border-amber-400 group">
+          <div class="w-12 h-12 rounded-2xl bg-amber-400 text-navy-950 flex items-center justify-center shrink-0 shadow-xs group-hover:scale-105 transition-transform">
             <svg class="w-6 h-6 stroke-current fill-none stroke-2" viewBox="0 0 24 24"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
           </div>
-          <div>
-            <h3 id="whyCardTitle-0" class="font-heading font-bold text-base sm:text-lg text-navy-950">Fee Worker Terbuka &amp; Adil</h3>
-            <p id="whyCardDesc-0" class="text-xs sm:text-sm text-slate-600 mt-1.5 leading-relaxed">
+          <div class="space-y-1.5 flex-1">
+            <h3 id="whyCardTitle-0" class="font-heading font-bold text-base sm:text-lg text-navy-950 group-hover:text-blue-900 transition-colors">Fee Worker Terbuka &amp; Adil</h3>
+            <p id="whyCardDesc-0" class="text-xs sm:text-sm text-slate-600 leading-relaxed">
               Worker mengetahui besaran fee sebelum mengambil order. Tidak ada pemotongan sepihak, sehingga worker bekerja maksimal, profesional, dan tuntas.
             </p>
           </div>
         </div>
 
         <!-- ITEM 2: GENDER MATCHING DI RUANG PRIVAT -->
-        <div class="bg-white rounded-3xl border border-slate-200/90 p-6 sm:p-7 flex items-start gap-4 shadow-xs hover:shadow-md transition card-spring hover:border-amber-400">
-          <div class="w-12 h-12 rounded-2xl bg-amber-400 text-navy-900 flex items-center justify-center shrink-0 shadow-xs">
+        <div class="bg-white rounded-3xl border border-slate-200/90 p-6 sm:p-7 flex items-start gap-4 shadow-xs hover:shadow-md transition-all duration-300 card-spring hover:border-amber-400 group">
+          <div class="w-12 h-12 rounded-2xl bg-amber-400 text-navy-950 flex items-center justify-center shrink-0 shadow-xs group-hover:scale-105 transition-transform">
             <svg class="w-6 h-6 stroke-current fill-none stroke-2" viewBox="0 0 24 24"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
           </div>
-          <div>
-            <h3 id="whyCardTitle-1" class="font-heading font-bold text-base sm:text-lg text-navy-950">Gender Matching di Ruang Privat</h3>
-            <p id="whyCardDesc-1" class="text-xs sm:text-sm text-slate-600 mt-1.5 leading-relaxed">
+          <div class="space-y-1.5 flex-1">
+            <h3 id="whyCardTitle-1" class="font-heading font-bold text-base sm:text-lg text-navy-950 group-hover:text-blue-900 transition-colors">Gender Matching di Ruang Privat</h3>
+            <p id="whyCardDesc-1" class="text-xs sm:text-sm text-slate-600 leading-relaxed">
               Klien cewek bebas request pengerjaan, 100% worker cewek untuk pengerjaan di kos atau tempat tinggal demi kenyamanan, etika, dan privasi terjaga.
             </p>
           </div>
         </div>
 
-        <!-- ITEM 3: LAYANAN 1 PINTU SERBA BISA -->
-        <div class="bg-white rounded-3xl border border-slate-200/90 p-6 sm:p-7 flex items-start gap-4 shadow-xs hover:shadow-md transition card-spring hover:border-amber-400">
-          <div class="w-12 h-12 rounded-2xl bg-amber-400 text-navy-900 flex items-center justify-center shrink-0 shadow-xs">
-            <svg class="w-6 h-6 stroke-current fill-none stroke-2" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="m9 12 2 2 4-4"/></svg>
+        <!-- ITEM 3: LAYANAN 1 PINTU SERBA BISA (CENTERPIECE 100% WIDTH) -->
+        <div class="md:col-span-2 bg-gradient-to-br from-amber-50/60 via-white to-amber-50/30 rounded-3xl border border-amber-200/90 p-6 sm:p-7 flex flex-col sm:flex-row items-start sm:items-center gap-4.5 sm:gap-6 shadow-xs hover:shadow-md transition-all duration-300 card-spring hover:border-amber-400 group">
+          <div class="w-12 sm:w-14 h-12 sm:h-14 rounded-2xl bg-gradient-to-br from-amber-400 to-amber-500 text-navy-950 flex items-center justify-center shrink-0 shadow-xs group-hover:scale-105 transition-transform">
+            <svg class="w-6 sm:w-7 h-6 sm:h-7 stroke-current fill-none stroke-2" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="m9 12 2 2 4-4"/></svg>
           </div>
-          <div>
-            <h3 id="whyCardTitle-2" class="font-heading font-bold text-base sm:text-lg text-navy-950">Layanan 1 Pintu Serba Bisa</h3>
-            <p id="whyCardDesc-2" class="text-xs sm:text-sm text-slate-600 mt-1.5 leading-relaxed">
+          <div class="flex-1 space-y-2">
+            <div class="flex flex-wrap items-center gap-2">
+              <h3 id="whyCardTitle-2" class="font-heading font-bold text-base sm:text-lg text-navy-950 group-hover:text-blue-900 transition-colors">Layanan 1 Pintu Serba Bisa</h3>
+              <span class="px-2.5 py-0.5 rounded-full text-[10px] font-extrabold uppercase tracking-wider bg-amber-200/80 text-amber-900 border border-amber-300/80">8 Lini SURUH</span>
+            </div>
+            <p id="whyCardDesc-2" class="text-xs sm:text-sm text-slate-700 leading-relaxed">
               Cukup 1 kontak untuk 8 kategori kebutuhan harian: Go SURUH (Mobilitas &amp; Antar-Jemput), Move SURUH (Pindahan &amp; Angkut), Keep SURUH (Penitipan Barang), Fix SURUH (Rakit &amp; Teknis), Task SURUH (Titip Beli &amp; Kurir), Desk SURUH (Urus Dokumen), Crew SURUH (Tenaga Event), dan Talent SURUH (Tutor &amp; Talent Kreatif).
             </p>
+            <div class="flex flex-wrap gap-1.5 pt-1">
+              <span class="px-2.5 py-0.5 rounded-lg bg-white border border-slate-200/90 text-[11px] font-bold text-navy-900 shadow-2xs">Go SURUH</span>
+              <span class="px-2.5 py-0.5 rounded-lg bg-white border border-slate-200/90 text-[11px] font-bold text-navy-900 shadow-2xs">Move SURUH</span>
+              <span class="px-2.5 py-0.5 rounded-lg bg-white border border-slate-200/90 text-[11px] font-bold text-navy-900 shadow-2xs">Keep SURUH</span>
+              <span class="px-2.5 py-0.5 rounded-lg bg-white border border-slate-200/90 text-[11px] font-bold text-navy-900 shadow-2xs">Fix SURUH</span>
+              <span class="px-2.5 py-0.5 rounded-lg bg-white border border-slate-200/90 text-[11px] font-bold text-navy-900 shadow-2xs">Task SURUH</span>
+              <span class="px-2.5 py-0.5 rounded-lg bg-white border border-slate-200/90 text-[11px] font-bold text-navy-900 shadow-2xs">Desk SURUH</span>
+              <span class="px-2.5 py-0.5 rounded-lg bg-white border border-slate-200/90 text-[11px] font-bold text-navy-900 shadow-2xs">Crew SURUH</span>
+              <span class="px-2.5 py-0.5 rounded-lg bg-white border border-slate-200/90 text-[11px] font-bold text-navy-900 shadow-2xs">Talent SURUH</span>
+            </div>
           </div>
         </div>
 
         <!-- ITEM 4: WORKER TERVERIFIKASI -->
-        <div class="bg-white rounded-3xl border border-slate-200/90 p-6 sm:p-7 flex items-start gap-4 shadow-xs hover:shadow-md transition card-spring hover:border-amber-400">
-          <div class="w-12 h-12 rounded-2xl bg-amber-400 text-navy-900 flex items-center justify-center shrink-0 shadow-xs">
+        <div class="bg-white rounded-3xl border border-slate-200/90 p-6 sm:p-7 flex items-start gap-4 shadow-xs hover:shadow-md transition-all duration-300 card-spring hover:border-amber-400 group">
+          <div class="w-12 h-12 rounded-2xl bg-amber-400 text-navy-950 flex items-center justify-center shrink-0 shadow-xs group-hover:scale-105 transition-transform">
             <svg class="w-6 h-6 stroke-current fill-none stroke-2" viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
           </div>
-          <div>
-            <h3 id="whyCardTitle-3" class="font-heading font-bold text-base sm:text-lg text-navy-950">Worker Terverifikasi</h3>
-            <p id="whyCardDesc-3" class="text-xs sm:text-sm text-slate-600 mt-1.5 leading-relaxed">
+          <div class="space-y-1.5 flex-1">
+            <h3 id="whyCardTitle-3" class="font-heading font-bold text-base sm:text-lg text-navy-950 group-hover:text-blue-900 transition-colors">Worker Terverifikasi</h3>
+            <p id="whyCardDesc-3" class="text-xs sm:text-sm text-slate-600 leading-relaxed">
               Dikerjakan langsung oleh worker dari Mahasiswa Unair / Warga lokal Surabaya yang telah diverifikasi identitasnya, komunikatif, ramah, dan bertanggung jawab penuh.
             </p>
           </div>
         </div>
 
         <!-- ITEM 5: RESPON TANGGAP KEBUTUHAN URGENT -->
-        <div class="bg-white rounded-3xl border border-slate-200/90 p-6 sm:p-7 flex items-start gap-4 shadow-xs hover:shadow-md transition card-spring hover:border-amber-400 md:col-span-2 lg:col-span-1">
-          <div class="w-12 h-12 rounded-2xl bg-amber-400 text-navy-900 flex items-center justify-center shrink-0 shadow-xs">
+        <div class="bg-white rounded-3xl border border-slate-200/90 p-6 sm:p-7 flex items-start gap-4 shadow-xs hover:shadow-md transition-all duration-300 card-spring hover:border-amber-400 group">
+          <div class="w-12 h-12 rounded-2xl bg-amber-400 text-navy-950 flex items-center justify-center shrink-0 shadow-xs group-hover:scale-105 transition-transform">
             <svg class="w-6 h-6 stroke-current fill-none stroke-2" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
           </div>
-          <div>
-            <h3 id="whyCardTitle-4" class="font-heading font-bold text-base sm:text-lg text-navy-950">Respon Tanggap Kebutuhan Urgent</h3>
-            <p id="whyCardDesc-4" class="text-xs sm:text-sm text-slate-600 mt-1.5 leading-relaxed">
+          <div class="space-y-1.5 flex-1">
+            <h3 id="whyCardTitle-4" class="font-heading font-bold text-base sm:text-lg text-navy-950 group-hover:text-blue-900 transition-colors">Respon Tanggap Kebutuhan Urgent</h3>
+            <p id="whyCardDesc-4" class="text-xs sm:text-sm text-slate-600 leading-relaxed">
               Siaga membantu kebutuhan mendadak: motor mogok di jalan, antar-jemput stasiun dini hari, hingga titip obat saat sakit di kos di seluruh penjuru Surabaya, dll.
             </p>
           </div>
