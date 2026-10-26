@@ -1200,15 +1200,21 @@
           
           <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
             <div class="space-y-1.5">
-              <label class="block font-bold text-navy-900">1. Nomor WhatsApp Resmi Owner (Format 628...)</label>
-              <input type="text" id="settingWaNumber" value="6289509960815" class="focus-ring w-full p-3 rounded-xl border border-slate-300 font-mono text-sm font-bold text-emerald-700" />
-              <p class="text-[11px] text-slate-500">Default Owner Afif: 6289509960815. Otomatis mengubah seluruh tombol WhatsApp di website utama.</p>
+              <label class="block font-bold text-navy-900">1. Nomor WA Admin Utama Pemesanan (Format 628...)</label>
+              <input type="text" id="settingWaNumber" value="6289677772336" class="focus-ring w-full p-3 rounded-xl border border-slate-300 font-mono text-sm font-bold text-emerald-700" />
+              <p class="text-[11px] text-slate-500">Default Admin Pemesanan: 6289677772336. Digunakan untuk seluruh pemesanan order, form custom, modal booking, dan floating chat.</p>
             </div>
             <div class="space-y-1.5">
-              <label class="block font-bold text-navy-900">2. Label Tombol WA Mengambang (Pojok Kanan Bawah Web)</label>
-              <input type="text" id="settingFloatingWaLabel" value="Chat Admin Fast Respon" class="focus-ring w-full p-3 rounded-xl border border-slate-300 text-xs sm:text-sm font-bold" />
-              <p class="text-[11px] text-slate-500">Teks pada tombol hijau WhatsApp yang melayang di pojok kanan bawah.</p>
+              <label class="block font-bold text-navy-900">2. Nomor WA Owner Afif (Komplain &amp; Kerjasama)</label>
+              <input type="text" id="settingOwnerWaNumber" value="6289509960815" class="focus-ring w-full p-3 rounded-xl border border-slate-300 font-mono text-sm font-bold text-amber-700" />
+              <p class="text-[11px] text-slate-500">Default Owner Afif: 6289509960815. Ditaruh di footer paling bawah khusus untuk eskalasi, masukan, dan komplain langsung ke Owner.</p>
             </div>
+          </div>
+
+          <div class="space-y-1.5">
+            <label class="block font-bold text-navy-900">3. Label Tombol WA Mengambang (Pojok Kanan Bawah Web)</label>
+            <input type="text" id="settingFloatingWaLabel" value="Chat Admin Fast Respon" class="focus-ring w-full p-3 rounded-xl border border-slate-300 text-xs sm:text-sm font-bold" />
+            <p class="text-[11px] text-slate-500">Teks pada tombol hijau WhatsApp yang melayang di pojok kanan bawah.</p>
           </div>
 
           <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
@@ -1714,12 +1720,13 @@
 
     // ONE-TIME REVISION MIGRATION: Ensure stale pre-revision localStorage keys do not overwrite the 9-point precision revision
     try {
-      var CURRENT_REV_VER = '2026-10-26-rev9-v3';
+      var CURRENT_REV_VER = '2026-10-26-rev9-v4';
       if (localStorage.getItem('UNAIR_REV_VER') !== CURRENT_REV_VER) {
         localStorage.removeItem('UNAIR_SITE_CONFIG');
         localStorage.removeItem('UNAIR_SERVICES');
         localStorage.removeItem('UNAIR_FAQ_DATA');
         localStorage.removeItem('UNAIR_SURUH_WA');
+        localStorage.removeItem('UNAIR_OWNER_WA');
         localStorage.removeItem('UNAIR_SURUH_HERO_BADGE');
         localStorage.removeItem('UNAIR_SURUH_HERO_PREFIX');
         localStorage.removeItem('UNAIR_SURUH_HERO_HIGHLIGHT');
@@ -1842,7 +1849,7 @@
       {
         id: 1,
         q: 'Bagaimana cara memesan layanan di UNAIR SURUH?',
-        a: 'Cukup klik tombol "Pesan Layanan Ini" pada layanan yang diinginkan atau isi form Custom SURUH, pilih tanggal & jam kebutuhan, dan pesan akan langsung terformat rapi untuk dikirim via <a href="https://wa.me/6289509960815?text=Halo%20Owner%20Afif,%20saya%20mau%20order%20layanan%20UNAIR%20SURUH" target="_blank" rel="noopener noreferrer" class="text-amber-600 font-bold hover:underline">WhatsApp Owner Afif</a>.',
+        a: 'Cukup klik tombol "Pesan Layanan Ini" pada layanan yang diinginkan atau isi form Custom SURUH, pilih tanggal & jam kebutuhan, dan pesan akan langsung terformat rapi untuk dikirim via <a href="https://wa.me/6289677772336?text=Halo%20Admin%20UNAIR%20SURUH,%20saya%20mau%20order%20layanan" target="_blank" rel="noopener noreferrer" class="text-amber-600 font-bold hover:underline">WhatsApp Admin Pemesanan</a> (jika ada kendala atau komplain khusus, hubungi kanal langsung ke Owner Afif di bagian paling bawah website).',
         active: true
       },
       {
@@ -3221,7 +3228,8 @@
       cfg.faqSubtitle = getVal('cmsFaqSubtitle', '');
 
       // 6. Contacts & Footer
-      cfg.waNumber = getVal('settingWaNumber', '6289509960815');
+      cfg.waNumber = getVal('settingWaNumber', '6289677772336');
+      cfg.ownerWaNumber = getVal('settingOwnerWaNumber', '6289509960815');
       cfg.floatingWaLabel = getVal('settingFloatingWaLabel', 'Chat WA');
       cfg.footerEmail = getVal('settingFooterEmail', 'unairsuruh@gmail.com');
       cfg.footerInstagram = getVal('settingFooterIg', '@unair.suruh');
@@ -3247,6 +3255,7 @@
       localStorage.setItem('UNAIR_SURUH_HERO_CTA', cfg.heroCtaPrimary);
       localStorage.setItem('UNAIR_SURUH_BANNER_TEXT', cfg.topBarText);
       if (cfg.waNumber) localStorage.setItem('UNAIR_SURUH_WA', cfg.waNumber);
+      if (cfg.ownerWaNumber) localStorage.setItem('UNAIR_OWNER_WA', cfg.ownerWaNumber);
 
       notifyWebsiteSync('SITE_CONFIG_SAVED');
       showToast('✅ Semua tampilan Website Utama berhasil disimpan & disinkronkan!');
@@ -3256,6 +3265,9 @@
       try {
         const savedWa = localStorage.getItem('UNAIR_SURUH_WA');
         if (savedWa) setValIf('settingWaNumber', savedWa);
+
+        const savedOwnerWa = localStorage.getItem('UNAIR_OWNER_WA');
+        if (savedOwnerWa) setValIf('settingOwnerWaNumber', savedOwnerWa);
 
         const savedPin = localStorage.getItem('UNAIR_ADMIN_PIN');
         if (savedPin) setValIf('settingAdminPin', savedPin);
@@ -3380,9 +3392,13 @@
     }
 
     function saveAdminSettings() {
-      const wa = getVal('settingWaNumber', '6289509960815').replace(/^0/, '62').replace(/[^0-9]/g, '');
+      const wa = getVal('settingWaNumber', '6289677772336').replace(/^0/, '62').replace(/[^0-9]/g, '');
       localStorage.setItem('UNAIR_SURUH_WA', wa);
       setValIf('settingWaNumber', wa);
+
+      const ownerWa = getVal('settingOwnerWaNumber', '6289509960815').replace(/^0/, '62').replace(/[^0-9]/g, '');
+      localStorage.setItem('UNAIR_OWNER_WA', ownerWa);
+      setValIf('settingOwnerWaNumber', ownerWa);
 
       const newPin = getVal('settingAdminPin', '1954');
       if (newPin) localStorage.setItem('UNAIR_ADMIN_PIN', newPin);
@@ -3419,7 +3435,8 @@
         testimonials: adminTestimonialsList,
         workers: workers,
         orders: orders,
-        waNumber: localStorage.getItem('UNAIR_SURUH_WA') || '6289509960815'
+        waNumber: localStorage.getItem('UNAIR_SURUH_WA') || '6289677772336',
+        ownerWaNumber: localStorage.getItem('UNAIR_OWNER_WA') || '6289509960815'
       };
       const blob = new Blob([JSON.stringify(backup, null, 2)], { type: 'application/json' });
       const url = window.URL.createObjectURL(blob);

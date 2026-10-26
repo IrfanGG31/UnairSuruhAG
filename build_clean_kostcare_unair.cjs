@@ -5,8 +5,9 @@ console.log('Building UNAIR SURUH - 8 Official Care Services...');
 
 const publicDir = path.join(__dirname, 'public');
 
-// Single source of truth for the WhatsApp number used on every CTA.
-const WA_NUMBER = '6289509960815';
+// WhatsApp Configuration
+const WA_NUMBER = '6289677772336'; // Admin Utama Pemesanan (+62 896-7777-2336)
+const OWNER_WA_NUMBER = '6289509960815'; // Owner Afif - Khusus Komplain, Pengaduan & Kerjasama (+62 895-0996-0815)
 
 // Web build (Vite/Vercel) uses static file URLs from /public.
 // Standalone copies in Downloads get these inlined as base64 by inlineAssets().
@@ -536,8 +537,8 @@ const htmlContent = `<!DOCTYPE html>
         </a>
       </div>
       <div class="pt-2.5 flex items-center justify-between text-[11px] text-slate-500 font-medium">
-        <span class="font-bold text-navy-900">Owner: Afif</span>
-        <a href="https://wa.me/${WA_NUMBER}" target="_blank" rel="noopener noreferrer" class="font-bold text-amber-600 hover:underline flex items-center gap-1"><span>Chat WhatsApp</span> &rarr;</a>
+        <span class="font-bold text-navy-900">Admin Pemesanan</span>
+        <a href="https://wa.me/${WA_NUMBER}" target="_blank" rel="noopener noreferrer" class="font-bold text-amber-600 hover:underline flex items-center gap-1"><span>Chat WhatsApp &rarr;</span></a>
       </div>
     </div>
 
@@ -861,7 +862,7 @@ const htmlContent = `<!DOCTYPE html>
 
               <p class="text-[11px] text-center text-slate-300 flex items-center justify-center gap-1.5 pt-0.5">
                 <span class="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-pulse"></span>
-                <span id="customFormNoteText">Pesan otomatis terformat rapi &amp; siap langsung dikirim ke WhatsApp Owner Afif</span>
+                <span id="customFormNoteText">Pesan otomatis terformat rapi &amp; siap langsung dikirim ke WhatsApp Admin Pemesanan</span>
               </p>
 
             </div>
@@ -1365,7 +1366,7 @@ ${feedData.map(renderFeedCard).join('\n\n')}
             <svg class="w-4 h-4 stroke-current fill-none stroke-2 group-open:rotate-180 transition shrink-0 ml-3" viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9"/></svg>
           </summary>
           <div class="text-xs sm:text-sm text-slate-600 mt-3 leading-relaxed">
-            Cukup klik tombol <strong>&quot;Pesan Layanan Ini&quot;</strong> pada layanan yang diinginkan atau isi form <strong>Custom SURUH</strong>, pilih tanggal &amp; jam kebutuhan, dan pesan akan langsung terformat rapi untuk dikirim via <a href="https://wa.me/${WA_NUMBER}?text=Halo%20Owner%20Afif,%20saya%20mau%20order%20layanan%20UNAIR%20SURUH" target="_blank" rel="noopener noreferrer" class="text-amber-600 font-bold hover:underline inline-flex items-center gap-1"><span>WhatsApp Owner Afif</span> <svg class="w-3.5 h-3.5 stroke-current fill-none stroke-2 inline" viewBox="0 0 24 24"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg></a>.
+            Cukup klik tombol <strong>&quot;Pesan Layanan Ini&quot;</strong> pada layanan yang diinginkan atau isi form <strong>Custom SURUH</strong>, pilih tanggal &amp; jam kebutuhan, dan pesan akan langsung terformat rapi untuk dikirim via <a href="https://wa.me/${WA_NUMBER}?text=Halo%20Admin%20UNAIR%20SURUH,%20saya%20mau%20order%20layanan" target="_blank" rel="noopener noreferrer" class="text-amber-600 font-bold hover:underline inline-flex items-center gap-1"><span>WhatsApp Admin Pemesanan</span> <svg class="w-3.5 h-3.5 stroke-current fill-none stroke-2 inline" viewBox="0 0 24 24"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg></a> (jika ada kendala atau komplain khusus, tersedia juga kanal langsung ke Owner Afif di bagian paling bawah website).
           </div>
         </details>
 
@@ -1520,8 +1521,11 @@ ${feedData.map(renderFeedCard).join('\n\n')}
             Usaha jasa satu pintu independen oleh mahasiswa UNAIR di Surabaya yang membantu semua kalangan untuk menyelesaikan kebutuhan harian dengan harga disepakati di awal dan fee pekerja transparan.
           </p>
           <div class="pt-2 flex flex-wrap items-center gap-2 sm:gap-3 text-xs font-semibold text-slate-700">
-            <a id="footerPjBadge" href="https://wa.me/${WA_NUMBER}" target="_blank" rel="noopener noreferrer" class="bg-amber-100 hover:bg-amber-200 text-amber-900 px-3 py-1 rounded-full font-bold transition inline-flex items-center gap-1.5"><span>Owner: Afif</span> <span class="text-[10px] bg-amber-400 text-navy-950 px-1.5 py-0.5 rounded font-extrabold">Chat WA</span></a>
-            <span id="footerWorkerBadge" class="bg-blue-50 text-blue-800 px-3 py-1 rounded-full">Worker Terverifikasi (Mahasiswa &amp; Warga Surabaya)</span>
+            <a id="footerPjBadge" data-owner-wa href="https://wa.me/${OWNER_WA_NUMBER}?text=Halo%20Owner%20Afif,%20saya%20ingin%20menyampaikan%20masukan/komplain/kerjasama%20mengenai%20layanan%20UNAIR%20SURUH" target="_blank" rel="noopener noreferrer" class="bg-amber-100 hover:bg-amber-200 text-amber-900 px-3.5 py-1.5 rounded-full font-bold transition inline-flex items-center gap-2 shadow-2xs">
+              <span>Owner: Afif</span>
+              <span class="text-[10px] bg-amber-400 text-navy-950 px-2 py-0.5 rounded font-extrabold">Komplain &amp; Kerjasama</span>
+            </a>
+            <span id="footerWorkerBadge" class="bg-blue-50 text-blue-800 px-3 py-1.5 rounded-full">Worker Terverifikasi (Mahasiswa &amp; Warga Surabaya)</span>
           </div>
         </div>
 
@@ -1542,25 +1546,29 @@ ${feedData.map(renderFeedCard).join('\n\n')}
 
         <div class="space-y-2">
           <div class="font-heading font-bold text-xs text-navy-900 uppercase tracking-wider">Kontak &amp; Kanal Resmi</div>
-          <ul class="space-y-2 text-xs text-slate-600 font-medium">
+          <ul class="space-y-2.5 text-xs text-slate-600 font-medium">
             <li class="flex items-center gap-2">
-              <span class="font-bold text-navy-950">Owner:</span>
-              <a href="https://wa.me/${WA_NUMBER}" target="_blank" rel="noopener noreferrer" class="text-amber-600 font-bold hover:underline">Chat WhatsApp Owner Afif</a>
+              <span class="font-bold text-navy-950 shrink-0">Pemesanan:</span>
+              <a href="https://wa.me/${WA_NUMBER}?text=Halo%20Admin%20UNAIR%20SURUH,%20saya%20mau%20order%20layanan" target="_blank" rel="noopener noreferrer" class="text-emerald-700 font-bold hover:underline inline-flex items-center gap-1">
+                <span>Admin Utama (+62 896-7777-2336)</span>
+              </a>
             </li>
             <li class="flex items-center gap-2">
-              <span class="font-bold text-navy-950">WhatsApp:</span>
-              <a href="https://wa.me/${WA_NUMBER}" target="_blank" rel="noopener noreferrer" class="text-amber-600 font-bold hover:underline">Hubungi CS WhatsApp Resmi</a>
+              <span class="font-bold text-navy-950 shrink-0">Owner Afif:</span>
+              <a id="footerOwnerLink" data-owner-wa href="https://wa.me/${OWNER_WA_NUMBER}?text=Halo%20Owner%20Afif,%20saya%20ingin%20menyampaikan%20masukan/komplain/kerjasama%20mengenai%20layanan%20UNAIR%20SURUH" target="_blank" rel="noopener noreferrer" class="text-amber-700 font-bold hover:underline inline-flex items-center gap-1">
+                <span>Komplain &amp; Kerjasama (+62 895-0996-0815)</span>
+              </a>
             </li>
             <li class="flex items-center gap-2">
-              <span class="font-bold text-navy-950">Email:</span>
+              <span class="font-bold text-navy-950 shrink-0">Email:</span>
               <a id="footerEmailLink" href="mailto:unairsuruh@gmail.com" class="text-amber-600 hover:underline">unairsuruh@gmail.com</a>
             </li>
             <li class="flex items-center gap-2">
-              <span class="font-bold text-navy-950">Instagram:</span>
+              <span class="font-bold text-navy-950 shrink-0">Instagram:</span>
               <a id="footerIgLink" href="https://www.instagram.com/unair_suruh" target="_blank" rel="noopener noreferrer" class="text-amber-600 hover:underline">@unair_suruh</a>
             </li>
             <li class="flex items-center gap-2">
-              <span class="font-bold text-navy-950">TikTok:</span>
+              <span class="font-bold text-navy-950 shrink-0">TikTok:</span>
               <a id="footerTiktokLink" href="https://www.tiktok.com/@unair_suruh" target="_blank" rel="noopener noreferrer" class="text-amber-600 hover:underline">@unair_suruh</a>
             </li>
             <li id="footerCoverageText" class="pt-1 text-[11px] text-slate-500">
@@ -1577,7 +1585,8 @@ ${feedData.map(renderFeedCard).join('\n\n')}
 
       <div class="pt-2 flex flex-col sm:flex-row items-center justify-between text-[11px] text-slate-400 gap-3">
         <div>&copy; 2026 UNAIR SURUH (@unair_suruh). Seluruh hak cipta dilindungi.</div>
-        <div class="flex items-center gap-4">
+        <div class="flex flex-wrap items-center gap-4">
+          <a data-owner-wa href="https://wa.me/${OWNER_WA_NUMBER}?text=Halo%20Owner%20Afif,%20saya%20ingin%20menyampaikan%20masukan/komplain/kerjasama%20mengenai%20layanan%20UNAIR%20SURUH" target="_blank" rel="noopener noreferrer" class="text-amber-700 font-bold hover:underline">Pusat Komplain ke Owner Afif &rarr;</a>
           <a href="#mitra" class="text-amber-600 font-bold hover:underline">Gabung Jadi Worker @unair_suruh</a>
           <a href="#" class="hover:underline">Kebijakan Privasi</a>
           <a href="#" class="hover:underline">Ketentuan Layanan</a>
@@ -1797,7 +1806,7 @@ ${feedData.map(renderFeedCard).join('\n\n')}
         </button>
         <p class="text-[11px] text-center text-slate-500 flex items-center justify-center gap-1.5 pt-1">
           <span class="w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span>
-          <span>Owner: Afif • Terhubung langsung ke WhatsApp</span>
+          <span>Admin Pemesanan • Terhubung langsung ke WhatsApp Fast Respon</span>
         </p>
       </div>
 
@@ -1813,12 +1822,13 @@ ${feedData.map(renderFeedCard).join('\n\n')}
 
     // ONE-TIME REVISION MIGRATION: Ensure stale pre-revision localStorage keys do not overwrite the 9-point precision revision
     try {
-      var CURRENT_REV_VER = '2026-10-26-rev9-v3';
+      var CURRENT_REV_VER = '2026-10-26-rev9-v4';
       if (localStorage.getItem('UNAIR_REV_VER') !== CURRENT_REV_VER) {
         localStorage.removeItem('UNAIR_SITE_CONFIG');
         localStorage.removeItem('UNAIR_SERVICES');
         localStorage.removeItem('UNAIR_FAQ_DATA');
         localStorage.removeItem('UNAIR_SURUH_WA');
+        localStorage.removeItem('UNAIR_OWNER_WA');
         localStorage.removeItem('UNAIR_SURUH_HERO_BADGE');
         localStorage.removeItem('UNAIR_SURUH_HERO_PREFIX');
         localStorage.removeItem('UNAIR_SURUH_HERO_HIGHLIGHT');
@@ -1874,10 +1884,33 @@ ${feedData.map(renderFeedCard).join('\n\n')}
       return '${WA_NUMBER}';
     }
 
+    function getOwnerWaNumber() {
+      try {
+        var cfgRaw = localStorage.getItem('UNAIR_SITE_CONFIG');
+        if (cfgRaw) {
+          var cfg = JSON.parse(cfgRaw);
+          if (cfg && cfg.ownerWaNumber && String(cfg.ownerWaNumber).trim()) {
+            return String(cfg.ownerWaNumber).trim().replace(/^0/, '62').replace(/[^0-9]/g, '');
+          }
+        }
+        var saved = localStorage.getItem('UNAIR_OWNER_WA');
+        if (saved && saved.trim()) {
+          return saved.trim().replace(/^0/, '62').replace(/[^0-9]/g, '');
+        }
+      } catch (e) {}
+      return '${OWNER_WA_NUMBER}';
+    }
+
     function applyDynamicWaNumber() {
       var num = getWaNumber();
-      document.querySelectorAll('a[href*="wa.me/"]').forEach(function(el) {
+      var ownerNum = getOwnerWaNumber();
+
+      document.querySelectorAll('a[href*="wa.me/"]:not([data-owner-wa])').forEach(function(el) {
         el.href = el.href.replace(new RegExp('wa\\.me/\\d+'), 'wa.me/' + num);
+      });
+
+      document.querySelectorAll('a[data-owner-wa]').forEach(function(el) {
+        el.href = el.href.replace(new RegExp('wa\\.me/\\d+'), 'wa.me/' + ownerNum);
       });
     }
 
