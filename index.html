@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
   <title>UNAIR SURUH — Solusi Praktis Mahasiswa &amp; Warga Surabaya</title>
   <meta name="description" content="Layanan on-demand Surabaya (@unair_suruh): Go SURUH, Move SURUH, Keep SURUH, Fix SURUH, Task SURUH, Desk SURUH, Crew SURUH, dan Talent SURUH." />
-  <link rel="icon" type="image/webp" href="/img/unair-suruh-logo.webp" />
+  <link id="siteFavicon" rel="icon" type="image/webp" href="/img/unair-suruh-logo.webp" />
   
   <!-- Google Fonts: Poppins (Heading), Inter (Body) -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -117,7 +117,7 @@
       <!-- LOGO & BRAND IDENTITY -->
       <a href="#" class="flex items-center gap-2 sm:gap-3.5 group focus-ring rounded-xl py-1 min-w-0">
         <div class="w-9 h-9 sm:w-11 sm:h-11 rounded-xl bg-white border border-slate-200 p-0.5 flex items-center justify-center shadow-xs overflow-hidden shrink-0 group-hover:scale-105 transition">
-          <img src="/img/unair-suruh-logo.webp" alt="Logo Maskot UNAIR SURUH" class="w-full h-full object-contain rounded-lg" />
+          <img id="navBrandLogo" data-brand-logo src="/img/unair-suruh-logo.webp" alt="Logo Maskot UNAIR SURUH" class="w-full h-full object-contain rounded-lg" />
         </div>
         <div class="min-w-0">
           <span id="navBrandTitle" class="font-heading font-black text-base sm:text-xl lg:text-2xl text-navy-950 tracking-tight block leading-tight truncate">UNAIR SURUH</span>
@@ -304,7 +304,7 @@
 
             <!-- PHOTO CARD (BALANCED ASPECT RATIO & COMFORTABLE VIEWPORT HEIGHT) -->
             <div class="relative w-full rounded-2xl sm:rounded-3xl overflow-hidden shadow-xl border-4 sm:border-[5px] border-white ring-1 ring-navy-950/10 bg-white aspect-[4/5] max-h-[430px] sm:max-h-[500px]">
-              <img src="/img/hero-team.webp" alt="Tim Worker UNAIR SURUH" class="w-full h-full object-cover object-center" />
+              <img id="heroMainImage" data-hero-photo src="/img/hero-team.webp" alt="Tim Worker UNAIR SURUH" class="w-full h-full object-cover object-center" />
               <div class="absolute inset-0 bg-gradient-to-t from-navy-950/50 via-transparent to-transparent"></div>
             </div>
 
@@ -317,7 +317,7 @@
             <!-- FLOATING MASCOT BADGE (REVISI 1.3: Judul & Sub-label) -->
             <div class="absolute bottom-3 left-3 right-3 sm:right-auto sm:-bottom-6 sm:-left-5 bg-white/95 backdrop-blur-md p-2.5 sm:p-3.5 sm:pr-6 rounded-2xl shadow-xl border border-slate-200 flex items-center gap-2.5 sm:gap-3 card-spring z-10">
               <div class="w-9 h-9 sm:w-11 sm:h-11 rounded-xl bg-white border border-amber-300 p-0.5 overflow-hidden shrink-0 shadow-xs flex items-center justify-center">
-                <img src="/img/unair-suruh-logo.webp" alt="Maskot UNAIR SURUH" class="w-full h-full object-contain rounded-lg" />
+                <img id="heroMascotLogo" data-mascot-logo src="/img/unair-suruh-logo.webp" alt="Maskot UNAIR SURUH" class="w-full h-full object-contain rounded-lg" />
               </div>
               <div class="min-w-0">
                 <div class="text-xs sm:text-sm font-black text-navy-950 flex items-center gap-1.5">
@@ -1936,7 +1936,7 @@
         <div class="space-y-3 md:col-span-2">
           <div class="flex items-center gap-3">
             <div class="w-10 h-10 rounded-xl bg-white border border-slate-200 p-0.5 overflow-hidden shadow-xs">
-              <img src="/img/unair-suruh-logo.webp" alt="Logo UNAIR SURUH" class="w-full h-full object-contain rounded-lg" />
+              <img id="footerBrandLogo" data-brand-logo src="/img/unair-suruh-logo.webp" alt="Logo UNAIR SURUH" class="w-full h-full object-contain rounded-lg" />
             </div>
             <span id="footerBrandTitle" class="font-heading font-black text-xl text-navy-950">UNAIR SURUH</span>
           </div>
@@ -2695,10 +2695,44 @@
                 tt.href = 'https://www.tiktok.com/@' + ttClean;
               }
             }
+
+            // 11. Media / Images (Logo, Hero Photo & Mascot)
+            applyMediaState(cfg);
           }
         }
       } catch(e) {
         console.warn('CMS sync skipped:', e);
+      }
+    }
+
+    // DYNAMIC MEDIA STATE (LOGO, HERO PHOTO, MASCOT BADGE)
+    function applyMediaState(cfg) {
+      try {
+        cfg = cfg || {};
+        var cLogo = cfg.customLogo || localStorage.getItem('UNAIR_CUSTOM_LOGO');
+        if (cLogo) {
+          document.querySelectorAll('[data-brand-logo]').forEach(function(img) { img.src = cLogo; });
+          var fav = document.getElementById('siteFavicon');
+          if (fav) fav.href = cLogo;
+        } else {
+          document.querySelectorAll('[data-brand-logo]').forEach(function(img) { img.src = '/img/unair-suruh-logo.webp'; });
+          var fav = document.getElementById('siteFavicon');
+          if (fav) fav.href = '/img/unair-suruh-logo.webp';
+        }
+
+        var cHero = cfg.customHeroPhoto || localStorage.getItem('UNAIR_CUSTOM_HERO_PHOTO');
+        var heroEl = document.getElementById('heroMainImage');
+        if (heroEl) {
+          heroEl.src = cHero || '/img/hero-team.webp';
+        }
+
+        var cMascot = cfg.customMascot || localStorage.getItem('UNAIR_CUSTOM_MASCOT');
+        var mascotEl = document.getElementById('heroMascotLogo');
+        if (mascotEl) {
+          mascotEl.src = cMascot || cLogo || '/img/unair-suruh-logo.webp';
+        }
+      } catch (e) {
+        console.warn('applyMediaState error:', e);
       }
     }
 
@@ -2723,6 +2757,7 @@
 
     function syncAllAdminData() {
       applyFullSiteConfig();
+      applyMediaState();
       applyDynamicWaNumber();
       applyServiceState();
       applyFaqData();
