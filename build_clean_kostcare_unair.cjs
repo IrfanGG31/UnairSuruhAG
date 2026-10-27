@@ -1544,21 +1544,45 @@ ${feedData.map(renderFeedCard).join('\n\n')}
           </ul>
         </div>
 
-        <div class="space-y-2">
-          <div class="font-heading font-bold text-xs text-navy-900 uppercase tracking-wider">Kontak &amp; Kanal Resmi</div>
-          <ul class="space-y-2.5 text-xs text-slate-600 font-medium">
-            <li class="flex items-center gap-2">
-              <span class="font-bold text-navy-950 shrink-0">Pemesanan:</span>
-              <a href="https://wa.me/${WA_NUMBER}?text=Halo%20Admin%20UNAIR%20SURUH,%20saya%20mau%20order%20layanan" target="_blank" rel="noopener noreferrer" class="text-emerald-700 font-bold hover:underline inline-flex items-center gap-1">
-                <span>Admin Utama (+62 896-7777-2336)</span>
-              </a>
-            </li>
-            <li class="flex items-center gap-2">
-              <span class="font-bold text-navy-950 shrink-0">Owner Afif:</span>
-              <a id="footerOwnerLink" data-owner-wa href="https://wa.me/${OWNER_WA_NUMBER}?text=Halo%20Owner%20Afif,%20saya%20ingin%20menyampaikan%20masukan/komplain/kerjasama%20mengenai%20layanan%20UNAIR%20SURUH" target="_blank" rel="noopener noreferrer" class="text-amber-700 font-bold hover:underline inline-flex items-center gap-1">
-                <span>Komplain &amp; Kerjasama (+62 895-0996-0815)</span>
-              </a>
-            </li>
+        <div class="space-y-3">
+          <div class="font-heading font-bold text-xs text-navy-900 uppercase tracking-wider flex items-center gap-2">
+            <span>Kontak &amp; Kanal Resmi</span>
+            <span class="w-1.5 h-1.5 rounded-full bg-emerald-500 animate-pulse"></span>
+          </div>
+
+          <!-- Tombol WhatsApp Modern & Siap Klik Langsung (Tanpa Teks Nomor Mentah) -->
+          <div class="space-y-2">
+            <!-- 1. Tombol WhatsApp Pemesanan (Admin Utama) -->
+            <a href="https://wa.me/${WA_NUMBER}?text=Halo%20Admin%20UNAIR%20SURUH,%20saya%20mau%20order%20layanan" target="_blank" rel="noopener noreferrer" class="btn-spring focus-ring flex items-center justify-between p-2.5 rounded-xl bg-emerald-50 hover:bg-emerald-100 border border-emerald-200/90 text-emerald-950 transition group shadow-2xs">
+              <div class="flex items-center gap-2.5">
+                <span class="w-7 h-7 rounded-lg bg-emerald-500 text-white flex items-center justify-center shrink-0 shadow-xs group-hover:scale-105 transition-transform">
+                  <svg class="w-3.5 h-3.5 fill-current" viewBox="0 0 24 24"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981z"/></svg>
+                </span>
+                <div class="text-left">
+                  <div class="text-xs font-black text-navy-900 group-hover:text-emerald-700 transition">Pemesanan Layanan</div>
+                  <div class="text-[10px] text-emerald-700 font-medium">Chat Admin Utama Fast Response</div>
+                </div>
+              </div>
+              <span class="text-xs font-bold text-emerald-800 bg-white px-2 py-0.5 rounded-md border border-emerald-200 group-hover:bg-emerald-600 group-hover:text-white transition">Chat WA &rarr;</span>
+            </a>
+
+            <!-- 2. Tombol WhatsApp Owner Afif (Pusat Komplain & Kerjasama) -->
+            <a id="footerOwnerLink" data-owner-wa href="https://wa.me/${OWNER_WA_NUMBER}?text=Halo%20Owner%20Afif,%20saya%20ingin%20menyampaikan%20masukan/komplain/kerjasama%20mengenai%20layanan%20UNAIR%20SURUH" target="_blank" rel="noopener noreferrer" class="btn-spring focus-ring flex items-center justify-between p-2.5 rounded-xl bg-amber-50 hover:bg-amber-100 border border-amber-200/90 text-navy-950 transition group shadow-2xs">
+              <div class="flex items-center gap-2.5">
+                <span class="w-7 h-7 rounded-lg bg-amber-400 text-navy-950 flex items-center justify-center shrink-0 shadow-xs group-hover:scale-105 transition-transform">
+                  <svg class="w-3.5 h-3.5 stroke-current fill-none stroke-2" viewBox="0 0 24 24"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+                </span>
+                <div class="text-left">
+                  <div class="text-xs font-black text-navy-900 group-hover:text-amber-800 transition">Owner Afif</div>
+                  <div class="text-[10px] text-amber-800 font-medium">Pusat Komplain &amp; Kerjasama</div>
+                </div>
+              </div>
+              <span class="text-xs font-bold text-amber-900 bg-white px-2 py-0.5 rounded-md border border-amber-200 group-hover:bg-amber-500 group-hover:text-navy-950 transition">Hubungi &rarr;</span>
+            </a>
+          </div>
+
+          <!-- Social Media & Cakupan -->
+          <ul class="space-y-1.5 text-xs text-slate-600 font-medium pt-1 border-t border-slate-200/80">
             <li class="flex items-center gap-2">
               <span class="font-bold text-navy-950 shrink-0">Email:</span>
               <a id="footerEmailLink" href="mailto:unairsuruh@gmail.com" class="text-amber-600 hover:underline">unairsuruh@gmail.com</a>
