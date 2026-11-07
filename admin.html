@@ -557,7 +557,7 @@
               <svg class="w-4 h-4 fill-none stroke-current stroke-2" viewBox="0 0 24 24"><path d="M19 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11l5 5v11a2 2 0 0 1-2 2z"/><polyline points="17 21 17 13 7 13 7 21"/><polyline points="7 3 7 8 15 8"/></svg>
               <span>Simpan &amp; Terapkan Semua</span>
             </button>
-            <a href="index.html" target="_blank" class="btn-spring focus-ring px-3.5 py-2.5 rounded-xl bg-white border border-slate-300 hover:bg-slate-50 text-navy-900 font-bold text-xs flex items-center gap-1.5">
+            <a href="index.html" onclick="goToPublicSite(); return false;" class="btn-spring focus-ring px-3.5 py-2.5 rounded-xl bg-white border border-slate-300 hover:bg-slate-50 text-navy-900 font-bold text-xs flex items-center gap-1.5">
               <span>Lihat Web</span>
               <svg class="w-3.5 h-3.5 stroke-current fill-none stroke-2" viewBox="0 0 24 24"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6M15 3h6v6M10 14L21 3"/></svg>
             </a>
@@ -3681,12 +3681,18 @@
       cfg.footerDesc = getVal('settingFooterDesc', 'Usaha jasa satu pintu independen oleh mahasiswa UNAIR di Surabaya yang membantu semua kalangan untuk menyelesaikan kebutuhan harian dengan harga disepakati di awal dan fee pekerja transparan.');
       cfg.footerDisclaimer = getVal('settingFooterDisclaimer', '');
 
+      // Include FAQs & Services into Site Config
+      cfg.faqs = adminFaqsList;
+      cfg.services = services;
+
       return cfg;
     }
 
     function saveCmsSettings() {
       const cfg = buildSiteConfigFromInputs();
       localStorage.setItem('UNAIR_SITE_CONFIG', JSON.stringify(cfg));
+      localStorage.setItem('UNAIR_FAQ_DATA', JSON.stringify(adminFaqsList));
+      localStorage.setItem('UNAIR_SERVICES', JSON.stringify(services));
 
       // Keep legacy keys in sync
       localStorage.setItem('UNAIR_SURUH_HERO_BADGE', cfg.heroBadge);

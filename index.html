@@ -2349,16 +2349,20 @@
     }
 
     function applyDynamicWaNumber() {
-      var num = getWaNumber();
-      var ownerNum = getOwnerWaNumber();
+      try {
+        var num = getWaNumber();
+        var ownerNum = getOwnerWaNumber();
 
-      document.querySelectorAll('a[href*="wa.me/"]:not([data-owner-wa])').forEach(function(el) {
-        el.href = el.href.replace(new RegExp('wa\.me/\d+'), 'wa.me/' + num);
-      });
+        document.querySelectorAll('a[href*="wa.me/"]:not([data-owner-wa])').forEach(function(el) {
+          el.href = el.href.replace(/wa\.me\/\d+/, 'wa.me/' + num);
+        });
 
-      document.querySelectorAll('a[data-owner-wa]').forEach(function(el) {
-        el.href = el.href.replace(new RegExp('wa\.me/\d+'), 'wa.me/' + ownerNum);
-      });
+        document.querySelectorAll('a[data-owner-wa]').forEach(function(el) {
+          el.href = el.href.replace(/wa\.me\/\d+/, 'wa.me/' + ownerNum);
+        });
+      } catch (e) {
+        console.warn('applyDynamicWaNumber error:', e);
+      }
     }
 
     function setTextIf(id, val) {
@@ -2417,11 +2421,15 @@
                 '</select>' +
               '</div>';
             }
+            var iconMarkup = (String(s.iconSvg || '').indexOf('<svg') !== -1)
+              ? s.iconSvg
+              : ('<svg class="w-6 h-6 stroke-current fill-none stroke-2 stroke-linecap-round stroke-linejoin-round" viewBox="0 0 24 24">' + s.iconSvg + '</svg>');
+
             html += '<div data-service-name="' + esc(s.title) + '" data-service-slug="' + esc(s.slug) + '" class="group bg-white rounded-3xl p-5 sm:p-6 border ' + esc(s.iconBorder) + ' shadow-card hover:shadow-card-hover transition-all duration-300 flex flex-col justify-between card-spring relative overflow-hidden ' + (isInactive ? 'opacity-60' : '') + '">' +
               '<div>' +
                 '<div class="flex items-start justify-between gap-3 mb-4">' +
                   '<div class="w-12 h-12 rounded-2xl ' + esc(s.iconBg) + ' ' + esc(s.iconColor) + ' flex items-center justify-center shadow-xs group-hover:scale-105 transition-transform shrink-0">' +
-                    '<svg class="w-6 h-6 stroke-current fill-none stroke-2 stroke-linecap-round stroke-linejoin-round" viewBox="0 0 24 24">' + s.iconSvg + '</svg>' +
+                    iconMarkup +
                   '</div>' +
                   '<span class="px-2.5 py-1 rounded-full text-[11px] font-bold border text-right leading-tight ' + esc(isInactive ? 'bg-slate-100 text-slate-600 border-slate-300' : s.badgeClass) + '">' + esc(isInactive ? 'Penuh Sementara' : s.badge) + '</span>' +
                 '</div>' +
@@ -2482,13 +2490,13 @@
       if (raw.indexOf('<ul') !== -1 || raw.indexOf('<li') !== -1 || raw.indexOf('<a ') !== -1 || raw.indexOf('<strong') !== -1) {
         return raw;
       }
-      var lines = raw.split(new RegExp('\r?\n'));
+      var lines = raw.split(/\r?\n/);
       if (lines.length <= 1) {
         return '<p>' + esc(raw) + '</p>';
       }
       var out = '';
       var inList = false;
-      var boldRe = new RegExp('\*\*(.+?)\*\*', 'g');
+      var boldRe = /\*\*(.+?)\*\*/g;
       lines.forEach(function(line) {
         var trimmed = line.trim();
         if (!trimmed) return;
@@ -2514,9 +2522,22 @@
 
     function applyFaqData() {
       try {
+        var faqs = null;
         var raw = localStorage.getItem('UNAIR_FAQ_DATA');
-        if (!raw) return;
-        var faqs = JSON.parse(raw);
+        if (raw) {
+          try { faqs = JSON.parse(raw); } catch (e) {}
+        }
+        if (!Array.isArray(faqs) || faqs.length === 0) {
+          var cfgRaw = localStorage.getItem('UNAIR_SITE_CONFIG');
+          if (cfgRaw) {
+            try {
+              var cfg = JSON.parse(cfgRaw);
+              if (cfg && Array.isArray(cfg.faqs) && cfg.faqs.length > 0) {
+                faqs = cfg.faqs;
+              }
+            } catch (e) {}
+          }
+        }
         if (!Array.isArray(faqs) || faqs.length === 0) return;
         var container = document.getElementById('faqListContainer');
         if (!container) return;
@@ -2612,7 +2633,7 @@
             setTextIf('heroVerifiedLine2', cfg.heroVerifiedLine2);
 
             // 3. Spotlight Custom SURUH
-            var customSection = document.getElementById('custom-suruh');
+            var customSection = document.getElementById('custom-suruh-spotlight') || document.getElementById('custom-suruh');
             if (customSection) {
               customSection.style.display = (cfg.customActive === false) ? 'none' : '';
             }
